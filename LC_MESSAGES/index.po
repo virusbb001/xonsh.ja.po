@@ -169,7 +169,7 @@ msgstr "Xonshは現在、以下の外部依存関係を持っています。"
 
 #: ../../dependencies.rst:5
 msgid "*Run Time:*"
-msgstr "実行環境:*"
+msgstr "*実行環境:*"
 
 #: ../../dependencies.rst:7
 msgid "Python v3.4+"
@@ -180,7 +180,7 @@ msgid ""
 "Pip supports \"extra\" dependencies in the form of ``xonsh[ptk,linux]``, "
 "where the list in the brackets identify the optional features"
 msgstr ""
-"Pipは``xonsh[ptk,linux]``のような\"追加の\"依存関係をサポートしており、"
+"Pipは ``xonsh[ptk,linux]`` のような\"追加の\"依存関係をサポートしており、"
 "括弧内のリストでオプション機能が識別されます。"
 
 #: ../../dependencies.rst:12
@@ -237,7 +237,7 @@ msgid ""
 " run the test suite)."
 msgstr ""
 "xonshを開発したい場合は、"
-"`requires-docs.txt <https://github.com/xonsh/xonsh/blob/master/requirements-docs.txt>`_"
+"`requires-docs.txt <https://github.com/xonsh/xonsh/blob/master/requirements-docs.txt>`_ "
 "（ドキュメンテーションを生成するため）および"
 "`requirements-tests.txt <https://github.com/xonsh/xonsh/blob/master/requirements-tests.txt>`_ "
 "（テストスイートを実行するため）にリストされている依存関係をインストールすることを強くお勧めします。"
@@ -297,7 +297,7 @@ msgid ""
 msgstr ""
 "ご質問やご意見がありましたら、xonsh@googlegroups.com メーリングリストに送信したり、"
 "IRCで私達を呼び出したり、直接著者に連絡したり、GitHubでissueを開いてください。 "
-"`ここからメーリングリストに参加してください！ <https://groups.google.com/forum/#!forum/xonsh>`_"
+"`ここからメーリングリストに参加してください！ <https://groups.google.com/forum/#!forum/xonsh>`_ "
 "(訳注: おそらく英語のみの受付です。)"
 
 
