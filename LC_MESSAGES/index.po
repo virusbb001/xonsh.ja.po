@@ -19,9 +19,10 @@ msgstr ""
 
 #: ../../intro.rst:2
 msgid "the xonsh shell"
-msgstr ""
+msgstr "Xonsh シェル"
 
 #: ../../intro.rst:57
+# TODO: Unix-gazing のいい感じの訳
 msgid ""
 "Xonsh is a Python-powered, cross-platform, Unix-gazing shell language and"
 " command prompt. The language is a superset of Python 3.4+ with "
@@ -29,10 +30,14 @@ msgid ""
 "It works on all major systems including Linux, Mac OSX, and Windows. "
 "Xonsh is meant for the daily use of experts and novices alike."
 msgstr ""
+"XonshはPythonで動く、クロスプラットフォームのUnix-gazingなシェル言語とコマンドプロンプトです。"
+"この言語は、BashとIPythonから慣れ親しんだ追加のシェルプリミティブを持つPython 3.4+のスーパーセットです。"
+"これは、Linux、Mac OSX、およびWindowsを含むすべての主要なシステムで動作します。"
+"Xonshは専門家と初心者の毎日の使用のために作られています"
 
 #: ../../tryitnow.rst:2
 msgid "Try It Now!"
-msgstr ""
+msgstr "今すぐ試す!"
 
 #: ../../tryitnow.rst:3
 msgid ""
@@ -41,10 +46,13 @@ msgid ""
 "below. **Note:** this is not a fully featured xonsh instance due to "
 "repl.it limitations."
 msgstr ""
+"ブラウザーでxonshを試してみてください。"
+"下の `Repl.it <https://repl.it>`_ フレームの右下にある三角再生ボタンを押すだけです。 "
+"注意： repl.itの制限により、完全に機能するxonshインスタンスではありません。"
 
 #: ../../comparison.rst:2
 msgid "Comparison"
-msgstr ""
+msgstr "比較"
 
 #: ../../comparison.rst:3
 msgid ""
@@ -52,34 +60,35 @@ msgid ""
 "The following table lists features and capabilities that various tools "
 "may or may not share."
 msgstr ""
+"Xonshは、他のほとんどのシェルやシェルツールと大きく異なります。次の表に、さまざまなツールが共有する機能と不可能な機能の一覧を示します。"
 
 #: ../../comparison.rst:12
 msgid "Bash"
-msgstr ""
+msgstr "Bash"
 
 #: ../../comparison.rst:13
 msgid "zsh"
-msgstr ""
+msgstr "zsh"
 
 #: ../../comparison.rst:14
 msgid "plumbum"
-msgstr ""
+msgstr "plumbum"
 
 #: ../../comparison.rst:15
 msgid "fish"
-msgstr ""
+msgstr "fish"
 
 #: ../../comparison.rst:16
 msgid "IPython"
-msgstr ""
+msgstr "IPython"
 
 #: ../../comparison.rst:17
 msgid "xonsh"
-msgstr ""
+msgstr "xonsh"
 
 #: ../../comparison.rst:18
 msgid "Sane language"
-msgstr ""
+msgstr "真っ当な言語"
 
 #: ../../comparison.rst:21 ../../comparison.rst:22 ../../comparison.rst:23
 #: ../../comparison.rst:24 ../../comparison.rst:26 ../../comparison.rst:27
@@ -94,55 +103,57 @@ msgstr ""
 #: ../../comparison.rst:73 ../../comparison.rst:78 ../../comparison.rst:82
 #: ../../comparison.rst:84 ../../comparison.rst:87 ../../comparison.rst:94
 msgid "✓"
-msgstr ""
+msgstr "✓"
 
 #: ../../comparison.rst:25
 msgid "Easily scriptable"
-msgstr ""
+msgstr "記述が簡単"
 
 #: ../../comparison.rst:32
 msgid "Native cross-platform support"
-msgstr ""
+msgstr "標準のクロスプラットフォームサポート"
 
 #: ../../comparison.rst:39
+# TODO: 自信なし 監訳求む
 msgid "Meant as a shell"
-msgstr ""
+msgstr "シェルのつもりであった"
 
 #: ../../comparison.rst:46
 msgid "Tab completion"
-msgstr ""
+msgstr "Tab保管"
 
 #: ../../comparison.rst:53
 msgid "Man-page completion"
-msgstr ""
+msgstr "Manページ保管"
 
 #: ../../comparison.rst:60
 msgid "Large standard library"
-msgstr ""
+msgstr "巨大な標準ライブラリ"
 
 #: ../../comparison.rst:67
 msgid "Typed variables"
-msgstr ""
+msgstr "型付きの変数"
 
 #: ../../comparison.rst:74
 msgid "Syntax highlighting"
-msgstr ""
+msgstr "シンタックスハイライト"
 
 #: ../../comparison.rst:79
+# このnotebookはJupyter Notebookを指していると思われます。
 msgid "in notebook"
-msgstr ""
+msgstr "Notebook内で"
 
 #: ../../comparison.rst:80
 msgid "w/ prompt-toolkit"
-msgstr ""
+msgstr "prompt-toolkit付きで"
 
 #: ../../comparison.rst:81
 msgid "Pun in name"
-msgstr ""
+msgstr "名前の洒落"
 
 #: ../../comparison.rst:88
 msgid "Rich history"
-msgstr ""
+msgstr "豊富な保管"
 
 #: ../../installation.rst:3
 msgid "Getting Started"
@@ -150,67 +161,71 @@ msgstr ""
 
 #: ../../dependencies.rst:2
 msgid "Dependencies"
-msgstr ""
+msgstr "依存関係"
 
 #: ../../dependencies.rst:3
 msgid "Xonsh currently has the following external dependencies,"
-msgstr ""
+msgstr "Xonshは現在、以下の外部依存関係を持っています。"
 
 #: ../../dependencies.rst:5
 msgid "*Run Time:*"
-msgstr ""
+msgstr "実行環境:*"
 
 #: ../../dependencies.rst:7
 msgid "Python v3.4+"
-msgstr ""
+msgstr "Python v3.4+"
 
 #: ../../dependencies.rst:9
 msgid ""
 "Pip supports \"extra\" dependencies in the form of ``xonsh[ptk,linux]``, "
 "where the list in the brackets identify the optional features"
 msgstr ""
+"Pipは``xonsh[ptk,linux]``のような\"追加の\"依存関係をサポートしており、"
+"括弧内のリストでオプション機能が識別されます。"
 
 #: ../../dependencies.rst:12
 msgid "Xonsh currently has the following extras"
-msgstr ""
+msgstr "Xonshは現在以下の追加依存関係を持っています"
 
 #: ../../dependencies.rst:14
 msgid "``ptk``: prompt-toolkit: *advanced readline library, line-editing*"
-msgstr ""
+msgstr "``ptk``: prompt-toolkit: *高度な readline ライブラリ, 行変数*"
 
 #: ../../dependencies.rst:16
 msgid "``pygments>=2.2``: *syntax-highlighting*"
-msgstr ""
+msgstr "``pygments>=2.2``: *シンタックスハイライト*"
 
 #: ../../dependencies.rst:17
 msgid ""
 "``proctitle``: setproctitle: *change the title of terminal to reflect the"
 " current subprocess*"
-msgstr ""
+msgstr "``proctitle``: setproctitle: *ターミナルのタイトルを現在のサブプロセスを反映するために変更*"
 
 #: ../../dependencies.rst:18
 msgid "``linux``: distro: *linux specific platform information*"
-msgstr ""
+msgstr "``linux``: distro: *Linux固有のプラットフォーム情報*"
 
 #: ../../dependencies.rst:19
 msgid "``mac``: gnureadline: *GNU's featureful version of readline*"
-msgstr ""
+msgstr "``mac``: gnureadline: *readlineのGNUの機能方法なバージョン*"
 
 #: ../../dependencies.rst:20
 msgid ""
 "``win``: win_unicode_console: *enables the use of Unicode in windows "
 "consoles*"
 msgstr ""
+"``win``: win_unicode_console: *Windowsコンソール内でUnicodeを有効化*"
 
 #: ../../dependencies.rst:22
 msgid ""
 "In addition, xonsh integrates with Jupyter, an in-browser REPL, enabling "
 "the use of xonsh in jupyter notebooks"
 msgstr ""
+"さらに、Xonshはブラウザー内のREPLであるJupyterと統合され、Jupyter NotebookでXonshを使用できるようにします"
 
 #: ../../dependencies.rst:25
 msgid "Development Dependencies"
-msgstr ""
+msgstr "開発用依存関係"
 
 #: ../../dependencies.rst:27
 msgid ""
@@ -221,26 +236,31 @@ msgid ""
 "<https://github.com/xonsh/xonsh/blob/master/requirements-tests.txt>`_ (to"
 " run the test suite)."
 msgstr ""
+"xonshを開発したい場合は、"
+"`requires-docs.txt <https://github.com/xonsh/xonsh/blob/master/requirements-docs.txt>`_"
+"（ドキュメンテーションを生成するため）および"
+"`requirements-tests.txt <https://github.com/xonsh/xonsh/blob/master/requirements-tests.txt>`_ "
+"（テストスイートを実行するため）にリストされている依存関係をインストールすることを強くお勧めします。"
 
 #: ../../installation.rst:8
 msgid "Installation"
-msgstr ""
+msgstr "インストール"
 
 #: ../../news.rst:3
 msgid "News & Media"
-msgstr ""
+msgstr "ニュース & メディア"
 
 #: ../../guides.rst:3
 msgid "Guides"
-msgstr ""
+msgstr "ガイド"
 
 #: ../../setup.rst:3
 msgid "Config Files and Settings"
-msgstr ""
+msgstr "設定ファイルと設定"
 
 #: ../../contributing.rst:4
 msgid "Contributing"
-msgstr ""
+msgstr "貢献"
 
 #: ../../contributing.rst:5
 msgid ""
@@ -251,12 +271,18 @@ msgid ""
 "(xonsh@googlegroups.com) or the `Gitter <https://gitter.im/xonsh/xonsh>`_"
 " channel."
 msgstr ""
+"xonshへの貢献を強くお勧めします！あなたが貢献したいのであれば、"
+"GitHubでリポジトリをフォークし、変更を加え、プルリクエストを発行するのと同じくらい簡単です。"
+"このプロセスについてご質問がある場合はお気軽に メーリングリスト (xonsh@googlegroups.com)"
+"もしくは `Gitter <https://gitter.im/xonsh/xonsh>`_ チャンネルへお問い合わせください。"
+"(訳注: この問い合わせ先はおそらく英語のみの受付です。)"
 
 #: ../../contributing.rst:10
 msgid ""
 "See the `Developer's Guide <devguide.html>`_ for more information about "
 "contributing."
 msgstr ""
+"貢献についてのより多くの情報は `開発者ガイド <devguide.html>`_ をご覧ください。"
 
 #: ../../contact.rst:4
 msgid "Contact Us"
@@ -269,44 +295,49 @@ msgid ""
 "open an issue on GitHub. `Join the mailing list here! "
 "<https://groups.google.com/forum/#!forum/xonsh>`_"
 msgstr ""
+"ご質問やご意見がありましたら、xonsh@googlegroups.com メーリングリストに送信したり、"
+"IRCで私達を呼び出したり、直接著者に連絡したり、GitHubでissueを開いてください。 "
+"`ここからメーリングリストに参加してください！ <https://groups.google.com/forum/#!forum/xonsh>`_"
+"(訳注: おそらく英語のみの受付です。)"
+
 
 #: ../../links.rst:4
 msgid "Helpful Links"
-msgstr ""
+msgstr "役立つリンク集"
 
 #: ../../links.rst:6
 msgid "`Documentation <http://xon.sh>`_"
-msgstr ""
+msgstr "`ドキュメント <http://xon.sh>`_"
 
 #: ../../links.rst:7
 msgid "`Gitter <https://gitter.im/xonsh/xonsh>`_"
-msgstr ""
+msgstr "`Gitter <https://gitter.im/xonsh/xonsh>`_"
 
 #: ../../links.rst:8
 msgid "`Mailing list <https://groups.google.com/forum/#!forum/xonsh>`_"
-msgstr ""
+msgstr "`メーリングリスト <https://groups.google.com/forum/#!forum/xonsh>`_"
 
 #: ../../links.rst:9
 msgid "`IRC: channel #xonsh on OFTC <http://www.oftc.net/>`_"
-msgstr ""
+msgstr "`IRC: OFTC 内 #xonsh チャンネル <http://www.oftc.net/>`_"
 
 #: ../../links.rst:10
 msgid "`GitHub Repository <https://github.com/xonsh/xonsh>`_"
-msgstr ""
+msgstr "`GitHub リポジトリ <https://github.com/xonsh/xonsh>`_"
 
 #: ../../links.rst:11
 msgid ":ref:`genindex`"
-msgstr ""
+msgstr ":ref:`genindex`"
 
 #: ../../links.rst:12
 msgid ":ref:`modindex`"
-msgstr ""
+msgstr ":ref:`modindex`"
 
 #: ../../links.rst:13
 msgid ":ref:`search`"
-msgstr ""
+msgstr ":ref:`search`"
 
 #: ../../development.rst:3
 msgid "Development Spiral"
-msgstr ""
+msgstr "開発の螺旋"
 
