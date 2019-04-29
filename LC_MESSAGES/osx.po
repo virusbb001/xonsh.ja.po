@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../osx.rst:3
+msgid "OSX Guide"
+msgstr ""
+
+#: ../../osx.rst:6
+msgid "Installation"
+msgstr ""
+
+#: ../../osx.rst:8
+msgid ""
+"You can install xonsh using a package manager including homebrew, "
+"macports, conda, pip, or from source."
+msgstr ""
+
+#: ../../osx.rst:10
+msgid "**homebrew:**"
+msgstr ""
+
+#: ../../osx.rst:17
+msgid "**MacPorts:**"
+msgstr ""
+
+#: ../../osx.rst:23
+msgid "**conda:**"
+msgstr ""
+
+#: ../../osx.rst:31
+msgid "**pip:**"
+msgstr ""
+
+#: ../../osx.rst:38
+msgid ""
+"**source:** Download the source `from github "
+"<https://github.com/xonsh/xonsh>`_ (`zip file "
+"<https://github.com/xonsh/xonsh/archive/master.zip>`_), then run the "
+"following from the source directory,"
+msgstr ""
+
+#: ../../osx.rst:47
+msgid "Extras for macOS"
+msgstr ""
+
+#: ../../osx.rst:49
+msgid "readline"
+msgstr ""
+
+#: ../../osx.rst:51
+msgid ""
+"On macOS, it is *strongly* recommended to install the ``gnureadline`` "
+"library if using the readline shell.  ``gnureadline`` can be installed "
+"via pip:"
+msgstr ""
+
+#: ../../osx.rst:58
+msgid "Path Helper"
+msgstr ""
+
+#: ../../osx.rst:60
+msgid ""
+"macOS provides a `path helper "
+"<http://www.softec.lu/site/DevelopersCorner/MasteringThePathHelper>`_, "
+"which by default configures paths in bash and other POSIX or C  shells. "
+"Without including these paths, common tools including those installed by "
+"Homebrew may be unavailable. See ``/etc/profile`` for details on how it "
+"is done. To ensure the path helper is invoked on xonsh (for all users), "
+"add the following to ``/etc/xonshrc``::"
+msgstr ""
+
+#: ../../osx.rst:70
+msgid "To incorporate the whole functionality of ``/etc/profile``::"
+msgstr ""
+
+#: ../../osx.rst:77
+msgid "Tab completion"
+msgstr ""
+
+#: ../../osx.rst:78
+msgid ""
+"Xonsh has support for using bash completion files on the shell, to use it"
+" you need to install the bash-completion package. The regular bash-"
+"completion package uses v1 which mostly works, but `occasionally has "
+"rough edges <https://github.com/xonsh/xonsh/issues/2111>`_ so we "
+"recommend using bash-completion v2."
+msgstr ""
+
+#: ../../osx.rst:80
+msgid ""
+"Bash completion comes from <https://github.com/scop/bash-completion> "
+"which suggests you use a package manager to install it, this manager will"
+" also install a new version of bash without affecting  /bin/bash. Xonsh "
+"also needs to be told where the bash shell file that builds the "
+"completions is, this has to be added to $BASH_COMPLETIONS. The package "
+"includes completions for many Unix commands."
+msgstr ""
+
+#: ../../osx.rst:82
+msgid "Common packaging systems for MacOs include"
+msgstr ""
+
+#: ../../osx.rst:84
+msgid "Homebrew where the bash-completion2 package needs to be installed."
+msgstr ""
+
+#: ../../osx.rst:90
+msgid ""
+"This will install the bash_completion file in `/usr/local/share/bash-"
+"completion/bash_completion` which is in the current xonsh code and so "
+"should just work."
+msgstr ""
+
+#: ../../osx.rst:92
+msgid ""
+"`MacPorts <https://trac.macports.org/wiki/howto/bash-completion>`_ where "
+"the bash-completion port needs to be installed."
+msgstr ""
+
+#: ../../osx.rst:100
+msgid ""
+"This includes a bash_completion file that needs to be added to the "
+"environment."
+msgstr ""
+
+#: ../../osx.rst:106
+msgid ""
+"Note that the `bash completion project page <https://github.com/scop"
+"/bash-completion>`_ gives the script to be called as in "
+".../profile.d/bash_completion.sh which will the call the script mentioned"
+" above and one in $XDG_CONFIG_HOME . Currently xonsh seems only to be "
+"able to read the first script directly."
+msgstr ""
+
+#: ../../dependencies.rst:2
+msgid "Dependencies"
+msgstr ""
+
+#: ../../dependencies.rst:3
+msgid "Xonsh currently has the following external dependencies,"
+msgstr ""
+
+#: ../../dependencies.rst:5
+msgid "*Run Time:*"
+msgstr ""
+
+#: ../../dependencies.rst:7
+msgid "Python v3.4+"
+msgstr ""
+
+#: ../../dependencies.rst:9
+msgid ""
+"Pip supports \"extra\" dependencies in the form of ``xonsh[ptk,linux]``, "
+"where the list in the brackets identify the optional features"
+msgstr ""
+
+#: ../../dependencies.rst:12
+msgid "Xonsh currently has the following extras"
+msgstr ""
+
+#: ../../dependencies.rst:14
+msgid "``ptk``: prompt-toolkit: *advanced readline library, line-editing*"
+msgstr ""
+
+#: ../../dependencies.rst:16
+msgid "``pygments>=2.2``: *syntax-highlighting*"
+msgstr ""
+
+#: ../../dependencies.rst:17
+msgid ""
+"``proctitle``: setproctitle: *change the title of terminal to reflect the"
+" current subprocess*"
+msgstr ""
+
+#: ../../dependencies.rst:18
+msgid "``linux``: distro: *linux specific platform information*"
+msgstr ""
+
+#: ../../dependencies.rst:19
+msgid "``mac``: gnureadline: *GNU's featureful version of readline*"
+msgstr ""
+
+#: ../../dependencies.rst:20
+msgid ""
+"``win``: win_unicode_console: *enables the use of Unicode in windows "
+"consoles*"
+msgstr ""
+
+#: ../../dependencies.rst:22
+msgid ""
+"In addition, xonsh integrates with Jupyter, an in-browser REPL, enabling "
+"the use of xonsh in jupyter notebooks"
+msgstr ""
+
+#: ../../dependencies.rst:25
+msgid "Development Dependencies"
+msgstr ""
+
+#: ../../dependencies.rst:27
+msgid ""
+"If you want to develop xonsh, it is extremely recommended to install the "
+"dependencies listed in `requirements-docs.txt "
+"<https://github.com/xonsh/xonsh/blob/master/requirements-docs.txt>`_ (to "
+"generate documentation) and `requirements-tests.txt "
+"<https://github.com/xonsh/xonsh/blob/master/requirements-tests.txt>`_ (to"
+" run the test suite)."
+msgstr ""
+
+#: ../../osx.rst:112
+msgid "Customization"
+msgstr ""
+
+#: ../../osx.rst:114
+msgid ""
+"See the `xonsh customization guide <customization.html>`_ for more "
+"details on setting up ``xonsh``!"
+msgstr ""
+

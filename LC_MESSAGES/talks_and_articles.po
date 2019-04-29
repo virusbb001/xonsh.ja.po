@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../talks_and_articles.rst:3
+msgid "Talks & Articles"
+msgstr ""
+
+#: ../../talks_and_articles.rst:4
+msgid "Here are some talks, articles, and other sundry about your favorite shell."
+msgstr ""
+
+#: ../../talks_and_articles.rst:7
+msgid "Talks"
+msgstr ""
+
+#: ../../talks_and_articles.rst:8
+msgid ""
+"**Python Nordeste 2016:** presented by Lucas Inojosa "
+"http://lucasicf.github.io/talks/shell_python/"
+msgstr ""
+
+#: ../../talks_and_articles.rst:10
+msgid "**PyCon 2016:** presented by Anthony Scopatz"
+msgstr ""
+
+#: ../../talks_and_articles.rst:20
+msgid "Articles"
+msgstr ""
+
+#: ../../talks_and_articles.rst:22
+msgid ""
+"`First Impressions of Xonsh <https://www.fusionbox.com/blog/detail"
+"/thoughts-on-pycon-2016/606/>`_, FusionBox, June 20, 2016."
+msgstr ""
+
+#: ../../talks_and_articles.rst:24
+msgid ""
+"`InfoWorld on xonsh <http://www.infoworld.com/article/3078017"
+"/application-development/new-shell-packs-power-of-python-and-"
+"bash.html>`_, Paul Krill, June 2nd, 2016."
+msgstr ""
+
+#: ../../talks_and_articles.rst:26
+msgid ""
+"`Slashdot on xonsh "
+"<https://developers.slashdot.org/story/16/06/04/0039245/pythonunix-"
+"hybrid-demoed-at-pycon>`_, June 2016."
+msgstr ""
+

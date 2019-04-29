@@ -1,0 +1,626 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../tutorial_macros.rst:5
+msgid "Tutorial: Macros"
+msgstr ""
+
+#: ../../tutorial_macros.rst:6
+msgid "Bust out your DSLRs, people. It is time to closely examine macros!"
+msgstr ""
+
+#: ../../tutorial_macros.rst:9
+msgid "What are macro instructions?"
+msgstr ""
+
+#: ../../tutorial_macros.rst:10
+msgid ""
+"In generic terms, a programming macro is a special kind of syntax that "
+"replaces a smaller amount of code with a larger expression, syntax tree, "
+"code object, etc after the macro has been evaluated. In practice, macros "
+"pause the normal parsing and evaluation of the code that they contain. "
+"This is so that they can perform their expansion with a complete inputs. "
+"Roughly, the algorithm executing a macro follows is:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:17
+msgid "Macro start, pause or skip normal parsing"
+msgstr ""
+
+#: ../../tutorial_macros.rst:18
+msgid "Gather macro inputs as strings"
+msgstr ""
+
+#: ../../tutorial_macros.rst:19
+msgid "Evaluate macro with inputs"
+msgstr ""
+
+#: ../../tutorial_macros.rst:20
+msgid "Resume normal parsing and execution."
+msgstr ""
+
+#: ../../tutorial_macros.rst:22
+msgid "Is this meta-programming? You betcha!"
+msgstr ""
+
+#: ../../tutorial_macros.rst:25
+msgid "When and where are macros used?"
+msgstr ""
+
+#: ../../tutorial_macros.rst:26
+msgid ""
+"Macros are a practicality-beats-purity feature of many programing "
+"languages. Because they allow you break out of the normal parsing cycle, "
+"depending on the language, you can do some truly wild things with them. "
+"However, macros are really there to reduce the amount of boiler plate "
+"code that users and developers have to write."
+msgstr ""
+
+#: ../../tutorial_macros.rst:32
+msgid ""
+"In C and C++ (and Fortran), the C Preprocessor ``cpp`` is a macro "
+"evaluation engine. For example, every time you see an ``#include`` or "
+"``#ifdef``, this is the ``cpp`` macro system in action. In these "
+"languages, the macros are technically outside of the definition of the "
+"language at hand. Furthermore, because ``cpp`` must function with only a "
+"single pass through the code, the sorts of macros that can be written "
+"with ``cpp`` are relatively simple."
+msgstr ""
+
+#: ../../tutorial_macros.rst:40
+msgid ""
+"Rust, on the other hand, has a first-class notion of macros that look and"
+" feel a lot like normal functions. Macros in Rust are capable of pulling "
+"off type information from their arguments and preventing their return "
+"values from being consumed."
+msgstr ""
+
+#: ../../tutorial_macros.rst:45
+msgid ""
+"Other languages like Lisp, Forth, and Julia also provide their macro "
+"systems. Even restructured text (rST) directives could be considered "
+"macros. Haskell and other more purely functional languages do not need "
+"macros (since evaluation is lazy anyway), and so do not have them."
+msgstr ""
+
+#: ../../tutorial_macros.rst:50
+#, python-format
+msgid ""
+"If these seem unfamiliar to the Python world, note that Jupyter and "
+"IPython magics ``%`` and ``%%`` are macros!"
+msgstr ""
+
+#: ../../tutorial_macros.rst:54
+msgid "Function Macros"
+msgstr ""
+
+#: ../../tutorial_macros.rst:55
+msgid ""
+"Xonsh supports Rust-like macros that are based on normal Python "
+"callables. Macros do not require a special definition in xonsh. However, "
+"like in Rust, they must be called with an exclamation point ``!`` between"
+" the callable and the opening parentheses ``(``. Macro arguments are "
+"split on the top-level commas ``,``, like normal Python functions.  For "
+"example, say we have the functions ``f`` and ``g``. We could perform a "
+"macro call on these functions with the following:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:76
+msgid ""
+"Not so bad, right?  So what actually happens to the arguments when used "
+"in a macro call?  Well, that depends on the definition of the function. "
+"In particular, each argument in the macro call is matched up with the "
+"corresponding parameter annotation in the callable's signature.  For "
+"example, say we have an ``identity()`` function that annotates its sole "
+"argument as a string:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:87
+msgid ""
+"If we call this normally, we'll just get whatever object we put in back "
+"out, even if that object is not a string:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:101
+msgid ""
+"However, if we perform macro calls instead we are now guaranteed to get "
+"the string of the source code that is in the macro call:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:115
+msgid ""
+"Also note that each macro argument is stripped prior to passing it to the"
+" macro itself. This is done for consistency."
+msgstr ""
+
+#: ../../tutorial_macros.rst:126
+msgid ""
+"Importantly, because we are capturing and not evaluating the source code,"
+" a macro call can contain input that is beyond the usual syntax. In fact,"
+" that is sort of the whole point. Here are some cases to start your gears"
+" turning:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:142
+msgid "You do you, ``identity()``."
+msgstr ""
+
+#: ../../tutorial_macros.rst:145
+msgid "Calling Function Macros"
+msgstr ""
+
+#: ../../tutorial_macros.rst:146
+msgid ""
+"There are a couple of points to consider when calling macros. The first "
+"is that passing in arguments by name will not behave as expected. This is"
+" because the ``<name>=`` is captured by the macro itself. Using the "
+"``identity()`` function from above:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:156
+msgid "Performing a macro call uses only argument order to pass in values."
+msgstr ""
+
+#: ../../tutorial_macros.rst:158
+msgid ""
+"Additionally, macro calls split arguments only on the top-level commas. "
+"The top-level commas are not included in any argument. This behaves "
+"analogously to normal Python function calls. For instance, say we have "
+"the following ``g()`` function that accepts two arguments:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:169
+msgid ""
+"Then you can see the splitting and stripping behavior on each macro "
+"argument:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:190
+msgid ""
+"Sometimes you may only want to pass in the first few arguments as macro "
+"arguments and you want the rest to be treated as normal Python arguments."
+" By convention, xonsh's macro caller will look for a lone ``*`` argument "
+"in order to split the macro arguments and the regular arguments. So for "
+"example:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:206
+msgid ""
+"In the above, note that ``x`` is still captured as a macro argument. "
+"However, everything after the ``*``, namely ``y``, is evaluated is if it "
+"were passed in to a normal function call.  This can be useful for large "
+"interfaces where only a handful of args are expected as macro arguments."
+msgstr ""
+
+#: ../../tutorial_macros.rst:211
+msgid "Hopefully, now you see the big picture."
+msgstr ""
+
+#: ../../tutorial_macros.rst:214
+msgid "Writing Function Macros"
+msgstr ""
+
+#: ../../tutorial_macros.rst:215
+msgid ""
+"Though any function (or callable) can be used as a macro, this "
+"functionality is probably most useful if the function was *designed* as a"
+" macro. There are two main aspects of macro design to consider: argument "
+"annotations and call site execution context."
+msgstr ""
+
+#: ../../tutorial_macros.rst:222
+msgid "Macro Annotations"
+msgstr ""
+
+#: ../../tutorial_macros.rst:223
+msgid "There are six kinds of annotations that macros are able to interpret:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:225
+msgid "Kinds of Annotation"
+msgstr ""
+
+#: ../../tutorial_macros.rst:228
+msgid "Category"
+msgstr ""
+
+#: ../../tutorial_macros.rst:229
+msgid "Object"
+msgstr ""
+
+#: ../../tutorial_macros.rst:230
+msgid "Flags"
+msgstr ""
+
+#: ../../tutorial_macros.rst:231
+msgid "Modes"
+msgstr ""
+
+#: ../../tutorial_macros.rst:232
+msgid "Returns"
+msgstr ""
+
+#: ../../tutorial_macros.rst:233
+msgid "String"
+msgstr ""
+
+#: ../../tutorial_macros.rst:234
+msgid "``str``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:235
+msgid "``'s'``, ``'str'``, or ``'string'``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:237
+msgid "Source code of argument as string, *default*."
+msgstr ""
+
+#: ../../tutorial_macros.rst:238
+msgid "AST"
+msgstr ""
+
+#: ../../tutorial_macros.rst:239
+msgid "``ast.AST``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:240
+msgid "``'a'`` or ``'ast'``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:241 ../../tutorial_macros.rst:246
+msgid "``'eval'`` (default), ``'exec'``, or ``'single'``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:242
+msgid "Abstract syntax tree of argument."
+msgstr ""
+
+#: ../../tutorial_macros.rst:243
+msgid "Code"
+msgstr ""
+
+#: ../../tutorial_macros.rst:244
+msgid "``types.CodeType`` or ``compile``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:245
+msgid "``'c'``, ``'code'``, or ``'compile'``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:247
+msgid "Compiled code object of argument."
+msgstr ""
+
+#: ../../tutorial_macros.rst:248
+msgid "Eval"
+msgstr ""
+
+#: ../../tutorial_macros.rst:249
+msgid "``eval`` or ``None``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:250
+msgid "``'v'`` or ``'eval'``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:252
+msgid "Evaluation of the argument."
+msgstr ""
+
+#: ../../tutorial_macros.rst:253
+msgid "Exec"
+msgstr ""
+
+#: ../../tutorial_macros.rst:254
+msgid "``exec``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:255
+msgid "``'x'`` or ``'exec'``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:256
+msgid "``'exec'`` (default) or ``'single'``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:257
+msgid "Execs the argument and returns None."
+msgstr ""
+
+#: ../../tutorial_macros.rst:258
+msgid "Type"
+msgstr ""
+
+#: ../../tutorial_macros.rst:259
+msgid "``type``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:260
+msgid "``'t'`` or ``'type'``"
+msgstr ""
+
+#: ../../tutorial_macros.rst:262
+msgid "The type of the argument after it has been evaluated."
+msgstr ""
+
+#: ../../tutorial_macros.rst:264
+msgid ""
+"These annotations allow you to hook into whichever stage of the "
+"compilation that you desire. It is important to note that the string form"
+" of the arguments is split and stripped (as described above) prior to "
+"conversion to the annotation type."
+msgstr ""
+
+#: ../../tutorial_macros.rst:269
+msgid ""
+"Each argument may be annotated with its own individual type. Annotations "
+"may be provided as either objects or as the string flags seen in the "
+"above table. String flags are case-insensitive. If an argument does not "
+"have an annotation, ``str`` is selected. This makes the macro function "
+"call behave like the subprocess macros and context manager macros below. "
+"For example,"
+msgstr ""
+
+#: ../../tutorial_macros.rst:281
+msgid "In a macro call of ``func!()``,"
+msgstr ""
+
+#: ../../tutorial_macros.rst:283
+msgid "``a`` will be evaluated with ``str`` since no annotation was provided,"
+msgstr ""
+
+#: ../../tutorial_macros.rst:284
+msgid "``b`` will be parsed into a syntax tree node, and"
+msgstr ""
+
+#: ../../tutorial_macros.rst:285
+msgid ""
+"``c`` will be compiled into code object since the builtin ``compile()`` "
+"function was used as the annotation."
+msgstr ""
+
+#: ../../tutorial_macros.rst:288
+msgid ""
+"Additionally, certain kinds of annotations have different modes that "
+"affect the parsing, compilation, and execution of its argument.  While a "
+"sensible default is provided, you may also supply your own. This is done "
+"by annotating with a (kind, mode) tuple.  The first element can be any "
+"valid object or flag. The second element must be a corresponding mode as "
+"a string.  For instance,"
+msgstr ""
+
+#: ../../tutorial_macros.rst:300
+msgid "Thus in a macro call of ``gunc!()``,"
+msgstr ""
+
+#: ../../tutorial_macros.rst:302
+msgid "``d`` will be exec'd in single-mode (rather than exec-mode), and"
+msgstr ""
+
+#: ../../tutorial_macros.rst:303
+msgid "``e`` will be compiled in exec-mode (rather than eval-mode)."
+msgstr ""
+
+#: ../../tutorial_macros.rst:305
+msgid ""
+"For more information on the differences between the exec, eval, and "
+"single modes please see the Python documentation."
+msgstr ""
+
+#: ../../tutorial_macros.rst:310
+msgid "Macro Function Execution Context"
+msgstr ""
+
+#: ../../tutorial_macros.rst:311
+msgid ""
+"Equally important as having the macro arguments is knowing the execution "
+"context of the macro call itself. Rather than mucking around with frames,"
+" macros provide both the globals and locals of the call site.  These are "
+"accessible as the ``macro_globals`` and ``macro_locals`` attributes of "
+"the macro function itself while the macro is being executed."
+msgstr ""
+
+#: ../../tutorial_macros.rst:317
+msgid ""
+"For example, consider a macro which replaces all literal ``1`` digits "
+"with the literal ``2``, evaluates the modification, and returns the "
+"results. To eval, the macro will need to pull off its globals and locals:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:329
+msgid "Running this with a few of different inputs, we see:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:343
+msgid ""
+"Of course, many other more sophisticated options are available depending "
+"on the use case."
+msgstr ""
+
+#: ../../tutorial_macros.rst:348
+msgid "Subprocess Macros"
+msgstr ""
+
+#: ../../tutorial_macros.rst:349
+msgid ""
+"Like with function macros above, subprocess macros allow you to pause the"
+" parser for until you are ready to exit subprocess mode. Unlike function "
+"macros, there is only a single macro argument and its macro type is "
+"always a string.  This is because it (usually) doesn't make sense to pass"
+" non-string arguments to a command. And when it does, there is the "
+"``@()`` syntax!"
+msgstr ""
+
+#: ../../tutorial_macros.rst:355
+msgid ""
+"In the simplest case, subprocess macros look like the equivalent of their"
+" function macro counterparts:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:363
+msgid ""
+"Again, note that everything to the right of the ``!`` is passed down to "
+"the ``echo`` command as the final, single argument. This is space "
+"preserving, like wrapping with quotes:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:383
+msgid ""
+"However, the macro will pause everything, including path and environment "
+"variable expansion, that might be present even with quotes.  For example:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:396
+msgid ""
+"Everything to the right of the exclamation point, except the leading and "
+"trailing whitespace, is passed into the command directly as written. This"
+" allows certain commands to function in cases where quoting or piping "
+"might be more burdensome. The ``timeit`` command is a great example where"
+" simple syntax will often fail, but will be easily executable as a macro:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:412
+msgid ""
+"All expressions to the left of the exclamation point are passed in "
+"normally and are not treated as the special macro argument. This allows "
+"the mixing of simple and complex command line arguments. For example, "
+"sometimes you might really want to write some code in another language:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:427
+msgid ""
+"Compared to function macros, subprocess macros are relatively simple. "
+"However, they can still be very expressive!"
+msgstr ""
+
+#: ../../tutorial_macros.rst:431
+msgid "Context Manager Macros"
+msgstr ""
+
+#: ../../tutorial_macros.rst:432
+msgid ""
+"Now that we have seen what life can be like with macro expressions, it is"
+" time to introduce the macro statement: ``with!``.  With-bang provides "
+"macros on top of existing Python context managers. This provides both "
+"anonymous and onymous blocks in xonsh."
+msgstr ""
+
+#: ../../tutorial_macros.rst:437
+msgid ""
+"The syntax for context manager macros is the same as the usual with-"
+"statement in Python, but with an additional exclamation point between the"
+" ``with`` word and the first context manager expression. As a simple "
+"example,"
+msgstr ""
+
+#: ../../tutorial_macros.rst:447
+msgid ""
+"In the above, everything to the left of the colon (``x``) will be "
+"evaluated normally. However, the body will not be executed and ``y`` will"
+" not be defined or printed. In this case, the body will be attached to x "
+"as a string, along with globals and locals, prior to the body even being "
+"entered. The body is then replaced with a ``pass`` statement. You can "
+"think of the above as being transformed into the following:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:462
+msgid "There are a few important things about this to notice:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:464
+msgid "The ``macro_block`` string is dedented,"
+msgstr ""
+
+#: ../../tutorial_macros.rst:465
+msgid ""
+"The ``macro_*`` attributes are set *before* the context manager is "
+"entered so the ``__enter__()`` method may use them, and"
+msgstr ""
+
+#: ../../tutorial_macros.rst:467
+msgid ""
+"The ``macro_*`` attributes are not cleaned up automatically so that the "
+"context manager may use them even after the object is exited. The "
+"``__exit__()`` method may clean up these attributes, if desired."
+msgstr ""
+
+#: ../../tutorial_macros.rst:471
+msgid ""
+"By default, macro blocks are returned as a string. However, like with "
+"function macro arguments, the kind of ``macro_block`` is determined by a "
+"special annotation.  This annotation is given via the ``__xonsh_block__``"
+" attribute on the context manager itself.  This allows the block to be "
+"interpreted as an AST, byte compiled, etc."
+msgstr ""
+
+#: ../../tutorial_macros.rst:477
+msgid ""
+"The convenient part about this syntax is that the macro block is only "
+"exited once it sees a dedent back to the level of the ``with!``. All "
+"other code is indiscriminately skipped! This allows you to write blocks "
+"of code in languages other than xonsh without pause."
+msgstr ""
+
+#: ../../tutorial_macros.rst:482
+msgid ""
+"For example, consider a simple XML macro context manager. This will "
+"return the parsed XML tree from a macro block. The context manager itself"
+" can be written as:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:506
+msgid "The above class may then be used in a with-bang as follows:"
+msgstr ""
+
+#: ../../tutorial_macros.rst:520
+msgid ""
+"And if you run this, you'll see that the ``tree`` object really is a "
+"parsed XML object."
+msgstr ""
+
+#: ../../tutorial_macros.rst:529
+msgid ""
+"So in roughly eight lines of xonsh code, you can seamlessly interface "
+"with another, vastly different language."
+msgstr ""
+
+#: ../../tutorial_macros.rst:532
+msgid ""
+"The possibilities for this are not limited to just markup languages or "
+"other party tricks. You could be a remote execution interface via SSH, "
+"RPC, dask / distributed, etc. The real benefit of context manager macros "
+"is that they allow you to select when, where, and what code is executed "
+"as a part of the xonsh language itself."
+msgstr ""
+
+#: ../../tutorial_macros.rst:538
+msgid "The power is there; use it without reservation!"
+msgstr ""
+
+#: ../../tutorial_macros.rst:541
+msgid "Take Away"
+msgstr ""
+
+#: ../../tutorial_macros.rst:542
+msgid ""
+"Hopefully, at this point, you see that a few well placed macros can be "
+"extremely convenient and valuable to any project."
+msgstr ""
+

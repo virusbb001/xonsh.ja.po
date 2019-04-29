@@ -1,0 +1,261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../tutorial_xontrib.rst:5
+msgid "Tutorial: Extensions (Xontribs)"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:6
+msgid ""
+"Take a deep breath and prepare for some serious Show & Tell; it's time to"
+" learn about xonsh extensions!"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:10
+msgid "Overview"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:11
+msgid ""
+"Xontributions, or ``xontribs``, are a set of tools and conventions for "
+"extending the functionality of xonsh beyond what is provided by default. "
+"This allows 3rd party developers and users to improve their xonsh "
+"experience without having to go through the xonsh development and release"
+" cycle."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:16
+msgid ""
+"Many tools and libraries have extension capabilities. Here are some that "
+"we took inspiration from for xonsh:"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:19
+msgid ""
+"`Sphinx <http://sphinx-doc.org/>`_: Extensions are just Python modules, "
+"bundles some extensions with the main package, interface is a list of "
+"string names."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:22
+msgid ""
+"`Oh My Zsh <http://ohmyz.sh/>`_: Centralized registry, autoloading, and "
+"for a shell."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:24
+msgid ""
+"`ESLint <http://eslint.org/>`_: Ability to use language package manager "
+"to install/remove extensions."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:29
+msgid "Structure"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:30
+msgid ""
+"Xontribs are modules written in either xonsh (``*.xsh``) or Python "
+"(``*.py``). Normally, these are stored and found in an `implicit "
+"namespace package <https://www.python.org/dev/peps/pep-0420/>`_ called "
+"``xontrib``. However, xontribs may be placed in any package or directory "
+"that is on the ``$PYTHONPATH``."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:36
+msgid ""
+"If a module is in the ``xontrib`` namespace package, it can be referred "
+"to just by its module name. If a module is in any other package, then it "
+"must be referred to by its full package path, separated by ``.`` like you"
+" would in an import statement.  Of course, a module in ``xontrib`` may be"
+" referred to with the full ``xontrib.myext``. But just calling it "
+"``myext`` is a lot shorter and one of the main advantages of placing an "
+"extension in the ``xontrib`` namespace package."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:44
+msgid "Here is a sample file system layout and what the xontrib names would be::"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:62
+msgid ""
+"You can also use `cookiecutter "
+"<https://github.com/audreyr/cookiecutter>`_ with the `xontrib template "
+"<https://github.com/laerus/cookiecutter-xontrib>`_ to easily create the "
+"layout for your xontrib package."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:68
+msgid "Loading Xontribs"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:69
+msgid ""
+"Xontribs may be loaded in a few different ways: from the config file, "
+"dynamically at runtime with the ``xontrib`` command, or by importing the "
+"module normally. Since these extensions are just Python modules, by "
+"default, they cannot be unloaded (easily)."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:76
+msgid ""
+"When a xontrib is loaded its public variables are placed in the current "
+"execution context unless ``__all__`` is defined, just like in regular "
+"Python modules."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:80
+msgid ""
+"Extensions are loaded via the ``xontrib`` command, which is a xonsh "
+"default alias. This command may be run from anywhere in a xonshrc file or"
+" at any point after xonsh has started up. Loading is the default action "
+"of the ``xontrib`` command. Thus the following methods for loading via "
+"this command are equivalent:"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:90
+msgid ""
+"Loading the same xontrib multiple times does not have any effect after "
+"the first. Xontribs are simply Python modules, and therefore follow the "
+"same caching rules. So by the same token, you can also import them "
+"normally. Of course, you have to use the full module name to import a "
+"xontrib:"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:103
+msgid "Listing Known Xontribs"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:104
+msgid ""
+"In addition to loading extensions, the ``xontrib`` command also allows "
+"you to list the known xontribs. This command will report whether known "
+"xontribs are installed and if they are loaded in the current session. To "
+"display this information, pass the ``list`` action to the ``xontrib`` "
+"command:"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:115
+msgid ""
+"By default, this will display information for all known xontribs. "
+"However, you can restrict this to a set of names passed in on the command"
+" line."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:123
+msgid ""
+"For programmatic access, you may also have this command print a JSON "
+"formatted string:"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:132
+msgid "Authoring Xontribs"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:133
+msgid ""
+"Writing a xontrib is as easy as writing a xonsh or Python file and "
+"sticking it in a directory named ``xontrib/``. However, please do not "
+"place an ``__init__.py`` in the ``xontrib/`` directory. It is an "
+"*implicit namespace package* and should not have one. See `PEP 420 "
+"<https://www.python.org/dev/peps/pep-0420/>`_ for more details."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:141
+msgid "Do not place an ``__init__.py`` in the ``xontrib/`` directory!"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:143
+msgid ""
+"If you plan on using ``*.xsh`` files in you xontrib, then you'll have to "
+"add some hooks to distutils, setuptools, pip, etc. to install these "
+"files. Try adding entries like the following entries to your ``setup()`` "
+"call in your ``setup.py``:"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:161
+msgid ""
+"Something similar can be done for any non-xontrib package or sub-package "
+"that needs to distribute ``*.xsh`` files."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:166
+msgid "Tell Us About Your Xontrib!"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:167
+msgid ""
+"We request that you register your xontrib with us.  We think that this is"
+" a good idea, in general, because then:"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:170
+msgid "Your xontrib will show up as an extension the xonsh website,"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:171
+msgid "It will appear in the ``xontrib list`` command, and"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:172
+msgid "It will show up in ``xonfig wizard``."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:174
+msgid ""
+"All of this let's users know that your xontrib is out there, ready to be "
+"used. Of course, you're under no obligation to register your xontrib.  "
+"Users will still be able to load your xontrib, as long as they have it "
+"installed."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:178
+msgid ""
+"To register a xontrib, add an entry to `the xontribs.json file "
+"<https://github.com/xonsh/xonsh/blob/master/xonsh/xontribs.json>`_ in the"
+" main xonsh repository.  A pull request is probably best, but if you are "
+"having trouble figuring it out please contact one of the xonsh devs with "
+"the relevant information. This is a JSON file with two top-level keys: "
+"``\"xontribs\"`` and ``\"packages\"``."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:185
+msgid ""
+"The ``\"xontribs\"`` key is a list of dictionaries that describes the "
+"xontrib module itself.  Such entries have the following structure:"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:200
+msgid ""
+"The ``\"packages\"`` key, on the other hand, is a dict mapping package "
+"names (associated with the xontrib entries) to metadata about the "
+"package. Package entries have the following structure:"
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:217
+msgid ""
+"Note that you can have as many entries in the ``\"install\"`` dict as you"
+" want. Also, the keys are arbitrary labels, so feel free to pick whatever"
+" you want."
+msgstr ""
+
+#: ../../tutorial_xontrib.rst:221
+msgid "Go forth!"
+msgstr ""
+

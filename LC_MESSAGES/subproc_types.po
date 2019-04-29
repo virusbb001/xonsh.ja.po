@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../subproc_types.rst:5
+msgid "Subprocess Types Table"
+msgstr ""
+
+#: ../../subproc_types.rst:6
+msgid ""
+"Xonsh has a few different ways to launch subprocesses, each with their "
+"own unique interface depending on your need. The following table is a "
+"quick reference for the different suprocesses. The columns have the "
+"following meaning:"
+msgstr ""
+
+#: ../../subproc_types.rst ../../subproc_types.rst:21
+msgid "Type"
+msgstr ""
+
+#: ../../subproc_types.rst:10
+msgid "The syntax for an example subprocess ``cmd``."
+msgstr ""
+
+#: ../../subproc_types.rst ../../subproc_types.rst:22
+msgid "Output"
+msgstr ""
+
+#: ../../subproc_types.rst:11
+msgid ""
+"Whether the output is streamed to stdout/stderr.  If \"captured\", the "
+"output is not streamed as the ``cmd`` runs. If \"uncaptured\", the output"
+" is streamed."
+msgstr ""
+
+#: ../../subproc_types.rst ../../subproc_types.rst:23
+msgid "Returns"
+msgstr ""
+
+#: ../../subproc_types.rst:13
+msgid ""
+"The type of the object returned by the subprocess executions. For "
+"example, if you were to run ``p = $(cmd)``, the return column gives the "
+"type of ``p``."
+msgstr ""
+
+#: ../../subproc_types.rst ../../subproc_types.rst:24
+msgid "Notes"
+msgstr ""
+
+#: ../../subproc_types.rst:15
+msgid "Any comments about the subprocess."
+msgstr ""
+
+#: ../../subproc_types.rst:25
+msgid "``cmd``"
+msgstr ""
+
+#: ../../subproc_types.rst:26 ../../subproc_types.rst:30
+#: ../../subproc_types.rst:34
+msgid "Uncaptured"
+msgstr ""
+
+#: ../../subproc_types.rst:27 ../../subproc_types.rst:31
+msgid "``HiddenCommandPipeline``"
+msgstr ""
+
+#: ../../subproc_types.rst:28
+msgid "The same as ``![cmd]``"
+msgstr ""
+
+#: ../../subproc_types.rst:29
+msgid "``![cmd]``"
+msgstr ""
+
+#: ../../subproc_types.rst:33
+msgid "``$[cmd]``"
+msgstr ""
+
+#: ../../subproc_types.rst:35
+msgid "``None``"
+msgstr ""
+
+#: ../../subproc_types.rst:37
+msgid "``!(cmd)``"
+msgstr ""
+
+#: ../../subproc_types.rst:38 ../../subproc_types.rst:42
+msgid "Captured"
+msgstr ""
+
+#: ../../subproc_types.rst:39
+msgid "``CommandPipeline``"
+msgstr ""
+
+#: ../../subproc_types.rst:41
+msgid "``$(cmd)``"
+msgstr ""
+
+#: ../../subproc_types.rst:43
+msgid "``str``"
+msgstr ""
+
+#: ../../subproc_types.rst:44
+msgid "stdout is returned"
+msgstr ""
+

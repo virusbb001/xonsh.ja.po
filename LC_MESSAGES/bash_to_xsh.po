@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../bash_to_xsh.rst:2
+msgid "Bash to Xonsh Translation Guide"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:3
+msgid ""
+"As you have probably figured out by now, xonsh is not ``sh``-lang "
+"compliant. If your muscles have memorized all of the Bash "
+"prestidigitations, this page will help you put a finger on how to do the "
+"equivalent task in xonsh."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:7
+msgid ""
+"For shell scripts, the recommended file extension is ``xsh``, and shebang"
+" line is ``#!/usr/bin/env xonsh``."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:14
+msgid "Bash"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:15
+msgid "Xonsh"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:16
+msgid "Notes"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:17
+msgid "``$NAME`` or ``${NAME}``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:18
+msgid "``$NAME``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:19
+msgid "Look up an environment variable by name."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:20
+msgid "``export NAME=Peter``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:21
+msgid "``$NAME = 'Peter'``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:22
+msgid "Setting an environment variable."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:23
+msgid "``unset NAME``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:24
+msgid "``del $NAME``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:25
+msgid "Unsetting/deleting an environment variable."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:26 ../../bash_to_xsh.rst:27
+msgid "``echo \"$HOME/hello\"``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:28
+msgid "Construct an argument using an environment variable."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:29
+msgid "``something/$SOME_VAR/$(some_command)``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:30
+msgid "``@('something/' + $SOME_VAR + $(some_command).strip())``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:31
+msgid "Concatenate a variable or text with the result of running a command."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:32
+msgid "``${!VAR}``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:33
+msgid "``${var or expr}``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:34
+msgid ""
+"Look up an environment variable via another variable name. In xonsh, this"
+" may be any valid expression."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:36
+msgid "``$(cmd args)`` or ```cmd args```"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:37
+msgid "``@$(cmd args)``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:38
+msgid ""
+"Command substitution (allow the output of a command to replace the "
+"command itself).  Tokenizes and executes the output of a subprocess "
+"command as another subprocess."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:41
+msgid "``set -e``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:42
+msgid "``$RAISE_SUBPROC_ERROR = True``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:43
+msgid ""
+"Cause a failure after a non-zero return code. Xonsh will raise a "
+"``supbrocess.CalledProcessError``."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:45
+msgid "``set -x``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:46
+msgid "``trace on``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:47
+msgid "Turns on tracing of source code lines during execution."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:48
+msgid "``&&``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:49
+msgid "``and`` or ``&&``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:50
+msgid "Logical-and operator for subprocesses."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:51
+msgid "``||``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:52
+msgid "``or`` as well as ``||``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:53
+msgid "Logical-or operator for subprocesses."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:54
+msgid "``$?``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:55
+msgid "``_.rtn``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:56
+msgid "Returns the exit code, or status, of the previous command."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:57
+msgid "``N=V command``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:58
+msgid "``with ${...}.swap(N=V): command``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:59
+msgid ""
+"Set temporary environment variable(s) and execute for command. Use an "
+"indented block to execute many commands in the same context."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:61
+msgid "``!$``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:62
+msgid "``__xonsh__.history[-1, -1]``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:63
+msgid "Get the last argument of the last command"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:64
+msgid "``$<n>``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:65
+msgid "``$ARG<n>``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:66
+msgid ""
+"Command line argument at index ``n``, so ``$ARG1`` is the equivalent of "
+"``$1``."
+msgstr ""
+
+#: ../../bash_to_xsh.rst:68
+msgid "``$@``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:69
+msgid "``$ARGS``"
+msgstr ""
+
+#: ../../bash_to_xsh.rst:70
+msgid "List of all command line argument and parameter strings."
+msgstr ""
+

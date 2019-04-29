@@ -1,0 +1,1790 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../envvars.rst:2
+msgid "Environment Variables"
+msgstr ""
+
+#: ../../envvars.rst:3
+msgid ""
+"The following displays information about the environment variables that "
+"affect xonsh performance in some way. It also lists their default values,"
+" if applicable."
+msgstr ""
+
+#: ../../envvarsbody:4
+msgid ":ref:`$ANSICON <ansicon>`"
+msgstr ""
+
+#: ../../envvarsbody:5
+msgid ":ref:`$AUTO_CD <auto_cd>`"
+msgstr ""
+
+#: ../../envvarsbody:6
+msgid ":ref:`$AUTO_PUSHD <auto_pushd>`"
+msgstr ""
+
+#: ../../envvarsbody:7
+msgid ":ref:`$AUTO_SUGGEST <auto_suggest>`"
+msgstr ""
+
+#: ../../envvarsbody:8
+msgid ":ref:`$AUTO_SUGGEST_IN_COMPLETIONS <auto_suggest_in_completions>`"
+msgstr ""
+
+#: ../../envvarsbody:9
+msgid ":ref:`$BASH_COMPLETIONS <bash_completions>`"
+msgstr ""
+
+#: ../../envvarsbody:10
+msgid ":ref:`$BOTTOM_TOOLBAR <bottom_toolbar>`"
+msgstr ""
+
+#: ../../envvarsbody:11
+msgid ":ref:`$CASE_SENSITIVE_COMPLETIONS <case_sensitive_completions>`"
+msgstr ""
+
+#: ../../envvarsbody:12
+msgid ":ref:`$CDPATH <cdpath>`"
+msgstr ""
+
+#: ../../envvarsbody:13
+msgid ":ref:`$COLOR_INPUT <color_input>`"
+msgstr ""
+
+#: ../../envvarsbody:14
+msgid ":ref:`$COLOR_RESULTS <color_results>`"
+msgstr ""
+
+#: ../../envvarsbody:15
+msgid ":ref:`$COMPLETIONS_BRACKETS <completions_brackets>`"
+msgstr ""
+
+#: ../../envvarsbody:16
+msgid ":ref:`$COMPLETIONS_CONFIRM <completions_confirm>`"
+msgstr ""
+
+#: ../../envvarsbody:17
+msgid ":ref:`$COMPLETIONS_DISPLAY <completions_display>`"
+msgstr ""
+
+#: ../../envvarsbody:18
+msgid ":ref:`$COMPLETIONS_MENU_ROWS <completions_menu_rows>`"
+msgstr ""
+
+#: ../../envvarsbody:19
+msgid ":ref:`$COMPLETION_QUERY_LIMIT <completion_query_limit>`"
+msgstr ""
+
+#: ../../envvarsbody:20
+msgid ":ref:`$DIRSTACK_SIZE <dirstack_size>`"
+msgstr ""
+
+#: ../../envvarsbody:21
+msgid ":ref:`$DOTGLOB <dotglob>`"
+msgstr ""
+
+#: ../../envvarsbody:22
+msgid ":ref:`$DYNAMIC_CWD_ELISION_CHAR <dynamic_cwd_elision_char>`"
+msgstr ""
+
+#: ../../envvarsbody:23
+msgid ":ref:`$DYNAMIC_CWD_WIDTH <dynamic_cwd_width>`"
+msgstr ""
+
+#: ../../envvarsbody:24
+msgid ":ref:`$EXPAND_ENV_VARS <expand_env_vars>`"
+msgstr ""
+
+#: ../../envvarsbody:25
+msgid ":ref:`$FORCE_POSIX_PATHS <force_posix_paths>`"
+msgstr ""
+
+#: ../../envvarsbody:26
+msgid ":ref:`$FOREIGN_ALIASES_OVERRIDE <foreign_aliases_override>`"
+msgstr ""
+
+#: ../../envvarsbody:27
+msgid ""
+":ref:`$FOREIGN_ALIASES_SUPPRESS_SKIP_MESSAGE "
+"<foreign_aliases_suppress_skip_message>`"
+msgstr ""
+
+#: ../../envvarsbody:28
+msgid ":ref:`$FUZZY_PATH_COMPLETION <fuzzy_path_completion>`"
+msgstr ""
+
+#: ../../envvarsbody:29
+msgid ":ref:`$GLOB_SORTED <glob_sorted>`"
+msgstr ""
+
+#: ../../envvarsbody:30
+msgid ":ref:`$HISTCONTROL <histcontrol>`"
+msgstr ""
+
+#: ../../envvarsbody:31
+msgid ":ref:`$IGNOREEOF <ignoreeof>`"
+msgstr ""
+
+#: ../../envvarsbody:32
+msgid ":ref:`$INDENT <indent>`"
+msgstr ""
+
+#: ../../envvarsbody:33
+msgid ":ref:`$INTENSIFY_COLORS_ON_WIN <intensify_colors_on_win>`"
+msgstr ""
+
+#: ../../envvarsbody:34
+msgid ":ref:`$LANG <lang>`"
+msgstr ""
+
+#: ../../envvarsbody:35
+msgid ":ref:`$LOADED_RC_FILES <loaded_rc_files>`"
+msgstr ""
+
+#: ../../envvarsbody:36
+msgid ":ref:`$LS_COLORS <ls_colors>`"
+msgstr ""
+
+#: ../../envvarsbody:37
+msgid ":ref:`$MOUSE_SUPPORT <mouse_support>`"
+msgstr ""
+
+#: ../../envvarsbody:38
+msgid ":ref:`$MULTILINE_PROMPT <multiline_prompt>`"
+msgstr ""
+
+#: ../../envvarsbody:39
+msgid ":ref:`$OLDPWD <oldpwd>`"
+msgstr ""
+
+#: ../../envvarsbody:40
+msgid ":ref:`$PATH <path>`"
+msgstr ""
+
+#: ../../envvarsbody:41
+msgid ":ref:`$PATHEXT <pathext>`"
+msgstr ""
+
+#: ../../envvarsbody:42
+msgid ":ref:`$PRETTY_PRINT_RESULTS <pretty_print_results>`"
+msgstr ""
+
+#: ../../envvarsbody:43
+msgid ":ref:`$PROMPT <prompt>`"
+msgstr ""
+
+#: ../../envvarsbody:44
+msgid ":ref:`$PROMPT_FIELDS <prompt_fields>`"
+msgstr ""
+
+#: ../../envvarsbody:45
+msgid ":ref:`$PROMPT_TOOLKIT_COLOR_DEPTH <prompt_toolkit_color_depth>`"
+msgstr ""
+
+#: ../../envvarsbody:46
+msgid ":ref:`$PTK_STYLE_OVERRIDES <ptk_style_overrides>`"
+msgstr ""
+
+#: ../../envvarsbody:47
+msgid ":ref:`$PUSHD_MINUS <pushd_minus>`"
+msgstr ""
+
+#: ../../envvarsbody:48
+msgid ":ref:`$PUSHD_SILENT <pushd_silent>`"
+msgstr ""
+
+#: ../../envvarsbody:49
+msgid ":ref:`$RAISE_SUBPROC_ERROR <raise_subproc_error>`"
+msgstr ""
+
+#: ../../envvarsbody:50
+msgid ":ref:`$RIGHT_PROMPT <right_prompt>`"
+msgstr ""
+
+#: ../../envvarsbody:51
+msgid ":ref:`$SHELL_TYPE <shell_type>`"
+msgstr ""
+
+#: ../../envvarsbody:52
+msgid ":ref:`$SUBSEQUENCE_PATH_COMPLETION <subsequence_path_completion>`"
+msgstr ""
+
+#: ../../envvarsbody:53
+msgid ":ref:`$SUGGEST_COMMANDS <suggest_commands>`"
+msgstr ""
+
+#: ../../envvarsbody:54
+msgid ":ref:`$SUGGEST_MAX_NUM <suggest_max_num>`"
+msgstr ""
+
+#: ../../envvarsbody:55
+msgid ":ref:`$SUGGEST_THRESHOLD <suggest_threshold>`"
+msgstr ""
+
+#: ../../envvarsbody:56
+msgid ":ref:`$SUPPRESS_BRANCH_TIMEOUT_MESSAGE <suppress_branch_timeout_message>`"
+msgstr ""
+
+#: ../../envvarsbody:57
+msgid ":ref:`$TERM <term>`"
+msgstr ""
+
+#: ../../envvarsbody:58
+msgid ":ref:`$TITLE <title>`"
+msgstr ""
+
+#: ../../envvarsbody:59
+msgid ":ref:`$UPDATE_COMPLETIONS_ON_KEYPRESS <update_completions_on_keypress>`"
+msgstr ""
+
+#: ../../envvarsbody:60
+msgid ":ref:`$UPDATE_OS_ENVIRON <update_os_environ>`"
+msgstr ""
+
+#: ../../envvarsbody:61
+msgid ":ref:`$UPDATE_PROMPT_ON_KEYPRESS <update_prompt_on_keypress>`"
+msgstr ""
+
+#: ../../envvarsbody:62
+msgid ":ref:`$VC_BRANCH_TIMEOUT <vc_branch_timeout>`"
+msgstr ""
+
+#: ../../envvarsbody:63
+msgid ":ref:`$VC_HG_SHOW_BRANCH <vc_hg_show_branch>`"
+msgstr ""
+
+#: ../../envvarsbody:64
+msgid ":ref:`$VIRTUAL_ENV <virtual_env>`"
+msgstr ""
+
+#: ../../envvarsbody:65
+msgid ":ref:`$VI_MODE <vi_mode>`"
+msgstr ""
+
+#: ../../envvarsbody:66
+msgid ":ref:`$WIN_UNICODE_CONSOLE <win_unicode_console>`"
+msgstr ""
+
+#: ../../envvarsbody:67
+msgid ":ref:`$XDG_CONFIG_HOME <xdg_config_home>`"
+msgstr ""
+
+#: ../../envvarsbody:68
+msgid ":ref:`$XDG_DATA_HOME <xdg_data_home>`"
+msgstr ""
+
+#: ../../envvarsbody:69
+msgid ":ref:`$XONSHRC <xonshrc>`"
+msgstr ""
+
+#: ../../envvarsbody:70
+msgid ":ref:`$XONSH_APPEND_NEWLINE <xonsh_append_newline>`"
+msgstr ""
+
+#: ../../envvarsbody:71
+msgid ":ref:`$XONSH_AUTOPAIR <xonsh_autopair>`"
+msgstr ""
+
+#: ../../envvarsbody:72
+msgid ":ref:`$XONSH_CACHE_EVERYTHING <xonsh_cache_everything>`"
+msgstr ""
+
+#: ../../envvarsbody:73
+msgid ":ref:`$XONSH_CACHE_SCRIPTS <xonsh_cache_scripts>`"
+msgstr ""
+
+#: ../../envvarsbody:74
+msgid ":ref:`$XONSH_COLOR_STYLE <xonsh_color_style>`"
+msgstr ""
+
+#: ../../envvarsbody:75
+msgid ":ref:`$XONSH_CONFIG_DIR <xonsh_config_dir>`"
+msgstr ""
+
+#: ../../envvarsbody:76
+msgid ":ref:`$XONSH_DATA_DIR <xonsh_data_dir>`"
+msgstr ""
+
+#: ../../envvarsbody:77
+msgid ":ref:`$XONSH_DATETIME_FORMAT <xonsh_datetime_format>`"
+msgstr ""
+
+#: ../../envvarsbody:78
+msgid ":ref:`$XONSH_DEBUG <xonsh_debug>`"
+msgstr ""
+
+#: ../../envvarsbody:79
+msgid ":ref:`$XONSH_ENCODING <xonsh_encoding>`"
+msgstr ""
+
+#: ../../envvarsbody:80
+msgid ":ref:`$XONSH_ENCODING_ERRORS <xonsh_encoding_errors>`"
+msgstr ""
+
+#: ../../envvarsbody:81
+msgid ":ref:`$XONSH_GITSTATUS_* <xonsh_gitstatus_*>`"
+msgstr ""
+
+#: ../../envvarsbody:82
+msgid ":ref:`$XONSH_HISTORY_BACKEND <xonsh_history_backend>`"
+msgstr ""
+
+#: ../../envvarsbody:83
+msgid ":ref:`$XONSH_HISTORY_FILE <xonsh_history_file>`"
+msgstr ""
+
+#: ../../envvarsbody:84
+msgid ":ref:`$XONSH_HISTORY_MATCH_ANYWHERE <xonsh_history_match_anywhere>`"
+msgstr ""
+
+#: ../../envvarsbody:85
+msgid ":ref:`$XONSH_HISTORY_SIZE <xonsh_history_size>`"
+msgstr ""
+
+#: ../../envvarsbody:86
+msgid ":ref:`$XONSH_INTERACTIVE <xonsh_interactive>`"
+msgstr ""
+
+#: ../../envvarsbody:87
+msgid ":ref:`$XONSH_LOGIN <xonsh_login>`"
+msgstr ""
+
+#: ../../envvarsbody:88
+msgid ":ref:`$XONSH_PROC_FREQUENCY <xonsh_proc_frequency>`"
+msgstr ""
+
+#: ../../envvarsbody:89
+msgid ":ref:`$XONSH_SHOW_TRACEBACK <xonsh_show_traceback>`"
+msgstr ""
+
+#: ../../envvarsbody:90
+msgid ":ref:`$XONSH_SOURCE <xonsh_source>`"
+msgstr ""
+
+#: ../../envvarsbody:91
+msgid ":ref:`$XONSH_STDERR_POSTFIX <xonsh_stderr_postfix>`"
+msgstr ""
+
+#: ../../envvarsbody:92
+msgid ":ref:`$XONSH_STDERR_PREFIX <xonsh_stderr_prefix>`"
+msgstr ""
+
+#: ../../envvarsbody:93
+msgid ":ref:`$XONSH_STORE_STDIN <xonsh_store_stdin>`"
+msgstr ""
+
+#: ../../envvarsbody:94
+msgid ":ref:`$XONSH_STORE_STDOUT <xonsh_store_stdout>`"
+msgstr ""
+
+#: ../../envvarsbody:95
+msgid ":ref:`$XONSH_TRACEBACK_LOGFILE <xonsh_traceback_logfile>`"
+msgstr ""
+
+#: ../../envvarsbody:99
+msgid "Listing"
+msgstr ""
+
+#: ../../envvarsbody:104
+msgid "$ANSICON"
+msgstr ""
+
+#: ../../envvarsbody:105
+msgid "This is used on Windows to set the title, if available."
+msgstr ""
+
+#: ../../envvarsbody:107 ../../envvarsbody:427 ../../envvarsbody:539
+#: ../../envvarsbody:567 ../../envvarsbody:623 ../../envvarsbody:693
+#: ../../envvarsbody:899 ../../envvarsbody:997 ../../envvarsbody:1025
+#: ../../envvarsbody:1039 ../../envvarsbody:1153 ../../envvarsbody:1195
+#: ../../envvarsbody:1278 ../../envvarsbody:1327 ../../envvarsbody:1341
+#: ../../envvarsbody:1383
+msgid "**configurable:** False"
+msgstr ""
+
+#: ../../envvarsbody:109 ../../envvarsbody:625 ../../envvarsbody:901
+#: ../../envvarsbody:999 ../../envvarsbody:1252 ../../envvarsbody:1329
+#: ../../envvarsbody:1385
+msgid "**default:** '<default not set>'"
+msgstr ""
+
+#: ../../envvarsbody:111 ../../envvarsbody:125 ../../envvarsbody:139
+#: ../../envvarsbody:155 ../../envvarsbody:169 ../../envvarsbody:191
+#: ../../envvarsbody:205 ../../envvarsbody:219 ../../envvarsbody:233
+#: ../../envvarsbody:247 ../../envvarsbody:261 ../../envvarsbody:275
+#: ../../envvarsbody:289 ../../envvarsbody:319 ../../envvarsbody:333
+#: ../../envvarsbody:347 ../../envvarsbody:361 ../../envvarsbody:375
+#: ../../envvarsbody:389 ../../envvarsbody:403 ../../envvarsbody:417
+#: ../../envvarsbody:431 ../../envvarsbody:445 ../../envvarsbody:459
+#: ../../envvarsbody:473 ../../envvarsbody:487 ../../envvarsbody:515
+#: ../../envvarsbody:529 ../../envvarsbody:543 ../../envvarsbody:557
+#: ../../envvarsbody:571 ../../envvarsbody:585 ../../envvarsbody:599
+#: ../../envvarsbody:613 ../../envvarsbody:627 ../../envvarsbody:641
+#: ../../envvarsbody:655 ../../envvarsbody:669 ../../envvarsbody:683
+#: ../../envvarsbody:697 ../../envvarsbody:711 ../../envvarsbody:732
+#: ../../envvarsbody:746 ../../envvarsbody:760 ../../envvarsbody:774
+#: ../../envvarsbody:788 ../../envvarsbody:810 ../../envvarsbody:824
+#: ../../envvarsbody:838 ../../envvarsbody:852 ../../envvarsbody:866
+#: ../../envvarsbody:880 ../../envvarsbody:903 ../../envvarsbody:917
+#: ../../envvarsbody:931 ../../envvarsbody:945 ../../envvarsbody:959
+#: ../../envvarsbody:973 ../../envvarsbody:987 ../../envvarsbody:1001
+#: ../../envvarsbody:1015 ../../envvarsbody:1029 ../../envvarsbody:1043
+#: ../../envvarsbody:1057 ../../envvarsbody:1073 ../../envvarsbody:1087
+#: ../../envvarsbody:1101 ../../envvarsbody:1115 ../../envvarsbody:1129
+#: ../../envvarsbody:1143 ../../envvarsbody:1157 ../../envvarsbody:1171
+#: ../../envvarsbody:1185 ../../envvarsbody:1199 ../../envvarsbody:1213
+#: ../../envvarsbody:1227 ../../envvarsbody:1254 ../../envvarsbody:1268
+#: ../../envvarsbody:1282 ../../envvarsbody:1296 ../../envvarsbody:1317
+#: ../../envvarsbody:1331 ../../envvarsbody:1345 ../../envvarsbody:1359
+#: ../../envvarsbody:1373 ../../envvarsbody:1387 ../../envvarsbody:1401
+#: ../../envvarsbody:1415 ../../envvarsbody:1429 ../../envvarsbody:1443
+#: ../../envvarsbody:1457
+msgid "**store_as_str:** False"
+msgstr ""
+
+#: ../../envvarsbody:118
+msgid "$AUTO_CD"
+msgstr ""
+
+#: ../../envvarsbody:119
+msgid ""
+"Flag to enable changing to a directory by entering the dirname or full "
+"path only (without the cd command)."
+msgstr ""
+
+#: ../../envvarsbody:121 ../../envvarsbody:135 ../../envvarsbody:151
+#: ../../envvarsbody:165 ../../envvarsbody:179 ../../envvarsbody:201
+#: ../../envvarsbody:215 ../../envvarsbody:229 ../../envvarsbody:243
+#: ../../envvarsbody:257 ../../envvarsbody:271 ../../envvarsbody:285
+#: ../../envvarsbody:315 ../../envvarsbody:329 ../../envvarsbody:343
+#: ../../envvarsbody:357 ../../envvarsbody:371 ../../envvarsbody:385
+#: ../../envvarsbody:399 ../../envvarsbody:413 ../../envvarsbody:441
+#: ../../envvarsbody:455 ../../envvarsbody:469 ../../envvarsbody:483
+#: ../../envvarsbody:497 ../../envvarsbody:511 ../../envvarsbody:525
+#: ../../envvarsbody:553 ../../envvarsbody:581 ../../envvarsbody:595
+#: ../../envvarsbody:609 ../../envvarsbody:637 ../../envvarsbody:651
+#: ../../envvarsbody:665 ../../envvarsbody:679 ../../envvarsbody:707
+#: ../../envvarsbody:721 ../../envvarsbody:742 ../../envvarsbody:756
+#: ../../envvarsbody:770 ../../envvarsbody:784 ../../envvarsbody:806
+#: ../../envvarsbody:820 ../../envvarsbody:834 ../../envvarsbody:848
+#: ../../envvarsbody:862 ../../envvarsbody:876 ../../envvarsbody:913
+#: ../../envvarsbody:927 ../../envvarsbody:941 ../../envvarsbody:955
+#: ../../envvarsbody:969 ../../envvarsbody:983 ../../envvarsbody:1011
+#: ../../envvarsbody:1053 ../../envvarsbody:1067 ../../envvarsbody:1083
+#: ../../envvarsbody:1097 ../../envvarsbody:1111 ../../envvarsbody:1125
+#: ../../envvarsbody:1139 ../../envvarsbody:1167 ../../envvarsbody:1181
+#: ../../envvarsbody:1209 ../../envvarsbody:1223 ../../envvarsbody:1250
+#: ../../envvarsbody:1264 ../../envvarsbody:1292 ../../envvarsbody:1313
+#: ../../envvarsbody:1355 ../../envvarsbody:1369 ../../envvarsbody:1397
+#: ../../envvarsbody:1411 ../../envvarsbody:1425 ../../envvarsbody:1439
+#: ../../envvarsbody:1453
+msgid "**configurable:** True"
+msgstr ""
+
+#: ../../envvarsbody:123 ../../envvarsbody:137 ../../envvarsbody:167
+#: ../../envvarsbody:287 ../../envvarsbody:373 ../../envvarsbody:429
+#: ../../envvarsbody:443 ../../envvarsbody:457 ../../envvarsbody:513
+#: ../../envvarsbody:597 ../../envvarsbody:744 ../../envvarsbody:758
+#: ../../envvarsbody:772 ../../envvarsbody:878 ../../envvarsbody:929
+#: ../../envvarsbody:943 ../../envvarsbody:957 ../../envvarsbody:1013
+#: ../../envvarsbody:1099 ../../envvarsbody:1113 ../../envvarsbody:1294
+#: ../../envvarsbody:1343 ../../envvarsbody:1371 ../../envvarsbody:1427
+#: ../../envvarsbody:1441
+msgid "**default:** False"
+msgstr ""
+
+#: ../../envvarsbody:132
+msgid "$AUTO_PUSHD"
+msgstr ""
+
+#: ../../envvarsbody:133
+msgid "Flag for automatically pushing directories onto the directory stack."
+msgstr ""
+
+#: ../../envvarsbody:146
+msgid "$AUTO_SUGGEST"
+msgstr ""
+
+#: ../../envvarsbody:147
+msgid ""
+"Enable automatic command suggestions based on history, like in the fish "
+"shell."
+msgstr ""
+
+#: ../../envvarsbody:149
+msgid ""
+"Pressing the right arrow key inserts the currently displayed suggestion. "
+"Only usable with ``$SHELL_TYPE=prompt_toolkit.``"
+msgstr ""
+
+#: ../../envvarsbody:153 ../../envvarsbody:245 ../../envvarsbody:259
+#: ../../envvarsbody:273 ../../envvarsbody:415 ../../envvarsbody:471
+#: ../../envvarsbody:485 ../../envvarsbody:541 ../../envvarsbody:667
+#: ../../envvarsbody:822 ../../envvarsbody:836 ../../envvarsbody:985
+#: ../../envvarsbody:1027 ../../envvarsbody:1127
+msgid "**default:** True"
+msgstr ""
+
+#: ../../envvarsbody:162
+msgid "$AUTO_SUGGEST_IN_COMPLETIONS"
+msgstr ""
+
+#: ../../envvarsbody:163
+msgid ""
+"Places the auto-suggest result as the first option in the completions. "
+"This enables you to tab complete the auto-suggestion."
+msgstr ""
+
+#: ../../envvarsbody:176
+msgid "$BASH_COMPLETIONS"
+msgstr ""
+
+#: ../../envvarsbody:177
+msgid ""
+"This is a list (or tuple) of strings that specifies where the "
+"``bash_completion`` script may be found. The first valid path will be "
+"used. For better performance, bash-completion v2.x is recommended since "
+"it lazy-loads individual completion scripts. For both bash-completion "
+"v1.x and v2.x, paths of individual completion scripts (like "
+"``.../completes/ssh``) do not need to be included here. The default "
+"values are platform dependent, but sane. To specify an alternate list, do"
+" so in the run control file."
+msgstr ""
+
+#: ../../envvarsbody:181
+msgid "**default:** Normally this is:"
+msgstr ""
+
+#: ../../envvarsbody:183
+msgid "``('/usr/share/bash-completion/bash_completion', )``"
+msgstr ""
+
+#: ../../envvarsbody:185
+msgid "But, on Mac it is:"
+msgstr ""
+
+#: ../../envvarsbody:187
+msgid ""
+"``('/usr/local/share/bash-completion/bash_completion', "
+"'/usr/local/etc/bash_completion')``"
+msgstr ""
+
+#: ../../envvarsbody:189
+msgid "Other OS-specific defaults may be added in the future."
+msgstr ""
+
+#: ../../envvarsbody:198
+msgid "$BOTTOM_TOOLBAR"
+msgstr ""
+
+#: ../../envvarsbody:199
+msgid ""
+"Template string for the bottom toolbar. This may be parametrized in the "
+"same way as the ``$PROMPT`` variable. Currently, this is only available "
+"in the prompt-toolkit shell."
+msgstr ""
+
+#: ../../envvarsbody:203 ../../envvarsbody:387 ../../envvarsbody:709
+#: ../../envvarsbody:786 ../../envvarsbody:1399 ../../envvarsbody:1413
+msgid "**default:** ''"
+msgstr ""
+
+#: ../../envvarsbody:212
+msgid "$CASE_SENSITIVE_COMPLETIONS"
+msgstr ""
+
+#: ../../envvarsbody:213
+msgid "Sets whether completions should be case sensitive or case insensitive."
+msgstr ""
+
+#: ../../envvarsbody:217
+msgid "**default:** True on Linux, False otherwise."
+msgstr ""
+
+#: ../../envvarsbody:226
+msgid "$CDPATH"
+msgstr ""
+
+#: ../../envvarsbody:227
+msgid ""
+"A list of paths to be used as roots for a cd, breaking compatibility with"
+" Bash, xonsh always prefer an existing relative path."
+msgstr ""
+
+#: ../../envvarsbody:231 ../../envvarsbody:569
+msgid "**default:** ()"
+msgstr ""
+
+#: ../../envvarsbody:240
+msgid "$COLOR_INPUT"
+msgstr ""
+
+#: ../../envvarsbody:241
+msgid "Flag for syntax highlighting interactive input."
+msgstr ""
+
+#: ../../envvarsbody:254
+msgid "$COLOR_RESULTS"
+msgstr ""
+
+#: ../../envvarsbody:255
+msgid "Flag for syntax highlighting return values."
+msgstr ""
+
+#: ../../envvarsbody:268
+msgid "$COMPLETIONS_BRACKETS"
+msgstr ""
+
+#: ../../envvarsbody:269
+msgid ""
+"Flag to enable/disable inclusion of square brackets and parentheses in "
+"Python attribute completions."
+msgstr ""
+
+#: ../../envvarsbody:282
+msgid "$COMPLETIONS_CONFIRM"
+msgstr ""
+
+#: ../../envvarsbody:283
+msgid ""
+"While tab-completions menu is displayed, press <Enter> to confirm "
+"completion instead of running command. This only affects the prompt-"
+"toolkit shell."
+msgstr ""
+
+#: ../../envvarsbody:296
+msgid "$COMPLETIONS_DISPLAY"
+msgstr ""
+
+#: ../../envvarsbody:297
+msgid ""
+"Configure if and how Python completions are displayed by the "
+"``prompt_toolkit`` shell."
+msgstr ""
+
+#: ../../envvarsbody:299
+msgid "This option does not affect Bash completions, auto-suggestions, etc."
+msgstr ""
+
+#: ../../envvarsbody:301
+msgid ""
+"Changing it at runtime will take immediate effect, so you can quickly "
+"disable and enable completions during shell sessions."
+msgstr ""
+
+#: ../../envvarsbody:303
+msgid ""
+"If ``$COMPLETIONS_DISPLAY`` is ``none`` or ``false``, do not display "
+"those completions."
+msgstr ""
+
+#: ../../envvarsbody:305
+msgid ""
+"If ``$COMPLETIONS_DISPLAY`` is ``single``, display completions in a "
+"single column while typing."
+msgstr ""
+
+#: ../../envvarsbody:307
+msgid ""
+"If ``$COMPLETIONS_DISPLAY`` is ``multi`` or ``true``, display completions"
+" in multiple columns while typing."
+msgstr ""
+
+#: ../../envvarsbody:310
+msgid ""
+"If ``$COMPLETIONS_DISPLAY`` is ``readline``, display completions will "
+"emulate the behavior of readline."
+msgstr ""
+
+#: ../../envvarsbody:313
+msgid ""
+"These option values are not case- or type-sensitive, so e.g.writing "
+"``$COMPLETIONS_DISPLAY = None`` and ``$COMPLETIONS_DISPLAY = 'none'`` are"
+" equivalent. Only usable with ``$SHELL_TYPE=prompt_toolkit``"
+msgstr ""
+
+#: ../../envvarsbody:317
+msgid "**default:** 'multi'"
+msgstr ""
+
+#: ../../envvarsbody:326
+msgid "$COMPLETIONS_MENU_ROWS"
+msgstr ""
+
+#: ../../envvarsbody:327
+msgid ""
+"Number of rows to reserve for tab-completions menu if "
+"``$COMPLETIONS_DISPLAY`` is ``single`` or ``multi``. This only affects "
+"the prompt-toolkit shell."
+msgstr ""
+
+#: ../../envvarsbody:331 ../../envvarsbody:850
+msgid "**default:** 5"
+msgstr ""
+
+#: ../../envvarsbody:340
+msgid "$COMPLETION_QUERY_LIMIT"
+msgstr ""
+
+#: ../../envvarsbody:341
+msgid ""
+"The number of completions to display before the user is asked for "
+"confirmation."
+msgstr ""
+
+#: ../../envvarsbody:345
+msgid "**default:** 100"
+msgstr ""
+
+#: ../../envvarsbody:354
+msgid "$DIRSTACK_SIZE"
+msgstr ""
+
+#: ../../envvarsbody:355
+msgid "Maximum size of the directory stack."
+msgstr ""
+
+#: ../../envvarsbody:359
+msgid "**default:** 20"
+msgstr ""
+
+#: ../../envvarsbody:368
+msgid "$DOTGLOB"
+msgstr ""
+
+#: ../../envvarsbody:369
+msgid ""
+"Globbing files with \"*\" or \"**\" will also match dotfiles, or those "
+"'hidden' files whose names begin with a literal '.'. Such files are "
+"filtered out by default."
+msgstr ""
+
+#: ../../envvarsbody:382
+msgid "$DYNAMIC_CWD_ELISION_CHAR"
+msgstr ""
+
+#: ../../envvarsbody:383
+msgid ""
+"The string used to show a shortened directory in a shortened cwd, e.g. "
+"``'…'``."
+msgstr ""
+
+#: ../../envvarsbody:396
+msgid "$DYNAMIC_CWD_WIDTH"
+msgstr ""
+
+#: ../../envvarsbody:397
+msgid ""
+"Maximum length in number of characters or as a percentage for the ``cwd``"
+" prompt variable. For example, \"20\" is a twenty character width and "
+"\"10%\" is ten percent of the number of columns available."
+msgstr ""
+
+#: ../../envvarsbody:401
+msgid "**default:** (inf, 'c')"
+msgstr ""
+
+#: ../../envvarsbody:410
+msgid "$EXPAND_ENV_VARS"
+msgstr ""
+
+#: ../../envvarsbody:411
+msgid ""
+"Toggles whether environment variables are expanded inside of strings in "
+"subprocess mode."
+msgstr ""
+
+#: ../../envvarsbody:424
+msgid "$FORCE_POSIX_PATHS"
+msgstr ""
+
+#: ../../envvarsbody:425
+msgid ""
+"Forces forward slashes (``/``) on Windows systems when using auto "
+"completion if set to anything truthy."
+msgstr ""
+
+#: ../../envvarsbody:438
+msgid "$FOREIGN_ALIASES_OVERRIDE"
+msgstr ""
+
+#: ../../envvarsbody:439
+msgid ""
+"Whether or not foreign aliases should override xonsh aliases with the "
+"same name. Note that setting of this must happen in the environment that "
+"xonsh was started from. It cannot be set in the ``.xonshrc`` as loading "
+"of foreign aliases happens before``.xonshrc`` is parsed"
+msgstr ""
+
+#: ../../envvarsbody:452
+msgid "$FOREIGN_ALIASES_SUPPRESS_SKIP_MESSAGE"
+msgstr ""
+
+#: ../../envvarsbody:453
+msgid ""
+"Whether or not foreign aliases should suppress the message that informs "
+"the user when a foreign alias has been skipped because it already exists "
+"in xonsh."
+msgstr ""
+
+#: ../../envvarsbody:466
+msgid "$FUZZY_PATH_COMPLETION"
+msgstr ""
+
+#: ../../envvarsbody:467
+msgid ""
+"Toggles 'fuzzy' matching of paths for tab completion, which is only used "
+"as a fallback if no other completions succeed but can be used as a way to"
+" adjust for typographical errors. If ``True``, then, e.g., ``xonhs`` will"
+" match ``xonsh``."
+msgstr ""
+
+#: ../../envvarsbody:480
+msgid "$GLOB_SORTED"
+msgstr ""
+
+#: ../../envvarsbody:481
+msgid ""
+"Toggles whether globbing results are manually sorted. If ``False``, the "
+"results are returned in arbitrary order."
+msgstr ""
+
+#: ../../envvarsbody:494
+msgid "$HISTCONTROL"
+msgstr ""
+
+#: ../../envvarsbody:495
+msgid ""
+"A set of strings (comma-separated list in string form) of options that "
+"determine what commands are saved to the history list. By default all "
+"commands are saved. The option ``ignoredups`` will not save the command "
+"if it matches the previous command. The option 'ignoreerr' will cause any"
+" commands that fail (i.e. return non-zero exit status) to not be added to"
+" the history list."
+msgstr ""
+
+#: ../../envvarsbody:499
+msgid "**default:** set()"
+msgstr ""
+
+#: ../../envvarsbody:501
+msgid "**store_as_str:** True"
+msgstr ""
+
+#: ../../envvarsbody:508
+msgid "$IGNOREEOF"
+msgstr ""
+
+#: ../../envvarsbody:509
+msgid "Prevents Ctrl-D from exiting the shell."
+msgstr ""
+
+#: ../../envvarsbody:522
+msgid "$INDENT"
+msgstr ""
+
+#: ../../envvarsbody:523
+msgid "Indentation string for multiline input"
+msgstr ""
+
+#: ../../envvarsbody:527
+msgid "**default:** '    '"
+msgstr ""
+
+#: ../../envvarsbody:536
+msgid "$INTENSIFY_COLORS_ON_WIN"
+msgstr ""
+
+#: ../../envvarsbody:537
+msgid ""
+"Enhance style colors for readability when using the default terminal "
+"(``cmd.exe``) on Windows. Blue colors, which are hard to read, are "
+"replaced with cyan. Other colors are generally replaced by their bright "
+"counter parts."
+msgstr ""
+
+#: ../../envvarsbody:550
+msgid "$LANG"
+msgstr ""
+
+#: ../../envvarsbody:551
+msgid "Fallback locale setting for systems where it matters"
+msgstr ""
+
+#: ../../envvarsbody:555
+msgid "**default:** 'C.UTF-8'"
+msgstr ""
+
+#: ../../envvarsbody:564
+msgid "$LOADED_RC_FILES"
+msgstr ""
+
+#: ../../envvarsbody:565
+msgid ""
+"Whether or not any of the xonsh run control files were loaded at startup."
+" This is a sequence of bools in Python that is converted to a CSV list in"
+" string form, ie ``[True, False]`` becomes ``'True,False'``."
+msgstr ""
+
+#: ../../envvarsbody:578
+msgid "$LS_COLORS"
+msgstr ""
+
+#: ../../envvarsbody:579
+msgid "Color settings for ``ls`` command line utility"
+msgstr ""
+
+#: ../../envvarsbody:583
+msgid "**default:** <function default_lscolors at 0x7f8a826d5598>"
+msgstr ""
+
+#: ../../envvarsbody:592
+msgid "$MOUSE_SUPPORT"
+msgstr ""
+
+#: ../../envvarsbody:593
+msgid ""
+"Enable mouse support in the ``prompt_toolkit`` shell. This allows "
+"clicking for positioning the cursor or selecting a completion. In some "
+"terminals however, this disables the ability to scroll back through the "
+"history of the terminal. Only usable with ``$SHELL_TYPE=prompt_toolkit``"
+msgstr ""
+
+#: ../../envvarsbody:606
+msgid "$MULTILINE_PROMPT"
+msgstr ""
+
+#: ../../envvarsbody:607
+msgid ""
+"Prompt text for 2nd+ lines of input, may be str or function which returns"
+" a str."
+msgstr ""
+
+#: ../../envvarsbody:611
+msgid "**default:** '.'"
+msgstr ""
+
+#: ../../envvarsbody:620
+msgid "$OLDPWD"
+msgstr ""
+
+#: ../../envvarsbody:621
+msgid "Used to represent a previous present working directory."
+msgstr ""
+
+#: ../../envvarsbody:634
+msgid "$PATH"
+msgstr ""
+
+#: ../../envvarsbody:635
+msgid "List of strings representing where to look for executables."
+msgstr ""
+
+#: ../../envvarsbody:639
+msgid ""
+"**default:** ('/usr/local/sbin', '/usr/local/bin', '/usr/bin', "
+"'/usr/bin/site_perl', '/usr/bin/vendor_perl', '/usr/bin/core_perl')"
+msgstr ""
+
+#: ../../envvarsbody:648
+msgid "$PATHEXT"
+msgstr ""
+
+#: ../../envvarsbody:649
+msgid ""
+"Sequence of extension strings (eg, ``.EXE``) for filtering valid "
+"executables by. Each element must be uppercase."
+msgstr ""
+
+#: ../../envvarsbody:653
+msgid "**default:** []"
+msgstr ""
+
+#: ../../envvarsbody:662
+msgid "$PRETTY_PRINT_RESULTS"
+msgstr ""
+
+#: ../../envvarsbody:663
+msgid "Flag for \"pretty printing\" return values."
+msgstr ""
+
+#: ../../envvarsbody:676
+msgid "$PROMPT"
+msgstr ""
+
+#: ../../envvarsbody:677
+msgid ""
+"The prompt text. May contain keyword arguments which are auto-formatted, "
+"see 'Customizing the Prompt' at http://xon.sh/tutorial.html#customizing-"
+"the-prompt. This value is never inherited from parent processes."
+msgstr ""
+
+#: ../../envvarsbody:681
+msgid "**default:** ``xonsh.environ.DEFAULT_PROMPT``"
+msgstr ""
+
+#: ../../envvarsbody:690
+msgid "$PROMPT_FIELDS"
+msgstr ""
+
+#: ../../envvarsbody:691
+msgid ""
+"Dictionary containing variables to be used when formatting $PROMPT and "
+"$TITLE. See 'Customizing the Prompt' http://xon.sh/tutorial.html"
+"#customizing-the-prompt"
+msgstr ""
+
+#: ../../envvarsbody:695
+msgid "**default:** ``xonsh.prompt.PROMPT_FIELDS``"
+msgstr ""
+
+#: ../../envvarsbody:704
+msgid "$PROMPT_TOOLKIT_COLOR_DEPTH"
+msgstr ""
+
+#: ../../envvarsbody:705
+msgid ""
+"The color depth used by prompt toolkit 2. Possible values are: "
+"``DEPTH_1_BIT``, ``DEPTH_4_BIT``, ``DEPTH_8_BIT``, ``DEPTH_24_BIT`` "
+"colors. Default is an empty string which means that prompt toolkit "
+"decide."
+msgstr ""
+
+#: ../../envvarsbody:718
+msgid "$PTK_STYLE_OVERRIDES"
+msgstr ""
+
+#: ../../envvarsbody:719
+msgid "A dictionary containing custom prompt_toolkit style definitions."
+msgstr ""
+
+#: ../../envvarsbody:730
+msgid "**default:** {'aborting': 'ansibrightblack',"
+msgstr ""
+
+#: ../../envvarsbody:724
+msgid ""
+"'auto-suggestion': 'ansibrightblack', 'completion-menu': 'bg:ansigray "
+"ansiblack', 'completion-menu.completion': '', 'completion-"
+"menu.completion.current': 'bg:ansibrightblack ansiwhite', "
+"'scrollbar.arrow': 'bg:ansiblack ansiwhite bold', 'scrollbar.background':"
+" 'bg:ansibrightblack', 'scrollbar.button': 'bg:ansiblack'}"
+msgstr ""
+
+#: ../../envvarsbody:739
+msgid "$PUSHD_MINUS"
+msgstr ""
+
+#: ../../envvarsbody:740
+msgid "Flag for directory pushing functionality. False is the normal behavior."
+msgstr ""
+
+#: ../../envvarsbody:753
+msgid "$PUSHD_SILENT"
+msgstr ""
+
+#: ../../envvarsbody:754
+msgid "Whether or not to suppress directory stack manipulation output."
+msgstr ""
+
+#: ../../envvarsbody:767
+msgid "$RAISE_SUBPROC_ERROR"
+msgstr ""
+
+#: ../../envvarsbody:768
+msgid ""
+"Whether or not to raise an error if a subprocess (captured or uncaptured)"
+" returns a non-zero exit status, which indicates failure. This is most "
+"useful in xonsh scripts or modules where failures should cause an end to "
+"execution. This is less useful at a terminal. The error that is raised is"
+" a ``subprocess.CalledProcessError``."
+msgstr ""
+
+#: ../../envvarsbody:781
+msgid "$RIGHT_PROMPT"
+msgstr ""
+
+#: ../../envvarsbody:782
+msgid ""
+"Template string for right-aligned text at the prompt. This may be "
+"parametrized in the same way as the ``$PROMPT`` variable. Currently, this"
+" is only available in the prompt-toolkit shell."
+msgstr ""
+
+#: ../../envvarsbody:795
+msgid "$SHELL_TYPE"
+msgstr ""
+
+#: ../../envvarsbody:796
+msgid "Which shell is used. Currently two base shell types are supported:"
+msgstr ""
+
+#: ../../envvarsbody:798
+msgid "``readline`` that is backed by Python's readline module"
+msgstr ""
+
+#: ../../envvarsbody:799
+msgid "``prompt_toolkit`` that uses external library of the same name"
+msgstr ""
+
+#: ../../envvarsbody:800
+msgid "``random`` selects a random shell from the above on startup"
+msgstr ""
+
+#: ../../envvarsbody:802
+msgid "``best`` selects the most feature-rich shell available on the"
+msgstr ""
+
+#: ../../envvarsbody:802
+msgid "user's system"
+msgstr ""
+
+#: ../../envvarsbody:804
+msgid ""
+"To use the ``prompt_toolkit`` shell you need to have the `prompt_toolkit "
+"<https://github.com/jonathanslenders/python-prompt-toolkit>`_ library "
+"installed. To specify which shell should be used, do so in the run "
+"control file."
+msgstr ""
+
+#: ../../envvarsbody:808
+msgid "**default:** ``best``"
+msgstr ""
+
+#: ../../envvarsbody:817
+msgid "$SUBSEQUENCE_PATH_COMPLETION"
+msgstr ""
+
+#: ../../envvarsbody:818
+msgid ""
+"Toggles subsequence matching of paths for tab completion. If ``True``, "
+"then, e.g., ``~/u/ro`` can match ``~/lou/carcolh``."
+msgstr ""
+
+#: ../../envvarsbody:831
+msgid "$SUGGEST_COMMANDS"
+msgstr ""
+
+#: ../../envvarsbody:832
+msgid ""
+"When a user types an invalid command, xonsh will try to offer suggestions"
+" of similar valid commands if this is True."
+msgstr ""
+
+#: ../../envvarsbody:845
+msgid "$SUGGEST_MAX_NUM"
+msgstr ""
+
+#: ../../envvarsbody:846
+msgid ""
+"xonsh will show at most this many suggestions in response to an invalid "
+"command. If negative, there is no limit to how many suggestions are "
+"shown."
+msgstr ""
+
+#: ../../envvarsbody:859
+msgid "$SUGGEST_THRESHOLD"
+msgstr ""
+
+#: ../../envvarsbody:860
+msgid ""
+"An error threshold. If the Levenshtein distance between the entered "
+"command and a valid command is less than this value, the valid command "
+"will be offered as a suggestion.  Also used for \"fuzzy\" tab completion "
+"of paths."
+msgstr ""
+
+#: ../../envvarsbody:864
+msgid "**default:** 3"
+msgstr ""
+
+#: ../../envvarsbody:873
+msgid "$SUPPRESS_BRANCH_TIMEOUT_MESSAGE"
+msgstr ""
+
+#: ../../envvarsbody:874
+msgid "Whether or not to suppress branch timeout warning messages."
+msgstr ""
+
+#: ../../envvarsbody:887
+msgid "$TERM"
+msgstr ""
+
+#: ../../envvarsbody:888
+msgid ""
+"TERM is sometimes set by the terminal emulator. This is used (when valid)"
+" to determine whether or not to set the title. Users shouldn't need to "
+"set this themselves. Note that this variable should be set as early as "
+"possible in order to ensure it is effective. Here are a few options:"
+msgstr ""
+
+#: ../../envvarsbody:890
+msgid ""
+"Set this from the program that launches xonsh. On POSIX systems, this can"
+" be performed by using env, e.g. ``/usr/bin/env TERM=xterm-color xonsh`` "
+"or similar."
+msgstr ""
+
+#: ../../envvarsbody:893
+msgid "From the xonsh command line, namely ``xonsh -DTERM=xterm-color``."
+msgstr ""
+
+#: ../../envvarsbody:894
+msgid "In the config file with ``{\"env\": {\"TERM\": \"xterm-color\"}}``."
+msgstr ""
+
+#: ../../envvarsbody:895
+msgid "Lastly, in xonshrc with ``$TERM``"
+msgstr ""
+
+#: ../../envvarsbody:897
+msgid ""
+"Ideally, your terminal emulator will set this correctly but that does not"
+" always happen."
+msgstr ""
+
+#: ../../envvarsbody:910
+msgid "$TITLE"
+msgstr ""
+
+#: ../../envvarsbody:911
+msgid ""
+"The title text for the window in which xonsh is running. Formatted in the"
+" same manner as ``$PROMPT``, see 'Customizing the Prompt' "
+"http://xon.sh/tutorial.html#customizing-the-prompt."
+msgstr ""
+
+#: ../../envvarsbody:915
+msgid "**default:** ``xonsh.environ.DEFAULT_TITLE``"
+msgstr ""
+
+#: ../../envvarsbody:924
+msgid "$UPDATE_COMPLETIONS_ON_KEYPRESS"
+msgstr ""
+
+#: ../../envvarsbody:925
+msgid ""
+"Completions display is evaluated and presented whenever a key is pressed."
+" This avoids the need to press TAB, except to cycle through the "
+"possibilities. This currently only affects the prompt-toolkit shell."
+msgstr ""
+
+#: ../../envvarsbody:938
+msgid "$UPDATE_OS_ENVIRON"
+msgstr ""
+
+#: ../../envvarsbody:939
+msgid ""
+"If True ``os_environ`` will always be updated when the xonsh environment "
+"changes. The environment can be reset to the default value by calling "
+"``__xonsh__.env.undo_replace_env()``"
+msgstr ""
+
+#: ../../envvarsbody:952
+msgid "$UPDATE_PROMPT_ON_KEYPRESS"
+msgstr ""
+
+#: ../../envvarsbody:953
+msgid ""
+"Disables caching the prompt between commands, so that it would be "
+"reevaluated on each keypress. Disabled by default because of the incurred"
+" performance penalty."
+msgstr ""
+
+#: ../../envvarsbody:966
+msgid "$VC_BRANCH_TIMEOUT"
+msgstr ""
+
+#: ../../envvarsbody:967
+msgid ""
+"The timeout (in seconds) for version control branch computations. This is"
+" a timeout per subprocess call, so the total time to compute will be "
+"larger than this in many cases."
+msgstr ""
+
+#: ../../envvarsbody:971
+msgid "**default:** 0.1"
+msgstr ""
+
+#: ../../envvarsbody:980
+msgid "$VC_HG_SHOW_BRANCH"
+msgstr ""
+
+#: ../../envvarsbody:981
+msgid "Whether or not to show the Mercurial branch in the prompt."
+msgstr ""
+
+#: ../../envvarsbody:994
+msgid "$VIRTUAL_ENV"
+msgstr ""
+
+#: ../../envvarsbody:995
+msgid "Path to the currently active Python environment."
+msgstr ""
+
+#: ../../envvarsbody:1008
+msgid "$VI_MODE"
+msgstr ""
+
+#: ../../envvarsbody:1009
+msgid "Flag to enable ``vi_mode`` in the ``prompt_toolkit`` shell."
+msgstr ""
+
+#: ../../envvarsbody:1022
+msgid "$WIN_UNICODE_CONSOLE"
+msgstr ""
+
+#: ../../envvarsbody:1023
+msgid ""
+"Enables unicode support in windows terminals. Requires the external "
+"library ``win_unicode_console``."
+msgstr ""
+
+#: ../../envvarsbody:1036
+msgid "$XDG_CONFIG_HOME"
+msgstr ""
+
+#: ../../envvarsbody:1037
+msgid ""
+"Open desktop standard configuration home dir. This is the same default as"
+" used in the standard."
+msgstr ""
+
+#: ../../envvarsbody:1041
+msgid "**default:** ``~/.config``"
+msgstr ""
+
+#: ../../envvarsbody:1050
+msgid "$XDG_DATA_HOME"
+msgstr ""
+
+#: ../../envvarsbody:1051
+msgid ""
+"Open desktop standard data home dir. This is the same default as used in "
+"the standard."
+msgstr ""
+
+#: ../../envvarsbody:1055
+msgid "**default:** ``~/.local/share``"
+msgstr ""
+
+#: ../../envvarsbody:1064
+msgid "$XONSHRC"
+msgstr ""
+
+#: ../../envvarsbody:1065
+msgid ""
+"A list of the locations of run control files, if they exist.  User "
+"defined run control file will supersede values set in system-wide control"
+" file if there is a naming collision."
+msgstr ""
+
+#: ../../envvarsbody:1069
+msgid ""
+"**default:** On Linux & Mac OSX: ``['/etc/xonshrc', "
+"'~/.config/xonsh/rc.xsh', '~/.xonshrc']``"
+msgstr ""
+
+#: ../../envvarsbody:1071
+msgid ""
+"On Windows: ``['%ALLUSERSPROFILE%\\\\xonsh\\\\xonshrc', "
+"'~/.config/xonsh/rc.xsh', '~/.xonshrc']``"
+msgstr ""
+
+#: ../../envvarsbody:1080
+msgid "$XONSH_APPEND_NEWLINE"
+msgstr ""
+
+#: ../../envvarsbody:1081
+msgid "Append new line when a partial line is preserved in output."
+msgstr ""
+
+#: ../../envvarsbody:1085
+msgid "**default:** <function xonsh_append_newline at 0x7f8a826d5510>"
+msgstr ""
+
+#: ../../envvarsbody:1094
+msgid "$XONSH_AUTOPAIR"
+msgstr ""
+
+#: ../../envvarsbody:1095
+msgid ""
+"Whether Xonsh will auto-insert matching parentheses, brackets, and "
+"quotes. Only available under the prompt-toolkit shell."
+msgstr ""
+
+#: ../../envvarsbody:1108
+msgid "$XONSH_CACHE_EVERYTHING"
+msgstr ""
+
+#: ../../envvarsbody:1109
+msgid ""
+"Controls whether all code (including code entered at the interactive "
+"prompt) will be cached."
+msgstr ""
+
+#: ../../envvarsbody:1122
+msgid "$XONSH_CACHE_SCRIPTS"
+msgstr ""
+
+#: ../../envvarsbody:1123
+msgid ""
+"Controls whether the code for scripts run from xonsh will be cached "
+"(``True``) or re-compiled each time (``False``)."
+msgstr ""
+
+#: ../../envvarsbody:1136
+msgid "$XONSH_COLOR_STYLE"
+msgstr ""
+
+#: ../../envvarsbody:1137
+msgid ""
+"Sets the color style for xonsh colors. This is a style name, not a color "
+"map. Run ``xonfig styles`` to see the available styles."
+msgstr ""
+
+#: ../../envvarsbody:1141
+msgid "**default:** 'default'"
+msgstr ""
+
+#: ../../envvarsbody:1150
+msgid "$XONSH_CONFIG_DIR"
+msgstr ""
+
+#: ../../envvarsbody:1151
+msgid "This is the location where xonsh configuration information is stored."
+msgstr ""
+
+#: ../../envvarsbody:1155
+msgid "**default:** ``$XDG_CONFIG_HOME/xonsh``"
+msgstr ""
+
+#: ../../envvarsbody:1164
+msgid "$XONSH_DATA_DIR"
+msgstr ""
+
+#: ../../envvarsbody:1165
+msgid "This is the location where xonsh data files are stored, such as history."
+msgstr ""
+
+#: ../../envvarsbody:1169
+msgid "**default:** ``$XDG_DATA_HOME/xonsh``"
+msgstr ""
+
+#: ../../envvarsbody:1178
+msgid "$XONSH_DATETIME_FORMAT"
+msgstr ""
+
+#: ../../envvarsbody:1179
+msgid ""
+"The format that is used for ``datetime.strptime()`` in various placesi.e "
+"the history timestamp option"
+msgstr ""
+
+#: ../../envvarsbody:1183
+#, python-format
+msgid "**default:** '%Y-%m-%d %H:%M'"
+msgstr ""
+
+#: ../../envvarsbody:1192
+msgid "$XONSH_DEBUG"
+msgstr ""
+
+#: ../../envvarsbody:1193
+msgid ""
+"Sets the xonsh debugging level. This may be an integer or a boolean. "
+"Setting this variable prior to stating xonsh to ``1`` or ``True`` will "
+"suppress amalgamated imports. Setting it to ``2`` will get some basic "
+"information like input transformation, command replacement. With ``3`` or"
+" a higher number will make more debugging information presented, like PLY"
+" parsing messages."
+msgstr ""
+
+#: ../../envvarsbody:1197
+msgid "**default:** 0"
+msgstr ""
+
+#: ../../envvarsbody:1206
+msgid "$XONSH_ENCODING"
+msgstr ""
+
+#: ../../envvarsbody:1207
+msgid "This is the encoding that xonsh should use for subprocess operations."
+msgstr ""
+
+#: ../../envvarsbody:1211
+msgid "**default:** ``sys.getdefaultencoding()``"
+msgstr ""
+
+#: ../../envvarsbody:1220
+msgid "$XONSH_ENCODING_ERRORS"
+msgstr ""
+
+#: ../../envvarsbody:1221
+msgid ""
+"The flag for how to handle encoding errors should they happen. Any string"
+" flag that has been previously registered with Python is allowed. See the"
+" 'Python codecs documentation' "
+"(https://docs.python.org/3/library/codecs.html#error-handlers) for more "
+"information and available options."
+msgstr ""
+
+#: ../../envvarsbody:1225
+msgid "**default:** ``surrogateescape``"
+msgstr ""
+
+#: ../../envvarsbody:1234
+msgid "$XONSH_GITSTATUS_*"
+msgstr ""
+
+#: ../../envvarsbody:1235
+msgid "Symbols for gitstatus prompt. Default values are:"
+msgstr ""
+
+#: ../../envvarsbody:1237
+msgid "``XONSH_GITSTATUS_HASH``: ``:``"
+msgstr ""
+
+#: ../../envvarsbody:1238
+msgid "``XONSH_GITSTATUS_BRANCH``: ``{CYAN}``"
+msgstr ""
+
+#: ../../envvarsbody:1239
+msgid "``XONSH_GITSTATUS_OPERATION``: ``{CYAN}``"
+msgstr ""
+
+#: ../../envvarsbody:1240
+msgid "``XONSH_GITSTATUS_STAGED``: ``{RED}●``"
+msgstr ""
+
+#: ../../envvarsbody:1241
+msgid "``XONSH_GITSTATUS_CONFLICTS``: ``{RED}×``"
+msgstr ""
+
+#: ../../envvarsbody:1242
+msgid "``XONSH_GITSTATUS_CHANGED``: ``{BLUE}+``"
+msgstr ""
+
+#: ../../envvarsbody:1243
+msgid "``XONSH_GITSTATUS_UNTRACKED``: ``…``"
+msgstr ""
+
+#: ../../envvarsbody:1244
+msgid "``XONSH_GITSTATUS_STASHED``: ``⚑``"
+msgstr ""
+
+#: ../../envvarsbody:1245
+msgid "``XONSH_GITSTATUS_CLEAN``: ``{BOLD_GREEN}✓``"
+msgstr ""
+
+#: ../../envvarsbody:1246
+msgid "``XONSH_GITSTATUS_AHEAD``: ``↑·``"
+msgstr ""
+
+#: ../../envvarsbody:1247
+msgid "``XONSH_GITSTATUS_BEHIND``: ``↓·``"
+msgstr ""
+
+#: ../../envvarsbody:1261
+msgid "$XONSH_HISTORY_BACKEND"
+msgstr ""
+
+#: ../../envvarsbody:1262
+msgid ""
+"Set which history backend to use. Options are: 'json', 'sqlite', and "
+"'dummy'. The default is 'json'. ``XONSH_HISTORY_BACKEND`` also accepts a "
+"class type that inherits from ``xonsh.history.base.History``, or its "
+"instance."
+msgstr ""
+
+#: ../../envvarsbody:1266
+msgid "**default:** 'json'"
+msgstr ""
+
+#: ../../envvarsbody:1275
+msgid "$XONSH_HISTORY_FILE"
+msgstr ""
+
+#: ../../envvarsbody:1276
+msgid "Location of history file (deprecated)."
+msgstr ""
+
+#: ../../envvarsbody:1280
+msgid "**default:** ``~/.xonsh_history``"
+msgstr ""
+
+#: ../../envvarsbody:1289
+msgid "$XONSH_HISTORY_MATCH_ANYWHERE"
+msgstr ""
+
+#: ../../envvarsbody:1290
+msgid ""
+"When searching history from a partial string (by pressing up arrow), "
+"match command history anywhere in a given line (not just the start)"
+msgstr ""
+
+#: ../../envvarsbody:1303
+msgid "$XONSH_HISTORY_SIZE"
+msgstr ""
+
+#: ../../envvarsbody:1304
+msgid ""
+"Value and units tuple that sets the size of history after garbage "
+"collection. Canonical units are:"
+msgstr ""
+
+#: ../../envvarsbody:1306
+msgid "``commands`` for the number of past commands executed,"
+msgstr ""
+
+#: ../../envvarsbody:1307
+msgid "``files`` for the number of history files to keep,"
+msgstr ""
+
+#: ../../envvarsbody:1308
+msgid "``s`` for the number of seconds in the past that are allowed, and"
+msgstr ""
+
+#: ../../envvarsbody:1309
+msgid "``b`` for the number of bytes that history may consume."
+msgstr ""
+
+#: ../../envvarsbody:1311
+msgid "Common abbreviations, such as '6 months' or '1 GB' are also allowed."
+msgstr ""
+
+#: ../../envvarsbody:1315
+msgid "**default:** ``(8128, 'commands')`` or ``'8128 commands'``"
+msgstr ""
+
+#: ../../envvarsbody:1324
+msgid "$XONSH_INTERACTIVE"
+msgstr ""
+
+#: ../../envvarsbody:1325
+msgid "``True`` if xonsh is running interactively, and ``False`` otherwise."
+msgstr ""
+
+#: ../../envvarsbody:1338
+msgid "$XONSH_LOGIN"
+msgstr ""
+
+#: ../../envvarsbody:1339
+msgid "``True`` if xonsh is running as a login shell, and ``False`` otherwise."
+msgstr ""
+
+#: ../../envvarsbody:1352
+msgid "$XONSH_PROC_FREQUENCY"
+msgstr ""
+
+#: ../../envvarsbody:1353
+msgid ""
+"The process frequency is the time that xonsh process threads sleep for "
+"while running command pipelines. The value has units of seconds [s]."
+msgstr ""
+
+#: ../../envvarsbody:1357
+msgid "**default:** 0.0001"
+msgstr ""
+
+#: ../../envvarsbody:1366
+msgid "$XONSH_SHOW_TRACEBACK"
+msgstr ""
+
+#: ../../envvarsbody:1367
+msgid ""
+"Controls if a traceback is shown if exceptions occur in the shell. Set to"
+" ``True`` to always show traceback or ``False`` to always hide. If "
+"undefined then the traceback is hidden but a notice is shown on how to "
+"enable the full traceback."
+msgstr ""
+
+#: ../../envvarsbody:1380
+msgid "$XONSH_SOURCE"
+msgstr ""
+
+#: ../../envvarsbody:1381
+msgid ""
+"When running a xonsh script, this variable contains the absolute path to "
+"the currently executing script's file."
+msgstr ""
+
+#: ../../envvarsbody:1394
+msgid "$XONSH_STDERR_POSTFIX"
+msgstr ""
+
+#: ../../envvarsbody:1395
+msgid ""
+"A format string, using the same keys and colors as ``$PROMPT``, that is "
+"appended whenever stderr is displayed. This may be used in conjunction "
+"with ``$XONSH_STDERR_PREFIX`` to start the block.For example, to have "
+"stderr appear on a red background, the prefix & postfix pair would be "
+"\"{BACKGROUND_RED}\" & \"{NO_COLOR}\"."
+msgstr ""
+
+#: ../../envvarsbody:1408
+msgid "$XONSH_STDERR_PREFIX"
+msgstr ""
+
+#: ../../envvarsbody:1409
+msgid ""
+"A format string, using the same keys and colors as ``$PROMPT``, that is "
+"prepended whenever stderr is displayed. This may be used in conjunction "
+"with ``$XONSH_STDERR_POSTFIX`` to close out the block.For example, to "
+"have stderr appear on a red background, the prefix & postfix pair would "
+"be \"{BACKGROUND_RED}\" & \"{NO_COLOR}\"."
+msgstr ""
+
+#: ../../envvarsbody:1422
+msgid "$XONSH_STORE_STDIN"
+msgstr ""
+
+#: ../../envvarsbody:1423
+msgid ""
+"Whether or not to store the stdin that is supplied to the ``!()`` and "
+"``![]`` operators."
+msgstr ""
+
+#: ../../envvarsbody:1436
+msgid "$XONSH_STORE_STDOUT"
+msgstr ""
+
+#: ../../envvarsbody:1437
+msgid ""
+"Whether or not to store the ``stdout`` and ``stderr`` streams in the "
+"history files."
+msgstr ""
+
+#: ../../envvarsbody:1450
+msgid "$XONSH_TRACEBACK_LOGFILE"
+msgstr ""
+
+#: ../../envvarsbody:1451
+msgid ""
+"Specifies a file to store the traceback log to, regardless of whether "
+"``XONSH_SHOW_TRACEBACK`` has been set. Its value must be a writable file "
+"or None / the empty string if traceback logging is not desired. Logging "
+"to a file is not enabled by default."
+msgstr ""
+
+#: ../../envvarsbody:1455
+msgid "**default:** None"
+msgstr ""
+

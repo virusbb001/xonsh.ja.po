@@ -1,0 +1,642 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../devguide.rst:5
+msgid "Developer's Guide"
+msgstr ""
+
+#: ../../devguide.rst:11
+msgid ""
+"Welcome to the xonsh developer's guide!  This is a place for developers "
+"to place information that does not belong in the user's guide or the "
+"library reference but is useful or necessary for the next people that "
+"come along to develop xonsh."
+msgstr ""
+
+#: ../../devguide.rst:16
+msgid "All code changes must go through the pull request review procedure."
+msgstr ""
+
+#: ../../devguide.rst:20
+msgid "Making Your First Change"
+msgstr ""
+
+#: ../../devguide.rst:22
+msgid ""
+"First, install xonsh from source and open a xonsh shell in your favorite "
+"terminal application. See installation instructions for details."
+msgstr ""
+
+#: ../../devguide.rst:25
+msgid "Next, make a trivial change (e.g. ``print(\"hello!\")`` in ``main.py``)."
+msgstr ""
+
+#: ../../devguide.rst:27
+msgid ""
+"Finally, run the following commands. You should see the effects of your "
+"change (e.g. ``hello!``)::"
+msgstr ""
+
+#: ../../devguide.rst:33
+msgid ""
+"The xonsh build process collapses all Python source files into a single "
+"``__amalgam__.py`` file. When xonsh is started with a falsy value for "
+"`$XONSH_DEBUG <envvars.html>`_, it imports Python modules straight from "
+"``__amalgam__.py``, which decreases startup times by eliminating the cost"
+" of runtime imports. But setting ``$ $XONSH_DEBUG=1`` will suppress "
+"amalgamated imports. Reloading the xonsh shell (``$ xonsh``) won't simply"
+" import the stale ``__amalgam__.py`` file that doesn't contain your new "
+"change, but will instead import the unamalgamated source code which does "
+"contain your change. You can now load every subsequent change by "
+"reloading xonsh, and if your code changes don't seem to have any effect, "
+"make sure you check ``$XONSH_DEBUG`` first!"
+msgstr ""
+
+#: ../../devguide.rst:46
+msgid "Changelog"
+msgstr ""
+
+#: ../../devguide.rst:47
+msgid ""
+"Pull requests will often have CHANGELOG entries associated with. However,"
+" to avoid excessive merge conflicts, please follow the following "
+"procedure:"
+msgstr ""
+
+#: ../../devguide.rst:50
+msgid "Go into the ``news/`` directory,"
+msgstr ""
+
+#: ../../devguide.rst:51
+msgid ""
+"Copy the ``TEMPLATE.rst`` file to another file in the ``news/`` "
+"directory. We suggest using the branchname::"
+msgstr ""
+
+#: ../../devguide.rst:56
+msgid ""
+"Add your entries as a bullet pointed lists in your ``branch.rst`` file in"
+" the appropriate category. It is OK to leave the ``None`` entries for "
+"later use."
+msgstr ""
+
+#: ../../devguide.rst:59
+msgid "Commit your ``branch.rst``."
+msgstr ""
+
+#: ../../devguide.rst:61
+msgid ""
+"Feel free to update this file whenever you want! Please don't use someone"
+" else's file name. All of the files in this ``news/`` directory will be "
+"merged automatically at release time.  The ``None`` entries will be "
+"automatically filtered out too!"
+msgstr ""
+
+#: ../../devguide.rst:68
+msgid "Style Guide"
+msgstr ""
+
+#: ../../devguide.rst:69
+msgid ""
+"xonsh is a pure Python project, and so we use PEP8 (with some additions) "
+"to ensure consistency throughout the code base."
+msgstr ""
+
+#: ../../devguide.rst:74
+msgid "Rules to Write By"
+msgstr ""
+
+#: ../../devguide.rst:75
+msgid ""
+"It is important to refer to things and concepts by their most specific "
+"name. When writing xonsh code or documentation please use technical terms"
+" appropriately. The following rules help provide needed clarity."
+msgstr ""
+
+#: ../../devguide.rst:81
+msgid "Interfaces"
+msgstr ""
+
+#: ../../devguide.rst:82
+msgid "User-facing APIs should be as generic and robust as possible."
+msgstr ""
+
+#: ../../devguide.rst:83
+msgid "Tests belong in the top-level ``tests`` directory."
+msgstr ""
+
+#: ../../devguide.rst:84
+msgid "Documentation belongs in the top-level ``docs`` directory."
+msgstr ""
+
+#: ../../devguide.rst:88
+msgid "Expectations"
+msgstr ""
+
+#: ../../devguide.rst:89
+msgid "Code must have associated tests and adequate documentation."
+msgstr ""
+
+#: ../../devguide.rst:90
+msgid ""
+"User-interaction code (such as the Shell class) is hard to test. "
+"Mechanism to test such constructs should be developed over time."
+msgstr ""
+
+#: ../../devguide.rst:92
+msgid "Have *extreme* empathy for your users."
+msgstr ""
+
+#: ../../devguide.rst:93
+msgid "Be selfish. Since you will be writing tests you will be your first user."
+msgstr ""
+
+#: ../../devguide.rst:97
+msgid "Python Style Guide"
+msgstr ""
+
+#: ../../devguide.rst:98
+msgid ""
+"xonsh uses `PEP8`_ for all Python code. The following rules apply where "
+"`PEP8`_ is open to interpretation."
+msgstr ""
+
+#: ../../devguide.rst:101
+msgid ""
+"Use absolute imports (``import xonsh.tools``) rather than explicit "
+"relative imports (``import .tools``). Implicit relative imports (``import"
+" tools``) are never allowed."
+msgstr ""
+
+#: ../../devguide.rst:104
+msgid ""
+"Use ``'single quotes'`` for string literals, and ``\"\"\"triple double "
+"quotes\"\"\"`` for docstrings. Double quotes are allowed to prevent "
+"single quote escaping, e.g. ``\"Y'all c'mon o'er here!\"``"
+msgstr ""
+
+#: ../../devguide.rst:107
+msgid ""
+"We use sphinx with the numpydoc extension to autogenerate API "
+"documentation. Follow the `numpydoc`_ standard for docstrings."
+msgstr ""
+
+#: ../../devguide.rst:109
+msgid "Simple functions should have simple docstrings."
+msgstr ""
+
+#: ../../devguide.rst:110
+msgid ""
+"Lines should be at most 80 characters long. The 72 and 79 character "
+"recommendations from PEP8 are not required here."
+msgstr ""
+
+#: ../../devguide.rst:112
+msgid ""
+"All Python code should be compliant with Python 3.4+.  At some unforeseen"
+" date in the future, Python 2.7 support *may* be supported."
+msgstr ""
+
+#: ../../devguide.rst:114
+msgid ""
+"Tests should be written with pytest using a procedural style. Do not use "
+"unittest directly or write tests in an object-oriented style."
+msgstr ""
+
+#: ../../devguide.rst:116
+msgid "Test generators make more dots and the dots must flow!"
+msgstr ""
+
+#: ../../devguide.rst:118
+msgid ""
+"You can easily check for style issues, including some outright bugs such "
+"as mispelled variable names, using pylint. If you're using Anaconda "
+"you'll need to run \"conda install pylint\" once. You can easily run "
+"pylint on the edited files in your uncommited git change::"
+msgstr ""
+
+#: ../../devguide.rst:125
+msgid "If you want to lint the entire code base run::"
+msgstr ""
+
+#: ../../devguide.rst:131
+msgid "Imports"
+msgstr ""
+
+#: ../../devguide.rst:132
+msgid ""
+"Xonsh source code may be amalgamated into a single file "
+"(``__amalgam__.py``) to speed up imports. The way the code amalgamater "
+"works is that other modules that are in the same package (and "
+"amalgamated) should be imported with::"
+msgstr ""
+
+#: ../../devguide.rst:138
+msgid ""
+"This is because the amalgamater puts all such modules in the same "
+"globals(), which is effectively what the from-imports do. For example, "
+"``xonsh.ast`` and ``xonsh.execer`` are both in the same package "
+"(``xonsh``). Thus they should use the above from from-import syntax."
+msgstr ""
+
+#: ../../devguide.rst:143
+msgid ""
+"Alternatively, for modules outside of the current package (or modules "
+"that are not amalgamated) the import statement should be either ``import "
+"pkg.x`` or ``import pkg.x as name``. This is because these are the only "
+"cases where the amalgamater is able to automatically insert lazy imports "
+"in way that is guaranteed to be safe. This is due to the ambiguity that "
+"``from pkg.x import name`` may import a variable that cannot be lazily "
+"constructed or may import a module. So the simple rules to follow are "
+"that:"
+msgstr ""
+
+#: ../../devguide.rst:151
+msgid ""
+"Import objects from modules in the same package directly in using from-"
+"import,"
+msgstr ""
+
+#: ../../devguide.rst:152
+msgid ""
+"Import objects from modules outside of the package via a direct import or"
+" import-as statement."
+msgstr ""
+
+#: ../../devguide.rst:156
+msgid "How to Test"
+msgstr ""
+
+#: ../../devguide.rst:160
+msgid "Docker"
+msgstr ""
+
+#: ../../devguide.rst:162
+msgid ""
+"If you want to run your \"work in progress version\" without installing "
+"and in a fresh environment you can use Docker. If Docker is installed you"
+" just have to run this::"
+msgstr ""
+
+#: ../../devguide.rst:168
+msgid ""
+"This will build and run the current state of the repository in an "
+"isolated container (it may take a while the first time you run it). There"
+" are two additional arguments you can pass this script."
+msgstr ""
+
+#: ../../devguide.rst:172
+msgid "The version of python"
+msgstr ""
+
+#: ../../devguide.rst:173
+msgid "the version of ``prompt_toolkit``"
+msgstr ""
+
+#: ../../devguide.rst:175
+msgid "Example::"
+msgstr ""
+
+#: ../../devguide.rst:179
+msgid ""
+"Ensure your cwd is the root directory of the project (i.e., the one "
+"containing the .git directory)."
+msgstr ""
+
+#: ../../devguide.rst:184
+msgid "Dependencies"
+msgstr ""
+
+#: ../../devguide.rst:186
+msgid "Prep your environment for running the tests::"
+msgstr ""
+
+#: ../../devguide.rst:193
+msgid "Running the Tests - Basic"
+msgstr ""
+
+#: ../../devguide.rst:195
+msgid "Run all the tests using pytest::"
+msgstr ""
+
+#: ../../devguide.rst:199
+msgid "Use \"-q\" to keep pytest from outputting a bunch of info for every test."
+msgstr ""
+
+#: ../../devguide.rst:203
+msgid "Running the Tests - Advanced"
+msgstr ""
+
+#: ../../devguide.rst:205
+msgid "To perform all unit tests::"
+msgstr ""
+
+#: ../../devguide.rst:209
+msgid ""
+"If you want to run specific tests you can specify the test names to "
+"execute. For example to run test_aliases::"
+msgstr ""
+
+#: ../../devguide.rst:214
+msgid "Note that you can pass multiple test names in the above examples::"
+msgstr ""
+
+#: ../../devguide.rst:220
+msgid "Writing the Tests - Advanced"
+msgstr ""
+
+#: ../../devguide.rst:222
+msgid "(refer to pytest documentation)"
+msgstr ""
+
+#: ../../devguide.rst:224
+msgid ""
+"With the Pytest framework you can use bare `assert` statements on "
+"anything you're trying to test, note that the name of the test function "
+"has to be prefixed with `test_`::"
+msgstr ""
+
+#: ../../devguide.rst:231
+msgid ""
+"The conftest.py in tests directory defines fixtures for mocking various "
+"parts of xonsh for more test isolation. For a list of the various "
+"fixtures::"
+msgstr ""
+
+#: ../../devguide.rst:236
+msgid "when writing tests it's best to use pytest features i.e. parametrization::"
+msgstr ""
+
+#: ../../devguide.rst:243
+msgid ""
+"this will run the test two times each time with the respective "
+"`test_env`. This can be done with a for loop too but the test will run "
+"only once for the different test cases and you get less isolation."
+msgstr ""
+
+#: ../../devguide.rst:247
+msgid ""
+"With that in mind, each test should have the least `assert` statements, "
+"preferably one."
+msgstr ""
+
+#: ../../devguide.rst:250
+msgid "At the moment, xonsh doesn't support any pytest plugins."
+msgstr ""
+
+#: ../../devguide.rst:252
+msgid "Happy Testing!"
+msgstr ""
+
+#: ../../devguide.rst:256
+msgid "How to Document"
+msgstr ""
+
+#: ../../devguide.rst:257
+msgid ""
+"Documentation takes many forms. This will guide you through the steps of "
+"successful documentation."
+msgstr ""
+
+#: ../../devguide.rst:262
+msgid "Docstrings"
+msgstr ""
+
+#: ../../devguide.rst:263
+msgid ""
+"No matter what language you are writing in, you should always have "
+"documentation strings along with you code. This is so important that it "
+"is part of the style guide.  When writing in Python, your docstrings "
+"should be in reStructured Text using the `numpydoc`_ format."
+msgstr ""
+
+#: ../../devguide.rst:270
+msgid "Auto-Documentation Hooks"
+msgstr ""
+
+#: ../../devguide.rst:271
+msgid ""
+"The docstrings that you have written will automatically be connected to "
+"the website, once the appropriate hooks have been setup.  At this stage, "
+"all documentation lives within xonsh's top-level ``docs`` directory. We "
+"uses the sphinx tool to manage and generate the documentation, which you "
+"can learn about from `the sphinx website <http://sphinx-doc.org/>`_. If "
+"you want to generate the documentation, first xonsh itself must be "
+"installed and then you may run the following command from the ``docs`` "
+"dir:"
+msgstr ""
+
+#: ../../devguide.rst:283
+msgid ""
+"For each new module, you will have to supply the appropriate hooks. This "
+"should be done the first time that the module appears in a pull request."
+"  From here, call the new module ``mymod``.  The following explains how "
+"to add hooks."
+msgstr ""
+
+#: ../../devguide.rst:290
+msgid "Python Hooks"
+msgstr ""
+
+#: ../../devguide.rst:291
+msgid ""
+"Python documentation lives in the ``docs/api`` directory. First, create a"
+" file in this directory that represents the new module called "
+"``mymod.rst``. The ``docs/api`` directory matches the structure of the "
+"``xonsh/`` directory. So if your module is in a sub-package, you'll need "
+"to go into the sub-package's directory before creating ``mymod.rst``. The"
+" contents of this file should be as follows:"
+msgstr ""
+
+#: ../../devguide.rst:299
+msgid "**mymod.rst:**"
+msgstr ""
+
+#: ../../devguide.rst:314
+msgid ""
+"This will discover all of the docstrings in ``mymod`` and create the "
+"appropriate webpage. Now, you need to hook this page up to the rest of "
+"the website."
+msgstr ""
+
+#: ../../devguide.rst:318
+msgid ""
+"Go into the ``index.rst`` file in ``docs/xonsh`` or other subdirectory "
+"and add ``mymod`` to the appropriate ``toctree`` (which stands for table-"
+"of-contents tree). Note that every sub-package has its own ``index.rst`` "
+"file."
+msgstr ""
+
+#: ../../devguide.rst:324
+msgid "Building the Website"
+msgstr ""
+
+#: ../../devguide.rst:326
+msgid "Building the website/documentation requires the following dependencies:"
+msgstr ""
+
+#: ../../devguide.rst:328
+msgid "`Sphinx <http://sphinx-doc.org/>`_"
+msgstr ""
+
+#: ../../devguide.rst:329
+msgid "`Cloud Sphinx Theme <https://cloud-sptheme.readthedocs.io/>`_"
+msgstr ""
+
+#: ../../devguide.rst:330
+msgid "`numpydoc <https://numpydoc.readthedocs.io/>`__"
+msgstr ""
+
+#: ../../devguide.rst:332
+msgid "Note that xonsh itself needs to be installed too."
+msgstr ""
+
+#: ../../devguide.rst:337
+msgid "Procedure for modifying the website"
+msgstr ""
+
+#: ../../devguide.rst:338
+msgid ""
+"The xonsh website source files are located in the ``docs`` directory. A "
+"developer first makes necessary changes, then rebuilds the website "
+"locally by executing the command::"
+msgstr ""
+
+#: ../../devguide.rst:344
+msgid ""
+"This will generate html files for the website in the ``_build/html/`` "
+"folder. The developer may view the local changes by opening these files "
+"with their favorite browser, e.g.::"
+msgstr ""
+
+#: ../../devguide.rst:350
+msgid ""
+"Once the developer is satisfied with the changes, the changes should be "
+"committed and pull-requested per usual. Once the pull request is "
+"accepted, the developer can push their local changes directly to the "
+"website by::"
+msgstr ""
+
+#: ../../devguide.rst:357
+msgid "Branches and Releases"
+msgstr ""
+
+#: ../../devguide.rst:358
+msgid ""
+"Mainline xonsh development occurs on the ``master`` branch. Other "
+"branches may be used for feature development (topical branches) or to "
+"represent past and upcoming releases."
+msgstr ""
+
+#: ../../devguide.rst:362
+msgid ""
+"All releases should have a release candidate ('-rc1') that comes out 2 - "
+"5 days prior to the scheduled release.  During this time, no changes "
+"should occur to a special release branch ('vX.X.X-release')."
+msgstr ""
+
+#: ../../devguide.rst:366
+msgid ""
+"The release branch is there so that development can continue on the "
+"develop branch while the release candidates (rc) are out and under "
+"review. This is because otherwise any new developments would have to wait"
+" until post-release to be merged into develop to prevent them from "
+"accidentally getting released early."
+msgstr ""
+
+#: ../../devguide.rst:372
+msgid ""
+"As such, the 'vX.X.X-release' branch should only exist while there are "
+"release candidates out.  They are akin to a temporary second level of "
+"staging, and so everything that is in this branch should also be part of "
+"master."
+msgstr ""
+
+#: ../../devguide.rst:376
+msgid ""
+"Every time a new release candidate comes out the vX.X.X-release should be"
+" tagged with the name 'X.X.X-rcX'.  There should be a 2 - 5 day period of"
+" time in between release candidates.  When the full and final release "
+"happens, the 'vX.X.X-release' branch is merged into master and then "
+"deleted."
+msgstr ""
+
+#: ../../devguide.rst:381
+msgid ""
+"If you have a new fix that needs to be in the next release candidate, you"
+" should make a topical branch and then pull request it into the release "
+"branch. After this has been accepted, the topical branch should be merged"
+" with master as well."
+msgstr ""
+
+#: ../../devguide.rst:386
+msgid ""
+"The release branch must be quiet and untouched for 2 - 5 days prior to "
+"the full release."
+msgstr ""
+
+#: ../../devguide.rst:389
+msgid ""
+"The release candidate procedure here only applies to major and minor "
+"releases. Micro releases may be pushed and released directly without "
+"having a release candidate."
+msgstr ""
+
+#: ../../devguide.rst:395
+msgid "Maintenance Tasks"
+msgstr ""
+
+#: ../../devguide.rst:396
+msgid ""
+"You can cleanup your local repository of transient files such as \\*.pyc "
+"files created by unit testing by running::"
+msgstr ""
+
+#: ../../devguide.rst:405
+msgid "Performing the Release"
+msgstr ""
+
+#: ../../devguide.rst:406
+msgid ""
+"This is done through the ``release.xsh`` script. To get a list of the "
+"valid options use::"
+msgstr ""
+
+#: ../../devguide.rst:411
+msgid "You can perform a full release::"
+msgstr ""
+
+#: ../../devguide.rst:415
+msgid "Or only a specific one::"
+msgstr ""
+
+#: ../../devguide.rst:419
+msgid "You can also exclude a release::"
+msgstr ""
+
+#: ../../devguide.rst:425
+msgid "Document History"
+msgstr ""
+
+#: ../../devguide.rst:426
+msgid ""
+"Portions of this page have been forked from the PyNE documentation, "
+"Copyright 2011-2015, the PyNE Development Team. All rights reserved."
+msgstr ""
+

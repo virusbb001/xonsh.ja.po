@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../tutorial_history_backend.rst:5
+msgid "Tutorial: Write Your Own History Backend"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:7
+msgid ""
+"One of the great things about xonsh is how easy it is to customize. In "
+"this tutorial, let's write our own history backend based on CouchDB."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:12
+msgid "Start with a Minimal History Template"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:14
+msgid "Here is a minimal history backend to start with:"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:37
+msgid ""
+"Go ahead and create the file ``~/.xonsh/history_couchdb.py`` and put the "
+"content above into it."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:40
+msgid ""
+"Now we need to tell xonsh to use it as the history backend. To do this we"
+" need xonsh to be able to find our file and this ``CouchDBHistory`` "
+"class. Putting the following code into ``~/.xonshrc`` file can achieve "
+"this."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:55
+msgid "After starting a new xonsh session, try the following commands:"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:66
+msgid "Woohoo! We just wrote a working history backend!"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:70
+msgid "Setup CouchDB"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:72
+msgid ""
+"For this to work, we need CouchDB up and running. Go to `CouchDB website "
+"<http://couchdb.apache.org/>`_ and spend some time to install it. we will"
+" wait for you. Take your time."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:76
+msgid "After installing, check that it's configured correctly with ``curl``:"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:98
+msgid ""
+"Okay, CouchDB is working. Now open `<http://127.0.0.1:5984/_utils/>`_ "
+"with your browser, and create a new database called ``xonsh-history``."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:103
+msgid "Initialize History Backend"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:120
+msgid ""
+"In the ``__init__()`` method, let's initialize `Some Public Attributes "
+"<api/history/base.html#xonsh.history.base.History>`_ which xonsh uses in "
+"various places. Note that we use Unix timestamp and some random char to "
+"make ``self.sessionid`` unique and to keep the entries ordered in time. "
+"We will cover it with a bit more detail in the next section."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:128
+msgid "Save History to CouchDB"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:130
+msgid "First, we need some helper functions to write docs to CouchDB."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:160
+msgid ""
+"``_save_to_db()`` takes a dict as the input, which contains the "
+"information about a command that user input, and saves it into CouchDB."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:163
+msgid ""
+"Instead of letting CouchDB provide us a random Document ID (i.e. the "
+"``data['_id']`` in our code), we build it for ourselves.  We use the Unix"
+" timestamp and UUID string for a second time. Prefixing this with "
+"``self.sessionid``, we make history entries in order inside a single "
+"xonsh session too. So that we don't need any extra CouchDB's `Design "
+"Documents and Views "
+"<http://docs.couchdb.org/en/2.0.0/couchapp/ddocs.html>`_ feature. Just "
+"with a bare ``_all_docs`` API, we can fetch history items back in order."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:172
+msgid ""
+"Now that we have helper functions, let's update our ``append()`` method "
+"to do the real job - save history into DB."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:184
+msgid ""
+"This method will be called by xonsh every time it runs a new command from"
+" user."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:188
+msgid "Retrieve History Items"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:198
+msgid ""
+"These two methods are responsible for getting history items for the "
+"current xonsh session and all historical sessions respectively."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:201
+msgid "And here is our helper method to get docs from DB:"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:221
+msgid ""
+"The `try-except` is here so that we're safe when something bad happens, "
+"like CouchDB is not running properly, etc."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:226
+msgid "Try Out Our New History Backend"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:228
+msgid ""
+"That's it. We've finished our new history backend. The ``import`` part is"
+" skipped, but I think you can figure it out though. Note that in our code"
+" an extra Python library is used: ``requests``. You could easily install "
+"it with ``pip`` or other library managers. You can find the full code "
+"here: `<https://gist.github.com/mitnk/2d08dc60aab33d8b8b758c544b37d570>`_"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:234
+msgid "Let's start a new xonsh session:"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:248
+msgid "Start a second xonsh session:"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:271
+msgid "We're not missing any history, so it looks like we're good to go!"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:275
+msgid "History Garbage Collection"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:277
+msgid ""
+"For the built-in history backends ``json`` and ``sqlite``, garbage "
+"collection is triggered when xonsh is started or when the user runs "
+"``history gc``. History items outside of the range defined by "
+"`$XONSH_HISTORY_SIZE <envvars.html#xonsh-history-size>`_ are deleted."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:297
+msgid ""
+"The History public method ``run_gc()`` is for this purpose. Our "
+"``CouchDBHistory`` doesn't define this method, thus it inherits from its "
+"parent ``History``, which does nothing. We will leave the GC "
+"implementation as an exercise."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:304
+msgid "Other History Options"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:306
+msgid ""
+"There are some environment variables that can change the behavior of the "
+"history backend. Such as `$HISTCONTROL <envvars.html#histcontrol>`_, "
+"`$XONSH_HISTORY_SIZE <envvars.html#xonsh-history-size>`_, "
+"`$XONSH_STORE_STDOUT <envvars.html#xonsh-store-stdout>`_, etc."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:311
+msgid ""
+"We should implement these ENVs in our CouchDB backend. Luckily, it's not "
+"a hard thing. We'll leave the implementation of those features to you, "
+"but you can see how it's handled for `the sqlite backend "
+"<_modules/xonsh/history/sqlite.html#SqliteHistory>`_."
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:318
+msgid "Wrap Up"
+msgstr ""
+
+#: ../../tutorial_history_backend.rst:320
+msgid ""
+"This is a barebones implementation but hopefully it will give you a sense"
+" of how you can customize xonsh's history backend for your own needs!"
+msgstr ""
+

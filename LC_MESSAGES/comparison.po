@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../comparison.rst:2
+msgid "Comparison"
+msgstr ""
+
+#: ../../comparison.rst:3
+msgid ""
+"Xonsh is significantly different from most other shells or shell tools. "
+"The following table lists features and capabilities that various tools "
+"may or may not share."
+msgstr ""
+
+#: ../../comparison.rst:12
+msgid "Bash"
+msgstr ""
+
+#: ../../comparison.rst:13
+msgid "zsh"
+msgstr ""
+
+#: ../../comparison.rst:14
+msgid "plumbum"
+msgstr ""
+
+#: ../../comparison.rst:15
+msgid "fish"
+msgstr ""
+
+#: ../../comparison.rst:16
+msgid "IPython"
+msgstr ""
+
+#: ../../comparison.rst:17
+msgid "xonsh"
+msgstr ""
+
+#: ../../comparison.rst:18
+msgid "Sane language"
+msgstr ""
+
+#: ../../comparison.rst:21 ../../comparison.rst:22 ../../comparison.rst:23
+#: ../../comparison.rst:24 ../../comparison.rst:26 ../../comparison.rst:27
+#: ../../comparison.rst:28 ../../comparison.rst:29 ../../comparison.rst:31
+#: ../../comparison.rst:35 ../../comparison.rst:36 ../../comparison.rst:37
+#: ../../comparison.rst:38 ../../comparison.rst:40 ../../comparison.rst:41
+#: ../../comparison.rst:43 ../../comparison.rst:45 ../../comparison.rst:47
+#: ../../comparison.rst:48 ../../comparison.rst:50 ../../comparison.rst:51
+#: ../../comparison.rst:52 ../../comparison.rst:57 ../../comparison.rst:59
+#: ../../comparison.rst:62 ../../comparison.rst:65 ../../comparison.rst:66
+#: ../../comparison.rst:70 ../../comparison.rst:71 ../../comparison.rst:72
+#: ../../comparison.rst:73 ../../comparison.rst:78 ../../comparison.rst:82
+#: ../../comparison.rst:84 ../../comparison.rst:87 ../../comparison.rst:94
+msgid "✓"
+msgstr ""
+
+#: ../../comparison.rst:25
+msgid "Easily scriptable"
+msgstr ""
+
+#: ../../comparison.rst:32
+msgid "Native cross-platform support"
+msgstr ""
+
+#: ../../comparison.rst:39
+msgid "Meant as a shell"
+msgstr ""
+
+#: ../../comparison.rst:46
+msgid "Tab completion"
+msgstr ""
+
+#: ../../comparison.rst:53
+msgid "Man-page completion"
+msgstr ""
+
+#: ../../comparison.rst:60
+msgid "Large standard library"
+msgstr ""
+
+#: ../../comparison.rst:67
+msgid "Typed variables"
+msgstr ""
+
+#: ../../comparison.rst:74
+msgid "Syntax highlighting"
+msgstr ""
+
+#: ../../comparison.rst:79
+msgid "in notebook"
+msgstr ""
+
+#: ../../comparison.rst:80
+msgid "w/ prompt-toolkit"
+msgstr ""
+
+#: ../../comparison.rst:81
+msgid "Pun in name"
+msgstr ""
+
+#: ../../comparison.rst:88
+msgid "Rich history"
+msgstr ""
+

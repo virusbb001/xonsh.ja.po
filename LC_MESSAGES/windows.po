@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../windows.rst:3
+msgid "Windows Guide"
+msgstr ""
+
+#: ../../windows.rst:6
+msgid "Installation"
+msgstr ""
+
+#: ../../windows.rst:9
+msgid "The easy way"
+msgstr ""
+
+#: ../../windows.rst:11
+msgid ""
+"The easiest way to install xonsh on windows is through the `Anaconda "
+"Python Distribution <https://www.anaconda.com/download/>`__ and the conda"
+" package manager."
+msgstr ""
+
+#: ../../windows.rst:16
+msgid "Xonsh is not supported on legacy Python (2.7)."
+msgstr ""
+
+#: ../../windows.rst:18
+msgid "Install xonsh with the following command:"
+msgstr ""
+
+#: ../../windows.rst:25
+msgid ""
+"This will install xonsh and all the recommended dependencies. Next, run "
+"xonsh:"
+msgstr ""
+
+#: ../../windows.rst:34
+msgid "Install from source"
+msgstr ""
+
+#: ../../windows.rst:36
+msgid ""
+"To install xonsh from source on Windows, first install `Python v3.4+`_ "
+"from http://python.org. Remember to select \"Add python to PATH\" during "
+"installation."
+msgstr ""
+
+#: ../../windows.rst:39
+msgid "Next, install the prompt_toolkit dependency via ``pip``:"
+msgstr ""
+
+#: ../../windows.rst:45
+msgid ""
+"Download the latest `xonsh-master.zip`_ from github and unzip it to "
+"``xonsh-master``."
+msgstr ""
+
+#: ../../windows.rst:48
+msgid "Now install xonsh:"
+msgstr ""
+
+#: ../../windows.rst:55
+msgid "Next, run xonsh:"
+msgstr ""
+
+#: ../../windows.rst:69
+msgid "Usage"
+msgstr ""
+
+#: ../../windows.rst:72
+msgid "Color style"
+msgstr ""
+
+#: ../../windows.rst:74
+msgid ""
+"The dark red and blue colors are completely unreadable in Windows' "
+"default terminal."
+msgstr ""
+
+#: ../../windows.rst:82
+msgid ""
+"There are ways to configure the colors (see below), but to give new users"
+" the best experience Xonsh has some tricks to fix colors. This is "
+"controlled by the :ref:`$INTENSIFY_COLORS_ON_WIN "
+"<intensify_colors_on_win>` environment variable which is ``True`` by "
+"default."
+msgstr ""
+
+#: ../../windows.rst:87
+msgid "**On Windows 10**"
+msgstr ""
+
+#: ../../windows.rst:89
+msgid ""
+"Windows 10 supports true color in the terminal, so on Win 10 Xonsh will "
+"use a style with hard coded colors instead of the terminal colors."
+msgstr ""
+
+#: ../../windows.rst:97
+msgid "**On older Windows**"
+msgstr ""
+
+#: ../../windows.rst:99
+msgid ""
+"On older windows installations Xonsh takes an other approach and replaces"
+" some of the unreadable dark colors with more readable alternatives (e.g."
+" blue becomes cyan)."
+msgstr ""
+
+#: ../../windows.rst:103
+msgid "**Configure the terminal colors**"
+msgstr ""
+
+#: ../../windows.rst:105
+msgid ""
+"It is possible to configure the Windows console with readable default "
+"colors, but it is tedious to do manually. The Microsoft console team has "
+"made a `handy tool to configure colors`_ in the terminal"
+msgstr ""
+
+#: ../../windows.rst:109
+msgid "`Download Colortool`_ from from GitHub"
+msgstr ""
+
+#: ../../windows.rst:111
+msgid ""
+"With better colors configured, ``$INTENSIFY_COLORS_ON_WIN`` should be set"
+" to ``False`` to allow the console to control the colors. You can do this"
+" by adding the following to the xonsh run control file ``.xonshrc``:"
+msgstr ""
+
+#: ../../windows.rst:124
+msgid "Avoid locking the working directory"
+msgstr ""
+
+#: ../../windows.rst:126
+msgid ""
+"Python (like other processes on Windows) locks the current working "
+"directory so it can't be deleted or renamed. ``cmd.exe`` has this "
+"behaviour as well, but it is quite annoying for a shell."
+msgstr ""
+
+#: ../../windows.rst:130
+msgid ""
+"The :ref:`free_cwd <free_cwd>` xontrib (add-on) for xonsh solves some of "
+"this problem. It works by hooking the prompt to reset the current working"
+" directory to the root drive folder whenever the shell is idle. It only "
+"works with the prompt-toolkit back-end. To enable that behaviour run the "
+"following:"
+msgstr ""
+
+#: ../../windows.rst:135
+msgid "Add this line to your ``~/.xonshrc`` file to have it always enabled."
+msgstr ""
+
+#: ../../windows.rst:143
+msgid "Name space conflicts"
+msgstr ""
+
+#: ../../windows.rst:145
+msgid ""
+"Due to ambiguity with the Python ``dir`` builtin, to list the current "
+"directory via the ``cmd.exe`` builtin you must explicitly request the "
+"``.``, like this:"
+msgstr ""
+
+#: ../../windows.rst:164
+msgid ""
+"Many people create a ``d`` alias for the ``dir`` command to save typing "
+"and avoid the ambiguity altogether:"
+msgstr ""
+
+#: ../../windows.rst:171
+msgid ""
+"You can add aliases to your ``~/.xonshrc`` to have it always available "
+"when xonsh starts."
+msgstr ""
+
+#: ../../windows.rst:177
+msgid "Unicode support for Windows"
+msgstr ""
+
+#: ../../windows.rst:179
+msgid ""
+"Python's utf-8 unicode is not compatible with the default shell 'cmd.exe'"
+" on Windows. The package ``win_unicode_console`` fixes this. Xonsh will "
+"use ``win_unicode_console`` if it is installed. This can be "
+"disabled/enabled with the :ref:`$WIN_UNICODE_CONSOLE "
+"<win_unicode_console>` environment variable."
+msgstr ""
+
+#: ../../windows.rst:181
+msgid ""
+"Even with unicode support enabled the symbols available will depend on "
+"the font used in cmd.exe."
+msgstr ""
+
+#: ../../windows.rst:183
+msgid ""
+"The packages ``win_unicode_console`` can be installed along with xonsh by"
+" using the package name ``xonsh[win]`` or separately using pip or conda."
+msgstr ""
+

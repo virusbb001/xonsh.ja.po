@@ -1,0 +1,6290 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../../CHANGELOG.rst:3
+msgid "Xonsh Change Log"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:8
+msgid "v0.8.12"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:10 ../../../CHANGELOG.rst:52
+#: ../../../CHANGELOG.rst:145 ../../../CHANGELOG.rst:188
+#: ../../../CHANGELOG.rst:233 ../../../CHANGELOG.rst:249
+#: ../../../CHANGELOG.rst:277 ../../../CHANGELOG.rst:302
+#: ../../../CHANGELOG.rst:379 ../../../CHANGELOG.rst:421
+#: ../../../CHANGELOG.rst:474 ../../../CHANGELOG.rst:516
+#: ../../../CHANGELOG.rst:635 ../../../CHANGELOG.rst:663
+#: ../../../CHANGELOG.rst:710 ../../../CHANGELOG.rst:727
+#: ../../../CHANGELOG.rst:761 ../../../CHANGELOG.rst:808
+#: ../../../CHANGELOG.rst:853 ../../../CHANGELOG.rst:894
+#: ../../../CHANGELOG.rst:912 ../../../CHANGELOG.rst:953
+#: ../../../CHANGELOG.rst:973 ../../../CHANGELOG.rst:988
+#: ../../../CHANGELOG.rst:1048 ../../../CHANGELOG.rst:1088
+#: ../../../CHANGELOG.rst:1127 ../../../CHANGELOG.rst:1159
+#: ../../../CHANGELOG.rst:1196 ../../../CHANGELOG.rst:1241
+#: ../../../CHANGELOG.rst:1337 ../../../CHANGELOG.rst:1351
+#: ../../../CHANGELOG.rst:1391 ../../../CHANGELOG.rst:1445
+#: ../../../CHANGELOG.rst:1557 ../../../CHANGELOG.rst:1635
+#: ../../../CHANGELOG.rst:1694 ../../../CHANGELOG.rst:1739
+#: ../../../CHANGELOG.rst:1812 ../../../CHANGELOG.rst:1850
+#: ../../../CHANGELOG.rst:2077 ../../../CHANGELOG.rst:2168
+#: ../../../CHANGELOG.rst:2263 ../../../CHANGELOG.rst:2360
+#: ../../../CHANGELOG.rst:2461 ../../../CHANGELOG.rst:2501
+#: ../../../CHANGELOG.rst:2535 ../../../CHANGELOG.rst:2733
+#: ../../../CHANGELOG.rst:2793 ../../../CHANGELOG.rst:2843
+#: ../../../CHANGELOG.rst:2933 ../../../CHANGELOG.rst:2995
+#: ../../../CHANGELOG.rst:3033 ../../../CHANGELOG.rst:3088
+#: ../../../CHANGELOG.rst:3094
+msgid "**Added:**"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:12
+msgid ""
+"Support for more ANSI escape sequence modifers allowed in color names. "
+"The current modifiers now allowed are: BOLD, FAINT, ITALIC, UNDERLINE, "
+"SLOWBLINK, FASTBLINK, INVERT, CONCEAL, and STRIKETHROUGH."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:15
+msgid ""
+"New ``ansi_tools.ansi_color_name_to_escape_code()`` function for "
+"converting a color name to an ANSI escape code."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:17
+msgid ""
+"``color_tools.RE_XONSH_COLOR`` is a regular expression for matching xonsh"
+" color names."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:19
+msgid ""
+"``color_tools.iscolor()`` is a simple function for testing whether a "
+"string is a valid color name or not."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:21
+msgid ""
+"The ``tools.all_permutations()`` function yields all possible "
+"permutations of an iterable, including removals."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:24 ../../../CHANGELOG.rst:85
+#: ../../../CHANGELOG.rst:151 ../../../CHANGELOG.rst:202
+#: ../../../CHANGELOG.rst:239 ../../../CHANGELOG.rst:348
+#: ../../../CHANGELOG.rst:389 ../../../CHANGELOG.rst:426
+#: ../../../CHANGELOG.rst:454 ../../../CHANGELOG.rst:489
+#: ../../../CHANGELOG.rst:537 ../../../CHANGELOG.rst:645
+#: ../../../CHANGELOG.rst:736 ../../../CHANGELOG.rst:773
+#: ../../../CHANGELOG.rst:824 ../../../CHANGELOG.rst:868
+#: ../../../CHANGELOG.rst:919 ../../../CHANGELOG.rst:1029
+#: ../../../CHANGELOG.rst:1069 ../../../CHANGELOG.rst:1106
+#: ../../../CHANGELOG.rst:1134 ../../../CHANGELOG.rst:1169
+#: ../../../CHANGELOG.rst:1203 ../../../CHANGELOG.rst:1267
+#: ../../../CHANGELOG.rst:1364 ../../../CHANGELOG.rst:1417
+#: ../../../CHANGELOG.rst:1480 ../../../CHANGELOG.rst:1581
+#: ../../../CHANGELOG.rst:1645 ../../../CHANGELOG.rst:1711
+#: ../../../CHANGELOG.rst:1751 ../../../CHANGELOG.rst:1819
+#: ../../../CHANGELOG.rst:1924 ../../../CHANGELOG.rst:2102
+#: ../../../CHANGELOG.rst:2186 ../../../CHANGELOG.rst:2294
+#: ../../../CHANGELOG.rst:2394 ../../../CHANGELOG.rst:2469
+#: ../../../CHANGELOG.rst:2507 ../../../CHANGELOG.rst:2614
+#: ../../../CHANGELOG.rst:2703 ../../../CHANGELOG.rst:2745
+#: ../../../CHANGELOG.rst:2808 ../../../CHANGELOG.rst:2877
+#: ../../../CHANGELOG.rst:2961 ../../../CHANGELOG.rst:3015
+#: ../../../CHANGELOG.rst:3045
+msgid "**Changed:**"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:26
+msgid "change url of xontrib-autojump"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:27
+msgid ""
+"ANSI color styles may now be defined simply by their plain and intense "
+"colors."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:28
+msgid ""
+"``SET_FOREGROUND_3INTS_`` renamed to ``SET_FOREGROUND_FAINT_``, "
+"``SET_BACKGROUND_3INTS_`` renamed to ``SET_BACKGROUND_FAINT_``, "
+"``SET_FOREGROUND_SHORT_`` renamed to ``SET_FOREGROUND_SLOWBLINK_``, and "
+"``SET_BACKGROUND_SHORT_`` renamed to ``SET_BACKGROUND_SLOWBLINK_``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:33 ../../../CHANGELOG.rst:120
+#: ../../../CHANGELOG.rst:876 ../../../CHANGELOG.rst:1178
+#: ../../../CHANGELOG.rst:1369 ../../../CHANGELOG.rst:1667
+#: ../../../CHANGELOG.rst:1773 ../../../CHANGELOG.rst:2000
+#: ../../../CHANGELOG.rst:2121 ../../../CHANGELOG.rst:2222
+#: ../../../CHANGELOG.rst:2323 ../../../CHANGELOG.rst:2417
+#: ../../../CHANGELOG.rst:2480 ../../../CHANGELOG.rst:2658
+#: ../../../CHANGELOG.rst:2762 ../../../CHANGELOG.rst:2816
+#: ../../../CHANGELOG.rst:2977 ../../../CHANGELOG.rst:3058
+msgid "**Removed:**"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:35
+msgid ""
+"``ansi_tools.ANSI_REVERSE_COLOR_NAME_TRANSLATIONS`` removed, as it is no "
+"longer needed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:38 ../../../CHANGELOG.rst:124
+#: ../../../CHANGELOG.rst:159 ../../../CHANGELOG.rst:209
+#: ../../../CHANGELOG.rst:266 ../../../CHANGELOG.rst:282
+#: ../../../CHANGELOG.rst:368 ../../../CHANGELOG.rst:400
+#: ../../../CHANGELOG.rst:435 ../../../CHANGELOG.rst:460
+#: ../../../CHANGELOG.rst:499 ../../../CHANGELOG.rst:552
+#: ../../../CHANGELOG.rst:650 ../../../CHANGELOG.rst:697
+#: ../../../CHANGELOG.rst:715 ../../../CHANGELOG.rst:741
+#: ../../../CHANGELOG.rst:779 ../../../CHANGELOG.rst:794
+#: ../../../CHANGELOG.rst:835 ../../../CHANGELOG.rst:881
+#: ../../../CHANGELOG.rst:900 ../../../CHANGELOG.rst:926
+#: ../../../CHANGELOG.rst:963 ../../../CHANGELOG.rst:978
+#: ../../../CHANGELOG.rst:996 ../../../CHANGELOG.rst:1010
+#: ../../../CHANGELOG.rst:1034 ../../../CHANGELOG.rst:1078
+#: ../../../CHANGELOG.rst:1094 ../../../CHANGELOG.rst:1112
+#: ../../../CHANGELOG.rst:1142 ../../../CHANGELOG.rst:1186
+#: ../../../CHANGELOG.rst:1211 ../../../CHANGELOG.rst:1288
+#: ../../../CHANGELOG.rst:1326 ../../../CHANGELOG.rst:1343
+#: ../../../CHANGELOG.rst:1374 ../../../CHANGELOG.rst:1397
+#: ../../../CHANGELOG.rst:1426 ../../../CHANGELOG.rst:1519
+#: ../../../CHANGELOG.rst:1591 ../../../CHANGELOG.rst:1674
+#: ../../../CHANGELOG.rst:1720 ../../../CHANGELOG.rst:1778
+#: ../../../CHANGELOG.rst:1826 ../../../CHANGELOG.rst:1840
+#: ../../../CHANGELOG.rst:2013 ../../../CHANGELOG.rst:2126
+#: ../../../CHANGELOG.rst:2229 ../../../CHANGELOG.rst:2332
+#: ../../../CHANGELOG.rst:2426 ../../../CHANGELOG.rst:2485
+#: ../../../CHANGELOG.rst:2512 ../../../CHANGELOG.rst:2524
+#: ../../../CHANGELOG.rst:2671 ../../../CHANGELOG.rst:2713
+#: ../../../CHANGELOG.rst:2766 ../../../CHANGELOG.rst:2783
+#: ../../../CHANGELOG.rst:2821 ../../../CHANGELOG.rst:2906
+#: ../../../CHANGELOG.rst:2984 ../../../CHANGELOG.rst:3021
+#: ../../../CHANGELOG.rst:3065
+msgid "**Fixed:**"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:40
+msgid "Fixed issues where ``$LS_COLORS`` could not convert valid ANSI colors."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:42 ../../../CHANGELOG.rst:135
+#: ../../../CHANGELOG.rst:177 ../../../CHANGELOG.rst:218
+msgid "**Authors:**"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:44 ../../../CHANGELOG.rst:137
+#: ../../../CHANGELOG.rst:179 ../../../CHANGELOG.rst:220
+msgid "Anthony Scopatz"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:45
+msgid "virus"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:50
+msgid "v0.8.11"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:54
+msgid ""
+"New ``xonsh.color_tools.short_to_ints()`` function for directly "
+"converting a short (0 - 256) color into a 3-tuple of ints representing "
+"its RGB value."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:57
+msgid ""
+"New ``xonsh.ansi_colors.ansi_reverse_style()`` function for converting a "
+"mapping of color names to ANSI escape codes into a mapping from escape "
+"codes into color names. This is not a round-trippable operation."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:61
+msgid ""
+"New ``xonsh.ansi_colors.ansi_color_escape_code_to_name()`` function for "
+"converting an ANSI color escape code into the closest xonsh color name "
+"for a given style."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:64
+msgid ""
+"New ``xonsh.events.EventManager.exists()`` method enables checking "
+"whether events actually exist without making the event if it doesn't "
+"exist."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:67
+msgid ""
+"New command-specific event categories called ``on_pre_spec_run_<cmd-"
+"name>`` and ``on_post_spec_run_<cmd-name>`` will be fired before and "
+"after ``SubpocSpec.run()`` is called.  This allows for command specific "
+"events to be executed.  For example, ``on_pre_spec_run_ls`` would be run "
+"prior to an invocation of ``ls``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:72
+msgid ""
+"New ``xonsh.environ.LsColors`` class for managing the ``$LS_COLORS`` "
+"environment variable. This ensures that the ``ls`` command respects the "
+"``$XONSH_COLOR_STYLE`` setting. An instance of this class is added to the"
+" environment when either the ``$LS_COLORS`` class is first accessed or "
+"the ``ls`` command is executed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:77
+msgid ""
+"The ``on_pre_spec_run_ls`` event is initialized with a default handler "
+"that ensures that ``$LS_COLORS`` is set in the actual environment prior "
+"to running an ``ls`` command."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:80
+msgid ""
+"New ``xonsh.tools.detype()`` function that simply calls an object's own "
+"``detype()`` method in order to detype it."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:82
+msgid "New ``xonsh.tools.always_none()`` function that simply returns ``None``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:83
+msgid "New ``Env.set_ensurer()`` method for setting an ensurer on an environment."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:87
+msgid ""
+"The black and white style ``bw`` now uses actual black and white ANSI "
+"colore codes for its colors, rather than just empty color sequences."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:90
+msgid ""
+"An environment variable ``detype`` operation no longer needs to be a "
+"function, but may also be ``None``. If ``None``, this variable is "
+"considered not detypeable, and will not be exported to subprocess "
+"environments via the ``Env.detype()`` function."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:94
+msgid ""
+"An environment variable ``detype`` function no longer needs to return a "
+"string, but may also return ``None``. If ``None`` is returned, this "
+"variable is  considered not detypeable, and will not be exported to "
+"subprocess environments via the ``Env.detype()`` function."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:98
+msgid ""
+"The ``Env.detype()`` method has been updated to respect the new ``None`` "
+"types when detyping."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:100
+msgid ""
+"The ``xonsh.tools.expandvars()`` function has been updated to respect the"
+" new ``None`` types when detyping."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:102
+msgid ""
+"The ``xonsh.xonfig.make_xonfig_wizard()`` function has been updated to "
+"respect the new ``None`` types when detyping."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:104
+msgid ""
+"Event handlers may now be added and discarded during event firing for "
+"normal events.  Such modifications will not be applied until the current "
+"firing operation is concluded. Thus you won't see newly added events "
+"fired."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:108
+msgid ""
+"xonsh now uses its own vendored version of ply. Any installed versions "
+"will no longer be used. This reflects that ply is no longer distributed "
+"as an installable package."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:110
+msgid "Updated to use ply version 3.11."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:111
+msgid ""
+"Reverted change in ``give_to_terminal`` to restore working version of "
+"``cmake``, ``rm -i``, etc.  This breaks ``pv | head``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:114 ../../../CHANGELOG.rst:545
+#: ../../../CHANGELOG.rst:1281 ../../../CHANGELOG.rst:1661
+#: ../../../CHANGELOG.rst:2411
+msgid "**Deprecated:**"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:116
+msgid ""
+"The ``xonsh.color_tools.make_pallete()`` function is no longer "
+"deprecated, as it is actually needed in other parts of xonsh still, such "
+"as ``pyghooks``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:122
+msgid "All code references to ``$FORMATTER_DICT`` have been removed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:126
+msgid ""
+"Resolved issues where macro functions were not able to properly accept "
+"single-line statements in ``exec`` and ``single`` mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:128
+msgid "Minor fixes to ``xonsh.events.debug_level()``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:129
+msgid ""
+"Fixed a regression where some interactive commands were not waited for "
+"properly for long enough."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:131
+msgid "Fixed environments not showing in the prompt when using Anaconda Python."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:133
+msgid ""
+"Fixed regression with anaconda activate/deactivate scripts not working on"
+" Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:138
+msgid "Morten Enemark Lund"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:143
+msgid "v0.8.10"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:147
+msgid ""
+"New ``xonsh.aliases.partial_eval_alias()`` function and related classes "
+"for dispatching and evaluating partial alias applications for callable "
+"aliases."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:153
+msgid ""
+"Subprocesses will no longer close file descriptors automatically. This "
+"was causing issues with other commands that expected file descriptors to "
+"remain open, such as ``make``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:156
+msgid ""
+"The ``xonsh.Aliases.eval_alias()`` method updated to use "
+"``xonsh.aliases.partial_eval_alias()``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:161
+msgid ""
+"Fixed ``xonsh.completers.base.complete_base()`` to no longer throw an "
+"error caused by ``complete_python()`` sometimes returning a tuple. This "
+"fixes cases such as ``ls &&<TAB>``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:164
+msgid ""
+"Fixed regression with line continuations in implicit subprocess mode "
+"within indented blocks of code, such as if-statements."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:166
+msgid ""
+"Resolved issue where setting empty signal masks was causing the terminal "
+"to close. This was problematic for certain command pipelines. For "
+"example, ``pv /dev/urandom | head`` now works."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:169
+msgid ""
+"Prevents recursive errors from being raised when there is no child "
+"process in ``xonsh.jobs.wait_for_active_job()``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:171
+msgid ""
+"Tweaked ``xonsh.completers.commands.complete_skipper()`` to insert a "
+"space following certain tokens (``&&``, ``||``, ``|``, ``and``, ``or``) "
+"to avoid overwriting existing tokens with completer output."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:174
+msgid ""
+"Fixed bug with evaluating recursive aliases that did not implement the "
+"full callable alias signature."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:180
+msgid "Gil Forsyth"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:181
+msgid "Troy de Freitas"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:186
+msgid "v0.8.9"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:190
+msgid ""
+"New ``env_prefix`` & ``env_postfix`` prompt fields for rendering the pre-"
+" and post-fix characters of the an active virtual environment."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:192
+msgid "ON_WSL attribute in platform.py"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:193
+msgid ""
+"Rendering of ``{env_name}`` in ``$PROMPT`` is now suppressed if the "
+"``$VIRTUAL_ENV_DISABLE_PROMPT`` environment variable is defined and "
+"truthy."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:196
+msgid ""
+"Rendering of ``{env_name}`` in ``$PROMPT`` is now overridden by the value"
+" of ``str($VIRTUAL_ENV_PROMPT)`` if that environment variable is defined "
+"and ``not None``. ``$VIRTUAL_ENV_DISABLE_PROMPT`` takes precedence over "
+"``$VIRTUAL_ENV_PROMPT``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:200
+msgid "A xontrib which adds support for `direnv <https://direnv.net/>`_"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:204
+msgid ""
+"``env_name`` prompt field now looks up the pre- and post-fix characters, "
+"rather than relying on hard-coded values."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:206
+msgid "Some minor ``history show`` efficiency improvements."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:207
+msgid "If we are on wsl, avoid to use xonsh_preexec_fn when pipe."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:211
+msgid "Made ``$PATH`` searching more robust to broken symlinks on Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:212
+msgid "undesirable SIGSTOP by putting in a SIGCONT"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:213
+msgid ""
+"Fixed issue with recursive aliases not being passed all keyword arguments"
+" that are part of the callable alias spec. This allows commands like "
+"``aliases['hsa'] = \"history show all\"; hsa | head`` to no longer fail "
+"with strange errors."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:221
+msgid "Sagar Tewari"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:222
+msgid "Brian Skinn"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:223
+msgid "Yohei Tamura"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:224
+msgid "anatoly techtonik"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:225
+msgid "74th"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:226
+msgid "Chad Kennedy"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:231
+msgid "v0.8.8"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:235
+msgid ""
+"``vox new`` has an added ``-p --interpreter`` flag for choosing the "
+"Python interpreter to use for virtualenv creation"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:236
+msgid ""
+"The default Python intrepreter vox uses to create virtual environments "
+"can be set using the ``$VOX_DEFAULT_INTERPRETER`` environment variable."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:241
+msgid "``lib.ChainDB`` now resolves results to the type of the inputs if possible"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:247
+msgid "v0.8.7"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:251
+msgid "New xonsh syntax ``pf`` strings -- combining path strings with f-strings."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:253
+msgid "Usage:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:268
+msgid ""
+"Set ``ls`` to ``predict_true`` in ``default_threadable_predictors``.  "
+"This prevents ``ls`` on OSX from being flagged on OSX as unthreadable "
+"(incorrectly) because it relies on ``ncurses``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:275
+msgid "v0.8.6"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:279
+msgid ""
+"Doco about how to update xonsh and how to set and unset environment "
+"variables"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:284
+msgid ""
+"Updated behavior of the ``cat`` coreutils function so that it properly "
+"handles as vareity of cases such as:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:287
+msgid "Exits after concatenating normal files which have a finite size"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:288
+msgid ""
+"Continues to run for special files which do not have a size, such as "
+"``/dev/random``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:290
+msgid "Is interruptable in all cases with Crtl-C."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:291
+msgid ""
+"Callable aliases were not properly raising a ``CalledProcessError`` when "
+"they returned a non-zero exist status when ``$RAISE_SUBPROC_ERROR = "
+"True``. This has been fixed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:294
+msgid "Fixed interpretation of color names with PTK2 and Pygments 2.3.1."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:300
+msgid "v0.8.5"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:304
+msgid ""
+"Add alias to `base16 shell "
+"<https://github.com/chriskempson/base16-shell>`_"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:325
+msgid "Installation / Usage"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:307
+msgid "To install use pip"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:313
+msgid "Add on ``~/.xonshrc``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:322
+msgid "See image"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:327
+msgid ""
+"New ``DumbShell`` class that kicks in whenever ``$TERM == \"dumb\"``. "
+"This usually happens in emacs. Currently, this class inherits from the "
+"``ReadlineShell`` but adds some light customization to make sure that "
+"xonsh looks good in the resultant terminal emulator."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:331
+msgid ""
+"Aliases from foreign shells (e.g. Bash) that are more than single "
+"expressions, or contain sub-shell executions, are now evaluated and run "
+"in the foreign shell. Previously, xonsh would attempt to translate the "
+"alias from sh-lang into xonsh. These restrictions have been removed.  For"
+" example, the following now works:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:343
+msgid ""
+"New ``ForeignShellBaseAlias``, ``ForeignShellFunctionAlias``, and "
+"``ForeignShellExecAlias`` classes have been added which manage foreign "
+"shell alias execution."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:350
+msgid ""
+"String aliases will now first be checked to see if they contain sub-"
+"expressions that require evaluations, such as ``@(expr)``, ``$[cmd]``, "
+"etc. If they do, then an ``ExecAlias`` will be constructed, rather than a"
+" simple list-of-strs substitutiuon alias being used. For example:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:363
+msgid "The ``parse_aliases()`` function now requires the shell name."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:364
+msgid ""
+"``ForeignShellFunctionAlias`` now inherits from ``ForeignShellBaseAlias``"
+" rather than ``object``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:370
+msgid ""
+"Fixed issues where the prompt-toolkit v2 shell would print an extra "
+"newline after Python evaluations in interactive mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:377
+msgid "v0.8.4"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:381
+msgid ""
+"Added the possibility of arbitrary paths to the help strings in ``vox "
+"activate`` and ``vox remove``; also updated the documentation "
+"accordingly."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:383
+msgid "New ``xonsh.aliases.ExecAlias`` class enables multi-statement aliases."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:384
+msgid ""
+"New ``xonsh.ast.isexpression()`` function will return a boolean of "
+"whether code is a simple xonsh expression or not."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:386
+msgid ""
+"Added top-level ``run-tests.xsh`` script for safely running the test "
+"suite."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:391
+msgid ""
+"String aliases are no longer split with ``shlex.split()``, but instead "
+"use ``xonsh.lexer.Lexer.split()``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:393
+msgid ""
+"Update xonsh/prompt/cwd.py _collapsed_pwd to print 2 chars if a directory"
+" begins with \".\""
+msgstr ""
+
+#: ../../../CHANGELOG.rst:394
+msgid "test which determines whether a directory is a virtualenv"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:396
+msgid ""
+"previously it used to check the existence of 'pyvenv.cfg' now it checks "
+"if 'bin/python' is executable"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:402
+msgid ""
+"Fixed issue with ``and`` & ``or`` being incorrectly tokenized in implicit"
+" subprocesses. Auto-wrapping of certain subprocesses will now correctly "
+"work. For example::"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:408
+msgid "Fix EOFError when press `control+d`"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:409
+msgid "fix no candidates if no permission files in PATH"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:410
+msgid "Fixed interpretation of color names with PTK2 and Pygments 2.3."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:411
+msgid "Several ResourceWarnings: unclosed file in tests"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:412
+msgid "AttributeError crash when using --timings flag"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:413
+msgid "issue #2929"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:419
+msgid "v0.8.3"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:423
+msgid "Dociumentation paragrapgh about gow to run xonsh in Emacs shell"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:428
+msgid "Updated what pip requirements are needed to build the documnetaion"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:429
+msgid ""
+"``$XONSH_TRACEBACK_LOGFILE`` now beside strings also accepts "
+"``os.PathLike`` objects."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:431
+msgid "Updated vended version of ``ply`` to 3.11"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:432
+msgid "Deprecation warnings now print from stacklevel 3."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:437
+msgid ""
+"Annotation assignment statements (e.g. ``x : int = 42``) are now "
+"supported."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:438
+msgid "Fixed error output wording for fg and bg commands"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:439
+msgid "Flake8 errors"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:440
+msgid ""
+"xonsh can now properly parse import statements with trailing comma within"
+" parentheses, e.g.::"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:444
+msgid "ResourceWarning: unclosed scandir iterator in imphooks.py"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:445
+msgid ""
+"Removed use of deprecated ``inspect.formatargspec()`` for "
+"``inspect.signature()``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:446
+msgid "``Makefile`` directive that updates vended version of ``ply``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:452
+msgid "v0.8.2"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:456
+msgid ""
+"Now there is only a single instance of ``string.Formatter()`` in the code"
+" base, which is called ``xonsh.tools.FORMATTER``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:462
+msgid ""
+"f-strings (``f\"{expr}\"``) are now fully capable of executing xonsh "
+"expressions. The one exception to this is that ``![cmd]`` and ``!(cmd)`` "
+"don't work because the ``!`` character interferes with Python string "
+"formatting. If you need to run subprocesses inside of f-strings, use "
+"``$[cmd]`` and ``$(cmd)`` instead."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:466
+msgid "Fixed occasional \"no attribute 'settitle' error\""
+msgstr ""
+
+#: ../../../CHANGELOG.rst:472
+msgid "v0.8.1"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:476
+msgid ""
+"``SubprocSpec`` has a new ``pipeline_index`` integer attribute that "
+"indicates the commands position in a pipeline. For example, in"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:483
+msgid ""
+"The ``ls`` command would have a pipeline index of 0 "
+"(``p.specs[0].pipeline_index == 0``) and ``grep`` would have a pipeline "
+"index of 1 (``p.specs[1].pipeline_index == 1``).  This may be usefule in "
+"callable alaises which recieve the spec as an argument."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:491
+msgid "Removed ``fish`` from list of supported foreign shells in the wizard."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:492
+msgid "Circle CI config updated to use a pinned version of ``black`` (18.9b0)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:493
+msgid "Pytest plugin now uses ``xonsh.main.setup()`` to setup test environment."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:494
+msgid ""
+"Linux platform discovery will no longer use "
+"``platform.linux_distribution()`` on Python >=3.6.6. due to pending "
+"deprecation warning."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:496
+msgid ""
+"Updated Linux Guide as Xonsh is now available in Arch Linux official "
+"repositories."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:501
+msgid ""
+"Builtin dynamic proxies and deprecation warning proxies were not deleting"
+" attributes and items properly."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:503
+msgid ""
+"Fixed stdout/sdterr writing infinite recursion error that would occur in "
+"long pipelines of callable aliases."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:505
+msgid ""
+"Fixed a bug which under very rare conditions could cause the shell to die"
+" with PermissionError exception while sending SIGSTOP signal to a child "
+"process."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:508
+msgid "Fixed further raw string deprecation warnings thoughout the code base."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:514
+msgid "v0.8.0"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:518
+msgid "Windows CI jobs on Azure Pipelines"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:519
+msgid ""
+"The ``cryptop`` command will no longer have its output captured by "
+"default."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:521
+msgid ""
+"Added new env-var ``PTK_STYLE_OVERRIDES``. The variable is a dictionary "
+"containing custom prompt_toolkit style definitions. For instance::"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:527
+msgid "will provide for more visually pleasing completion menu style whereas::"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:531
+msgid ""
+"will prevent prompt_toolkit from inverting the bottom toolbar colors "
+"(useful for powerline extension users)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:534
+msgid "Note: This only works with prompt_toolkit 2 prompter."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:539
+msgid ""
+"All ``__xonsh_*__`` builtins have been migrated to a ``XonshSession`` "
+"instance at ``__xonsh__``. E.g. ``__xonsh_env__`` is now "
+"``__xonsh__.env``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:541
+msgid ""
+"Other xonsh-specific builtins (such as ``XonshError``) have been proxied "
+"to the ``__xonsh__`` session object as well."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:547
+msgid ""
+"All ``__xonsh_*__`` builtins are deprected. Instead, the corresponding "
+"``__xonsh__.*`` accessor should be used. The existing ``__xonsh_*__`` "
+"accessors still work, but issue annoying warnings."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:554
+msgid ""
+"Fixed deprecation warnings from unallowed escape sequences as well as "
+"importing abstract base classes directly from ``collections``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:555
+msgid "Fix for string index error in stripped prefix"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:556
+msgid "bash_completions to include special characters in lprefix"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:558
+msgid ""
+"Previously, glob expansion characters would not be included in lprefix "
+"for replacement"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:580
+msgid "Now, lprefix begins at the first special character:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:600
+msgid ""
+"The ``xonsh.main.setup()`` function now correctly passes the "
+"``shell_type`` argument to the shell instance."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:602
+msgid ""
+"try_subproc_toks now works for subprocs with trailing and leading "
+"whitespace"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:604
+msgid ""
+"Previously, non-greedy wrapping of commands would fail if they had "
+"leading and trailing whitespace:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:617
+msgid "Now, the commands are parsed as expected:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:633
+msgid "v0.7.10"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:637
+msgid ""
+"'off' can be passed as falsy value to all flags accepting boolean "
+"argument."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:638
+msgid "DragonFly BSD support"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:639
+msgid ""
+"Format strings (f-strings) now allow environment variables to be looked "
+"up. For example, ``f\"{$HOME}\"`` will yield ``\"/home/user\"``. Note "
+"that this will look up and fill in the ``detype()``-ed version of the "
+"environment variable, i.e. it's native string representation."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:647
+msgid ""
+"Running ``aurman`` command will now be predicted to be unthreaded by "
+"default."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:652
+msgid ""
+"The xonsh ``xonfig wizard`` would crash if an unknown foreign shell was "
+"provided. This has been fixed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:654
+msgid "The ``hg split`` command will now predict as unthreadable."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:655
+msgid "Fixed path completer crash on attempted f-string completion"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:661
+msgid "v0.7.9"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:665
+msgid ""
+"The python-mode ``@(expr)`` syntax may now be used inside of subprocess "
+"arguments, not just as a stand-alone argument. For example:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:674
+msgid ""
+"This syntax will even properly expand to the outer product if the "
+"``expr`` is a list (or other non-string iterable) of values:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:685
+msgid "Previously this was not possible."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:686
+msgid ""
+"New ``$DOTGLOB`` environment variable enables globs to match \"hidden\" "
+"files which start with a literal ``.``. Set this variable to ``True`` to "
+"get this matching behavior. Cooresponding API changes have been made to "
+"``xonsh.tools.globpath()`` and ``xonsh.tools.iglobpath()``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:691
+msgid ""
+"New environment variable ``$FOREIGN_ALIASES_SUPPRESS_SKIP_MESSAGE`` "
+"enables the removal of skipping foreign alias messages."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:693
+msgid ""
+"New ``--suppress-skip-message`` command line option for skipping foreign "
+"alias messages when sourcing foreign shells."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:699
+msgid ""
+"In Bash completions, if there are no files to source, a ``set()`` will no"
+" longer be inserted into the completion script."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:701
+msgid ""
+"Fixed issue with TAB completion in readline not replacing values with "
+"spaces properly when the prefix was unquoted."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:708
+msgid "v0.7.8"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:712
+msgid ""
+"``xonsh.lib.collections.ChainDB``, a chain map which merges mergable "
+"fields"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:717
+msgid "Pass all params to voxapi.create"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:718
+msgid ""
+"PTK tab-completion now auto-accepts completion if only one option is "
+"present (note that fix is only for PTK2)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:725
+msgid "v0.7.7"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:729
+msgid "A xontrib which adds support for autojump to xonsh"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:730
+msgid ""
+"Added new env-var ``XONSH_HISTORY_MATCH_ANYWHERE``. If set to ``True`` "
+"then up-arrow history matching will match existing history entries with "
+"the search term located anywhere, not just at the beginning of the line. "
+"Default value is ``False``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:738
+msgid "Improved iteration over virtual environments in ``Vox.__iter__``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:743
+msgid "Fix for ``Enter`` not returning from Control-R search buffer"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:744
+msgid ""
+"Fixed automatic wrapping of many subprocesses that spanned multiple lines"
+" via line continuation characters with logical operators separating the "
+"commands. For example, the following now works:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:752
+msgid ""
+"Environment swapping would not properly reraise errors due to weird "
+"Python name binding issue."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:759
+msgid "v0.7.6"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:763
+msgid ""
+"Callable aliases may now accept a ``stack`` argument. If they do, then "
+"the stack, as computed from the aliases call site, is provided as a list "
+"of ``FrameInfo`` objects (as detailed in the standard library ``inspect``"
+" module). Otherwise, the ``stack`` parameter is ``None``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:767
+msgid ""
+"``SubprocSpec`` now has a ``stack`` attribute, for passing the call stack"
+" to callable aliases. This defaults to ``None`` if the spec does not need"
+" the stack. The ``resolve_stack()`` method computes the ``stack`` "
+"attribute."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:775
+msgid ""
+"xonsh/environ.py Exceptions are caught in the code executed under "
+"Env.swap()"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:781
+msgid "Scripts are now cached by their realpath, not just abspath."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:782
+msgid ""
+"Fixed a potential crash (``AssertionError: wrong color format``) on "
+"Python 3.5 and prompt_toolkit 1."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:783
+msgid ""
+"The ``completer`` command now correctly finds completion functions when "
+"nested inside of other functions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:785
+msgid ""
+"Fixed a crash when using the ``$XONSH_STDERR_PREFIX/POSTFIX`` with "
+"prompt_toolkit and Pygments 2.2."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:792
+msgid "v0.7.5"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:796
+msgid ""
+"Recent command history in ptk2 prompt now returns most recently executed "
+"commands first (as expected)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:798
+msgid ""
+"Fixed a regression taat prevented the readline backend from beeing used. "
+"This regression was caused by the new ansi-color names, which are "
+"incompatible with pygments 2.2."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:806
+msgid "v0.7.4"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:810
+msgid ""
+"New ``xonsh-cat`` command line utility, which is a xonsh replacement for "
+"the standard UNIX ``cat`` command."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:812
+msgid ""
+"The new ``xonsh.xoreutils.cat.cat_main()`` enables the "
+"``xonsh.xoreutils.cat`` module to be run as a command line utility."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:814
+msgid ""
+"New ``CommandsCache.is_only_functional_alias()`` and "
+"``CommandsCache.lazy_is_only_functional_alias()`` methods for determining"
+" if if a command name is only implemented as a function, and thus has no "
+"underlying binary command to execute."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:818
+msgid ""
+"``xonsh.xontribs.xontribs_load()`` is a new first-class API for loading "
+"xontribs via a Python function."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:820
+msgid ""
+"``$COMPLETIONS_DISPLAY`` now supports readline-like behavior on prompt-"
+"toolkit v2."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:826
+msgid ""
+"The xonsh Jupyter kernel now will properly redirect the output of "
+"commands such as ``git log``, ``man``, ``less`` and other paged commands "
+"to the client. This is done by setting ``$PAGER = 'cat'``. If ``cat`` is "
+"not available on the system, ``xonsh-cat`` is used instead."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:830
+msgid ""
+"The ``setup()`` function for starting up a working xonsh has ``aliases``,"
+" ``xontribs``, and ``threadable_predictors`` as new additional keyword "
+"arguments for customizing the loading of xonsh."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:837
+msgid ""
+"Fixed a bug with converting new PTK2 colors names to old names when using"
+" PTK1 or Jupyter"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:838
+msgid "as the shell type."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:839
+msgid ""
+"``CommandsCache.locate_binary()`` will now properly return None when "
+"``ignore_alias=False`` and the command is only a functional alias, such "
+"as with ``cd``. Previously, it would return the name of the command."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:843
+msgid ""
+"Fixed issue with ``$COMPLETIONS_DISPLAY`` raising an error on prompt-"
+"toolkit v2 when the value was not set to ``multi``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:845
+msgid "ValueError when executing ``vox list``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:851
+msgid "v0.7.3"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:855
+msgid ""
+"Add the ``PROMPT_TOOLKIT_COLOR_DEPTH`` environment to xonsh default "
+"environment. Possible values are ``DEPTH_1_BIT``/``MONOCHROME``, "
+"``DEPTH_4_BIT``/``ANSI_COLORS_ONLY``, ``DEPTH_8_BIT``/``DEFAULT``, or "
+"``DEPTH_24_BIT``/``TRUE_COLOR``. Note: not all terminals support all "
+"color depths."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:859
+msgid ""
+"New way to fix unreadable default terminal colors on Windows 10. Windows "
+"10 now supports true color in the terminal, so if prompt toolkit 2 is "
+"installed Xonsh will use a style with hard coded colors instead of the "
+"default terminal colors. This will give the same color experience as on "
+"linux an mac. The behaviour can be disabled with "
+"``$INTENSIFY_COLORS_ON_WIN`` environment variable."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:865
+msgid "New ``JupyterShell`` for interactive interfacing with Jupyter."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:870
+msgid ""
+"All ansicolor names used in styles have ben updated to the color names "
+"used by prompt_toolkit 2. The new names are are much easier to understand"
+" (e.g. ``ansicyan``/``ansibrightcyan`` vs. the old "
+"``#ansiteal``/``#ansiturquoise``). The names are automatically translated"
+" back when using prompt_toolkit 1."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:878
+msgid "Removed support for pygments < 2.2."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:883
+msgid ""
+"New ansi-color names fixes the problem with darker colors using "
+"prompt_toolkit 2 on windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:884
+msgid ""
+"Fixed a problem with the color styles on prompt toolkit 2. The default "
+"pygment style is no longer merged into style selected in xonsh."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:886
+msgid "The JupyterKernel has been fixed from a rather broken state."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:892
+msgid "v0.7.2"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:896
+msgid ""
+"``history show`` builtin now supports optional ``-0`` parameter that "
+"switches the output to null-delimited. Useful for piping history to "
+"external filters."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:902
+msgid ""
+"If exception is raised in indir context manager, return to original "
+"directory"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:903
+msgid ""
+"Fixed issue that autocomplete menu does not display at terminal's maximum"
+" height"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:910
+msgid "v0.7.1"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:914
+msgid "Added feature to aliases."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:915
+msgid ""
+"``xonsh.lib.os.rmtree()`` an rmtree which works on windows properly (even"
+" with git)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:921
+msgid "set default value of ``$AUTO_SUGGEST_IN_COMPLETIONS=False``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:922
+msgid ""
+"Use the ``pygments_cache.get_all_styles()`` function instead of "
+"interacting directly with pygments."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:928
+msgid ""
+"Fixed issue with ``$ARG<N>`` varaibles not being passed to subprocesses "
+"correctly."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:929
+msgid ""
+"Fixed issue with multiline string inside of ``@(expr)`` in unwrapped "
+"subprocesses. For example, the following now works::"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:934
+msgid ""
+"``CommandPipeline.output`` now does properly lazy, non-blocking creation "
+"of output string. ``CommandPipeline.out`` remains blocking."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:936
+msgid ""
+"Fix regression in ``INTENSIFY_COLORS_ON_WIN`` functionality due to "
+"prompt_toolkit 2 update."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:937
+msgid ""
+"Fixed issue that can't insert quotation marks and double quotes for "
+"completion."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:939
+msgid ""
+"Fixed issue with ``SyntaxErrors`` being reported on the wrong line when a"
+" block of code contained multiple implicit subprocesses."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:941
+msgid "``prompt_toolkit >= 2`` will start up even if Pygments isn't present"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:942
+msgid ""
+"Fixed a regression with ``xonfig styles`` reporting ``AttributeError: "
+"module 'pygments' has no attribute 'styles'``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:943
+msgid ""
+"ptk dependent xontribs (that use custom keybindings) now work with both "
+"ptk1 and ptk2"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:945
+msgid "Fixed async tokenizing issue on Python v3.7."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:951
+msgid "v0.7.0"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:955
+msgid "Added a hook for printing a spcial display method on an object."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:956
+msgid "Support for ``prompt_toolkit 2.0``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:957
+msgid ""
+"The ``--shell-type`` (``$SHELL_TYPE``) may now be specified using "
+"shortcuts, such as ``rl`` for ``readline`` and ``ptk2`` for "
+"``prompt_toolkit2``. See ``xonsh --help`` for a full listing of available"
+" aliases."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:965
+msgid "Restored AUGASSIGN_OPS definition, which was inadvertently removed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:971
+msgid "v0.6.10"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:975
+msgid "``xonsh.lib.subprocess.check_output`` as a ``check_output`` drop in"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:980
+msgid "``xonsh.lib.subprocess.run`` doesn't change dirs unless asked"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:986
+msgid "v0.6.9"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:990
+msgid "New xonsh standard library ``xonsh.lib`` subpackage"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:991
+msgid ""
+"``xonsh.lib.os.indir`` a context manager for temporarily entering into a "
+"directory"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:992
+msgid ""
+"``xonsh.lib.subprocess.run`` and ``xonsh.lib.subprocess.check_call`` "
+"subprocess stubs using ``xonsh`` as the backend"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:998
+msgid "update xoreutils._which.which() for python 3.x support."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:999
+msgid "Fixed issue with incorrect strip lengths for prefixes with quotes in them"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1000
+msgid ""
+"Fixed bash script to also consider leading double quotes and not just "
+"single quotes"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1002
+msgid ""
+"Launching xonsh with prompt_toolkit version 2.x no longer fails, and "
+"instead fallsback to readline shell. This is a patch for until "
+"prompt_toolkit 2.x support is fully implemented. See PR #2570"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1008
+msgid "v0.6.8"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1012
+msgid "completions relative to ``CDPATH`` only trigger when used with ``cd``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1013
+msgid ""
+"Import of ``ctypes.util`` is now explictly performed, as needed. Python "
+"v3.7 no longer imports this module along with ``ctypes``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1015
+msgid ""
+"Fixed issue with pygments-cache not properly generating a cache the first"
+" time when using prompt-toolkit. This was due to a lingering lazy import "
+"of ``pkg_resources`` that has been removed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1018
+msgid "Removed duplicate ``pip`` completer"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1019
+msgid ""
+"``bash_completion`` no longer returns invalid prefix lengths for "
+"directories containing escape file names"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1021
+msgid "Fixed error when using redirection (e.g., >) on Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1027
+msgid "v0.6.7"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1031
+msgid "Xonsh live example has been re-added back to the documentation."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1036
+msgid ""
+"Fixed issue where xonsh would fail to properly return the terminal prompt"
+" (and eat up 100% CPU) after a failed subprocess command in interactive "
+"mode if ``$RAISE_SUBPROC_ERROR = True``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1039
+msgid ""
+"``xonsh.tokenize.tok_name`` no longer mutates the standard library "
+"``tokenize.tok_name``. A copy is made on import instead."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1046
+msgid "v0.6.6"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1050
+msgid "A multipurpose add method to EnvPath. For example:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1066
+msgid "Added ``pygments-cache`` project in order to reduce startup time."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1071
+msgid "built_ins.py, corrected a typo."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1072
+msgid "test/test_news.py It now uses regex to verify the format of rst files"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1074
+msgid ""
+"Mercurial (``hg``) will no longer run in a threadable subprocess when it "
+"is run in interactive mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1080
+msgid "issue 2313"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1086
+msgid "v0.6.5"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1090
+msgid ""
+"Wizard ``FileInsterter`` node class now has ``dumps()`` method for "
+"converting a mapping to a string to insert in a file."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1096
+msgid ""
+"Fixed issue with ``xonfig wizard`` writer failing to write valid run "
+"control files for environment variables that are containter types. In "
+"particular, the storage of ``$XONSH_HISTORY_SIZE`` has been fixed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1104
+msgid "v0.6.4"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1108
+msgid ""
+"Error message improved for sourcing foreign shells, when file cannot be "
+"found or there is a syntax error."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1114
+msgid "Fixed issues with readline completer tab completing entries with spaces."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1116
+msgid ""
+"Fixed ``xonsh.tools.columnize()`` bug the prevented single-row input from"
+" being columnized correctly."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1118
+msgid "Now honor ASYNC and AWAIT as keywords in tokenizer on Python 3.7."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1125
+msgid "v0.6.3"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1129
+msgid ""
+"Docs for using ``@(<expr>)`` as a way to run commands and a gotcha about "
+"list of strings vs single string expressions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1131
+msgid "Ubuntu versions which xonsh is packaged for (with xonsh versions)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1136
+msgid ""
+"When reporting errors without a traceback (i.e. ``$XONSH_SHOW_TRACEBACK ="
+" False``) and the error is a ``XonshError`` the exception type is not "
+"longer printed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1138
+msgid ""
+"``CommandPipeline.proc`` may now be ``None``, to accomodate when the "
+"process fails to even start (i.e. a missing command or incorrect "
+"permisions)."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1144
+msgid ""
+"The ``curl`` command will now be run in a thread, which prevents "
+"documents that do not end in a newline from writing over the next prompt "
+"and vice versa."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1146
+msgid ""
+"Fix bug on Windows when ``PATHEXT`` environment variable did not exist. "
+"This also fixes building the xonsh documentation on Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1148
+msgid ""
+"Fixed a bug in the `free_cwd <http://xon.sh/xontribs.html#free-cwd>`__ "
+"Windows Xontrib, which caused the prompt to error if the current "
+"directory is deleted/renamed from an other process."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1150
+msgid ""
+"Fixed issue with ``$XONSH_SHOW_TRACEBACK`` not being respected in "
+"subprocess mode when the command could not be found or had incorrect "
+"permissions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1157
+msgid "v0.6.2"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1161
+msgid ""
+"Release tarballs now include licenses and minimal documentation for xonsh"
+" and ply"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1162
+msgid ""
+"Wizard now has a ``FileInserter`` node that allows blocks to be inserted "
+"and replaced inside of a file. This adheres to conversion rules "
+"fordumping as provided on this node."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1165
+msgid ""
+"New ``xonsh.wizard.StateVisitor.flatten()`` method for flattening the "
+"current state."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1171
+msgid ""
+"The xonsh startup wizard will only be triggered if no xonshrc files exist"
+" and the file ``~/.local/config/xonsh/no-wizard`` is not present."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1173
+msgid "The ``xonfig wizard`` command will now run write out to the xonshrc file."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1174
+msgid ""
+"Wizard nodes ``Save`` and ``Load`` had their names changed to "
+"``SaveJSON`` and ``LoadJSON``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1180
+msgid ""
+"Static configuration is dead (``config.json``), long live run control "
+"(``xonshrc``)!"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1181
+msgid ""
+"The following evironment variables have been removed as they are no "
+"longer needed: ``$LOADED_CONFIG`` and ``$XONSHCONFIG``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1183
+msgid "Many support functions for static configuration have also been removed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1188
+msgid "Files starting with ``#`` are auto-escaped by TAB completion"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1194
+msgid "v0.6.1"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1198
+msgid "Support for MSYS2."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1199
+msgid ""
+"New ``xonsh.main.setup()`` function for starting up xonsh in 3rd party "
+"packages."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1205
+msgid "Updated CircleCI to use circle version 2.0"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1206
+msgid "Replaced StopIteration with return in CommandPipeline.iterraw."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1207
+msgid ""
+"Xonsh run control now also looks for the XDG-compliant file "
+"``~/.config/xonsh/rc.xsh`` at startup."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1213
+msgid ""
+"Clean out ``$LINES`` and ``$COLUMNS`` if set, preventing some programs "
+"from drawing weirdly"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1214
+msgid "cat from xoreutils now outputs in configured encoding"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1215
+msgid ""
+"Fixed hanging issue with pipelines whose middle processes exit before the"
+" first or last process."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1217
+msgid ""
+"Fixed issue where xonsh would deduplicate spaces from bash "
+"autocompletions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1218
+msgid ""
+"Fixed failing redirections from stderr to stdout when the command being "
+"executed was a callable alias."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1220
+msgid "Ensure that the ``free_cwd`` contrib can only be active on pure Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1221
+msgid ""
+"Made an exceptional case in ``iglobpath()`` more robust when Python "
+"globbing fails for due to strange scrandir issue."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1223
+msgid "Unexpected process suspension on Cygwin and MSYS2."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1224
+msgid ""
+"``$XONSH_APPEND_NEWLINE`` will now default to True when in interactive "
+"mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1225
+msgid "Fixed issue with uncalled lambdas being run in subproc mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1226
+msgid "Lambda nodes not have proper line and column numbers in AST."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1227
+msgid ""
+"Properly throw ``SyntaxError`` when no kwargs are defined in a kwarg-only"
+" function. This used to throw a ``TypeError: 'NoneType' object is not "
+"iterable``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1230
+msgid "Addressed issue where encoding and errors were None when teeing output."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1231
+msgid ""
+"Commands like ``git c`` would complete to ``git 'checkout '`` because git"
+" adds an extra space to the end of the completion, which was being "
+"captured in the completion. Xonsh now fixes the git issue while retaining"
+" all whitespace when there is other internal whitespace."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1239
+msgid "v0.6.0"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1243
+msgid ""
+"Added an alias command, matching bash's implementation, available as part"
+" of bashisms."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1244
+msgid ""
+"New ``$AUTO_SUGGEST_IN_COMPLETIONS`` environment variable that "
+"enables/disables whether the auto-suggestion result appears in the tab "
+"completions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1246
+msgid "Added ``__add__()`` and ``__radd__()`` methods to ``EnvPath``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1247
+msgid "Xonsh now supports f-strings, as in Python v3.6+."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1248
+msgid ""
+"Added ``ipython`` as unthreadable in command cache threadabilty "
+"predictors."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1249
+msgid "Added ``whole_word_jumping`` xontrib"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1250
+msgid "Added ``$XONSH_APPEND_NEWLINE`` environment variable"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1251
+msgid "Support for PEP 515: Underscores in Numeric Literals"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1252
+msgid "``xonsh.color_tools.make_palette()``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1254
+msgid ""
+"Simple rename of the pre-existing ``xonsh.color_tools.make_pallete()`` "
+"function."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1257
+msgid "``xonsh.tools.decorator()`` function/method decorator."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1259
+msgid ""
+"This allows for an API function to be annotated with a decorator that "
+"documents deprecation, while also tying in functionality that will warn a"
+" user that the function has been deprecated, and, raise an "
+"``AssertionError`` if the function has passed its expiry date."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1264
+msgid "New xontrib ``schedule`` (Xonsh Task Scheduler)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1269
+msgid ""
+"``on_pre_prompt`` is now fired before prompt calculations are made, "
+"allowing modifications to the prompt."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1270
+msgid "``emacsclient`` will now return false in the threadable predictors."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1271
+msgid "Improved the autopair behavior to match that of popular code editors."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1272
+msgid ""
+"Moved the lazy ``pkg_resources`` package back to its original place. The "
+"will hopefully address some of the slowdown issues experiances on some "
+"platforms."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1275
+msgid "When xonsh is used to run an ``xsh`` script, the ``xonshrc`` is not loaded"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1276
+msgid ""
+"Change in the behavior of the default predictor with binary analysis. The"
+" pattern ``libgpm`` is use, assuming when ``gpm`` is used the program is "
+"not threadable. This change solves issues with programs as ``links``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1277
+msgid ""
+"Error messages added to the ``source`` command if it is used with a "
+"language that is not xonsh or Python."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1283
+msgid "``xonsh.color_tools.make_pallette()``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1285
+msgid "Deprecated in release 0.5.10 and will be removed in release 0.6.0."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1290
+msgid ""
+"Now f-strings can be used inside @() without explicit enclosing command "
+"in ![]"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1291
+msgid "Fix for ``x, y, *z = ...`` unpacking."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1292
+msgid ""
+"Git branch detection now correctly passes the environment down to the "
+"subprocess call.  This allows for branch detection when git is installed "
+"into a non-standard location."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1295
+msgid ""
+"Escape regex characters in ``path_complete`` to avoid regex parsing "
+"errors for certain combinations of characters in path completer"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1297
+msgid ""
+"gistatus: Fixed hash not being shown when in detaced HEAD and there are "
+"no tags"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1298
+msgid "Fix branch colorization when ``git`` or ``hg`` are aliases."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1299
+msgid "Fixed leftover ``.git/index.lock`` in ``gitstatus``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1300
+msgid "Made JSON history loading more robust to corrupt files."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1301
+msgid ""
+"Starting a new command with an open parentheses will no longer throw a "
+"traceback when ``$UPDATE_COMPLETIONS_ON_KEYPRESS`` is ``True``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1304
+msgid ""
+"Automatically wrapping subprocess calls would sometimes include "
+"semincolons and other line-ending tokens, rather than stopping at them. "
+"This has been fixed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1307
+msgid ""
+"Numerous spelling errors in documentation, docstrings/comments, text "
+"strings and local variable names."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1310
+msgid ""
+"Spelling error in the ``xonsh.color_tools.make_pallete()`` public "
+"function declaration. This was fixed by renaming the function to "
+"``xonsh.color_tools.make_palette()`` while maintaining a binding of "
+"``make_pallete()`` to the new ``make_palette()`` in case users are "
+"already used to this API."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1315
+msgid "Fixed issue with starting triple quote strings being run as a command."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1316
+msgid ""
+"Fixed a problem with escaping charet (^) character for cmd.exe in the "
+"source-cmd function."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1317
+msgid ""
+"``EOF in multi-line statement`` errors were misreported as being on line "
+"0. Now they are correctly reported as being on the last line of the file."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1324
+msgid "v0.5.12"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1328
+msgid ""
+"Fixed ``release.xsh`` to prevent it from dirtying the repo on release and"
+" leading to an unwanted ``.dev`` suffix on the version number"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1335
+msgid "v0.5.11"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1339
+msgid ""
+"``release.xsh`` creates a github release with the merged news entries as "
+"the release body"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1345
+msgid "``xonfig`` now displays the proper value for \"on linux\""
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1349
+msgid "v0.5.10"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1353
+msgid ""
+"Added ``xclip`` and ``repo`` to default threadable predictors (Issues "
+"#2355 and #2348)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1355
+msgid "Pretty printing of the $PATH variable"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1356
+msgid ""
+"Add \"fzf-widgets\" xontrib which provides fuzzy search productivity "
+"widgets with on custom keybindings to xontrib list."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1358
+msgid ""
+"New ``free_cwd`` xontrib for Windows, which prevent the current directory"
+" from being locked when the prompt is shown. This allows the other "
+"programs or Windows explorer to delete the current or parent directory. "
+"This is accomplished by resetting the CWD to the users home directory "
+"temporarily while the prompt is displayed. The directory is still locked "
+"while any commands are processed so xonsh still can't remove it own "
+"working directory."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1366
+msgid "Codecov threshold to 2%"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1371
+#, python-format
+msgid ""
+"On Windows environments variables in wrapped like``%foo%`` are no longer "
+"expanded automatically."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1376
+msgid "Fixed the ``--rc`` option so it now runs xonsh with the specified rc file"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1377
+msgid "``@$`` operator now functions properly when returned command is an alias"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1378
+msgid ""
+"Correct line continuation would not work on Windows if the line "
+"continuations were used in the ``xonshrc`` file."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1380
+msgid ""
+"Fixed a regression in the Windows ``sudo`` command, that allows users to "
+"run elevated commands in xonsh."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1381
+msgid "Fix echo command from xoreutils."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1382
+msgid ""
+"Fixed a bug on Windows which meant xonsh wasn't using PATH environment "
+"variable but instead relying on a default value from the windows "
+"registry."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1389
+msgid "v0.5.9"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1393
+msgid ""
+"Add ``Alt .`` keybinding to ``bashisms-xontrib`` to insert last argument "
+"of previous command into current buffer"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1399
+msgid "Fix crash when openSSH version of bash is on PATH on Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1400
+msgid ""
+"Added missing ensurers to make sure that ``bool`` env_vars are bools and "
+"``int`` env_vars are integers:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1403
+msgid "``DIRSTACK_SIZE``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1404
+msgid "``EXPAND_ENV_VARS``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1405
+msgid "``PUSHD_MINUS``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1406
+msgid "``PUSHD_SILENT``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1407
+msgid "``SUGGEST_COMMANDS``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1408
+msgid "``SUGGEST_MAX_NUM``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1409
+msgid "``SUGGEST_THRESHOLD``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1415
+msgid "v0.5.8"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1419
+msgid ""
+"The ``xonsh.platform.os_environ`` wrapper is  now case-insensitive and "
+"case-preserving on Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1421
+msgid ""
+"The private ``_TeeStd`` class will no longer attempt to write to a "
+"standard buffer after the tee has been 'closed' and the standard buffer "
+"returned to the system."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1428
+msgid "Fixed a bug on py34 where os.scandir was used by accident."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1429
+msgid ""
+"Line continuations (``\\\\``) is subproc mode will no longer consume the "
+"surrounding whitespace."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1431
+msgid ""
+"Fixed a bug if foreign_shell name was not written in lower case in the "
+"static configuration file ``config.json``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1433
+msgid ""
+"Fixed a regression on Windows where caused ``which`` reported that the "
+"``PATH`` environment variable could not be found."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1435
+msgid "Fixed issue with foregrounding jobs that were started in the background."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1436
+msgid "Fixed that ``Ctrl-C`` crashes xonsh after running an invalid command."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1437
+msgid "Fixed an potential ``ProcessLookupError`` issue, see #2288."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1443
+msgid "v0.5.7"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1447
+msgid ""
+"New ``color_tools`` module provides basic color tools for converting to "
+"and from various formats as well as creating palettes from color strings."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1450
+msgid "Redirections may now be used in string and list-of-strings aliases."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1452
+msgid ""
+"Subprocess redirection may now forego the whitespace between the "
+"redirection and a file name.  For example, ``echo hello world "
+">/dev/null``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1455
+msgid ""
+"Add a ``-P`` flag to the ``cd`` function in order to change directory and"
+" following symlinks."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1457
+msgid ""
+"``xonfig tutorial`` command to launch the http://xon.sh/tutorial in the "
+"browser."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1459
+msgid "``@(...)`` syntax now supports generators and tuples without parentheses."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1460
+msgid ""
+"Sourcing foreign shells now have the ``--show`` option, which lets you "
+"see when script will be run, and the ``--dryrun`` option which prevents "
+"the source from actually taking place. Xonsh's foreign shell API also "
+"added these keyword arguments."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1464
+msgid ""
+"Subprocess mode now supports subshells. Place any xonsh code between two "
+"parentheses, e.g. ``(cmd)``, to run this command in a separate xonsh "
+"subprocess."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1467
+msgid ""
+"Foreign shell aliases now have the ability to take extra arguments, if "
+"needed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1469
+msgid ""
+"Xonsh will issue a warning message when the current working directory has"
+" been remove out from under it and not replaced prior to running the next"
+" command."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1472
+msgid ""
+"Line continuation backslashes are respected on Windows in the PTK shell "
+"if the backspace is is preceded by a space."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1474
+msgid ""
+"Added ``ponysay`` as a command which will usually not run in a threaded "
+"mode in the commands cache."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1476
+msgid ""
+"New ``jsonutils`` module available for serializing special xonsh objects "
+"to JSON."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1482
+msgid ""
+"The literal tokens ``and`` and ``or`` must be surrounded by whitespace to"
+" delimit subprocess mode. If they do not have whitespace on both sides in"
+" subproc mode, they are considered to be part of a command argument."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1486
+msgid ""
+"The ``xontrib`` command is now flagged as unthreadable and will be run on"
+" the main Python thread. This allows xontribs to set signal handlers and "
+"other operations that require the main thread."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1489
+msgid "nvim (Neovim) has been flagged as unthreadable"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1490
+msgid ""
+"The interactive prompt will now catch ``SystemExit`` and, instead of "
+"exiting the session, will refresh the prompt. This is the same process as"
+" for keyboard interrupts."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1493
+msgid ""
+"Xonsh no longer launches the wizard for new users. Instead a welcome "
+"screen is shown which says how to launch the wizard."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1495
+msgid ""
+"Added Windows ``expanduser()``-like function which prevents the expansion"
+" of ``~`` that are not followed by a path separator."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1498
+msgid ""
+"Collecting xonsh history files was reported to have random runtime "
+"OSError failures. This exception is now handled, just in case. The The "
+"exception will still be printed in debug mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1501
+msgid "``Shell.stype`` has been renamed to ``Shell.shell_type``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1502
+msgid ""
+"The configuration wizard now displays the proper control sequence to "
+"leave the wizard at the to start of the wizard itself. Note that this is "
+"Ctrl+D for readline and Ctrl+C for prompt-toolkit."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1505
+msgid ""
+"Callable alias proxy functions are now more friendly to "
+"``functools.partial()``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1507
+msgid ""
+"``prompt.vc.get_hg_branch`` now uses ``os.scandir`` to walk up the "
+"filetree looking for a ``.hg`` directory. This results in (generally) "
+"faster branch resolution compared to the subprocess call to ``hg root``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1510
+msgid ""
+"Xonsh's script and code caches will are now invalidated whenever the "
+"xonsh version changes for a given Python version."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1512
+msgid ""
+"Autowrapping of subprocess globs has been improved to cover more cases "
+"that are ambiguous with Python syntax."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1514
+msgid ""
+"Job control info when foregrounding or backgrounding jobs will now only "
+"be displayed when xonsh is in interactive mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1516
+msgid ""
+"Enabled virtual terminal processing in the prompt-toolkit shell for "
+"Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1521
+msgid ""
+"3rd party pygments styles (like solorized or monokailight) are now able "
+"to be used in xonsh. These styles are dynamically created upon first use,"
+" rather than being lazily loaded by xonsh."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1524
+msgid ""
+"On Windows, ``os.environ`` is case insensitive. This would potentially "
+"change the case of environment variables set into the environment. Xonsh "
+"now uses ``nt.environ``, the case sensitive counterpart, to avoid these "
+"issues on Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1528
+msgid "Fix how ``$PWD`` is managed in order to work with symlinks gracefully"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1529
+msgid ""
+"``history replay`` no longer barfs on ``style_name`` when setting up the "
+"environment"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1531
+msgid ""
+"``Shell.shell_type`` is now properly set to the same value as "
+"``$SHELL_TYPE``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1532
+msgid "Fixed ``source-zsh`` to work with zsh v5.2."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1533
+msgid "Fixed issue where ``del (x, y)`` would raise a syntax error."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1534
+msgid ""
+"Certain vim commands issue commands involving subshells, and this is now "
+"supported."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1536
+msgid ""
+"Null bytes handed to Popen are now automatically escaped prior to running"
+" a subprocess. This prevents Popen from issuing embedded null byte "
+"exceptions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1539
+msgid ""
+"Xonsh will no longer crash is the current working directory is removed "
+"out from under it."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1541
+msgid "Multiline strings can now be written in subprocess mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1542
+msgid ""
+"PTK completions will now correctly deduplicate autosuggest completions "
+"and display completions values based on the cursor position."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1544
+msgid ""
+"Fixed bug where trailing backspaces on Windows paths could be interpreted"
+" as line continuations characters. Now line continuation characters must "
+"be preceded by a space on Windows. This only applies to xonsh in "
+"interactive mode to ensure  scripts are portable."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1548
+msgid ""
+"Importing ``*.xsh`` files will now respect the encoding listed in that "
+"file and properly fallback to UTF-8. This behaviour follows the rules "
+"described in PEP 263."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1551
+msgid "Wizard is now able to properly serialize environment paths."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1555
+msgid "v0.5.6"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1559
+msgid ""
+"New core utility function aliases (written in pure Python) are now "
+"available in ``xonsh.xoreutils``. These include: ``cat``, ``echo``, "
+"``pwd``, ``tee``, ``tty``, and ``yes``. These are not enabled by default."
+" Use the new ``coreutils`` xontrib to load them."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1563
+msgid "CircleCI test post codecov run"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1564
+msgid ""
+"The ``trace`` will automatically disable color printing when stdout is "
+"not a TTY or stdout is captured."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1566
+msgid ""
+"New ``jedi`` xontrib enables jedi-based tab completions when it is "
+"loaded. This supersedes xonsh's default Python-mode completer."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1568
+msgid ""
+"The lexer has a new ``split()`` method which splits strings according to "
+"xonsh's rules for whitespace and quotes."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1570
+msgid ""
+"New events for hooking into the Python import process are now available. "
+"You can now provide a handler for:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1573
+msgid "``on_import_pre_find_spec``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1574
+msgid "``on_import_post_find_spec``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1575
+msgid "``on_import_pre_create_module``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1576
+msgid "``on_import_post_create_module``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1577
+msgid "``on_import_pre_exec_module``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1578
+msgid "``on_import_post_exec_module``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1583
+msgid ""
+"The prompt toolkit shell's first completion will now be the current token"
+" from the auto-suggestion, if available."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1585
+msgid ""
+"Sourcing foreign shells will now safely skip applying aliases with the "
+"same name as existing xonsh aliases by default. This prevents "
+"accidentally overwriting important xonsh standard aliases, such as "
+"``cd``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1593
+msgid ""
+"Threadable prediction for subprocesses will now consult both the command "
+"as it was typed in and any resolved aliases."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1595
+msgid ""
+"The first prompt will no longer print in the middle of the line if the "
+"user has already started typing."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1597
+msgid ""
+"Windows consoles will now automatically enable virtual terminal "
+"processing with the readline shell, if available. This allows the full "
+"use of ANSI escape sequences."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1600
+msgid ""
+"On the Windows readline shell, the tab-completion suppression prompt will"
+" no longer error out depending on what you press."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1602
+msgid ""
+"Fixed issue with subprocess mode wrapping not respecting line "
+"continuation backslashes."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1604
+msgid ""
+"Handle a bug where Bash On Windows causes platform.windows_bash_command()"
+" to raise CalledProcessError."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1606
+msgid ""
+"Fixed issues pertaining to completing from raw string paths. This is "
+"particularly relevant to Windows, where raw strings are inserted in path "
+"completion."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1609
+msgid ""
+"Replace deprecated calls to ``time.clock()`` by calls to "
+"``time.perf_counter()``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1611
+msgid ""
+"Use ``clock()`` to set the start time of ``_timings`` in non-windows "
+"instead of manually setting it to ``0.0``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1613
+msgid ""
+"The ``trace`` utility will now correctly color output and not print "
+"extraneous newlines when called in a script."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1615
+msgid ""
+"The ``@$(cmd)`` operator now correctly splits strings according to xonsh "
+"semantics, rather than just on whitespace using ``str.split()``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1617
+msgid ""
+"The ``mpl`` xontrib has been updated to improve matplotlib handling. If "
+"``xontrib load mpl`` is run before matplotlib is imported and xonsh is in"
+" interactive mode, matplotlib will automatically enter interactive mode "
+"as well. Additionally, ``pyplot.show()`` is patched in interactive mode "
+"to be non-blocking. If a non-blocking show fails to draw the figure for "
+"some reason, a regular blocking version is called."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1624
+msgid ""
+"Fixed issues like ``timeit ls`` causing OSError - \"Inappropriate ioctl "
+"for device\"."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1626
+msgid ""
+"Fixed a potential \"OSError: [Errno 22] Invalid argument\" to increase "
+"job control stability."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1633
+msgid "v0.5.5"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1637
+msgid ""
+"New ``--rc`` command line option allows users to specify paths to run "
+"control files from the command line. This includes both xonsh-based and "
+"JSON-based configuration."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1640
+msgid ""
+"New ``$UPDATE_COMPLETIONS_ON_KEYPRESS`` controls whether or not "
+"completions will automatically display and update while typing. This "
+"feature is only available in the prompt-toolkit shell."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1647
+msgid ""
+"Xonsh scripts now report ``__file__`` and ``__name__`` when run as "
+"scripts or sourced. These variables have the same meaning as they do in "
+"Python scripts."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1650
+msgid ""
+"``$XONSHRC`` and related configuration variables now accept JSON-based "
+"static configuration file names as elements. This unifies the two methods"
+" of run control to a single entry point and loading system."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1653
+msgid ""
+"The ``xonsh.shell.Shell()`` class now requires that an Execer instance be"
+" explicitly provided to its init method. This class is no longer "
+"responsible for creating an execer an its dependencies."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1656
+msgid ""
+"Moved decorators ``unthreadable``, ``uncapturable`` from ``xonsh.proc`` "
+"to ``xonsh.tools``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1658
+msgid "Some refactorings on jobs control."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1663
+msgid ""
+"The ``--config-path`` command line option is now deprecated in favor of "
+"``--rc``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1669
+msgid ""
+"``xonsh.environ.DEFAULT_XONSHRC`` has been removed due to deprecation. "
+"For this value, please check the environment instead, or call "
+"``xonsh.environ.default_xonshrc(env)``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1676
+msgid ""
+"Command pipelines that end in a callable alias are now interruptable with"
+" ``^C`` and the processes that are piped into the alias have their file "
+"handles closed. This should ensure that the entire pipeline is closed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1679
+msgid ""
+"Fixed issue where unthreadable subprocs were not allowed to be captured "
+"with the ``$(cmd)`` operator."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1681
+msgid ""
+"The ``ProcProxy`` class (unthreadable aliases) was not being executed and"
+" would hang if the alias was capturable. This has been fixed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1683
+msgid ""
+"Fixed a ``tcsetattr: Interrupted system call`` issue when run xonsh "
+"scripts."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1684
+msgid ""
+"Fixed issue with ``ValueError`` being thrown from ``inspect.signature()``"
+" when called on C-extension callables in tab completer."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1686
+msgid "Fixed issue that ``ls | less`` crashes on Mac."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1687
+msgid ""
+"Threadable prediction was incorrectly based on the user input command, "
+"rather than the version where aliases have been resolved. This has been "
+"corrected."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1692
+msgid "v0.5.4"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1696
+msgid ""
+"Add alias ``xip`` (\"kip\") so that xonsh's Python environment (whatever "
+"that is) can be modified."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1697
+msgid ""
+"HistoryEntry, a SimpleNamespace object that represents a command in "
+"history."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1698
+msgid "``xonsh.completers.bash_completion`` module"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1699
+msgid ""
+"Added option to report timing information of xonsh startup times. Start "
+"xonsh with the ``--timings`` flag to use the feature."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1701
+msgid ""
+"The Python tab completer will now complete the argument names of "
+"functions and other callables."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1703
+msgid ""
+"Uptime module added to ``xonsh.xoreutils``. This can report the system "
+"boot time and up time."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1705
+msgid ""
+"The environment variable ``XONSH_HISTORY_BACKEND`` now also supports a "
+"value of class type or a History Backend instance."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1707
+msgid "``on_envvar_new`` event that fires after a new envvar is created."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1708
+msgid "``on_envvar_change`` event that fires after an envvar is changed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1713
+msgid "history indexing api to be more simple, now returns HistoryEntry."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1714
+msgid ""
+"Decoupled ``bash_completion`` from xonsh project and added shim back to "
+"xonsh."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1716
+msgid ""
+"The JSON history backend will now unlock history files that were created "
+"prior to the last reboot."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1722
+msgid ""
+"Fixed broken bash completions on Windows if 'Windows Subsystem for Linux'"
+" is installed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1723
+msgid ""
+"Readline history would try to read the first element of history prior to "
+"actually loading any history. This caused an exception to be raised on "
+"Windows at xonsh startup when using pyreadline."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1726
+msgid ""
+"Fixed issue with readline tab completer overwriting initial prefix in "
+"some instances."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1728
+msgid ""
+"Fixed issue wherein if ``git`` or (presumably) ``hg`` are aliased, then "
+"branch information no longer appears in the ``$PROMPT``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1730
+msgid ""
+"Fixed an issue with commands that background themselves (such as ``gpg-"
+"connect-agent``) not being able to be run from within xonshrc."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1737
+msgid "v0.5.3"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1741
+msgid "Tab completion xontrib for python applications based on click framework."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1742
+msgid ""
+"Added ``on_transform_command`` event for pre-processing that macros can't"
+" handle."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1743
+msgid "Autodetection of backgroundability by binary analysis on POSIX."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1744
+msgid "New argument ``expand_user=True`` to ``tools.expand_path``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1745
+msgid ""
+"New ``$COMPLETION_QUERY_LIMIT`` environment variable for setting the "
+"number of completions above which the user will be asked if they wish to "
+"see the potential completions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1748
+msgid "Users may now redirect stdout to stderr in subprocess mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1753
+msgid ""
+"The ``Block`` and ``Functor`` context managers from ``xonsh.contexts`` "
+"have been rewritten to use xonsh's macro capabilities. You must now enter"
+" these via the ``with!`` statement, e.g. ``with! Block(): pass``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1756
+msgid ""
+"The ``distributed`` xontrib now needs to use the ``with!`` statement, "
+"since it relies on ``Functor``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1758
+msgid "``telnet`` has been flagged as unthreadable."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1759
+msgid ""
+"When ``$DYNAMIC_CWD_ELISION_CHAR`` is non empty and the last dir of cwd "
+"is too long and shortened, the elision char is added at the end."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1761
+msgid ""
+"``pygments`` is no longer a strict dependency of the ``prompt_toolkit`` "
+"backend. If ``pygments`` is not installed, the PTK backend will use the "
+"default ansi color settings from the terminal. Syntax highlighting "
+"requires that ``pygments`` is installed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1765
+msgid "Events are now keyword arguments only"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1766
+msgid "Restored ``on_precommand`` to its original signature."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1767
+msgid "Move ``built_ins.expand_path`` to ``tools.expand_path``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1768
+msgid "Rename ``tools.expandpath`` to ``tools._expandpath``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1769
+msgid "Added ``gvim`` command to unthreadable predictors."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1770
+msgid "The ``source`` alias now passes ``$ARGS`` down to file it is sourcing."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1775
+msgid "``XonshBlockError`` has been removed, since it no longer serves a purpose."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1780
+msgid ""
+"``PopenThread`` will now re-issue SIGINT to the main thread when it is "
+"received."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1782
+msgid ""
+"Fixed an issue that using sqlite history backend does not kill unfinished"
+" jobs when quitting xonsh with a second \"exit\"."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1784
+msgid ""
+"Fixed an issue that xonsh would fail over to external shells when running"
+" .xsh script which raises exceptions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1786
+msgid ""
+"Fixed an issue with ``openpty()`` returning non-unix line endings in its "
+"buffer. This was causing git and ssh to fail when xonsh was used as the "
+"login shell on the server. See https://mail.python.org/pipermail/python-"
+"list/2013-June/650460.html for more details."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1790
+msgid "Restored the ability to ^Z and ``fg`` processes on posix platforms."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1791
+msgid ""
+"CommandPipelines were not guaranteed to have been ended when the return "
+"code was requested. This has been fixed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1793
+msgid ""
+"Introduce path expansion in ``is_writable_file`` to fix "
+"``$XONSH_TRACEBACK_LOGFILE=~/xonsh.log``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1795
+msgid ""
+"Backgrounding a running process (^Z) now restores ECHO mode to the "
+"terminal in cases where the subprocess doesn't properly restore itself. A"
+" major instance of this behaviour is Python's interactive interpreter."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1798
+msgid ""
+"Readline backend would not ask the user to confirm the printing of "
+"completion options if they numbered above a certain value. Instead they "
+"would be dumped to the screen. This has been fixed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1801
+msgid ""
+"Jupyter kernel was no longer properly running subprocess commands. This "
+"has been fixed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1803
+msgid ""
+"The filename is applied to the target of the ``source`` alias, providing "
+"better tracebacks."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1810
+msgid "v0.5.2"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1814
+msgid "Added ``weechat`` to default predictors"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1815
+msgid ""
+"``$DYNAMIC_CWD_ELISION_CHAR`` environment variable to control how a "
+"shortened path is displayed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1821
+msgid ""
+"``_ret_code`` function of ``prompt_ret_code`` xontrib return now ``None``"
+" when return code is 0 instead of empty string allowing more "
+"customization of prompt format."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1828
+msgid "Minor Python completer token counting bug fix."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1829
+msgid "multiline syntax error in PTK shell due to buffer not being reset"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1830
+msgid "Segfaults and other early exit signals are now reported correctly, again."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1832
+msgid "``tests/bin/{cat,pwd,wc}`` shebang changed to python3"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1838
+msgid "v0.5.1"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1842
+msgid "Fixed xonfig raising error when xonsh is not installed from source."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1848
+msgid "v0.5.0"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1852
+msgid ""
+"$XONTRIB_MPL_MINIMAL environment variable can be set to change if plots "
+"are minimalist or as-seen"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1853
+msgid ""
+"xontrib-mpl now supports iTerm2 inline image display if iterm2_tools "
+"python package is installed"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1854
+msgid ""
+"Xonsh now will fallback to other shells if encountered errors when "
+"starting up."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1856
+msgid "Added entry to customization faq re: ``dirs`` alias (#1452)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1857
+msgid "Added entry to customization faq re: tab completion selection (#1725)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1858
+msgid "Added entry to customization faq re: libgcc core dump (#1160)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1859
+msgid "Section about quoting in the tutorial."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1860
+msgid ""
+"The ``$VC_HG_SHOW_BRANCH`` environment variable to control whether to "
+"hide the hg branch in the prompt."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1861
+msgid ""
+"xonfig now contains the latest git commit date if xonsh installed from "
+"source."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1863
+msgid ""
+"Alt+Enter will execute a multiline code block irrespective of cursor "
+"position"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1864
+msgid ""
+"Windows now has the ability to read output asynchronously from the "
+"console."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1866
+msgid ""
+"Use `doctr <https://drdoctr.github.io/doctr/>`_ to deploy dev docs to "
+"github pages"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1867
+msgid ""
+"New ``xonsh.proc.uncapturable()`` decorator for declaring that function "
+"aliases should not be run in a captured subprocess."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1869
+msgid "New history backend sqlite."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1870
+msgid ""
+"Prompt user to install xontrib package if they try to load an uninstalled"
+" xontrib"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1872
+msgid ""
+"Callable aliases may now take a final ``spec`` argument, which is the "
+"corresponding ``SubprocSpec`` instance."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1874
+msgid ""
+"New ``bashisms`` xontrib provides additional Bash-like syntax, such as "
+"``!!``. This xontrib only affects the command line, and not xonsh "
+"scripts."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1876
+msgid "Tests that create testing repos (git, hg)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1877
+msgid ""
+"New subprocess specification class ``SubprocSpec`` is used for specifying"
+" and manipulating subprocess classes prior to execution."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1879
+msgid "New ``PopenThread`` class runs subprocesses on a a separate thread."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1880
+msgid ""
+"New ``CommandPipeline`` and ``HiddenCommandPipeline`` classes manage the "
+"execution of a pipeline of commands via the execution of the last command"
+" in the pipeline. Instances may be iterated and stream lines from the "
+"stdout buffer. These pipelines read from the stdout & stderr streams in a"
+" non-blocking manner."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1885
+msgid "``$XONSH_STORE_STDOUT`` is now available on all platforms!"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1886
+msgid ""
+"The ``CommandsCache`` now has the ability to predict whether or not a "
+"command must be run in the foreground using ``Popen`` or may use a "
+"background thread and can use ``PopenThread``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1889
+msgid ""
+"Callable aliases may now use the full gamut of functions signatures: "
+"``f()``, ``f(args)``,  ``f(args, stdin=None)``, ``f(args, stdin=None, "
+"stdout=None)``, and ` ``f(args, stdin=None, stdout=None, stderr=None)``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1893
+msgid ""
+"Uncaptured subprocesses now receive a PTY file handle for stdout and "
+"stderr."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1895
+msgid ""
+"New ``$XONSH_PROC_FREQUENCY`` environment variable that specifies how "
+"long loops in the subprocess framework should sleep. This may be adjusted"
+" from its default value to improved performance and mitigate \"leaky\" "
+"pipes on slower machines."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1899
+msgid "``Shift+Tab`` moves backwards in completion dropdown in prompt_toolkit"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1900
+msgid "PromptFormatter class that holds all the related prompt methods"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1901
+msgid "PromptFormatter caching when building the prompt"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1902
+msgid "p-strings: ``p'/foo/bar'`` is short for ``pathlib.Path('/foo/bar')``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1903
+msgid "byte strings: prefixes other than ``b'foo'`` (eg, ``RB'foo'``) now work"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1904
+msgid ""
+"Backticks for regex or glob searches now support an additional modifier "
+"``p``, which causes them to return Path objects instead of strings."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1906
+msgid ""
+"New ``BOTTOM_TOOLBAR`` environment variable to control a bottom toolbar "
+"as specified in prompt-toolkit"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1907
+msgid ""
+"New ``$XONSH_STDERR_PREFIX`` and ``$XONSH_STDERR_POSTFIX`` environment "
+"variables allow the user to print a prompt-like string before and after "
+"all stderr that is seen. For example, say that you would like stderr to "
+"appear on a red background, you might set ``$XONSH_STDERR_PREFIX = "
+"\"{BACKGROUND_RED}\"`` and ``$XONSH_STDERR_PREFIX = \"{NO_COLOR}\"``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1913
+msgid ""
+"New ``xonsh.pyghooks.XonshTerminal256Formatter`` class patches the "
+"pygments formatter to understand xonsh color token semantics."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1915
+msgid "Load events are now available"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1916
+msgid ""
+"New events added: ``on_post_init``, ``on_pre_cmdloop``, ``on_pre_rc``, "
+"``on_post_rc``, ``on_ptk_create``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1917
+msgid "Completion for ``xonsh`` builtin functions ``xontrib`` and ``xonfig``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1918
+msgid ""
+"Added a general customization FAQ page to the docs to collect various "
+"tips/tricks/fixes for common issues/requests"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1920
+msgid ""
+"``test_single_command`` and ``test_redirect_out_to_file`` tests in "
+"``test_integrations``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1921
+msgid "Add note that the target of redirection should be separated by a space."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1926
+msgid "CircleCI now handles flake8 checks"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1927
+msgid "Travis doesn't allow failures on nightly"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1928
+msgid ""
+"``get_hg_branch`` runs ``hg root`` to find root dir and check if we're in"
+" repo"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1929
+msgid ""
+"The default style will now use the color keywords (#ansired, "
+"#ansidarkred) to set colors that follow the terminal color schemes. "
+"Currently, this requires prompt_toolkit master (>1.0.8) and pygments "
+"master (2.2) to work correctly."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1932
+msgid "``vox activate`` now accepts relative directories."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1933
+msgid "Updated the effectivity of ``$XONSH_DEBUG`` on debug messages."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1934
+msgid "Better documentation on how to get nice colors in Windows' default console"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1935
+msgid ""
+"All custom prompt_toolkit key binding filters now declared with the "
+"``@Condition`` decorator"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1937
+msgid ""
+"The style for the prompt toolkit completion menu is now "
+"lightgray/darkgray instead of turquoise/teal"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1938
+msgid "landscape.io linting now ignores ply directory"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1939
+msgid "``history`` help messages to reflect subcommand usage"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1940
+msgid ""
+"Quote all paths when completion if any of the paths needs be quoted, so "
+"that bash can automatically complete to the max prefix of the paths."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1942
+msgid "Tee'd reads now occur in 1kb chunks, rather than character-by-character."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1943
+msgid ""
+"The ``which`` alias no longer has a trailing newline if it is captured. "
+"This means that ``$(which cmd)`` will simply be the path to the command."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1945
+msgid ""
+"The following commands are, by default, predicted to be not threadable in"
+" some circumstances:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1948
+msgid "bash"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1949
+msgid "csh"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1950
+msgid "clear"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1951
+msgid "clear.exe"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1952
+msgid "cls"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1953
+msgid "cmd"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1954
+msgid "ex"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1955
+msgid "fish"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1956
+msgid "htop"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1957
+msgid "ksh"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1958
+msgid "less"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1959
+msgid "man"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1960
+msgid "more"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1961
+msgid "mutt"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1962
+msgid "nano"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1963
+msgid "psql"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1964
+msgid "ranger"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1965
+msgid "rview"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1966
+msgid "rvim"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1967
+msgid "scp"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1968
+msgid "sh"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1969
+msgid "ssh"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1970
+msgid "startx"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1971
+msgid "sudo"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1972
+msgid "tcsh"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1973
+msgid "top"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1974
+msgid "vi"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1975
+msgid "view"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1976
+msgid "vim"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1977
+msgid "vimpager"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1978
+msgid "xo"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1979
+msgid "xonsh"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1980
+msgid "zsh"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1981
+msgid ""
+"The ``run_subproc()`` function has been replaced with a new "
+"implementation."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1982
+msgid "Piping between processes now uses OS pipes."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1983
+msgid ""
+"``$XONSH_STORE_STDIN`` now uses ``os.pread()`` rather than ``tee`` and a "
+"new file."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1985
+msgid ""
+"The implementation of the ``foreground()`` decorator has been moved to "
+"``unthreadable()``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1987
+msgid ""
+"``voxapi.Vox`` now supports ``pathlib.Path`` and ``PathLike`` objects as "
+"virtual environment identifiers"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1988
+msgid "Renamed FORMATTER_DICT to PROMPT_FIELDS"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1989
+msgid "BaseShell instantiates PromptFormatter"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1990
+msgid "readline/ptk shells use PromptFormatter"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1991
+msgid "Updated the bundled version of ``ply`` to current master available"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1992
+msgid "vended ``ply`` is now a git subtree to help with any future updates"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1993
+msgid ""
+"``WHITE``  color keyword now means lightgray and ``INTENSE_WHITE`` "
+"completely white"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1994
+msgid ""
+"Removed ``add_to_shell`` doc section from ``*nix`` install pages and "
+"instead relocated it to the general customization page"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:1996
+msgid ""
+"Moved a few ``*nix`` customization tips from the linux install page to "
+"the general customization page"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2002
+msgid "coverage checks"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2003
+msgid ""
+"``CompletedCommand`` and ``HiddenCompletedCommand`` classes have been "
+"removed in favor of ``CommandPipeline`` and ``HiddenCommandPipeline``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2005
+msgid ""
+"``SimpleProcProxy`` and ``SimpleForegroundProcProxy`` have been removed "
+"in favor of a more general mechanism for dispatching callable aliases "
+"implemented in the ``ProcProxyThread``  and ``ProcProxy`` classes."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2008
+msgid "``test_run_subproc.py`` in favor of ``test_integrations.py``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2009
+msgid "Unused imports in many tests"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2010
+msgid "Many duplicated tests (copypasta)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2015
+msgid ""
+"xontrib-mpl now preserves the figure and does not permanently alter it "
+"for viewing"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2016
+msgid "Fix up small pep8 violations"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2017
+msgid "Fixed a bug where some files are not showing using bash completer"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2018
+msgid ""
+"Fixed some issues with subprocess capturing aliases that it probably "
+"shouldn't."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2020
+msgid "``safe_readable()`` now checks for ``ValueError`` as well."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2021
+msgid "The scroll bars in the PTK completions menus are back."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2022
+msgid ""
+"Jupyter kernel installation now respects the setuptools ``root`` "
+"parameter."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2023
+msgid ""
+"Fix ``__repr__`` and ``__str__`` methods of ``SubprocSpec`` so they "
+"report correctly"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2025
+msgid "Fixed the message printed when which is unable to find the command."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2026
+msgid "Fixed a handful of sphinx errors and warnings in the docs"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2027
+msgid "Fixed many PEP8 violations that had gone unnoticed"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2028
+msgid ""
+"Fix failure to detect an Anaconda python distribution if the python was "
+"install from the conda-forge channel."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2029
+msgid "current_branch will try and locate the vc binary once"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2030
+msgid ""
+"May now Crtl-C out of an infinite loop with a subprocess, such as "
+"```while True: sleep 1``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2032
+msgid "Fix for stdin redirects."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2033
+msgid "Backgrounding works with ``$XONSH_STORE_STDOUT``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2034
+msgid ""
+"``PopenThread`` blocks its thread from finishing until command has "
+"completed or process is suspended."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2036
+msgid ""
+"Added a minimum time buffer time for command pipelines to check for if "
+"previous commands have executed successfully.  This is helpful for "
+"pipelines where the last command takes a long time to start up, such as "
+"GNU Parallel. This also checks to make sure that output has occurred. "
+"This includes piping 2+ commands together and pipelines that end in "
+"unthreadable commands."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2042
+msgid ""
+"``curr_branch`` reports correctly when ``git config status.short true`` "
+"is used"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2043
+msgid "``pip`` completion now filters results by prefix"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2044
+msgid ""
+"Fixed streaming ``!(alias)`` repr evaluation where bytes where not "
+"streamed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2046
+msgid "Aliases that begin with a comma now complete correctly (no spurious comma)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2047
+msgid ""
+"Use ``python3`` in shebang lines for compatibility with distros that "
+"still use Python 2 as the default Python"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2048
+msgid "STDOUT is only stored when ``$XONSH_STORE_STDOUT=True``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2049
+msgid ""
+"Fixed issue with alias redirections to files throwing an OSError because "
+"the function ProcProxies were not being waited upon."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2051
+msgid ""
+"Fixed issue with callable aliases that happen to call sys.exit() or raise"
+" SystemExit taking out the whole xonsh process."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2053
+msgid "Safely flushes file handles on threaded buffers."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2054
+msgid "Proper default value and documentation for ``$BASH_COMPLETIONS``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2055
+msgid "Fixed readline completer issues on paths with spaces"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2056
+msgid ""
+"Fix bug in ``argvquote()`` functions used when sourcing batch files on "
+"Windows. The bug meant an extra backslash was added to UNC paths. Thanks "
+"to @bytesemantics for spotting it, and @janschulz for fixing the issue."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2058
+msgid ""
+"pep8, lint and refactor in pytest style of ``test_ptk_multiline.py``, "
+"``test_replay.py``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2059
+msgid "Tab completion of aliases returned a upper cased alias on Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2060
+msgid "History show all action now also include current session items."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2061
+msgid ""
+"``proc.stream_stderr`` now handles stderr that doesn't have buffer "
+"attribute"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2062
+msgid "Made ``history show`` result sorted."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2063
+msgid "Fixed issue that ``history gc`` does not delete empty history files."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2064
+msgid ""
+"Standard stream tees have been fixed to accept the possibility that they "
+"may not be backed by a binary buffer. This includes the pipeline stdout "
+"tee as well as the shell tees."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2067
+msgid "Fixed a bug when the pygments plugin was used by third party editors etc."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2068
+msgid ""
+"CPU usage of ``PopenThread`` and ``CommandPipeline`` has been brought "
+"down significantly."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2075
+msgid "v0.4.7"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2079
+msgid "Define alias for 'echo' on startup for Windows only."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2080
+msgid "New coredev `astronouth7303 <https://github.com/astronouth7303>`_ added"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2081
+msgid "``which -a`` now searches in ``__xonsh_ctx__`` too"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2082
+msgid "Info about the xontrib cookiecutter template on xontrib tutorial"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2083
+msgid ""
+"xonsh's optional dependencies may now be installed with the pip extras "
+"``ptk``, ``proctitle``, ``linux``, ``mac``, and ``win``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2084
+msgid "Env ``help`` method to format and print the vardocs for an envvar"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2085
+msgid "test_news fails if no empty line before a category"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2086
+msgid "more info on test_news failures"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2087
+msgid "Added ``on_precommand`` and ``on_postcommand`` `events </events.html>`_"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2088
+msgid ""
+"New ``FORMATTER_DICT`` entry ``gitstatus`` to provides informative git "
+"status"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2089
+msgid ""
+"FOREIGN_ALIASES_OVERRIDE envvar to control whether foreign aliases should"
+" override xonsh aliases with the same name."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2092
+msgid ""
+"Warning on tutorial about foreign aliases being ignored if a xonsh alias "
+"exist with the same name if not FOREIGN_ALIASES_OVERRIDE."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2094
+msgid ""
+"The prompt-toolkit shell now auto-inserts matching parentheses, brackets,"
+" and quotes. Enabled via the ``XONSH_AUTOPAIR`` environment variable"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2095
+msgid ""
+"Better syntax highlights in prompt-toolkit, including valid command / "
+"path highlighting, macro syntax highlighting, and more"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2096
+msgid "More info on tutorial about history interaction"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2097
+msgid "Entry on bash_to_xsh"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2098
+msgid "Macro context managers are now available via the ``with!`` syntax."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2104
+msgid "Devguide reflects the current process of releasing through ``release.xsh``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2105
+msgid "moved ``which`` from ``xonsh.aliases`` into ``xoreutils.which``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2106
+msgid "``xonsh.prompt.gitstatus.gitstatus`` now returns a namedtuple"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2108
+msgid ""
+"implementation of ``xonsh.prompt.vc_branch.get_git_branch`` and "
+"``xonsh.prompt.vc_branch.git_dirty_working_directory`` to use 'git status"
+" --procelain'"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2110
+msgid ""
+"moved prompt formatting specific functions from ``xonsh.environ`` to "
+"``xonsh.prompt.base``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2112
+msgid "All prompt formatter functions moved to ``xonsh.prompt`` subpackage"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2113
+msgid ""
+"Printing the message about foreign aliases being ignored happens only if "
+"XONSH_DEBUG is set."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2115
+msgid "Use ``SetConsoleTitleW()`` on Windows instead of a process call."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2116
+msgid "Tutorial to reflect the current history command argument functionality"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2117
+msgid ""
+"Macro function arguments now default to ``str``, rather than ``eval``, "
+"for consistency with other parts of the macro system."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2123
+msgid "aliases that use '!' in their name cause they clash with the macro syntax"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2128
+msgid ""
+"Fix regression where bash git completions where not loaded automatically "
+"when GitForWindows is installed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2130
+msgid "More tokens are now supported in subproc args, such as ``==``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2131
+msgid ""
+"Python completions now work without space delimiters, e.g. "
+"``a=matpl<TAB>`` will complete to ``a=matplotlib``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2133
+msgid ""
+"Parser would fail on nested, captured suprocess macros. Now, it works, "
+"hooray!?"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2135
+msgid "now fires chdir event if OS change in working directory is detected."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2137
+msgid "``xonsh.prompt.vc_branch.git_dirty_working_directory``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2137
+msgid ""
+"uses ``porcelain`` option instead of using the bytestring ``nothing to "
+"commit`` to find out if a git directory is dirty"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2139
+msgid "Fix bug where know commands where not highlighted on windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2140
+msgid "Fixed completer showing executable in upper case on windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2141
+msgid ""
+"Fixed issue where tilde expansion was occurring more than once before an "
+"equals sign."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2143
+msgid "test_dirstack test_cdpath_expansion leaving stray testing dirs"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2144
+msgid "Better completer display for long completions in prompt-toolkit"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2145
+msgid ""
+"Automatically append newline to target of ``source`` alias, so that it "
+"may be exec'd."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2147
+msgid "test_news fails when single graves around word"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2148
+msgid "Slashes in virtual environment names work in vox"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2149
+msgid "non string type value in $FORMATTER_DICT turning prompt ugly"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2150
+msgid ""
+"whole prompt turning useless when one formatting function raises an "
+"exception"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2151
+msgid "Fix completion after alias expansion"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2152
+msgid "Fix hard crash when foreign shell functions fails to run. #1715"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2153
+msgid ""
+"Bug where non-default locations for ``XDG_DATA_HOME`` and "
+"``XONSH_DATA_DIR`` would not expand ``~`` into the home directory"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2155
+msgid "Auto quote path completions if path contains 'and' or 'or'"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2157
+msgid "Completion now works on subcommands after pipe, ``&&``, ``||`` and so on."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2158
+msgid ""
+"cd . and cd <singleCharacter> now work.  Fix indexerror in AUTO_PUSHD "
+"case, too."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2159
+msgid ""
+"Fixed issue with accidentally wrapping generators inside of function "
+"calls."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2160
+msgid "History indexing with string returns most recent command."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2166
+msgid "v0.4.6"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2170
+msgid ""
+"New option ``COMPLETIONS_CONFIRM``. When set, ``<Enter>`` is used to "
+"confirm completion instead of running command while completion menu is "
+"displayed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2172
+msgid "NetBSD is now supported."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2173
+msgid ""
+"Macro function calls are now available. These use a Rust-like ``f!(arg)``"
+" syntax."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2175
+msgid "Macro subprocess call now available with the ``echo! x y z`` syntax."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2177
+msgid ""
+"A new `event subsystem <http://xon.sh/tutorial_events.html>`_ has been "
+"added."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2178
+msgid "howto install sections for Debian/Ubuntu and Fedora."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2179
+msgid "``History`` methods ``__iter__`` and ``__getitem__``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2181
+msgid "``tools.get_portions`` that yields parts of an iterable"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2182
+msgid ""
+"Added a py.test plugin to collect ``test_*.xsh`` files and run "
+"``test_*()`` functions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2183
+msgid "``__repr__`` and ``__str__`` magic method on LazyObject"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2188
+msgid "``create_module`` implementation on XonshImportHook"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2189
+msgid ""
+"Results of the ``bash`` tab completer are now properly escaped (quoted) "
+"when necessary."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2190
+msgid ""
+"Foreign aliases that match xonsh builtin aliases are now ignored with a "
+"warning."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2191
+msgid ""
+"``prompt_toolkit`` completions now only show the rightmost portion of a "
+"given completion in the dropdown"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2193
+msgid ""
+"The value of ``'none'`` is no longer allowed for ``$SHELL_TYPE`` just "
+"during the initial load from the environment. ``-D``, later times, and "
+"other sources still work."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2195
+msgid ""
+"``yacc_debug=True`` now load the parser on the same thread that the "
+"Parser instance is created. ``setup.py`` now uses this synchronous form "
+"as it was causing the parser table to be missed by some package managers."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2199
+msgid ""
+"Tilde expansion for the home directory now has the same semantics as "
+"Bash. Previously it only matched leading tildes."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2201
+msgid ""
+"Context sensitive AST transformation now checks that all names in an "
+"expression are in scope. If they are, then Python mode is retained. "
+"However, if even one is missing, subprocess wrapping is attempted. "
+"Previously, only the left-most name was examined for being within scope."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2205
+msgid ""
+"``dirstack.pushd`` and ``dirstack.popd`` now handle UNC paths (of form "
+"``\\\\<server>\\<share>\\...``), but only on Windows. They emulate "
+"behavior of `CMD.EXE` by creating a temporary mapped drive letter "
+"(starting from z: down) to replace the ``\\\\<server>\\<share>`` portion "
+"of the path, on the ``pushd`` and unmapping the drive letter when all "
+"references to it are popped."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2210
+msgid ""
+"And ``dirstack`` suppresses this temporary drive mapping funky jive if "
+"registry entry ``HKCU\\software\\microsoft\\command "
+"processor\\DisableUNCCheck`` (or HKLM\\...) is a DWORD value 1.  This "
+"allows Xonsh to show the actual UNC path in your prompt string and *also*"
+" allows subprocess commands invoking `CMD.EXE` to run in the expected "
+"working directory. See https://support.microsoft.com/en-us/kb/156276 to "
+"satisfy any lingering curiosity."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2214
+msgid ""
+"``lazy_locate_binary`` handles binary on different drive letter than "
+"current working directory (on Windows)."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2215
+msgid "``_curr_session_parser`` now iterates over ``History``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2216
+msgid ""
+"New implementation of bash completer with better performance and "
+"compatibility."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2217
+msgid ""
+"``$COMPLETIONS_BRACKETS`` is now available to determine whether or not to"
+" include opening brackets in Python completions"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2219
+msgid ""
+"``xonsh.bat`` tries to use `pylauncher "
+"<https://www.python.org/dev/peps/pep-0397/>`_ when available."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2224
+msgid "``History`` method ``show``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2225
+msgid "``_hist_get_portion`` in favor of ``tools.get_portions``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2226
+msgid "Unused imports in proc, flake8."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2231
+msgid "xonsh modules imported now have the __file__ attribute"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2232
+msgid ""
+"Context sensitive AST transformer was not adding argument names to the "
+"local scope. This would then enable extraneous subprocess mode wrapping "
+"for expressions whose leftmost name was function argument. This has been "
+"fixed by properly adding the argument names to the scope."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2236
+msgid ""
+"Foreign shell functions that are mapped to empty filenames no longer "
+"receive aliases since they can't be found to source later."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2238
+msgid ""
+"Correctly preserve arguments given to xon.sh, in case there are quoted "
+"ones."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2239
+msgid ""
+"Environment variables in subprocess mode were not being expanded unless "
+"they were in a sting. They are now expanded properly."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2241
+msgid ""
+"Fixed a bug that prevented xonsh from running scripts with code caching "
+"disabled."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2242
+msgid ""
+"Text of instructions to download missing program now does not get off and"
+" appears in whole."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2244
+msgid "Fix some test problems when win_unicode_console was installed on windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2245
+msgid ""
+"Fixed bug that prompt string and ``$PWD`` failed to track change in "
+"actual working directory if the invoked Python function happened to "
+"change it (e.g via ```os.chdir()```.  Fix is to update ``$PWD`` after "
+"each command in ```BaseShell.default()```."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2248
+msgid "The interactive prompt now correctly handles multiline strings."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2249
+msgid ""
+"``cd \\\\<server>\\<share>`` now works when $AUTO_PUSHD is set, either "
+"creating a temporary mapped drive or simply setting UNC working directory"
+" based on registry ``DisableUNCCheck``.  However, if $AUTO_PUSHD is not "
+"set and UNC checking is enabled (default for Windows), it issues an error"
+" message and fails.  This improves on prior behavior, which would fail to"
+" change the current working directory, but would set $PWD and prompt "
+"string to the UNC path, creating false expectations."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2254
+msgid "fix parsing for tuple of tuples (like `(),()`)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2255
+msgid ""
+"``sys.stdin``, ``sys.stdout``, ``sys.stderr`` no longer complete with "
+"opening square brackets"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2257
+msgid ""
+"xonsh now properly handles syntax error messages arising from using "
+"values in inappropriate contexts (e.g., ``del 7``)."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2261
+msgid "v0.4.5"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2265
+msgid ""
+"``_hist_get`` that uses generators to filter and fetch the history "
+"commands of each session."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2268
+msgid "``-n`` option to the show subcommand to choose to numerate the commands."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2270
+msgid ""
+"The ``exec`` command is now a first class alias that acts the same way as"
+" in sh-based languages. It replaces the current process with the command "
+"and argument that follows it. This allows xonsh to be used as a default "
+"shell while maintaining functionality with SSH, gdb, and other third "
+"party programs that assume the default shell supports raw ``exec command "
+"[args]`` syntax."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2276
+msgid ""
+"This feature introduces some ambiguity between exec-as-a-subprocess and "
+"exec-as-a-function (the inescapable Python builtin). Though the two "
+"pieces of syntax do not overlap, they perform very different operations. "
+"Please see the xonsh FAQ for more information on trade-offs and "
+"mitigation strategies."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2280
+msgid "``which -v`` now calls superhelp, which will print highlighted source."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2281
+msgid ""
+"Added xontribs: * `z (Tracks your most used directories, based on "
+"'frecency'.) <https://github.com/astronouth7303/xontrib-z>`_"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2283
+msgid "amalgamate.py now supports relative imports."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2284
+msgid ""
+"``history show`` args ``-t``, ``-f``, ``-T`` ``+T`` to filter commands by"
+" timestamp"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2286
+msgid ""
+"``ensure_timestamp`` in xonsh.tools to try and convert an object to a "
+"timestamp a.k.a float"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2288
+msgid ""
+"``$XONSH_DATETIME_FORMAT`` envvar, the default format to be used with "
+"``datetime.datetime.strptime()``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2289
+msgid ""
+"``xon.sh`` script now sets ``$LANG=C.UTF8`` in the event that no encoding"
+" is detected."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2291
+msgid "amalgamate.py now properly handles ``from __future__`` imports."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2296
+msgid "``_hist_show`` now uses ``_hist_get`` to print out the commands."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2297
+msgid "``xonsh.completers`` sub-package is now fully lazy."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2298
+msgid ""
+"The vox xontrib now takes flags very similar to Python's venv tool. Use "
+"``vox --help <command>`` to learn more."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2300
+msgid ""
+"Xontribs may now define ``__all__`` as a module top-level to limit what "
+"gets exported to the shell context"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2301
+msgid ""
+"xon.sh uses the interpreter used to install instead of the default "
+"python3."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2302
+msgid "``imphooks`` now checks directory access rights."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2303
+msgid "$TITLE now changes both icon (tab) and window title"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2304
+msgid "Moved ``amalgamate_source`` outside ``build_tables``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2306
+msgid "Disable amalgamation on setup develop"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2307
+msgid "``_hist_parse_args`` implementation refactor"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2309
+msgid "moved all parameter checking in ``_hist_get``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2311
+msgid "``_hist_show`` to handle numeration and timestamp printing of commands"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2312
+msgid ""
+"``xonsh.imphooks`` does not install the import hooks automatically, you "
+"now need to explicitly call the  `install_hook()` method defined in this "
+"module. For example: ``from xonsh.imphooks import install_hook; "
+"install_hook()``. The ``install_hook`` method can safely be called "
+"several times. If you need compatibility with previous versions of Xonsh "
+"you can use the following::"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2320
+msgid "xonfig command now dumps more encoding related settings."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2325
+msgid ""
+"Anaconda Build is shutting down so we can no longer build conda "
+"development packages. All references to these packages are removed from "
+"the documentation."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2327
+msgid ""
+"Removed conda build recipe since the it is no longer used for Anaconda "
+"Build. The recipe used to build xonsh on conda-forge can be found here: "
+"https://github.com/conda-forge/xonsh-"
+"feedstock/blob/master/recipe/meta.yaml"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2334
+msgid "``_zsh_hist_parser`` not parsing history files without timestamps."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2335
+msgid "Fixed amalgamation of aliased imports that are already in ``sys.modules``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2336
+msgid ""
+"Xonsh will no longer fail to start in directories where the user doesn't "
+"have read access."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2338
+msgid ""
+"Fixed parser error line number exception from being raised while trying "
+"to raise a SyntaxError."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2340
+msgid "Made pip completer more robust to when pip is not installed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2341
+msgid ""
+"Fix a startup problem on windows caused by a refactor of Prompt_toolkit. "
+"https://github.com/jonathanslenders/python-prompt-toolkit/commit/a9df2a2"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2343
+msgid "``ensure_slice`` bugfix for -1 index/slice"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2344
+msgid "Alias tab completion works again"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2345
+msgid "Version number reported by bundled PLY"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2346
+msgid "``xonfig`` no longer breaks if PLY is externally installed and version 3.8"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2347
+msgid "LazyObject supports set union"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2348
+msgid ""
+"Fixed error with not sourcing files with ``$XONSH_ENCODING`` and "
+"``$XONSH_ENCODING_ERRORS``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2350
+msgid ""
+"``$IGNOREEOF`` envrionment variable now works properly in the prompt-"
+"toolkit shell."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2352
+msgid "Completions in ``jupyter_kernel.py`` now use updated completion framework"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2358
+msgid "v0.4.4"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2362
+msgid ""
+"New ``lazyobject()``, ``lazydict()``, and ``lazybool()`` decorators to "
+"turn functions into lazy, global objects."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2364
+msgid "``vox remove`` command can remove multiple environments at once."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2365
+msgid "Added FreeBSD support."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2366
+msgid "Tab completion for pip python package manager."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2367
+msgid "Regular expressions for environment variable matching."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2369
+msgid "__contains__ method on Env"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2370
+msgid "Added news tests to enforce changelog conformity."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2371
+msgid ""
+"A new way to add optional items to the prompt format string has been "
+"added. Instead of relying on formatter dict items being padded with a "
+"space, now the padding characters are specified in the format string "
+"itself, in place of the format spec (after a ``:``)."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2376
+msgid ""
+"For example, previously the prompt string ``{cwd}{curr_branch} $`` would "
+"rely on ``curr_branch`` giving its output prepended with a space for "
+"separation, or outputting nothing if it is not applicable. Now "
+"``curr_branch`` just outputs a value or ``None``, and the prompt string "
+"has to specify the surrounding characters: ``{cwd}{curr_branch: {}} $``. "
+"Here the  value of ``curr_branch`` will be prepended with a space (``{}``"
+" is a placeholder for the value itself). The format string after ``:`` is"
+" applied only if the value is not ``None``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2384
+msgid "``xonsh.completers`` subpackage is now amalgamated."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2385
+msgid ""
+"amalgamate.py will now warn if the same name is defined across multiple "
+"different files."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2387
+msgid "xonsh_builtins, xonsh_execer fixtures in conftest.py"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2388
+msgid "Docs on how to tweak the Windows ConHost for a better color scheme."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2389
+msgid "Docs: how to fix Thunar's \"Open Terminal Here\" action."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2390
+msgid ""
+"A new API class was added to Vox: ``xontrib.voxapi.Vox``. This allows "
+"programmatic access to the virtual environment machinery for other "
+"xontribs. See the API documentation for details."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2391
+msgid "History now accepts multiple slices arguments separated by spaces"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2396
+msgid "amalgamate now works on Python 2 and allows relative imports."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2397
+msgid "Top-level xonsh package now more lazy."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2398
+msgid ""
+"Show conda environment name in prompt in parentheses similar what conda "
+"does."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2399
+msgid "Implementation of expandvars now uses regex"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2400
+msgid ""
+"Because of the addition of \"optional items\" to the prompt format "
+"string, the functions ``xonsh.environ.current_branch``, "
+"``xonsh.environ.env_name`` and formatter dict items ``curr_branch``, "
+"``current_job``, ``env_name`` are no longer padded with a separator."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2404
+msgid "many test cases to use fixtures and parametrization"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2405
+msgid ""
+"Public interface in ``xonsh.ansi_colors`` module now has ``ansi_`` prefix"
+" to prevent name conflicts with other parts of xonsh."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2407
+msgid ""
+"Vox was moved to xontrib. Behaves exactly the same as before, just need "
+"to add it to your xontribs."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2408
+msgid "is_int_as_str and is_slice_as_str are now reimplemented in EAFP style"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2413
+msgid "yield statements (nose style) and for loops in tests"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2414 ../../../CHANGELOG.rst:2423
+msgid "is_int_or_slice"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2419
+msgid "_is_in_env, _get_env_string functions on tools"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2420
+msgid ""
+"``xonsh.environ.format_prompt`` has been dropped; "
+"``partial_format_prompt`` can be used instead."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2422
+msgid "for loops and yield statements in test cases, unused imports"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2428
+msgid "Fixed bug on Windows preventing xonsh from changing the console title."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2429
+msgid "Unrecognized ``$XONSH_COLOR_STYLE`` values don't crash terminal."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2430
+msgid ""
+"Writing the window title will no longer accidentally answer interactive "
+"questions, eg ``rm -i`` now works as expected."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2432
+msgid "more matching cases for envvar reference"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2433
+msgid ""
+"Certain linux VTE terminals would not start new tabs in the previous CWD."
+" This may now be rectified by adding ``{vte_new_tab_cwd}`` somewhere to "
+"the prompt."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2436
+msgid ""
+"Unqualified usage of Unstorable in xonsh setup wizard that was causing "
+"the wizard to crash and burn"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2438
+msgid ""
+"Bare ``except:`` was replaced with ``except Exception`` to prevent "
+"accidentally catching utility exceptions such as KeyboardInterrupt, which"
+" caused unexpected problems like printing out the raw $PROMPT string."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2441
+msgid "Fixed multiple definition of ``EQUAL``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2442
+msgid "Fixed multiple definition of ``pprint``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2443
+msgid "Fixed multiple definition of ``pyghooks``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2444
+msgid "Fixed multiple definition of ``pygments``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2445
+msgid "Fixed multiple definition of ``tokenize``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2446
+msgid "redundant and 'leaky' tests in nose"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2447
+msgid "Fix bug that prevented disabling $INTENSIFY_COLORS_ON_WIN in ``xonshrc``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2448
+msgid ""
+"``LazyJSON`` will now hide failures to close, and instead rely on "
+"reference counting if something goes wrong."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2450
+msgid "Fixed maximum recursion error with color styles."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2451
+msgid ""
+"Parser tables will no longer be generated in the current directory by "
+"accident."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2453
+msgid "Error messages when zsh or bash history file is not found"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2459
+msgid "v0.4.3"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2463
+msgid "The results of glob expressions are sorted if ``$GLOB_SORTED`` is set."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2464
+msgid "LazyObjects will now load themselves on ``__getitem__()``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2465
+msgid ""
+"New tools in ``xonsh.lazyasd`` module for loading modules in background "
+"threads."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2471
+msgid "``GLOB_SORTED`` is enabled by default."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2472
+msgid ""
+"Sped up loading of pygments by ~100x by loading ``pkg_resources`` in "
+"background."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2474
+msgid ""
+"Sped up loading of prompt-toolkit by ~2x-3x by loading ``pkg_resources`` "
+"in background."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2476
+msgid ""
+"``setup.py`` will no longer git checkout to replace the version number. "
+"Now it simply stores and reuses the original version line."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2482
+msgid "Removed the ``xonsh.built_ins.ENV`` global instance of the Env class."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2487
+msgid ""
+"Bug with setting hist size not being settable due to lazy object loading "
+"has been resolved."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2489
+msgid "Minor amalgamate bug with ``import pkg.mod`` amalgamated imports."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2490
+msgid ""
+"No longer raises an error if a directory in ``$PATH`` does not exist on "
+"Python v3.4."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2492
+msgid ""
+"Fixed a readline shell completion issue that caused by inconsistency "
+"between ``$CASE_SENSITIVE_COMPLETIONS`` and readline's inputrc setting."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2499
+msgid "v0.4.2"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2503
+msgid ""
+"dev versions now display a ``devN`` counter at the end and ``xonfig "
+"info`` also displays the git sha of the current build"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2509
+msgid ""
+"`prompt_toolkit` completion no longer automatically selects the first "
+"entry on first tab-press when completing multiple directories at once"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2514
+msgid ""
+"Sourcing foreign shells now allow fully capture environment variables "
+"that contain newlines as long as they also don't contain equal signs."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2516
+msgid "Added scripts directory to MANIFEST.in"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2522
+msgid "v0.4.1"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2526
+msgid ""
+"``setup.py`` will only amalgamate source files if ``amalgamate.py`` is "
+"available. This fixes issues with installing from pip."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2533
+msgid "v0.4.0"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2537
+msgid ""
+"A new class, ``xonsh.tools.EnvPath`` has been added. This class "
+"implements a ``MutableSequence`` object and overrides the ``__getitem__``"
+" method so that when its entries are requested (either explicitly or "
+"implicitly), variable and user expansion is performed, and relative paths"
+" are resolved. ``EnvPath`` accepts objects (or lists of objects) of "
+"``str``, ``bytes`` or ``pathlib.Path`` types."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2543
+msgid ""
+"New amalgamate tool collapses modules inside of a package into a single "
+"``__amalgam__.py`` module. This tool glues together all of the code from "
+"the modules in a package, finds and removes intra-package imports, makes "
+"all non-package imports lazy, and adds hooks into the ``__init__.py``. "
+"This helps makes initial imports of modules fast and decreases startup "
+"time. Packages and sub-packages must be amalgamated separately."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2549
+msgid ""
+"New lazy and self-destructive module ``xonsh.lazyasd`` adds a suite of "
+"classes for delayed creation of objects."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2552
+msgid "A ``LazyObject`` won't be created until it has an attribute accessed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2553
+msgid "A ``LazyDict`` will load each value only when a key is accessed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2554
+msgid "A ``LazyBool`` will only be created when ``__bool__()`` is called."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2556
+msgid ""
+"Additionally, when fully loaded, the above objects will replace "
+"themselves by name in the context that they were handed, thus "
+"dereferencing themselves. This is useful for global variables that may be"
+" expensive to create, should only be created once, and may not be used in"
+" any particular session."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2560
+msgid ""
+"New ``xon.sh`` script added for launching xonsh from a sh environment. "
+"This should be used if the normal ``xonsh`` script does not work for some"
+" reason."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2563
+msgid "Normal globbing is now available in Python mode via ``g````"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2564
+msgid ""
+"Backticks were expanded to allow searching using arbitrary functions, via"
+" ``@<func>````"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2566
+msgid "``xonsh.platform`` now has a new ``PATH_DEFAULT`` variable."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2567
+msgid ""
+"Tab completers can now raise ``StopIteration`` to prevent consideration "
+"of remaining completers."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2569
+msgid "Added tab completer for the ``completer`` alias."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2570
+msgid ""
+"New ``Block`` and ``Functor`` context managers are now available as part "
+"of the ``xonsh.contexts`` module."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2572
+msgid ""
+"``Block`` provides support for turning a context body into a non-"
+"executing list of string lines. This is implement via a syntax tree "
+"transformation. This is useful for creating remote execution tools that "
+"seek to prevent local execution."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2576
+msgid ""
+"``Functor`` is a subclass of the ``Block`` context manager that turns the"
+" block into a callable object.  The function object is available via the "
+"``func()`` attribute.  However, the ``Functor`` instance is itself "
+"callable and will dispatch to ``func()``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2580
+msgid ""
+"New ``$VC_BRANCH_TIMEOUT`` environment variable is the time (in seconds) "
+"of how long to spend attempting each individual version control branch "
+"information command during ``$PROMPT`` formatting.  This allows for "
+"faster prompt resolution and faster startup times."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2584
+msgid ""
+"New lazy methods added to CommandsCache allowing for testing and "
+"inspection without the possibility of recomputing the cache."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2586 ../../../CHANGELOG.rst:2598
+msgid "``!(command)`` is now usefully iterable, yielding lines of stdout"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2587 ../../../CHANGELOG.rst:2599
+msgid ""
+"Added XonshCalledProcessError, which includes the relevant "
+"CompletedCommand. Also handles differences between Py3.4 and 3.5 in "
+"CalledProcessError"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2589
+msgid ""
+"Tab completion of paths now includes zsh-style path expansion "
+"(subsequence matching), toggleable with ``$SUBSEQUENCE_PATH_COMPLETION``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2591
+msgid ""
+"Tab completion of paths now includes \"fuzzy\" matches that are accurate "
+"to within a few characters, toggleable with ``$FUZZY_PATH_COMPLETION``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2593 ../../../CHANGELOG.rst:2596
+#: ../../../CHANGELOG.rst:2644
+msgid ""
+"Provide ``$XONSH_SOURCE`` for scripts in the environment variables "
+"pointing to the currently running script's path"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2595
+msgid "Arguments '+' and '-' for the ``fg`` command (job control)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2601
+msgid "XonshError and XonshCalledProcessError are now in builtins:"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2603
+msgid "``history session``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2604
+msgid "``history xonsh``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2605
+msgid "``history all``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2606
+msgid "``history zsh``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2607
+msgid "``history bash``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2608
+msgid "``__xonsh_history__.show()``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2610
+msgid ""
+"New ``pathsep_to_set()`` and ``set_to_pathsep()`` functions convert "
+"to/from ``os.pathsep`` separated strings to a set of strings."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2616
+msgid "Changed testing framework from nose to pytest"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2617
+msgid ""
+"All ``PATH``-like environment variables are now stored in an ``EnvPath`` "
+"object, so that non-absolute paths or paths containing environment "
+"variables can be resolved properly."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2620
+msgid ""
+"In ``VI_MODE``, the ``v`` key will enter character selection mode, not "
+"open the editor.  ``Ctrl-X Ctrl-E`` will still open an editor in any mode"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2622
+msgid ""
+"``$XONSH_DEBUG`` will now suppress amalgamated imports. This usually "
+"needs to be set in the calling environment or prior to *any* xonsh "
+"imports."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2624
+msgid "Restructured ``xonsh.platform`` to be fully lazy."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2625
+msgid "Restructured ``xonsh.ansi_colors`` to be fully lazy."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2626
+msgid ""
+"Ensured the ``pygments`` and ``xonsh.pyghooks`` are not imported until "
+"actually needed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2628
+msgid "Yacc parser is now loaded in a background thread."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2629
+msgid ""
+"Cleaned up argument parsing in ``xonsh.main.premain`` by removing the "
+"``undo_args`` hack."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2631
+msgid "Now complains on invalid arguments."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2632
+msgid ""
+"``Env`` now guarantees that the ``$PATH`` is available and mutable when "
+"initialized."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2634
+msgid ""
+"On Windows the ``PROMPT`` environment variable is reset to `$P$G` before "
+"sourcing ``*.bat`` files."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2636
+msgid ""
+"On Windows the ``PROMPT`` environment variable is reset to `$P$G` before "
+"starting subprocesses. This prevents the unformatted xonsh ``PROMPT`` "
+"template from showing up when running batch files with ``ECHO ON```"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2639
+msgid ""
+"``@()`` now passes through functions as well as strings, which allows for"
+" the use of anonymous aliases and aliases not explicitly added to the "
+"``aliases`` mapping."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2642
+msgid ""
+"Functions in ``Execer`` now take ``transform`` kwarg instead of "
+"``wrap_subproc``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2646
+msgid "XonshError and XonshCalledProcessError are now in builtins"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2647
+msgid ""
+"``__repr__`` on the environment only shows a short representation of the "
+"object instead of printing the whole environment dictionary"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2649
+msgid "More informative prompt when configuring foreign shells in the wizard."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2650
+msgid ""
+"``CommandsCache`` is now a mapping from command names to a tuple of "
+"(executable locations, has alias flags). This enables faster lookup "
+"times."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2652
+msgid ""
+"``locate_bin()`` now uses the ``CommandsCache``, rather than scanning the"
+" ``$PATH`` itself."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2654
+msgid "``$PATHEXT`` is now a set, rather than a list."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2655
+msgid "Ignore case and leading a quotes when sorting completions"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2660
+msgid ""
+"The ``'console_scripts'`` option to setuptools has been removed. It was "
+"found to cause slowdowns of over 150 ms on every startup."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2662
+msgid ""
+"Bash is no longer loaded by default as a foreign shell for initial "
+"configuration. This was done to increase stock startup times. This "
+"behaviour can be recovered by adding ``{\"shell\": \"bash\"}`` to your "
+"``\"foreign_shells\"`` in your config.json file. For more details, see "
+"http://xon.sh/xonshconfig.html#foreign-shells"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2667
+msgid "``ensure_git()`` and ``ensure_hg()`` decorators removed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2668
+msgid "``call_hg_command()`` function removed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2673
+msgid ""
+"Issue where ``xonsh`` did not expand user and environment variables in "
+"``$PATH``, forcing the user to add absolute paths."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2675
+msgid "Fixed a problem with aliases not always being found."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2676
+msgid ""
+"Fixed issue where input was directed to the last process in a pipeline, "
+"rather than the first."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2678
+msgid "Bug where xonfig wizard can't find ENV docs"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2679
+msgid ""
+"Fixed ``xonsh.environ.locate_binary()`` to handle PATH variable are given"
+" as a tuple."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2680
+msgid ""
+"Fixed missing completions for ``cd`` and ```rmdir`` when directories had "
+"spaces in their names."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2682
+msgid "Bug preventing `xonsh` executable being installed on macOS."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2683
+msgid "Strip leading space in commands passed using the \"-c\" switch"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2684
+msgid "Fixed xonfig wizard failing on Windows due to colon in created filename."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2685
+msgid ""
+"Ensured that the prompt_toolkit shell functions, even without a "
+"``completer`` attribute."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2687
+msgid "Fixed crash resulting from malformed ``$PROMPT`` or ``$TITLE``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2688
+msgid "xonsh no longer backgrounds itself after every command on Cygwin."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2689
+msgid ""
+"Fixed an issue about ``os.killpg()`` on Cygwin which caused xonsh to "
+"crash occasionally"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2691
+msgid "Fix crash on startup when Bash Windows Subsystem for Linux is on the Path."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2692
+msgid ""
+"Fixed issue with setting and signaling process groups on Linux when the "
+"first process is a function alias and has no pid."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2694
+msgid ""
+"Fixed ``_list_completers`` such that it does not throw a ValueError if no"
+" completer is registered."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2695
+msgid ""
+"Fixed ``_list_completers`` such that it does not throw an AttributeError "
+"if a completer has no docstring."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2696
+msgid "Bug that caused command line argument ``--config-path`` to be ignored."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2697
+msgid "Bug that caused xonsh to break on startup when prompt-toolkit < 1.0.0."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2701
+msgid "v0.3.4"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2705
+msgid "``$PROMPT`` from foreign shells is now ignored."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2706
+msgid ""
+"``$RC_FILES`` environment variable now stores the run control files we "
+"attempted to load."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2708
+msgid ""
+"Only show the prompt for the wizard if we did not attempt to load any run"
+" control files (as opposed to if none were successfully loaded)."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2710
+msgid "Git and mercurial branch and dirty function refactor to improve run times."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2715
+msgid ""
+"Fixed an issue whereby attempting to delete a literal value (e.g., ``del "
+"7``) in the prompt_toolkit shell would cause xonsh to crash."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2717
+msgid ""
+"Fixed broken behavior when using ``cd ..`` to move into a nonexistent "
+"directory."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2719
+msgid ""
+"Partial workaround for Cygwin where ``pthread_sigmask`` appears to be "
+"missing from the ``signal`` module."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2721
+msgid "Fixed crash resulting from malformed ``$PROMPT``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2722
+msgid ""
+"Fixed regression on Windows with the locate_binary() function. The bug "
+"prevented `source-cmd` from working correctly and broke the "
+"``activate``/``deactivate`` aliases for the conda environments."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2725
+msgid ""
+"Fixed crash resulting from errors other than syntax errors in run control"
+" file."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2727
+msgid ""
+"On Windows if bash is not on the path look in the registry for the "
+"defaults install directory for GitForWindows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2732
+msgid "v0.3.3"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2735
+msgid ""
+"Question mark literals, ``?``, are now allowed as part of subprocess "
+"argument names."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2737
+msgid "IPython style visual pointer to show where syntax error was detected"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2738
+msgid ""
+"Pretty printing of output and syntax highlighting of input and output can"
+" now be controlled via new environment variables ``$COLOR_INPUT``, "
+"``$COLOR_RESULTS``, and ``$PRETTY_PRINT_RESULTS``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2742
+msgid ""
+"In interactive mode, if there are stopped or background jobs, Xonsh "
+"prompts for confirmations rather than just killing all jobs and exiting."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2747
+msgid ""
+"``which`` now gives a better verbose report of where the executables are "
+"found."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2749
+msgid ""
+"Tab completion now uses a different interface, which allows new "
+"completers to be implemented in Python."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2751
+msgid ""
+"Most functions in the ``Execer`` now take an extra argument "
+"``transform``, indicating whether the syntax tree transformations should "
+"be applied."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2754
+msgid ""
+"``prompt_toolkit`` is now loaded lazily, decreasing load times when using"
+" the ``readline`` shell."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2756
+msgid "RC files are now executed directly in the appropriate context."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2757
+msgid ""
+"``_`` is now updated by ``![]``, to contain the appropriate "
+"``CompletedCommand`` object."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2764
+msgid "Fixed bug on Windows where ``which`` did not include current directory"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2768
+msgid "Fixed crashed bash-completer when bash is not available on Windows"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2769
+msgid ""
+"Fixed bug on Windows where tab-completion for executables would return "
+"all files."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2770
+msgid ""
+"Fixed bug on Windows which caused the bash $PROMPT variable to be used "
+"when no no $PROMPT variable was set in .xonshrc"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2772
+msgid ""
+"Improved start-up times by caching information about bash completion "
+"functions"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2774
+msgid ""
+"The --shell-type CLI flag now takes precedence over $SHELL_TYPE specified"
+" in .xonshrc"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2776
+msgid ""
+"Fixed an issue about ``os.killpg()`` on OS X which caused xonsh crash "
+"with occasionally."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2782
+msgid "v0.3.2"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2785
+msgid ""
+"Fixed PermissionError when tab completions tries to lookup executables in"
+" directories without read permissions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2787
+msgid "Fixed incorrect parsing of command line flags"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2792
+msgid "v0.3.1"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2795
+msgid ""
+"When a subprocess exits with a signal (e.g. SIGSEGV), a message is "
+"printed, similar to Bash."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2797
+msgid "Added comma literals to subproc mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2798
+msgid ""
+"``@$(cmd)`` has been added as a subprocess-mode operator, which replaces "
+"in the subprocess command itself with the result of running ``cmd``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2800
+msgid ""
+"New ``showcmd`` alias for displaying how xonsh interprets subprocess mode"
+" commands and arguments."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2802
+msgid ""
+"Added ``$DYNAMIC_CWD_WIDTH`` to allow the adjusting of the current "
+"working directory width in the prompt."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2804
+msgid "Added ``$XONSH_DEBUG`` environment variable to help with debugging."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2805
+msgid ""
+"The ``${...}`` shortcut for ``__xonsh_env__`` now returns appropriate "
+"completion options"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2810
+msgid ""
+"On Windows the default bash completions files ``$BASH_COMPLETIONS`` now "
+"points to the default location of the completions files used by 'Git for "
+"Windows'"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2812
+msgid ""
+"On Cygwin, some tweaks are applied to foreign shell subprocess calls and "
+"the readline import, in order to avoid hangs on launch."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2818
+msgid "Special cased code for handling version of prompt_toolkit < v1.0.0"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2823
+msgid "Show sorted bash completions suggestions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2824
+msgid ""
+"Fix bash completions (e.g git etc.) on windows when completions files "
+"have spaces in their path names"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2826
+msgid "Fixed a bug preventing ``source-bash`` from working on Windows"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2827
+msgid "Numerous improvements to job control via a nearly-complete rewrite."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2828
+msgid ""
+"Addressed issue with finding the next break in subproc mode in context "
+"sensitive parsing."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2830
+msgid ""
+"Fixed issue with loading readline init files (inputrc) that seems to be "
+"triggered by libedit."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2832
+msgid "``$MULTILINE_PROMPT`` now allows colors, as originally intended."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2833
+msgid ""
+"Rectified install issue with Jupyter hook when installing with pyenv, "
+"Jupyter install hook now respects ``--prefix`` argument."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2835
+msgid "Fixed issue with the xonsh.ply subpackage not being installed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2836
+msgid ""
+"Fixed a parsing bug whereby a trailing ``&`` on a line was being ignored "
+"(processes were unable to be started in the background)"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2842
+msgid "v0.3.0"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2845
+msgid ""
+"``and``, ``or``, ``&&``, ``||`` have been added as subprocess logical "
+"operators, by popular demand!"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2847
+msgid ""
+"Subprocesses may be negated with ``not`` and grouped together with "
+"parentheses."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2848
+msgid "New framework for writing xonsh extensions, called ``xontribs``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2849
+msgid ""
+"Added a new shell type ``'none'``, used to avoid importing ``readline`` "
+"or ``prompt_toolkit`` when running scripts or running a single command."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2851
+msgid "New: `sudo` functionality on Windows through an alias"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2852
+msgid ""
+"Automatically enhance colors for readability in the default terminal "
+"(cmd.exe) on Windows. This functionality can be enabled/disabled with the"
+" $INTENSIFY_COLORS_ON_WIN environment variable."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2855
+msgid ""
+"Added ``Ellipsis`` lookup to ``__xonsh_env__`` to allow environment "
+"variable checks, e.g. ``'HOME' in ${...}``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2856
+msgid ""
+"Added an option to update ``os.environ`` every time the xonsh environment"
+" changes. This is disabled by default but can be enabled by setting "
+"``$UPDATE_OS_ENVIRON`` to True."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2859
+msgid ""
+"Added Windows 'cmd.exe' as a foreign shell. This gives xonsh the ability "
+"to source Windows Batch files (.bat and .cmd). Calling ``source-cmd "
+"script.bat`` or the alias ``source-bat script.bat`` will call the bat "
+"file and changes to the environment variables will be reflected in xonsh."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2863
+msgid ""
+"Added an alias for the conda environment activate/deactivate batch "
+"scripts when running the Anaconda python distribution on Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2865
+msgid ""
+"Added a menu entry to launch xonsh when installing xonsh from a conda "
+"package"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2866
+msgid ""
+"Added a new ``which`` alias that supports both regular ``which`` and also"
+" searches through xonsh aliases. A pure python implementation of "
+"``which`` is used. Thanks to Trent Mick. https://github.com/trentm/which/"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2869
+msgid "Added support for prompt toolkit v1.0.0."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2870
+msgid ""
+"Added ``$XONSH_CACHE_SCRIPTS`` and ``$XONSH_CACHE_EVERYTHING`` "
+"environment variables to control caching of scripts and interactive "
+"commands.  These can also be controlled by command line options ``--no-"
+"script-cache`` and ``--cache-everything`` when starting xonsh."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2874
+msgid ""
+"Added a workaround to allow ctrl-c to interrupt reverse incremental "
+"search in the readline shell"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2879
+msgid ""
+"Running scripts through xonsh (or running a single command with ``-c``) "
+"no longer runs the user's rc file, unless the ``--login`` option is "
+"specified. Also avoids loading aliases and environments from foreign "
+"shells, as well as loading bash completions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2883
+msgid ""
+"rc files are now compiled and cached, to avoid re-parsing when they "
+"haven't changed.  Scripts are also compiled and cached, and there is the "
+"option to cache interactive commands."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2886
+msgid ""
+"Left and Right arrows in the ``prompt_toolkit`` shell now wrap in "
+"multiline environments"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2888
+msgid ""
+"Regexpath matching with backticks, now returns an empty list in python "
+"mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2889
+msgid "Pygments added as a dependency for the conda package"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2890
+msgid ""
+"Foreign shells now allow for setting exit-on-error commands before and "
+"after all other commands via the ``seterrprevcmd`` and ``seterrpostcmd`` "
+"arguments. Sensinble defaults are provided for existing shells."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2893
+msgid ""
+"PLY is no longer a external dependency but is bundled in xonsh/ply. Xonsh"
+" can therefore run without any external dependencies, although having "
+"prompt-toolkit recommended."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2896
+msgid ""
+"Provide better user feedback when running ``which`` in a platform that "
+"doesn't provide it (e.g. Windows)."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2898
+msgid ""
+"The lexer now uses a custom tokenizer that handles regex globs in the "
+"proper way."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2908
+msgid "Fixed bug with loading prompt-toolkit shell < v0.57."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2909
+msgid ""
+"Fixed bug with prompt-toolkit completion when the cursor is not at the "
+"end of the line."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2911
+msgid ""
+"Aliases will now evaluate environment variables and other expansions at "
+"execution time rather than passing through a literal string."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2913
+msgid ""
+"Fixed environment variables from os.environ not being loaded when a "
+"running a script"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2915
+msgid "The readline shell will now load the inputrc files."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2916
+msgid "Fixed bug that prevented `source-alias` from working."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2917
+msgid "Now able to ``^C`` the xonfig wizard on start up."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2918
+msgid ""
+"Fixed deadlock on Windows when running subprocess that generates enough "
+"output to fill the OS pipe buffer."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2920
+msgid ""
+"Sourcing foreign shells will now return a non-zero exit code if the "
+"source operation failed for some reason."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2922
+msgid ""
+"Fixed PermissionError when running commands in directories without read "
+"permissions"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2923
+msgid "Prevent Windows fixups from overriding environment vars in static config"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2924
+msgid ""
+"Fixed Optional Github project status to reflect added/removed files via "
+"git_dirty_working_directory()"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2925
+msgid ""
+"Fixed xonsh.exe launcher on Windows, when Python install directory has a "
+"space in it"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2926
+msgid "Fixed `$CDPATH` to support `~` and environments variables in its items"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2932
+msgid "v0.2.7"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2935
+msgid ""
+"Added new valid ``$SHELL_TYPE`` called ``'best'``. This selects the best "
+"value for the concrete shell type based on the availability on the user's"
+" machine."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2937
+msgid ""
+"New environment variable ``$XONSH_COLOR_STYLE`` will set the color "
+"mapping for all of xonsh."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2939
+msgid ""
+"New ``XonshStyle`` pygments style will determine the appropriate color "
+"mapping based on ``$XONSH_COLOR_STYLE``.  The associated "
+"``xonsh_style_proxy()`` is intended for wrapping ``XonshStyle`` when "
+"actually being used by pygments."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2943
+msgid ""
+"The functions ``print_color()`` and ``format_color()`` found in "
+"``xonsh.tools`` dispatch to the approriate shell color handling and may "
+"be used from anywhere."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2946
+msgid ""
+"``xonsh.tools.HAVE_PYGMENTS`` flag now denotes if pygments is installed "
+"and available on the users system."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2948
+msgid "The ``ansi_colors`` module is now available for handling ANSI color codes."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2949
+msgid "``?`` and ``??`` operator output now has colored titles, like in IPython."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2950
+msgid "``??`` will syntax highlight source code if pygments is available."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2951
+msgid "Python mode output is now syntax highlighted if pygments is available."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2952
+msgid ""
+"New ``$RIGHT_PROMPT`` environment variable for displaying right-aligned "
+"text in prompt-toolkit shell."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2954
+msgid ""
+"Added ``!(...)`` operator, which returns an object representing the "
+"result of running a command.  The truth value of this object is True if "
+"the return code is equal to zero and False otherwise."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2957
+msgid ""
+"Optional dependency on the win_unicode_console package to enable unicode "
+"support in cmd.exe on Windows. This can be disabled/enabled with the "
+"``$WIN_UNICODE_CONSOLE`` environment variable."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2963
+msgid "Updated ``$SHELL_TYPE`` default to ``'best'``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2964
+msgid ""
+"Shell classes are now responsible for implementing their own color "
+"formatting and printing."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2966
+msgid ""
+"Prompt coloring, history diffing, and tracing uses new color handling "
+"capabilities."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2968
+msgid ""
+"New ``Token.Color`` token for xonsh color names, e.g. we now use "
+"``Token.Color.RED`` rather than ``Token.RED``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2970
+msgid ""
+"Untracked files in git are ignored when determining if a git workdir is "
+"is dirty. This affects the coloring of the branch label."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2972
+msgid ""
+"Regular expression globbing now uses ``re.fullmatch`` instead of "
+"``re.match``, and the result of an empty regex glob does not cause the "
+"argument to be deleted."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2979
+msgid ""
+"The ``xonsh.tools.TERM_COLORS`` mapping has been axed, along with all "
+"references to it. This may cause a problem if you were using a raw color "
+"code in your xonshrc file from ``$FORMATTER_DICT``. To fix, simply remove"
+" these references."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2986
+msgid "Multidimensional slicing, as in numpy, no longer throws SyntaxErrors."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2987
+msgid "Some minor zsh fixes for more platforms and setups."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2988
+msgid ""
+"The ``BaseShell.settitle`` method no longer has its commands captured by "
+"``$(...)``"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2994
+msgid "v0.2.6"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2997
+msgid ""
+"``trace`` alias added that enables users to turn on and off the printing "
+"of source code lines prior to their execution. This is useful for "
+"debugging scripts."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:2999
+msgid ""
+"New ability to force callable alias functions to be run in the "
+"foreground, i.e. the main thread from which the function was called. This"
+" is useful for debuggers and profilers which may require such access. Use"
+" the ``xonsh.proc.foreground`` decorator on an alias function to flag it."
+" ``ForegroundProcProxy`` and ``SimpleForegroundProcProxy`` classes have "
+"been added to support this feature. Normally, forcing a foreground alias "
+"is not needed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3005
+msgid ""
+"Added boolean ``$RAISE_SUBPROC_ERROR`` environment variable. If true and "
+"a subprocess command exits with a non-zero return code, a "
+"CalledProcessError will be raised. This is useful in scripts that should "
+"fail at the first error."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3009
+msgid ""
+"If the ``setproctitle`` package is installed, the process title will be "
+"set to ``'xonsh'`` rather than the path to the Python interpreter."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3011
+msgid ""
+"zsh foreign shell interface now supported natively in xonsh, like with "
+"Bash. New ``source-zsh`` alias allows easy access to zsh scripts and "
+"functions."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3013
+msgid "Vox virtual environment manager added."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3017
+msgid ""
+"The ``foreign_shell_data()`` keyword arguments ``envcmd`` and "
+"``aliascmd`` now default to ``None``."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3019
+msgid "Updated alias docs to pull in usage from the commands automatically."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3023
+msgid "Hundreds of bugs related to line and column numbers have been addressed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3024
+msgid ""
+"Fixed path completion not working for absolute paths or for expanded "
+"paths on Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3025
+msgid "Fixed issue with hg dirty branches and $PATH."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3026
+msgid ""
+"Fixed issues related to foreign shell data in files with whitespace in "
+"the names."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3027
+msgid ""
+"Worked around bug in ConEmu/cmder which prevented ``get_git_branch()`` "
+"from working in these terminal emulators on Windows."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3032
+msgid "v0.2.5"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3035
+msgid ""
+"New configuration utility 'xonfig' which reports current system setup "
+"information and creates config files through an interactive wizard."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3038
+msgid "Toolkit for creating wizards now available"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3039
+msgid "timeit and which aliases will now complete their arguments."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3040
+msgid ""
+"$COMPLETIONS_MENU_ROWS environment variable controls the size of the tab-"
+"completion menu in prompt-toolkit."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3042
+msgid ""
+"Prompt-toolkit shell now supports true multiline input with the ability "
+"to scroll up and down in the prompt."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3047
+msgid ""
+"The xonfig wizard will run on interactive startup if no configuration "
+"file is found."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3049
+msgid "BaseShell now has a singleline() method for prompting a single input."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3050
+msgid "Environment variable docs are now auto-generated."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3051
+msgid ""
+"Prompt-toolkit shell will now dynamically allocate space for the tab-"
+"completion menu."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3053
+msgid ""
+"Looking up nonexistent environment variables now generates an error in "
+"Python mode, but produces a sane default value in subprocess mode."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3055
+msgid ""
+"Environments are now considered to contain all manually-adjusted keys, "
+"and also all keys with an associated default value."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3060
+msgid ""
+"Removed ``xonsh.ptk.shortcuts.Prompter.create_prompt_layout()`` and "
+"``xonsh.ptk.shortcuts.Prompter.create_prompt_application()`` methods to "
+"reduce portion of xonsh that forks prompt-toolkit. This may require users"
+" to upgrade to prompt-toolkit v0.57+."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3067
+msgid ""
+"First prompt in the prompt-toolkit shell now allows for up and down "
+"arrows to search through history."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3069
+msgid "Made obtaining the prompt-toolkit buffer thread-safe."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3070
+msgid ""
+"Now always set non-detypable environment variables when sourcing foreign "
+"shells."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3072
+msgid ""
+"Fixed issue with job management if a TTY existed but was not controlled "
+"by the process, posix only."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3074
+msgid "Jupyter kernel no longer times out when using foreign shells on startup."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3075
+msgid ""
+"Capturing redirections, e.g. ``$(echo hello > f.txt)``, no longer fails "
+"with a decoding error."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3077
+msgid "Evaluation in a Jupyter cell will return pformatted object."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3078
+msgid "Jupyter with redirect uncaptured subprocs to notebook."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3079
+msgid "Tab completion in Jupyter fixed."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3083
+msgid "v0.2.1 - v0.2.4"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3084
+msgid "You are reading the docs...but you still feel hungry."
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3087
+msgid "v0.2.0"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3090
+msgid "Rich history recording and replaying"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3093
+msgid "v0.1.0"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3096
+msgid "Naturally typed environment variables"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3097
+msgid "Inherits the environment from BASH"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3098
+msgid "Uses BASH completion for subprocess commands"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3099
+msgid "Regular expression filename globbing"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3100
+msgid "Its own PLY-based lexer and parser"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3101
+msgid "xonsh code parses into a Python AST"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3102
+msgid "You can do all the normal Python things, like arithmetic and importing"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3103
+msgid "Captured and uncaptured subprocesses"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3104
+msgid "Pipes, redirection, and non-blocking subprocess syntax support"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3105
+msgid "Help and superhelp with ? and ??"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3106
+msgid "Command aliasing"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3107
+msgid "Multiline input, unlike ed"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3108
+msgid "History matching like in IPython"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3109
+msgid "Color prompts"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3110
+msgid "Low system overhead"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3116
+msgid "<v0.1.0"
+msgstr ""
+
+#: ../../../CHANGELOG.rst:3117
+msgid "The before times, like 65,000,000 BCE."
+msgstr ""
+

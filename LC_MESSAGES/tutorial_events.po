@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../tutorial_events.rst:5
+msgid "Tutorial: Events"
+msgstr ""
+
+#: ../../tutorial_events.rst:6
+msgid "What's the best way to keep informed in xonsh? Subscribe to an event!"
+msgstr ""
+
+#: ../../tutorial_events.rst:9
+msgid "Overview"
+msgstr ""
+
+#: ../../tutorial_events.rst:10
+msgid ""
+"Simply, events are a way for various pieces of xonsh to tell each other "
+"what's going on. They're fired when something of note happens, eg the "
+"current directory changes or just before a command is executed."
+msgstr ""
+
+#: ../../tutorial_events.rst:14
+msgid ""
+"While xonsh has its own event system, it is not dissimilar to other event"
+" systems. If you do know events, this should be easy to understand. If "
+"not, then this document is extra for you."
+msgstr ""
+
+#: ../../tutorial_events.rst:18
+msgid "Show me the code!"
+msgstr ""
+
+#: ../../tutorial_events.rst:19
+msgid "Fine, fine!"
+msgstr ""
+
+#: ../../tutorial_events.rst:21
+msgid ""
+"This will add a line to a file every time the current directory changes "
+"(due to ``cd``, ``pushd``, or several other commands)::"
+msgstr ""
+
+#: ../../tutorial_events.rst:29
+msgid ""
+"The exact arguments passed and returns expected vary from event to event;"
+" see the `event list <events.html>`_ for the details."
+msgstr ""
+
+#: ../../tutorial_events.rst:32
+msgid ""
+"Note that the event system is keyword only. Event handlers must match "
+"argument names and must have a ``**kw`` as protection against future "
+"changes."
+msgstr ""
+
+#: ../../tutorial_events.rst:36
+msgid "Can I use this, too?"
+msgstr ""
+
+#: ../../tutorial_events.rst:38
+msgid "Yes! It's even easy! In your xontrib, you just have to do something like::"
+msgstr ""
+
+#: ../../tutorial_events.rst:46
+msgid ""
+"This will enable users to call ``help(events.myxontrib_on_spam)`` and get"
+" useful output."
+msgstr ""
+
+#: ../../tutorial_events.rst:49
+msgid "Further Reading"
+msgstr ""
+
+#: ../../tutorial_events.rst:51
+msgid ""
+"For a complete list of available events, see `the events reference "
+"<events.html>`_."
+msgstr ""
+
+#: ../../tutorial_events.rst:53
+msgid ""
+"If you want to know more about the gory details of what makes events "
+"tick, see `Advanced Events <advanced_events.html>`_."
+msgstr ""
+

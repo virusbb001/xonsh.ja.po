@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../tutorial_ptk.rst:5
+msgid "Tutorial: ``prompt_toolkit`` custom keybindings"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:7
+msgid ""
+"Are you really jonesing for some special keybindings? We can help you out"
+" with that. The first time is free and so is every other time!"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:10
+msgid ""
+"This tutorial will let you hook directly into the ``prompt_toolkit`` "
+"keybinding manager. It will not stop you from rendering your prompt "
+"completely unusable, so tread lightly."
+msgstr ""
+
+#: ../../tutorial_ptk.rst:16
+msgid "Overview"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:18
+msgid ""
+"The ``prompt_toolkit`` shell has a registry for handling custom "
+"keybindings. You may not like the default keybindings in xonsh, or you "
+"may want to add a new key binding."
+msgstr ""
+
+#: ../../tutorial_ptk.rst:22
+msgid ""
+"We'll walk you though how to do this using ``prompt_toolkit`` tools to "
+"define keybindings and warn you about potential pitfalls."
+msgstr ""
+
+#: ../../tutorial_ptk.rst:25
+msgid "All of the code below can be entered into your `xonshrc <xonshrc.html>`_"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:28
+msgid "Control characters"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:30
+msgid ""
+"We can't and won't stop you from doing what you want, but in the interest"
+" of a functioning shell, you probably shouldn't mess with the following "
+"keystrokes. Some of them are `ASCII control characters "
+"<https://en.wikipedia.org/wiki/Control_character#In_ASCII>`_ and _really_"
+" shouldn't be used. The others are used by xonsh and will result in some "
+"loss of functionality (in less you take the time to rebind them "
+"elsewhere)."
+msgstr ""
+
+#: ../../tutorial_ptk.rst:41
+msgid "Keystroke"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:42
+msgid "ASCII control representation"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:43
+msgid "Default command"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:44
+msgid "``Control J``"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:45
+msgid "``<Enter>``"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:46
+msgid "Run command"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:47
+msgid "``Control I``"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:48
+msgid "``<Tab>``"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:49
+msgid "Indent, autocomplete"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:50
+msgid "``Control R``"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:52
+msgid "Backwards history search"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:53
+msgid "``Control Z``"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:55
+msgid "SIGSTOP current job"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:56
+msgid "``Control C``"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:58
+msgid "SIGINT current job"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:62
+msgid "Useful imports"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:64
+msgid ""
+"There are a few useful ``prompt_toolkit`` tools that will help us create "
+"better bindings::"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:71
+msgid "Custom keyload function"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:73
+msgid ""
+"We need our additional keybindings to load after the shell is "
+"initialized, so we define a function that contains all of the custom "
+"keybindings and decorate it with the appropriate event, in this case "
+"``on_ptk_create``. Please note that the method of ``handler`` differs "
+"depending on the version of ``prompt_toolkit``."
+msgstr ""
+
+#: ../../tutorial_ptk.rst:78
+msgid ""
+"We'll start with a toy example that just inserts the text \"hi\" into the"
+" current line of the prompt::"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:91
+msgid ""
+"Put that in your `xonshrc <xonshrc.html>`_, restart xonsh and then see if"
+" pressing ``Ctrl-w`` does anything (it should!)"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:94
+msgid ""
+"From prompt_toolkit 2.x it is also possible to write ``Keys.ControlW`` "
+"like ``c-w``."
+msgstr ""
+
+#: ../../tutorial_ptk.rst:98
+msgid "What commands can keybindings run?"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:100
+msgid ""
+"Pretty much anything! Since we're defining these commands after xonsh has"
+" started up, we can create keybinding events that run subprocess commands"
+" with hardly any effort at all. If we wanted to, say, have a command that"
+" runs ``ls -l`` in the current directory::"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:111
+msgid ""
+"The ``event.cli.renderer.erase()`` is required to redraw the prompt after"
+" asking for a separate command to send information to ``STDOUT``"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:115
+msgid "Restrict actions with filters"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:117
+msgid ""
+"Often we want a key command to only work if certain conditions are met. "
+"For instance, the ``<TAB>`` key in xonsh brings up the completions menu, "
+"but then it also cycles through the available completions. We use filters"
+" to create this behavior."
+msgstr ""
+
+#: ../../tutorial_ptk.rst:122
+msgid ""
+"A few helpful filters are included with ``prompt_toolkit``, like "
+"``ViInsertMode`` and ``EmacsInsertMode``, which return ``True`` when the "
+"respective insert mode is active."
+msgstr ""
+
+#: ../../tutorial_ptk.rst:126
+msgid ""
+"But it's also easy to create our own filters that take advantage of "
+"xonsh's beautiful strangeness. Suppose we want a filter to restrict a "
+"given command to run only when there are fewer than ten files in a given "
+"directory. We just need a function that returns a Bool that matches that "
+"requirement and then we decorate it! And remember, those functions can be"
+" in xonsh-language, not just pure Python::"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:134
+msgid ""
+"See `the tutorial section on globbing <tutorial.html#normal-globbing>`_ "
+"for more globbing options."
+msgstr ""
+
+#: ../../tutorial_ptk.rst:137
+msgid ""
+"Now that the condition is defined, we can pass it as a ``filter`` keyword"
+" to a keybinding definition::"
+msgstr ""
+
+#: ../../tutorial_ptk.rst:144
+msgid ""
+"With both of those in your ``.xonshrc``, pressing ``Control L`` will list"
+" the contents of your current directory if there are fewer than 10 items "
+"in it. Useful? Debatable. Powerful? Yes."
+msgstr ""
+

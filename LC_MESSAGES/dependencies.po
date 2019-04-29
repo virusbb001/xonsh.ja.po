@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../dependencies.rst:2
+msgid "Dependencies"
+msgstr ""
+
+#: ../../dependencies.rst:3
+msgid "Xonsh currently has the following external dependencies,"
+msgstr ""
+
+#: ../../dependencies.rst:5
+msgid "*Run Time:*"
+msgstr ""
+
+#: ../../dependencies.rst:7
+msgid "Python v3.4+"
+msgstr ""
+
+#: ../../dependencies.rst:9
+msgid ""
+"Pip supports \"extra\" dependencies in the form of ``xonsh[ptk,linux]``, "
+"where the list in the brackets identify the optional features"
+msgstr ""
+
+#: ../../dependencies.rst:12
+msgid "Xonsh currently has the following extras"
+msgstr ""
+
+#: ../../dependencies.rst:14
+msgid "``ptk``: prompt-toolkit: *advanced readline library, line-editing*"
+msgstr ""
+
+#: ../../dependencies.rst:16
+msgid "``pygments>=2.2``: *syntax-highlighting*"
+msgstr ""
+
+#: ../../dependencies.rst:17
+msgid ""
+"``proctitle``: setproctitle: *change the title of terminal to reflect the"
+" current subprocess*"
+msgstr ""
+
+#: ../../dependencies.rst:18
+msgid "``linux``: distro: *linux specific platform information*"
+msgstr ""
+
+#: ../../dependencies.rst:19
+msgid "``mac``: gnureadline: *GNU's featureful version of readline*"
+msgstr ""
+
+#: ../../dependencies.rst:20
+msgid ""
+"``win``: win_unicode_console: *enables the use of Unicode in windows "
+"consoles*"
+msgstr ""
+
+#: ../../dependencies.rst:22
+msgid ""
+"In addition, xonsh integrates with Jupyter, an in-browser REPL, enabling "
+"the use of xonsh in jupyter notebooks"
+msgstr ""
+
+#: ../../dependencies.rst:25
+msgid "Development Dependencies"
+msgstr ""
+
+#: ../../dependencies.rst:27
+msgid ""
+"If you want to develop xonsh, it is extremely recommended to install the "
+"dependencies listed in `requirements-docs.txt "
+"<https://github.com/xonsh/xonsh/blob/master/requirements-docs.txt>`_ (to "
+"generate documentation) and `requirements-tests.txt "
+"<https://github.com/xonsh/xonsh/blob/master/requirements-tests.txt>`_ (to"
+" run the test suite)."
+msgstr ""
+

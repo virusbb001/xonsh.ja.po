@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../quotes.rst:3
+msgid "Quotes"
+msgstr ""
+
+#: ../../quotes.rst:4
+msgid "`@gilforsyth <https://twitter.com/gilforsyth>`_ **says,**"
+msgstr ""
+
+#: ../../quotes.rst:8
+msgid ""
+"“Just stumbled across xonsh by @scopatz -- holy cow it's amazing.  I've "
+"never been so happy to rewrite a .rc file”"
+msgstr ""
+
+#: ../../quotes.rst:12
+msgid "`@wbuthod <https://twitter.com/wbuthod>`_ **says,**"
+msgstr ""
+
+#: ../../quotes.rst:16
+msgid ""
+"“I've tweeted about Xonsh before, and finally spent a day using it "
+"exclusively. I must have it on ALL PLATFORMS now.”"
+msgstr ""
+
+#: ../../quotes.rst:19
+msgid "`@biochemistries <https://twitter.com/biochemistries>`_ **says,**"
+msgstr ""
+
+#: ../../quotes.rst:23
+msgid ""
+"“@pathogenomenick @btnaughton @lexnederbragt the dark wizardry of "
+"@scopatz :-) check out xon.sh”"
+msgstr ""
+

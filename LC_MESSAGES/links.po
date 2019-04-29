@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../links.rst:4
+msgid "Helpful Links"
+msgstr ""
+
+#: ../../links.rst:6
+msgid "`Documentation <http://xon.sh>`_"
+msgstr ""
+
+#: ../../links.rst:7
+msgid "`Gitter <https://gitter.im/xonsh/xonsh>`_"
+msgstr ""
+
+#: ../../links.rst:8
+msgid "`Mailing list <https://groups.google.com/forum/#!forum/xonsh>`_"
+msgstr ""
+
+#: ../../links.rst:9
+msgid "`IRC: channel #xonsh on OFTC <http://www.oftc.net/>`_"
+msgstr ""
+
+#: ../../links.rst:10
+msgid "`GitHub Repository <https://github.com/xonsh/xonsh>`_"
+msgstr ""
+
+#: ../../links.rst:11
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../links.rst:12
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../links.rst:13
+msgid ":ref:`search`"
+msgstr ""
+

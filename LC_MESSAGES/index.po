@@ -1,0 +1,312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../intro.rst:2
+msgid "the xonsh shell"
+msgstr ""
+
+#: ../../intro.rst:57
+msgid ""
+"Xonsh is a Python-powered, cross-platform, Unix-gazing shell language and"
+" command prompt. The language is a superset of Python 3.4+ with "
+"additional shell primitives that you are used to from Bash and IPython. "
+"It works on all major systems including Linux, Mac OSX, and Windows. "
+"Xonsh is meant for the daily use of experts and novices alike."
+msgstr ""
+
+#: ../../tryitnow.rst:2
+msgid "Try It Now!"
+msgstr ""
+
+#: ../../tryitnow.rst:3
+msgid ""
+"Try out xonsh right here in the browser. Just press the triangle play "
+"button in the bottom right of the `Repl.it <https://repl.it>`_ frame "
+"below. **Note:** this is not a fully featured xonsh instance due to "
+"repl.it limitations."
+msgstr ""
+
+#: ../../comparison.rst:2
+msgid "Comparison"
+msgstr ""
+
+#: ../../comparison.rst:3
+msgid ""
+"Xonsh is significantly different from most other shells or shell tools. "
+"The following table lists features and capabilities that various tools "
+"may or may not share."
+msgstr ""
+
+#: ../../comparison.rst:12
+msgid "Bash"
+msgstr ""
+
+#: ../../comparison.rst:13
+msgid "zsh"
+msgstr ""
+
+#: ../../comparison.rst:14
+msgid "plumbum"
+msgstr ""
+
+#: ../../comparison.rst:15
+msgid "fish"
+msgstr ""
+
+#: ../../comparison.rst:16
+msgid "IPython"
+msgstr ""
+
+#: ../../comparison.rst:17
+msgid "xonsh"
+msgstr ""
+
+#: ../../comparison.rst:18
+msgid "Sane language"
+msgstr ""
+
+#: ../../comparison.rst:21 ../../comparison.rst:22 ../../comparison.rst:23
+#: ../../comparison.rst:24 ../../comparison.rst:26 ../../comparison.rst:27
+#: ../../comparison.rst:28 ../../comparison.rst:29 ../../comparison.rst:31
+#: ../../comparison.rst:35 ../../comparison.rst:36 ../../comparison.rst:37
+#: ../../comparison.rst:38 ../../comparison.rst:40 ../../comparison.rst:41
+#: ../../comparison.rst:43 ../../comparison.rst:45 ../../comparison.rst:47
+#: ../../comparison.rst:48 ../../comparison.rst:50 ../../comparison.rst:51
+#: ../../comparison.rst:52 ../../comparison.rst:57 ../../comparison.rst:59
+#: ../../comparison.rst:62 ../../comparison.rst:65 ../../comparison.rst:66
+#: ../../comparison.rst:70 ../../comparison.rst:71 ../../comparison.rst:72
+#: ../../comparison.rst:73 ../../comparison.rst:78 ../../comparison.rst:82
+#: ../../comparison.rst:84 ../../comparison.rst:87 ../../comparison.rst:94
+msgid "✓"
+msgstr ""
+
+#: ../../comparison.rst:25
+msgid "Easily scriptable"
+msgstr ""
+
+#: ../../comparison.rst:32
+msgid "Native cross-platform support"
+msgstr ""
+
+#: ../../comparison.rst:39
+msgid "Meant as a shell"
+msgstr ""
+
+#: ../../comparison.rst:46
+msgid "Tab completion"
+msgstr ""
+
+#: ../../comparison.rst:53
+msgid "Man-page completion"
+msgstr ""
+
+#: ../../comparison.rst:60
+msgid "Large standard library"
+msgstr ""
+
+#: ../../comparison.rst:67
+msgid "Typed variables"
+msgstr ""
+
+#: ../../comparison.rst:74
+msgid "Syntax highlighting"
+msgstr ""
+
+#: ../../comparison.rst:79
+msgid "in notebook"
+msgstr ""
+
+#: ../../comparison.rst:80
+msgid "w/ prompt-toolkit"
+msgstr ""
+
+#: ../../comparison.rst:81
+msgid "Pun in name"
+msgstr ""
+
+#: ../../comparison.rst:88
+msgid "Rich history"
+msgstr ""
+
+#: ../../installation.rst:3
+msgid "Getting Started"
+msgstr ""
+
+#: ../../dependencies.rst:2
+msgid "Dependencies"
+msgstr ""
+
+#: ../../dependencies.rst:3
+msgid "Xonsh currently has the following external dependencies,"
+msgstr ""
+
+#: ../../dependencies.rst:5
+msgid "*Run Time:*"
+msgstr ""
+
+#: ../../dependencies.rst:7
+msgid "Python v3.4+"
+msgstr ""
+
+#: ../../dependencies.rst:9
+msgid ""
+"Pip supports \"extra\" dependencies in the form of ``xonsh[ptk,linux]``, "
+"where the list in the brackets identify the optional features"
+msgstr ""
+
+#: ../../dependencies.rst:12
+msgid "Xonsh currently has the following extras"
+msgstr ""
+
+#: ../../dependencies.rst:14
+msgid "``ptk``: prompt-toolkit: *advanced readline library, line-editing*"
+msgstr ""
+
+#: ../../dependencies.rst:16
+msgid "``pygments>=2.2``: *syntax-highlighting*"
+msgstr ""
+
+#: ../../dependencies.rst:17
+msgid ""
+"``proctitle``: setproctitle: *change the title of terminal to reflect the"
+" current subprocess*"
+msgstr ""
+
+#: ../../dependencies.rst:18
+msgid "``linux``: distro: *linux specific platform information*"
+msgstr ""
+
+#: ../../dependencies.rst:19
+msgid "``mac``: gnureadline: *GNU's featureful version of readline*"
+msgstr ""
+
+#: ../../dependencies.rst:20
+msgid ""
+"``win``: win_unicode_console: *enables the use of Unicode in windows "
+"consoles*"
+msgstr ""
+
+#: ../../dependencies.rst:22
+msgid ""
+"In addition, xonsh integrates with Jupyter, an in-browser REPL, enabling "
+"the use of xonsh in jupyter notebooks"
+msgstr ""
+
+#: ../../dependencies.rst:25
+msgid "Development Dependencies"
+msgstr ""
+
+#: ../../dependencies.rst:27
+msgid ""
+"If you want to develop xonsh, it is extremely recommended to install the "
+"dependencies listed in `requirements-docs.txt "
+"<https://github.com/xonsh/xonsh/blob/master/requirements-docs.txt>`_ (to "
+"generate documentation) and `requirements-tests.txt "
+"<https://github.com/xonsh/xonsh/blob/master/requirements-tests.txt>`_ (to"
+" run the test suite)."
+msgstr ""
+
+#: ../../installation.rst:8
+msgid "Installation"
+msgstr ""
+
+#: ../../news.rst:3
+msgid "News & Media"
+msgstr ""
+
+#: ../../guides.rst:3
+msgid "Guides"
+msgstr ""
+
+#: ../../setup.rst:3
+msgid "Config Files and Settings"
+msgstr ""
+
+#: ../../contributing.rst:4
+msgid "Contributing"
+msgstr ""
+
+#: ../../contributing.rst:5
+msgid ""
+"We highly encourage contributions to xonsh!  If you would like to "
+"contribute, it is as easy as forking the repository on GitHub, making "
+"your changes, and issuing a pull request.  If you have any questions "
+"about this process don't hesitate to ask the mailing list "
+"(xonsh@googlegroups.com) or the `Gitter <https://gitter.im/xonsh/xonsh>`_"
+" channel."
+msgstr ""
+
+#: ../../contributing.rst:10
+msgid ""
+"See the `Developer's Guide <devguide.html>`_ for more information about "
+"contributing."
+msgstr ""
+
+#: ../../contact.rst:4
+msgid "Contact Us"
+msgstr ""
+
+#: ../../contact.rst:5
+msgid ""
+"If you have questions or comments, please send them to the mailing list "
+"xonsh@googlegroups.com, page us on IRC, contact the author directly, or "
+"open an issue on GitHub. `Join the mailing list here! "
+"<https://groups.google.com/forum/#!forum/xonsh>`_"
+msgstr ""
+
+#: ../../links.rst:4
+msgid "Helpful Links"
+msgstr ""
+
+#: ../../links.rst:6
+msgid "`Documentation <http://xon.sh>`_"
+msgstr ""
+
+#: ../../links.rst:7
+msgid "`Gitter <https://gitter.im/xonsh/xonsh>`_"
+msgstr ""
+
+#: ../../links.rst:8
+msgid "`Mailing list <https://groups.google.com/forum/#!forum/xonsh>`_"
+msgstr ""
+
+#: ../../links.rst:9
+msgid "`IRC: channel #xonsh on OFTC <http://www.oftc.net/>`_"
+msgstr ""
+
+#: ../../links.rst:10
+msgid "`GitHub Repository <https://github.com/xonsh/xonsh>`_"
+msgstr ""
+
+#: ../../links.rst:11
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../links.rst:12
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../links.rst:13
+msgid ":ref:`search`"
+msgstr ""
+
+#: ../../development.rst:3
+msgid "Development Spiral"
+msgstr ""
+

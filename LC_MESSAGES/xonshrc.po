@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../xonshrc.rst:2
+msgid "Run Control File"
+msgstr ""
+
+#: ../../xonshrc.rst:3
+msgid ""
+"Xonsh allows you to have run control files to customize your shell "
+"behavior.  These are called ``xonshrc`` files."
+msgstr ""
+
+#: ../../xonshrc.rst:5
+msgid ""
+"The system-wide ``xonshrc`` file controls options that are applied to all"
+" users of Xonsh on a given system.  You can create this file in "
+"``/etc/xonshrc`` for Linux and OSX and in "
+"``%ALLUSERSPROFILE%\\xonsh\\xonshrc`` on Windows."
+msgstr ""
+
+#: ../../xonshrc.rst:7
+msgid ""
+"Xonsh also allows you to have a run control file in your home directory "
+"called ``~/.xonshrc``.  The options set in the local ``xonshrc`` only "
+"apply to the current user and will override any conflicting settings set "
+"in the system-wide control file."
+msgstr ""
+
+#: ../../xonshrc.rst:9
+msgid ""
+"These files are written in the xonsh language, of course. They are "
+"executed exactly once at startup. The following is a real-world example "
+"of such a file."
+msgstr ""
+
+#: ../../xonshrc.rst:12
+msgid ":download:`Download xonshrc <xonshrc.xsh>`"
+msgstr ""
+
+#: ../../xonshrc.rst:19
+msgid "Snippets for xonshrc"
+msgstr ""
+
+#: ../../xonshrc.rst:20
+msgid ""
+"The following are usefull snippets and code that tweaks and adjust xonsh "
+"in various ways. If you have any useful tricks, feel free to share them."
+msgstr ""
+
+#: ../../xonshrc.rst:24
+msgid "Adjust how git branch label behaves"
+msgstr ""
+
+#: ../../xonshrc.rst:25
+msgid ""
+"Xonsh adds a colored branch name to the prompt when working with git or "
+"hg repositories. This behavior can be controlled with the ``$PROMPT`` "
+"environment variable. See how to `customize the prompt`_ . The branch "
+"name changes color if the work dir is dirty or not. This is controlled by"
+" the ``{branch_color}`` formatter string."
+msgstr ""
+
+#: ../../xonshrc.rst:30
+msgid ""
+"The following snippet reimplements the formatter also to include "
+"untracked files when considering if a git directory is dirty."
+msgstr ""
+
+#: ../../xonshrc.rst:44
+msgid "Get better colors from the ``ls`` command"
+msgstr ""
+
+#: ../../xonshrc.rst:45
+msgid ""
+"The colors of the ``ls`` command may be hard to read in a dark terminal. "
+"If so, this is an excellent addition to the xonshrc file."
+msgstr ""
+

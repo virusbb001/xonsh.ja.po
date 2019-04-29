@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../aliases.rst:5
+msgid "Built-in Aliases"
+msgstr ""
+
+#: ../../aliases.rst:6
+msgid "This page describes the xonsh built-in commands and aliases."
+msgstr ""
+
+#: ../../aliases.rst:9
+msgid "``cd``"
+msgstr ""
+
+#: ../../aliases.rst:10
+msgid ""
+"Changes the directory. If no directory is specified (i.e. if there are no"
+" arguments) then this changes to the current user's home directory."
+msgstr ""
+
+#: ../../aliases.rst:15
+msgid "``pushd``"
+msgstr ""
+
+#: ../../aliases.rst:16
+msgid ""
+"Adds a directory to the top of the directory stack, or rotates the stack,"
+" making the new top of the stack the current working directory."
+msgstr ""
+
+#: ../../aliases.rst:23
+msgid "``popd``"
+msgstr ""
+
+#: ../../aliases.rst:24
+msgid "Removes entries from the directory stack."
+msgstr ""
+
+#: ../../aliases.rst:30
+msgid "``dirs``"
+msgstr ""
+
+#: ../../aliases.rst:31
+msgid ""
+"Displays the list of currently remembered directories.  Can also be used "
+"to clear the directory stack."
+msgstr ""
+
+#: ../../aliases.rst:38
+msgid "``jobs``"
+msgstr ""
+
+#: ../../aliases.rst:39
+msgid "Display a list of all current jobs."
+msgstr ""
+
+#: ../../aliases.rst:43
+msgid "``fg``"
+msgstr ""
+
+#: ../../aliases.rst:44
+msgid ""
+"Bring the currently active job to the foreground, or, if a single number "
+"is given as an argument, bring that job to the foreground."
+msgstr ""
+
+#: ../../aliases.rst:49
+msgid "``bg``"
+msgstr ""
+
+#: ../../aliases.rst:50
+msgid ""
+"Resume execution of the currently active job in the background, or, if a "
+"single number is given as an argument, resume that job in the background."
+msgstr ""
+
+#: ../../aliases.rst:55
+msgid "``EOF``, ``exit``, and ``quit``"
+msgstr ""
+
+#: ../../aliases.rst:56
+msgid ""
+"The commands ``EOF``, ``exit``, and ``quit`` all alias the same action, "
+"which is to leave xonsh in a safe manner. Typing ``Crtl-d`` is the same "
+"as typing ``EOF`` and pressing enter."
+msgstr ""
+
+#: ../../aliases.rst:62
+msgid "``exec`` and  ``xexec``"
+msgstr ""
+
+#: ../../aliases.rst:67
+msgid "``source``"
+msgstr ""
+
+#: ../../aliases.rst:68
+msgid ""
+"Executes the contents of the provided files in the current context. This,"
+" of course, only works on xonsh and Python files."
+msgstr ""
+
+#: ../../aliases.rst:73
+msgid "``source-bash``"
+msgstr ""
+
+#: ../../aliases.rst:74
+msgid ""
+"Like the ``source`` command but for Bash files. This is a thin wrapper "
+"around the ``source-foreign`` alias where the ``shell`` argument is "
+"automatically set to ``bash``."
+msgstr ""
+
+#: ../../aliases.rst:80
+msgid "``source-foreign``"
+msgstr ""
+
+#: ../../aliases.rst:81
+msgid ""
+"Like the ``source`` command but for files in foreign (non-xonsh) "
+"languages. It will pick up the environment and any aliases."
+msgstr ""
+
+#: ../../aliases.rst:88
+msgid "``history``"
+msgstr ""
+
+#: ../../aliases.rst:89
+msgid ""
+"Tools for dealing with xonsh history. See `the history tutorial "
+"<tutorial_hist.html>`_ for more information all the history command and "
+"all of its sub-commands."
+msgstr ""
+
+#: ../../aliases.rst:96
+msgid "``replay``"
+msgstr ""
+
+#: ../../aliases.rst:97
+msgid ""
+"Replays a xonsh history file.  See `the replay section of the history "
+"tutorial <tutorial_hist.html#replay-action>`_ for more information about "
+"this command."
+msgstr ""
+
+#: ../../aliases.rst:104
+msgid "``timeit``"
+msgstr ""
+
+#: ../../aliases.rst:105
+msgid "Runs timing study on arguments. Similar to IPython's ``%timeit`` magic."
+msgstr ""
+
+#: ../../aliases.rst:109
+msgid "``scp-resume``"
+msgstr ""
+
+#: ../../aliases.rst:110
+msgid ""
+"Simple alias defined as ``['rsync', '--partial', '-h', '--progress', '--"
+"rsh=ssh']``."
+msgstr ""
+
+#: ../../aliases.rst:113
+msgid "``showcmd``"
+msgstr ""
+
+#: ../../aliases.rst:114
+msgid "Displays how commands and arguments are evaluated."
+msgstr ""
+
+#: ../../aliases.rst:118
+msgid "``ipynb``"
+msgstr ""
+
+#: ../../aliases.rst:119
+msgid "Simple alias defined as ``['ipython', 'notebook', '--no-browser']``."
+msgstr ""
+
+#: ../../aliases.rst:123
+msgid "``trace``"
+msgstr ""
+
+#: ../../aliases.rst:124
+msgid ""
+"Provides an interface to printing lines of source code prior to their "
+"execution."
+msgstr ""
+
+#: ../../aliases.rst:130
+msgid "``xpip``"
+msgstr ""
+
+#: ../../aliases.rst:131
+msgid ""
+"Runs the ``pip`` package manager for xonsh itself. Useful for "
+"installations where xonsh is in an isolated environment (eg conda, "
+"homebrew)."
+msgstr ""
+
+#: ../../aliases.rst:134
+msgid ""
+"In general, use ``xpip`` if you're configuring or adding features to "
+"xonsh, and use ``pip`` if you're doing Python development."
+msgstr ""
+
+#: ../../aliases.rst:139
+msgid "``xonfig``"
+msgstr ""
+
+#: ../../aliases.rst:140
+msgid "Manages xonsh configuration information."
+msgstr ""
+
+#: ../../aliases.rst:146
+msgid "Windows cmd Aliases"
+msgstr ""
+
+#: ../../aliases.rst:147
+msgid "The following aliases on Windows are expanded to ``['cmd', '/c', alias]``:"
+msgstr ""
+
+#: ../../aliases.rst:172
+msgid "``activate``/``deactivate`` on Windows with Anaconda"
+msgstr ""
+
+#: ../../aliases.rst:173
+msgid ""
+"On Windows with an Anaconda Python distribution, ``activate`` and "
+"``deactivate`` are aliased to ``['source-bat activate']`` and ``['source-"
+"bat deactivate']``. This makes it possible to use the same commands to "
+"activate/deactivate conda environments as in cmd.exe."
+msgstr ""
+
+#: ../../aliases.rst:180
+msgid "``sudo`` on Windows"
+msgstr ""
+
+#: ../../aliases.rst:181
+msgid ""
+"On Windows, if no executables named ``sudo`` are found, Xonsh adds a "
+"``sudo`` alias that poly fills the \"run as Admin\" behavior with the "
+"help of ``ShellExecuteEx`` and ``ctypes``. It doesn't support any actual "
+"``sudo`` parameters and just takes the command to run."
+msgstr ""
+
+#: ../../aliases.rst:188
+msgid "``ls``"
+msgstr ""
+
+#: ../../aliases.rst:189
+msgid ""
+"The ``ls`` command is aliased to ``['ls', '--color=auto', '-v']`` "
+"normally.  On Mac OSX it is instead aliased to ``['ls', '-G']``."
+msgstr ""
+
+#: ../../aliases.rst:194
+msgid "``grep``"
+msgstr ""
+
+#: ../../aliases.rst:195
+msgid "The ``grep`` command is aliased to ``['grep', '--color=auto']``."
+msgstr ""
+
+#: ../../aliases.rst:199
+msgid "``xontrib``"
+msgstr ""
+
+#: ../../aliases.rst:200
+msgid "Manages xonsh extensions."
+msgstr ""
+

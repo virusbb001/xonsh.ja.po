@@ -1,0 +1,285 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../customization.rst:3
+msgid "Updating and customizing xonsh"
+msgstr ""
+
+#: ../../customization.rst:9
+msgid "Updating xonsh"
+msgstr ""
+
+#: ../../customization.rst:11
+msgid "How to update xonsh depend on the install method."
+msgstr ""
+
+#: ../../customization.rst:13
+msgid "**xonsh installed via pip**"
+msgstr ""
+
+#: ../../customization.rst:15
+msgid ""
+"If you have installed via pip (possibly into a virtual environment), then"
+" you can update xonsh from within itself with the following command:"
+msgstr ""
+
+#: ../../customization.rst:23
+msgid ""
+"``xpip`` (note the \"x\" at the  beginning of ``xpip``) is a predefined "
+"alias pointing to the ``pip`` command associated with the Python "
+"executable running this xonsh."
+msgstr ""
+
+#: ../../customization.rst:25
+msgid "**xonsh installed via a package manager**"
+msgstr ""
+
+#: ../../customization.rst:27
+msgid ""
+"If you have installed via a package manager, it is recommended to update "
+"xonsh through the  package manager's appropriate command. For example, on"
+" macOS if you have installed via homebrew, you should update like this:"
+msgstr ""
+
+#: ../../customization.rst:34
+msgid "Customizing xonsh - How do I..."
+msgstr ""
+
+#: ../../customization.rst:39
+msgid "...change the current color theme?"
+msgstr ""
+
+#: ../../customization.rst:41
+msgid "You can view the available styles by typing"
+msgstr ""
+
+#: ../../customization.rst:47
+msgid "For a quick peek at the theme's colors you can do"
+msgstr ""
+
+#: ../../customization.rst:53
+msgid "To set a new theme, do"
+msgstr ""
+
+#: ../../customization.rst:62
+msgid "...import python modules from a local directory?"
+msgstr ""
+
+#: ../../customization.rst:64
+msgid ""
+"The modules available for import in a given ``xonsh`` session depend on "
+"what's available in ``sys.path``. If you want to be able to import a "
+"module that resides in the current directory, ensure that there is an "
+"empty string as the first element of your ``sys.path``"
+msgstr ""
+
+#: ../../customization.rst:77
+msgid "...set ``xonsh`` as my default shell?"
+msgstr ""
+
+#: ../../customization.rst:79
+msgid ""
+"If you want to use xonsh as your default shell, you will first have to "
+"add xonsh to ``/etc/shells``."
+msgstr ""
+
+#: ../../customization.rst:82
+msgid "First ensure that xonsh is on your ``$PATH``"
+msgstr ""
+
+#: ../../customization.rst:88
+msgid "Then, as root, add xonsh to the shell list"
+msgstr ""
+
+#: ../../customization.rst:94
+msgid "To change shells, run"
+msgstr ""
+
+#: ../../customization.rst:100
+msgid "You will have to log out and log back in before the changes take effect."
+msgstr ""
+
+#: ../../customization.rst:105
+msgid "...select a tab completion result without executing the current line?"
+msgstr ""
+
+#: ../../customization.rst:107
+msgid ""
+"In the ``prompt_toolkit`` shell, you can cycle through possible tab-"
+"completion results using the TAB key and use ENTER to select the "
+"completion you want. By default, ENTER will also execute the current "
+"line. If you would prefer to not automatically execute the line (say, if "
+"you're constructing a long pathname), you can set"
+msgstr ""
+
+#: ../../customization.rst:117
+msgid "in your ``xonshrc``"
+msgstr ""
+
+#: ../../customization.rst:122
+msgid "...add a default argument to a builtin ``xonsh`` alias?"
+msgstr ""
+
+#: ../../customization.rst:124
+msgid ""
+"If you want to add a default argument to a builtin alias like ``dirs`` "
+"the standard alias definition method will fail. In order to handle this "
+"case you can use the following solution in your ``xonshrc``:"
+msgstr ""
+
+#: ../../customization.rst:141
+msgid "...make terminal tabs start in the correct directory?"
+msgstr ""
+
+#: ../../customization.rst:143
+msgid ""
+"If you use Gnome Terminal or another VTE terminal and it doesn't start "
+"new tabs in the CWD of the original TAB, this is because of a custom VTE "
+"interface. To fix this, please add ``{vte_new_tab_cwd}`` somewhere to you"
+" prompt:"
+msgstr ""
+
+#: ../../customization.rst:151
+msgid ""
+"This will issue the proper escape sequence to the terminal without "
+"otherwise affecting the displayed prompt."
+msgstr ""
+
+#: ../../customization.rst:157
+msgid "...set up the \"Open Terminal Here\" action in Thunar?"
+msgstr ""
+
+#: ../../customization.rst:159
+msgid ""
+"If you use Thunar and \"Open Terminal Here\" action does not work, you "
+"can try to replace a command for this action by the following:"
+msgstr ""
+
+#: ../../customization.rst:166
+msgid ""
+"In order to do this, go to ``Edit > Configure custom actions...``, then "
+"choose ``Open Terminal Here`` and click on ``Edit currently selected "
+"action`` button."
+msgstr ""
+
+#: ../../customization.rst:172
+msgid "...use utf-8 characters in xonsh?"
+msgstr ""
+
+#: ../../customization.rst:174
+msgid ""
+"If you are unable to use utf-8 (ie. non-ascii) characters in xonsh. For "
+"example if you get the following output"
+msgstr ""
+
+#: ../../customization.rst:182
+msgid "The problem might be:"
+msgstr ""
+
+#: ../../customization.rst:184
+msgid ""
+"Your locale is not set to utf-8, to check this you can set the content of"
+" the environment variable ``LC_TYPE``"
+msgstr ""
+
+#: ../../customization.rst:186
+msgid ""
+"Your locale is correctly set but **after** xonsh started. This is "
+"typically the case if you set your ``LC_TYPE`` inside your ``.xonshrc`` "
+"and xonsh is your default/login shell. To fix this you should see the "
+"documentation of your operating system to know how to correctly setup "
+"environment variables before the shell start (``~/.pam_environment`` for "
+"example)"
+msgstr ""
+
+#: ../../customization.rst:195
+msgid "...fix a ``libgcc_s.so.1`` error?"
+msgstr ""
+
+#: ../../customization.rst:197
+msgid ""
+"On certain flavors of Linux you may periodically encounter this error "
+"message when starting ``xonsh``:"
+msgstr ""
+
+#: ../../customization.rst:205
+msgid ""
+"This is due to an upstream Python problem and can be fixed by setting "
+"``LD_PRELOAD``:"
+msgstr ""
+
+#: ../../customization.rst:213
+msgid "...color my man pages?"
+msgstr ""
+
+#: ../../customization.rst:214
+msgid ""
+"You can add add `man page color support`_ using ``less`` environment "
+"variables:"
+msgstr ""
+
+#: ../../customization.rst:235
+msgid "...use xonsh inside Emacs?"
+msgstr ""
+
+#: ../../customization.rst:237
+msgid "**Option A: Comint buffer**"
+msgstr ""
+
+#: ../../customization.rst:239
+msgid ""
+"You can use xonsh as your `interactive shell in Emacs "
+"<https://www.gnu.org/software/emacs/manual/html_node/emacs/Interactive-"
+"Shell.html>`_ in a Comint buffer. This way you keep all the Emacs editing"
+" power in the shell, but you loose xonsh's completion feature."
+msgstr ""
+
+#: ../../customization.rst:244
+msgid ""
+"Make sure you install xonsh with readline support and in your "
+"``.xonshrc`` file define"
+msgstr ""
+
+#: ../../customization.rst:251
+msgid "Also, in Emacs set ``explicit-shell-file-name`` to your xonsh executable."
+msgstr ""
+
+#: ../../customization.rst:253
+msgid "**Option B: Ansi-term buffer**"
+msgstr ""
+
+#: ../../customization.rst:255
+msgid ""
+"The second option is to run xonsh in an Ansi-term buffer inside Emacs. "
+"This way you have to switch modes if you want do Emacs-style editing, but"
+" you keep xonsh's impressive completion."
+msgstr ""
+
+#: ../../customization.rst:259
+msgid ""
+"For this it is preferred to have xonsh installed with the prompt-toolkit."
+" Then you can leave ``$SHELL_TYPE`` at its default."
+msgstr ""
+
+#: ../../customization.rst:262
+msgid ""
+"Emacs will prompt you for the path of the xonsh exeutable when you start "
+"up ``ansi-term``."
+msgstr ""
+

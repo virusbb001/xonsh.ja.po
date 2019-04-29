@@ -1,0 +1,440 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../events.rst:2
+msgid "Core Events"
+msgstr ""
+
+#: ../../events.rst:3
+msgid ""
+"The following events are defined by xonsh itself. For more information "
+"about events, see `the events tutorial <tutorial_events.html>`_."
+msgstr ""
+
+#: ../../eventsbody:4
+msgid ":ref:`on_chdir <on_chdir>`"
+msgstr ""
+
+#: ../../eventsbody:5
+msgid ":ref:`on_envvar_change <on_envvar_change>`"
+msgstr ""
+
+#: ../../eventsbody:6
+msgid ":ref:`on_envvar_new <on_envvar_new>`"
+msgstr ""
+
+#: ../../eventsbody:7
+msgid ":ref:`on_exit <on_exit>`"
+msgstr ""
+
+#: ../../eventsbody:8
+msgid ":ref:`on_import_post_create_module <on_import_post_create_module>`"
+msgstr ""
+
+#: ../../eventsbody:9
+msgid ":ref:`on_import_post_exec_module <on_import_post_exec_module>`"
+msgstr ""
+
+#: ../../eventsbody:10
+msgid ":ref:`on_import_post_find_spec <on_import_post_find_spec>`"
+msgstr ""
+
+#: ../../eventsbody:11
+msgid ":ref:`on_import_pre_create_module <on_import_pre_create_module>`"
+msgstr ""
+
+#: ../../eventsbody:12
+msgid ":ref:`on_import_pre_exec_module <on_import_pre_exec_module>`"
+msgstr ""
+
+#: ../../eventsbody:13
+msgid ":ref:`on_import_pre_find_spec <on_import_pre_find_spec>`"
+msgstr ""
+
+#: ../../eventsbody:14
+msgid ":ref:`on_post_cmdloop <on_post_cmdloop>`"
+msgstr ""
+
+#: ../../eventsbody:15
+msgid ":ref:`on_post_init <on_post_init>`"
+msgstr ""
+
+#: ../../eventsbody:16
+msgid ":ref:`on_post_prompt <on_post_prompt>`"
+msgstr ""
+
+#: ../../eventsbody:17
+msgid ":ref:`on_post_rc <on_post_rc>`"
+msgstr ""
+
+#: ../../eventsbody:18
+msgid ":ref:`on_postcommand <on_postcommand>`"
+msgstr ""
+
+#: ../../eventsbody:19
+msgid ":ref:`on_pre_cmdloop <on_pre_cmdloop>`"
+msgstr ""
+
+#: ../../eventsbody:20
+msgid ":ref:`on_pre_prompt <on_pre_prompt>`"
+msgstr ""
+
+#: ../../eventsbody:21
+msgid ":ref:`on_pre_rc <on_pre_rc>`"
+msgstr ""
+
+#: ../../eventsbody:22
+msgid ":ref:`on_pre_spec_run_ls <on_pre_spec_run_ls>`"
+msgstr ""
+
+#: ../../eventsbody:23
+msgid ":ref:`on_precommand <on_precommand>`"
+msgstr ""
+
+#: ../../eventsbody:24
+msgid ":ref:`on_ptk_create <on_ptk_create>`"
+msgstr ""
+
+#: ../../eventsbody:25
+msgid ":ref:`on_transform_command <on_transform_command>`"
+msgstr ""
+
+#: ../../eventsbody:30
+msgid "Listing"
+msgstr ""
+
+#: ../../eventsbody:35
+msgid "``on_chdir(olddir: str, newdir: str) -> None``"
+msgstr ""
+
+#: ../../eventsbody:36
+msgid "Fires when the current directory is changed for any reason."
+msgstr ""
+
+#: ../../eventsbody:43
+msgid "``on_envvar_change(name: str, oldvalue: Any, newvalue: Any) -> None``"
+msgstr ""
+
+#: ../../eventsbody:44
+msgid ""
+"Fires after an environment variable is changed. Note: Setting envvars "
+"inside the handler might cause a recursion until the limit."
+msgstr ""
+
+#: ../../eventsbody:53
+msgid "``on_envvar_new(name: str, value: Any) -> None``"
+msgstr ""
+
+#: ../../eventsbody:54
+msgid ""
+"Fires after a new environment variable is created. Note: Setting envvars "
+"inside the handler might cause a recursion until the limit."
+msgstr ""
+
+#: ../../eventsbody:63
+msgid "``on_exit() -> None``"
+msgstr ""
+
+#: ../../eventsbody:64
+msgid "Fired after all commands have been executed, before tear-down occurs."
+msgstr ""
+
+#: ../../eventsbody:66 ../../eventsbody:144
+msgid "NOTE: All the caveats of the ``atexit`` module also apply to this event."
+msgstr ""
+
+#: ../../eventsbody:73
+msgid "``on_import_post_create_module(module: Module, spec: ModuleSpec) -> None``"
+msgstr ""
+
+#: ../../eventsbody:74
+msgid ""
+"Fires after a module is created by its loader but before the loader "
+"returns it. The parameters here are the module object itself and the spec"
+" object. See importlib for more details."
+msgstr ""
+
+#: ../../eventsbody:83
+msgid "``on_import_post_exec_module``"
+msgstr ""
+
+#: ../../eventsbody:84
+msgid "on_import_post_create_module(module: Module) -> None"
+msgstr ""
+
+#: ../../eventsbody:86
+msgid ""
+"Fires after a module is executed by its loader but before the loader "
+"returns it. The only parameter is the module itself. See importlib for "
+"more details."
+msgstr ""
+
+#: ../../eventsbody:94
+msgid "``on_import_post_find_spec(spec, fullname, path, target) -> None``"
+msgstr ""
+
+#: ../../eventsbody:95
+msgid ""
+"Fires after all import find_spec() calls have been executed. The "
+"parameters here the spec and the arguments "
+"importlib.abc.MetaPathFinder.find_spec(). Namely,"
+msgstr ""
+
+#: ../../eventsbody
+msgid "``spec``"
+msgstr ""
+
+#: ../../eventsbody:98
+msgid "A ModuleSpec object if the spec was found, or None if it was not."
+msgstr ""
+
+#: ../../eventsbody
+msgid "``fullname``"
+msgstr ""
+
+#: ../../eventsbody:99 ../../eventsbody:131
+msgid "The full name of the module to import."
+msgstr ""
+
+#: ../../eventsbody
+msgid "``path``"
+msgstr ""
+
+#: ../../eventsbody:100 ../../eventsbody:132
+msgid ""
+"None if a top-level import, otherwise the ``__path__`` of the parent "
+"package."
+msgstr ""
+
+#: ../../eventsbody
+msgid "``target``"
+msgstr ""
+
+#: ../../eventsbody:102 ../../eventsbody:134
+msgid "Target module used to make a better guess about the package spec."
+msgstr ""
+
+#: ../../eventsbody:109
+msgid "``on_import_pre_create_module(spec: ModuleSpec) -> None``"
+msgstr ""
+
+#: ../../eventsbody:110
+msgid ""
+"Fires right before a module is created by its loader. The only parameter "
+"is the spec object. See importlib for more details."
+msgstr ""
+
+#: ../../eventsbody:118
+msgid "``on_import_pre_exec_module(module: Module) -> None``"
+msgstr ""
+
+#: ../../eventsbody:119
+msgid ""
+"Fires right before a module is executed by its loader. The only parameter"
+" is the module itself. See importlib for more details."
+msgstr ""
+
+#: ../../eventsbody:127
+msgid ""
+"``on_import_pre_find_spec(fullname: str, path: str, target: module or "
+"None) -> None``"
+msgstr ""
+
+#: ../../eventsbody:128
+msgid ""
+"Fires before any import find_spec() calls have been executed. The "
+"parameters here are the same as importlib.abc.MetaPathFinder.find_spec()."
+" Namely,"
+msgstr ""
+
+#: ../../eventsbody:141
+msgid "``on_post_cmdloop() -> None``"
+msgstr ""
+
+#: ../../eventsbody:142
+msgid "Fired just after the command loop finishes, if it is."
+msgstr ""
+
+#: ../../eventsbody:151
+msgid "``on_post_init() -> None``"
+msgstr ""
+
+#: ../../eventsbody:152
+msgid "Fired after all initialization is finished and we're ready to do work."
+msgstr ""
+
+#: ../../eventsbody:154
+msgid "NOTE: This is fired before the wizard is automatically started."
+msgstr ""
+
+#: ../../eventsbody:161
+msgid "``on_post_prompt() -> None``"
+msgstr ""
+
+#: ../../eventsbody:162
+msgid "Fires just after the prompt returns"
+msgstr ""
+
+#: ../../eventsbody:169
+msgid "``on_post_rc() -> None``"
+msgstr ""
+
+#: ../../eventsbody:170
+msgid "Fired just after rc files are loaded, if they are."
+msgstr ""
+
+#: ../../eventsbody:177
+msgid "``on_postcommand(cmd: str, rtn: int, out: str or None, ts: list) -> None``"
+msgstr ""
+
+#: ../../eventsbody:178
+msgid ""
+"Fires just after a command is executed. The arguments are the same as "
+"history."
+msgstr ""
+
+#: ../../eventsbody:180
+msgid "Parameters:"
+msgstr ""
+
+#: ../../eventsbody:182
+msgid "``cmd``: The command that was executed (after transformation)"
+msgstr ""
+
+#: ../../eventsbody:183
+msgid "``rtn``: The result of the command executed (``0`` for success)"
+msgstr ""
+
+#: ../../eventsbody:184
+msgid "``out``: If xonsh stores command output, this is the output"
+msgstr ""
+
+#: ../../eventsbody:185
+msgid "``ts``: Timestamps, in the order of ``[starting, ending]``"
+msgstr ""
+
+#: ../../eventsbody:192
+msgid "``on_pre_cmdloop() -> None``"
+msgstr ""
+
+#: ../../eventsbody:193
+msgid "Fired just before the command loop is started, if it is."
+msgstr ""
+
+#: ../../eventsbody:200
+msgid "``on_pre_prompt() -> None``"
+msgstr ""
+
+#: ../../eventsbody:201
+msgid "Fires just before the prompt is shown"
+msgstr ""
+
+#: ../../eventsbody:208
+msgid "``on_pre_rc() -> None``"
+msgstr ""
+
+#: ../../eventsbody:209
+msgid "Fired just before rc files are loaded, if they are."
+msgstr ""
+
+#: ../../eventsbody:216
+msgid "``on_pre_spec_run_ls(spec: xonsh.built_ins.SubprocSpec) -> None``"
+msgstr ""
+
+#: ../../eventsbody:217
+msgid "Fires right before a SubprocSpec.run() is called for the ls command."
+msgstr ""
+
+#: ../../eventsbody:225
+msgid "``on_precommand(cmd: str) -> None``"
+msgstr ""
+
+#: ../../eventsbody:226
+msgid "Fires just before a command is executed."
+msgstr ""
+
+#: ../../eventsbody:233
+msgid ""
+"``on_ptk_create(prompter: PromptSession, history: PromptToolkitHistory, "
+"completer: PromptToolkitCompleter, bindings: KeyBindings) ->``"
+msgstr ""
+
+#: ../../eventsbody:234
+msgid "Fired after prompt toolkit has been initialized"
+msgstr ""
+
+#: ../../eventsbody:241
+msgid "``on_transform_command(cmd: str) -> str``"
+msgstr ""
+
+#: ../../eventsbody:242
+msgid ""
+"Fired to request xontribs to transform a command line. Return the "
+"transformed command, or the same command if no transformation occurs. "
+"Only done for interactive sessions."
+msgstr ""
+
+#: ../../eventsbody:246
+msgid ""
+"This may be fired multiple times per command, with other transformers "
+"input or output, so design any handlers for this carefully."
+msgstr ""
+
+#: ../../events.rst:10
+msgid "Event Categories"
+msgstr ""
+
+#: ../../events.rst:11
+msgid ""
+"Additionally, there are a few categories of events whose names are part "
+"of the specification of the event. These events are fired if they exist, "
+"and are ignored otherwise. Here are their specifications."
+msgstr ""
+
+#: ../../events.rst:18
+msgid "``on_pre_spec_run_<cmd-name>(spec: SubprocSpec) -> None``"
+msgstr ""
+
+#: ../../events.rst:19
+msgid ""
+"This event fires whenever a command with a give name (``<cmd-name>``) has"
+" its ``SubprocSpec.run()`` method called.  This is fired prior to the run"
+" call executing anything at all. This recieves the ``SubprocSpec`` object"
+" as ``spec`` that triggered the event, allowing the handler to modify the"
+" spec if needed.  For example, if we wanted to intercept an ``ls`` spec, "
+"we could write:"
+msgstr ""
+
+#: ../../events.rst:34
+msgid "``on_post_spec_run_<cmd-name>(spec: SubprocSpec) -> None``"
+msgstr ""
+
+#: ../../events.rst:35
+msgid ""
+"This event fires whenever a command with a give name (``<cmd-name>``) has"
+" its ``SubprocSpec.run()`` method called.  This is fired after to the run"
+" call has executed everything except returning. This recieves the "
+"``SubprocSpec`` object as ``spec`` that triggered the event, allowing the"
+" handler to modify the spec if needed. Note that because of the way "
+"process pipelines and specs work in xonsh, the command will have started "
+"running, but won't necessarily have completed. This is because "
+"``SubprocSpec.run()`` does not block. For example, if we wanted to get an"
+" ``ls`` spec after ls has started running, we could write:"
+msgstr ""
+

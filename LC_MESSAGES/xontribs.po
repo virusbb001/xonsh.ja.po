@@ -1,0 +1,641 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../xontribs.rst:2
+msgid "Xontribs"
+msgstr ""
+
+#: ../../xontribs.rst:3
+msgid ""
+"The following lists known xonsh contributions (xontribs), a description "
+"of the xontrib, and how to get your hands on it. Once installed, these "
+"xontribs can be loaded into your session by adding them to your xonshrc "
+"file or on the command line using the ``xontrib`` command:"
+msgstr ""
+
+#: ../../xontribsbody:4
+msgid ":ref:`apt_tabcomplete <apt_tabcomplete>`"
+msgstr ""
+
+#: ../../xontribsbody:5
+msgid ":ref:`autojump <autojump>`"
+msgstr ""
+
+#: ../../xontribsbody:6
+msgid ":ref:`autoxsh <autoxsh>`"
+msgstr ""
+
+#: ../../xontribsbody:7
+msgid ":ref:`avox <avox>`"
+msgstr ""
+
+#: ../../xontribsbody:8
+msgid ":ref:`base16_shell <base16_shell>`"
+msgstr ""
+
+#: ../../xontribsbody:9
+msgid ":ref:`bashisms <bashisms>`"
+msgstr ""
+
+#: ../../xontribsbody:10
+msgid ":ref:`click_tabcomplete <click_tabcomplete>`"
+msgstr ""
+
+#: ../../xontribsbody:11
+msgid ":ref:`coreutils <coreutils>`"
+msgstr ""
+
+#: ../../xontribsbody:12
+msgid ":ref:`direnv <direnv>`"
+msgstr ""
+
+#: ../../xontribsbody:13
+msgid ":ref:`distributed <distributed>`"
+msgstr ""
+
+#: ../../xontribsbody:14
+msgid ":ref:`docker_tabcomplete <docker_tabcomplete>`"
+msgstr ""
+
+#: ../../xontribsbody:15
+msgid ":ref:`free_cwd <free_cwd>`"
+msgstr ""
+
+#: ../../xontribsbody:16
+msgid ":ref:`fzf-widgets <fzf-widgets>`"
+msgstr ""
+
+#: ../../xontribsbody:17
+msgid ":ref:`jedi <jedi>`"
+msgstr ""
+
+#: ../../xontribsbody:18
+msgid ":ref:`mpl <mpl>`"
+msgstr ""
+
+#: ../../xontribsbody:19
+msgid ":ref:`powerline <powerline>`"
+msgstr ""
+
+#: ../../xontribsbody:20
+msgid ":ref:`prompt_ret_code <prompt_ret_code>`"
+msgstr ""
+
+#: ../../xontribsbody:21
+msgid ":ref:`prompt_vi_mode <prompt_vi_mode>`"
+msgstr ""
+
+#: ../../xontribsbody:22
+msgid ":ref:`schedule <schedule>`"
+msgstr ""
+
+#: ../../xontribsbody:23
+msgid ":ref:`scrapy_tabcomplete <scrapy_tabcomplete>`"
+msgstr ""
+
+#: ../../xontribsbody:24
+msgid ":ref:`vox <vox>`"
+msgstr ""
+
+#: ../../xontribsbody:25
+msgid ":ref:`vox_tabcomplete <vox_tabcomplete>`"
+msgstr ""
+
+#: ../../xontribsbody:26
+msgid ":ref:`whole_word_jumping <whole_word_jumping>`"
+msgstr ""
+
+#: ../../xontribsbody:27
+msgid ":ref:`xo <xo>`"
+msgstr ""
+
+#: ../../xontribsbody:28
+msgid ":ref:`xonda <xonda>`"
+msgstr ""
+
+#: ../../xontribsbody:29
+msgid ":ref:`z <z>`"
+msgstr ""
+
+#: ../../xontribsbody:36
+msgid "Information"
+msgstr ""
+
+#: ../../xontribsbody:41
+msgid "apt_tabcomplete"
+msgstr ""
+
+#: ../../xontribsbody
+msgid "Website"
+msgstr ""
+
+#: ../../xontribsbody:42
+msgid "https://github.com/DangerOnTheRanger/xonsh-apt-tabcomplete"
+msgstr ""
+
+#: ../../xontribsbody
+msgid "Package"
+msgstr ""
+
+#: ../../xontribsbody:43
+msgid ""
+"`xonsh-apt-tabcomplete website <https://github.com/DangerOnTheRanger"
+"/xonsh-apt-tabcomplete>`_, BSD 2-clause"
+msgstr ""
+
+#: ../../xontribsbody:45
+msgid "Adds tabcomplete functionality to apt-get/apt-cache inside of xonsh."
+msgstr ""
+
+#: ../../xontribsbody:47 ../../xontribsbody:94 ../../xontribsbody:120
+#: ../../xontribsbody:192 ../../xontribsbody:249 ../../xontribsbody:308
+#: ../../xontribsbody:357 ../../xontribsbody:429 ../../xontribsbody:478
+#: ../../xontribsbody:504 ../../xontribsbody:530 ../../xontribsbody:579
+#: ../../xontribsbody:628 ../../xontribsbody:655 ../../xontribsbody:681
+msgid "**Installation:**"
+msgstr ""
+
+#: ../../xontribsbody:54 ../../xontribsbody:75 ../../xontribsbody:101
+#: ../../xontribsbody:127 ../../xontribsbody:148 ../../xontribsbody:173
+#: ../../xontribsbody:199 ../../xontribsbody:230 ../../xontribsbody:256
+#: ../../xontribsbody:289 ../../xontribsbody:315 ../../xontribsbody:338
+#: ../../xontribsbody:364 ../../xontribsbody:387 ../../xontribsbody:410
+#: ../../xontribsbody:436 ../../xontribsbody:459 ../../xontribsbody:485
+#: ../../xontribsbody:511 ../../xontribsbody:537 ../../xontribsbody:560
+#: ../../xontribsbody:586 ../../xontribsbody:609 ../../xontribsbody:636
+#: ../../xontribsbody:662 ../../xontribsbody:688
+msgid "**Usage:**"
+msgstr ""
+
+#: ../../xontribsbody:56 ../../xontribsbody:77 ../../xontribsbody:103
+#: ../../xontribsbody:129 ../../xontribsbody:150 ../../xontribsbody:175
+#: ../../xontribsbody:201 ../../xontribsbody:232 ../../xontribsbody:258
+#: ../../xontribsbody:291 ../../xontribsbody:317 ../../xontribsbody:340
+#: ../../xontribsbody:366 ../../xontribsbody:389 ../../xontribsbody:412
+#: ../../xontribsbody:438 ../../xontribsbody:461 ../../xontribsbody:487
+#: ../../xontribsbody:513 ../../xontribsbody:539 ../../xontribsbody:562
+#: ../../xontribsbody:588 ../../xontribsbody:611 ../../xontribsbody:638
+#: ../../xontribsbody:664 ../../xontribsbody:690
+msgid ""
+"Run the following command to enable (or add it to your :doc:`.xonshrc "
+"</xonshrc>` file to enable on startup.)"
+msgstr ""
+
+#: ../../xontribsbody:67
+msgid "autojump"
+msgstr ""
+
+#: ../../xontribsbody:68
+msgid "https://github.com/sagartewari01/autojump-xonsh"
+msgstr ""
+
+#: ../../xontribsbody:69
+msgid "xontrib-autojump"
+msgstr ""
+
+#: ../../xontribsbody:71
+msgid "autojump support for xonsh"
+msgstr ""
+
+#: ../../xontribsbody:88
+msgid "autoxsh"
+msgstr ""
+
+#: ../../xontribsbody:89
+msgid "https://github.com/Granitas/xonsh-autoxsh"
+msgstr ""
+
+#: ../../xontribsbody:90
+msgid ""
+"`xonsh-autoxsh website <https://github.com/Granitas/xonsh-autoxsh>`_, "
+"GPLv3"
+msgstr ""
+
+#: ../../xontribsbody:92
+msgid ""
+"Adds automatic execution of xonsh script files called``.autoxsh`` when "
+"enterting a directory with ``cd`` function"
+msgstr ""
+
+#: ../../xontribsbody:114
+msgid "avox"
+msgstr ""
+
+#: ../../xontribsbody:115
+msgid "https://github.com/astronouth7303/xontrib-avox"
+msgstr ""
+
+#: ../../xontribsbody:116
+msgid ""
+"`xontrib-avox website <https://github.com/astronouth7303/xontrib-avox>`_,"
+" GPLv3"
+msgstr ""
+
+#: ../../xontribsbody:118
+msgid "Automatic (de)activation of virtual environments as you cd around"
+msgstr ""
+
+#: ../../xontribsbody:140
+msgid "base16_shell"
+msgstr ""
+
+#: ../../xontribsbody:141
+msgid "https://github.com/ErickTucto/xontrib-base16-shell"
+msgstr ""
+
+#: ../../xontribsbody:142
+msgid "xontrib-base16-shell"
+msgstr ""
+
+#: ../../xontribsbody:144
+msgid "Change base16 shell themes"
+msgstr ""
+
+#: ../../xontribsbody:161
+msgid "bashisms"
+msgstr ""
+
+#: ../../xontribsbody:162 ../../xontribsbody:213 ../../xontribsbody:270
+#: ../../xontribsbody:329 ../../xontribsbody:378 ../../xontribsbody:401
+#: ../../xontribsbody:450 ../../xontribsbody:551 ../../xontribsbody:600
+msgid "http://xon.sh"
+msgstr ""
+
+#: ../../xontribsbody:163 ../../xontribsbody:214 ../../xontribsbody:271
+#: ../../xontribsbody:330 ../../xontribsbody:379 ../../xontribsbody:402
+#: ../../xontribsbody:451 ../../xontribsbody:552 ../../xontribsbody:601
+msgid "`xonsh website <http://xon.sh>`_, BSD 3-clause"
+msgstr ""
+
+#: ../../xontribsbody:165
+msgid ""
+"Enables additional Bash-like syntax while at the command prompt. For "
+"example, the ``!!`` syntax for running the previous command is now "
+"usable.Note that these features are implemented as precommand events and "
+"these additions do not affect the xonsh language when run as script. That"
+" said, you might find them useful if you have strong muscle memory."
+msgstr ""
+
+#: ../../xontribsbody:167
+msgid ""
+"**Warning:** This xontrib may modify user command line input to implement"
+" its behavior. To see the modifications as they are applied (in unified "
+"diffformat), please set ``$XONSH_DEBUG`` to ``2`` or higher."
+msgstr ""
+
+#: ../../xontribsbody:169 ../../xontribsbody:226 ../../xontribsbody:285
+#: ../../xontribsbody:334 ../../xontribsbody:383 ../../xontribsbody:406
+#: ../../xontribsbody:455 ../../xontribsbody:556 ../../xontribsbody:605
+msgid "This xontrib is preinstalled with xonsh."
+msgstr ""
+
+#: ../../xontribsbody:186
+msgid "click_tabcomplete"
+msgstr ""
+
+#: ../../xontribsbody:187
+msgid "https://github.com/Granitosaurus/xonsh-click-tabcomplete"
+msgstr ""
+
+#: ../../xontribsbody:188
+msgid ""
+"`xonsh-click-tabcomplete website <https://github.com/Granitosaurus/xonsh-"
+"click-tabcomplete>`_, GPLv3"
+msgstr ""
+
+#: ../../xontribsbody:190
+msgid ""
+"Adds tabcomplete functionality to click based python applications inside "
+"of xonsh."
+msgstr ""
+
+#: ../../xontribsbody:212
+msgid "coreutils"
+msgstr ""
+
+#: ../../xontribsbody:216
+msgid ""
+"Additional core utilities that are implemented in xonsh. The current list"
+" includes:"
+msgstr ""
+
+#: ../../xontribsbody:218
+msgid "cat"
+msgstr ""
+
+#: ../../xontribsbody:219
+msgid "echo"
+msgstr ""
+
+#: ../../xontribsbody:220
+msgid "pwd"
+msgstr ""
+
+#: ../../xontribsbody:221
+msgid "tee"
+msgstr ""
+
+#: ../../xontribsbody:222
+msgid "tty* yes"
+msgstr ""
+
+#: ../../xontribsbody:224
+msgid ""
+"In many cases, these may have a lower performance overhead than the posix"
+" command line utility with the same name. This is because these tools "
+"avoid the need for a full subprocess call. Additionally, these tools are "
+"cross-platform."
+msgstr ""
+
+#: ../../xontribsbody:243
+msgid "direnv"
+msgstr ""
+
+#: ../../xontribsbody:244
+msgid "https://github.com/74th/xonsh-direnv"
+msgstr ""
+
+#: ../../xontribsbody:245
+msgid "`xonsh-direnv website <https://github.com/74th/xonsh-direnv>`_, MIT"
+msgstr ""
+
+#: ../../xontribsbody:247
+msgid "Supports direnv."
+msgstr ""
+
+#: ../../xontribsbody:269
+msgid "distributed"
+msgstr ""
+
+#: ../../xontribsbody:273
+msgid ""
+"The distributed parallel computing library hooks for xonsh. Importantly "
+"this provides a substitute 'dworker' command which enables distributed "
+"workers to have access to xonsh builtins."
+msgstr ""
+
+#: ../../xontribsbody:275
+msgid ""
+"Furthermore, this xontrib adds a 'DSubmitter' context manager for "
+"executing a block remotely. Moreover, this also adds a convenience "
+"function 'dsubmit()' for creating DSubmitter and Executor instances at "
+"the same time. Thus users may submit distributed jobs with::"
+msgstr ""
+
+#: ../../xontribsbody:283
+msgid "This is useful for long running or non-blocking jobs."
+msgstr ""
+
+#: ../../xontribsbody:302
+msgid "docker_tabcomplete"
+msgstr ""
+
+#: ../../xontribsbody:303
+msgid "https://github.com/xsteadfastx/xonsh-docker-tabcomplete"
+msgstr ""
+
+#: ../../xontribsbody:304
+msgid ""
+"`xonsh-docker-tabcomplete website <https://github.com/xsteadfastx/xonsh-"
+"docker-tabcomplete>`_, MIT"
+msgstr ""
+
+#: ../../xontribsbody:306
+msgid "Adds tabcomplete functionality to docker inside of xonsh."
+msgstr ""
+
+#: ../../xontribsbody:328
+msgid "free_cwd"
+msgstr ""
+
+#: ../../xontribsbody:332
+msgid ""
+"Windows only xontrib, to release the lock on the current directory "
+"whenever the prompt is shown. Enabling this will allow the other programs"
+" or Windows Explorer to delete or rename the current or parent "
+"directories. Internally, it is accomplished by temporarily resetting CWD "
+"to the root drive folder while waiting at the prompt. This only works "
+"with the prompt_toolkit backend and can cause cause issues if any "
+"extensions are enabled that hook the prompt and relies on ``os.getcwd()``"
+msgstr ""
+
+#: ../../xontribsbody:351
+msgid "fzf-widgets"
+msgstr ""
+
+#: ../../xontribsbody:352
+msgid "https://github.com/shahinism/xontrib-fzf-widgets"
+msgstr ""
+
+#: ../../xontribsbody:353
+msgid ""
+"`xontrib-fzf-widgets website <https://github.com/shahinism/xontrib-fzf-"
+"widgets>`_, GPLv3"
+msgstr ""
+
+#: ../../xontribsbody:355
+msgid "Adds some fzf widgets to your xonsh shell."
+msgstr ""
+
+#: ../../xontribsbody:377
+msgid "jedi"
+msgstr ""
+
+#: ../../xontribsbody:381
+msgid "Jedi tab completion hooks for xonsh."
+msgstr ""
+
+#: ../../xontribsbody:400
+msgid "mpl"
+msgstr ""
+
+#: ../../xontribsbody:404
+msgid ""
+"Matplotlib hooks for xonsh, including the new 'mpl' alias that displays "
+"the current figure on the screen."
+msgstr ""
+
+#: ../../xontribsbody:423
+msgid "powerline"
+msgstr ""
+
+#: ../../xontribsbody:424
+msgid "https://github.com/santagada/xontrib-powerline"
+msgstr ""
+
+#: ../../xontribsbody:425
+msgid ""
+"`xontrib-powerline website <https://github.com/santagada/xontrib-"
+"powerline>`_, MIT"
+msgstr ""
+
+#: ../../xontribsbody:427
+msgid "Powerline for Xonsh shell"
+msgstr ""
+
+#: ../../xontribsbody:449
+msgid "prompt_ret_code"
+msgstr ""
+
+#: ../../xontribsbody:453
+msgid "Adds return code info to the prompt"
+msgstr ""
+
+#: ../../xontribsbody:472
+msgid "prompt_vi_mode"
+msgstr ""
+
+#: ../../xontribsbody:473
+msgid "https://github.com/t184256/xontrib-prompt-vi-mode"
+msgstr ""
+
+#: ../../xontribsbody:474
+msgid ""
+"`xontrib-prompt-vi-mode website <https://github.com/t184256/xontrib-"
+"prompt-vi-mode>`_, MIT"
+msgstr ""
+
+#: ../../xontribsbody:476
+msgid "vi-mode status formatter for xonsh prompt"
+msgstr ""
+
+#: ../../xontribsbody:498
+msgid "schedule"
+msgstr ""
+
+#: ../../xontribsbody:499
+msgid "https://github.com/astronouth7303/xontrib-schedule"
+msgstr ""
+
+#: ../../xontribsbody:500
+msgid ""
+"`xontrib-schedule website <https://github.com/astronouth7303/xontrib-"
+"schedule>`_, MIT"
+msgstr ""
+
+#: ../../xontribsbody:502
+msgid "Xonsh Task Scheduling"
+msgstr ""
+
+#: ../../xontribsbody:524
+msgid "scrapy_tabcomplete"
+msgstr ""
+
+#: ../../xontribsbody:525
+msgid "https://github.com/Granitas/xonsh-scrapy-tabcomplete"
+msgstr ""
+
+#: ../../xontribsbody:526
+msgid ""
+"`xonsh-scrapy-tabcomplete website <https://github.com/Granitas/xonsh-"
+"scrapy-tabcomplete>`_, GPLv3"
+msgstr ""
+
+#: ../../xontribsbody:528
+msgid "Adds tabcomplete functionality to scrapy inside of xonsh."
+msgstr ""
+
+#: ../../xontribsbody:550
+msgid "vox"
+msgstr ""
+
+#: ../../xontribsbody:554
+msgid "Python virtual environment manager for xonsh."
+msgstr ""
+
+#: ../../xontribsbody:573
+msgid "vox_tabcomplete"
+msgstr ""
+
+#: ../../xontribsbody:574
+msgid "https://github.com/Granitosaurus/xonsh-vox-tabcomplete"
+msgstr ""
+
+#: ../../xontribsbody:575
+msgid ""
+"`xonsh-vox-tabcomplete website <https://github.com/Granitosaurus/xonsh-"
+"vox-tabcomplete>`_, GPLv3"
+msgstr ""
+
+#: ../../xontribsbody:577
+msgid "Adds tabcomplete functionality to vox inside of xonsh."
+msgstr ""
+
+#: ../../xontribsbody:599
+msgid "whole_word_jumping"
+msgstr ""
+
+#: ../../xontribsbody:603
+msgid ""
+"Jumping across whole words (non-whitespace) with "
+"Ctrl+Left/Right.Alt+Left/Right remains unmodified to jump over smaller "
+"word segments."
+msgstr ""
+
+#: ../../xontribsbody:622
+msgid "xo"
+msgstr ""
+
+#: ../../xontribsbody:623
+msgid "https://github.com/scopatz/xo"
+msgstr ""
+
+#: ../../xontribsbody:624
+msgid "`exofrills website <http://exofrills.org>`_, WTFPL"
+msgstr ""
+
+#: ../../xontribsbody:626
+msgid ""
+"Adds an 'xo' alias to run the exofrills text editor in the current Python"
+" interpreter session. This shaves off a bit of the startup time when "
+"running your favorite, minimal text editor."
+msgstr ""
+
+#: ../../xontribsbody:649
+msgid "xonda"
+msgstr ""
+
+#: ../../xontribsbody:650
+msgid "https://github.com/gforsyth/xonda"
+msgstr ""
+
+#: ../../xontribsbody:651
+msgid "`xonda website <https://github.com/gforsyth/xonda>`_, MIT"
+msgstr ""
+
+#: ../../xontribsbody:653
+msgid "A thin wrapper around conda with tab completion"
+msgstr ""
+
+#: ../../xontribsbody:675
+msgid "z"
+msgstr ""
+
+#: ../../xontribsbody:676
+msgid "https://github.com/astronouth7303/xontrib-z"
+msgstr ""
+
+#: ../../xontribsbody:677
+msgid "`xontrib-z website <https://github.com/astronouth7303/xontrib-z>`_, GPLv3"
+msgstr ""
+
+#: ../../xontribsbody:679
+msgid "Tracks your most used directories, based on 'frecency'."
+msgstr ""
+

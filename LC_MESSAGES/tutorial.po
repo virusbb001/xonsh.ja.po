@@ -1,0 +1,1585 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../tutorial.rst:5
+msgid "Tutorial"
+msgstr ""
+
+#: ../../tutorial.rst:6
+msgid ""
+"xonsh is a shell language and command prompt. Unlike other shells, xonsh "
+"is based on Python, with additional syntax added that makes calling "
+"subprocess commands, manipulating the environment, and dealing with the "
+"file system easy.  The xonsh command prompt gives users interactive "
+"access to the xonsh language."
+msgstr ""
+
+#: ../../tutorial.rst:12
+msgid ""
+"While all Python code is also xonsh, not all Bash code can be used in "
+"xonsh. That would defeat the purpose, and Python is better anyway! Still,"
+" xonsh is Bash-wards compatible in the ways that matter, such as for "
+"running commands, reading in the Bash environment, and utilizing Bash tab"
+" completion."
+msgstr ""
+
+#: ../../tutorial.rst:17
+msgid ""
+"The purpose of this tutorial is to teach you xonsh. There are many "
+"excellent guides out there for learning Python, and this will not join "
+"their ranks. Similarly, you'd probably get the most out of this tutorial "
+"if you have already used a command prompt or interactive interpreter."
+msgstr ""
+
+#: ../../tutorial.rst:22
+msgid "Let's dive in!"
+msgstr ""
+
+#: ../../tutorial.rst:25
+msgid "Starting xonsh"
+msgstr ""
+
+#: ../../tutorial.rst:26
+msgid ""
+"Assuming you have successfully installed xonsh (see http://xon.sh), you "
+"can start up the xonsh interpreter via the ``xonsh`` command. Suppose you"
+" are in a lesser terminal:"
+msgstr ""
+
+#: ../../tutorial.rst:35
+msgid ""
+"Now we are in a xonsh shell. Our username happens to be ``snail``, our "
+"hostname happens to be ``home``, and we are in our home directory "
+"(``~``). Alternatively, you can setup your terminal emulator (xterm, "
+"gnome-terminal, etc) to run xonsh automatically when it starts up. This "
+"is recommended."
+msgstr ""
+
+#: ../../tutorial.rst:41
+msgid "Basics"
+msgstr ""
+
+#: ../../tutorial.rst:42
+msgid ""
+"The xonsh language is based on Python, and the xonsh shell uses Python to"
+" interpret any input it receives. This makes simple things, like "
+"arithmetic, simple:"
+msgstr ""
+
+#: ../../tutorial.rst:51
+msgid ""
+"From here on we'll be using ``>>>`` to prefix (or prompt) any xonsh "
+"input. This follows the Python convention and helps trick syntax "
+"highlighting, though ``$`` is more traditional for shells."
+msgstr ""
+
+#: ../../tutorial.rst:55
+msgid ""
+"Since this is just Python, we are able to import modules, print values, "
+"and use other built-in Python functionality:"
+msgstr ""
+
+#: ../../tutorial.rst:66
+msgid ""
+"We can also create and use literal data types, such as ints, floats, "
+"lists, sets, and dictionaries. Everything that you are used to if you "
+"already know Python is there:"
+msgstr ""
+
+#: ../../tutorial.rst:76
+msgid ""
+"The xonsh shell also supports multi-line input for more advanced flow "
+"control. The multi-line mode is automatically entered whenever the first "
+"line of input is not syntactically valid on its own.  Multi-line mode is "
+"then exited when enter (or return) is pressed when the cursor is in the "
+"first column."
+msgstr ""
+
+#: ../../tutorial.rst:90
+msgid "Flow control, of course, includes loops."
+msgstr ""
+
+#: ../../tutorial.rst:103
+msgid ""
+"We can also define and call functions and classes. I'll mostly spare you "
+"the details, but this *is* pretty cool:"
+msgstr ""
+
+#: ../../tutorial.rst:114
+msgid ""
+"For easier indentation, Shift+Tab will enter 4 spaces. And that about "
+"wraps it up for the basics section.  It is just like Python."
+msgstr ""
+
+#: ../../tutorial.rst:118
+msgid "Environment Variables"
+msgstr ""
+
+#: ../../tutorial.rst:119
+msgid ""
+"Environment variables are written as ``$`` followed by a name.  For "
+"example, ``$HOME``, ``$PWD``, and ``$PATH``."
+msgstr ""
+
+#: ../../tutorial.rst:127
+msgid ""
+"You can set (and export) environment variables like you would set any "
+"other variable in Python.  The same is true for deleting them too."
+msgstr ""
+
+#: ../../tutorial.rst:137
+msgid "Very nice."
+msgstr ""
+
+#: ../../tutorial.rst:140
+msgid "The Environment Itself ``${...}``"
+msgstr ""
+
+#: ../../tutorial.rst:142
+msgid ""
+"All environment variables live in the built-in ``${...}`` (aka "
+"``__xonsh__.env``) mapping. You can access this mapping directly, but in "
+"most situations, you shouldn’t need to."
+msgstr ""
+
+#: ../../tutorial.rst:145
+msgid ""
+"If you want for example to check if an environment variable is present in"
+" your current session (say, in your awesome new ``xonsh`` script) you can"
+" use the membership operator:"
+msgstr ""
+
+#: ../../tutorial.rst:153
+msgid ""
+"To get information about a specific environment variable you can use the "
+":func:`~xonsh.environ.Env.help` method."
+msgstr ""
+
+#: ../../tutorial.rst:160
+msgid ""
+"One helpful method on the ``${...}`` is :func:`~xonsh.environ.Env.swap`. "
+"It can be used to temporarily set an environment variable:"
+msgstr ""
+
+#: ../../tutorial.rst:175
+msgid "Environment Lookup with ``${<expr>}``"
+msgstr ""
+
+#: ../../tutorial.rst:177
+msgid ""
+"The ``$NAME`` is great as long as you know the name of the environment "
+"variable you want to look up.  But what if you want to construct the name"
+" programmatically, or read it from another variable?  Enter the ``${}`` "
+"operator."
+msgstr ""
+
+#: ../../tutorial.rst:182
+msgid ""
+"In Bash, ``$NAME`` and ``${NAME}`` are syntactically equivalent. In "
+"xonsh, they have separate meanings."
+msgstr ""
+
+#: ../../tutorial.rst:185
+msgid ""
+"We can place any valid Python expression inside of the curly braces in "
+"``${<expr>}``. This result of this expression will then be used to look "
+"up a value in the environment. Here are a couple of examples in action:"
+msgstr ""
+
+#: ../../tutorial.rst:197
+msgid "Not bad, xonsh, not bad."
+msgstr ""
+
+#: ../../tutorial.rst:200
+msgid "Environment Types"
+msgstr ""
+
+#: ../../tutorial.rst:202
+msgid ""
+"Like other variables in Python, environment variables have a type. "
+"Sometimes this type is imposed based on the variable name. The current "
+"rules are pretty simple:"
+msgstr ""
+
+#: ../../tutorial.rst:206
+msgid "``\\w*PATH``: any variable whose name ends in PATH is a list of strings."
+msgstr ""
+
+#: ../../tutorial.rst:207
+msgid "``\\w*DIRS``: any variable whose name ends in DIRS is a list of strings."
+msgstr ""
+
+#: ../../tutorial.rst:208
+msgid "``XONSH_HISTORY_SIZE``: this variable is an int."
+msgstr ""
+
+#: ../../tutorial.rst:209
+msgid "``CASE_SENSITIVE_COMPLETIONS``: this variable is a boolean."
+msgstr ""
+
+#: ../../tutorial.rst:211
+msgid ""
+"xonsh will automatically convert back and forth to untyped (string-only) "
+"representations of the environment as needed (mostly by subprocess "
+"commands). When in xonsh, you'll always have the typed version.  Here are"
+" a couple of PATH examples:"
+msgstr ""
+
+#: ../../tutorial.rst:225
+msgid ""
+"Also note that *any* Python object can go into the environment. It is "
+"sometimes useful to have more sophisticated types, like functions, in the"
+" environment. There are handful of environment variables that xonsh "
+"considers special. They can be seen on the `Environment Variables page "
+"<envvars.html>`_."
+msgstr ""
+
+#: ../../tutorial.rst:230
+msgid ""
+"In subprocess mode, referencing an undefined environment variable will "
+"produce an empty string.  In Python mode, however, a ``KeyError`` will be"
+" raised if the variable does not exist in the environment."
+msgstr ""
+
+#: ../../tutorial.rst:236
+msgid "Running Commands"
+msgstr ""
+
+#: ../../tutorial.rst:237
+msgid ""
+"As a shell, xonsh is meant to make running commands easy and fun. Running"
+" subprocess commands should work like any other in any other shell."
+msgstr ""
+
+#: ../../tutorial.rst:262
+msgid "This should feel very natural."
+msgstr ""
+
+#: ../../tutorial.rst:266
+msgid "Python-mode vs Subprocess-mode"
+msgstr ""
+
+#: ../../tutorial.rst:267
+msgid ""
+"It is sometimes helpful to make the distinction between lines that "
+"operate in pure Python mode and lines that use shell-specific syntax, "
+"edit the execution environment, and run commands. Unfortunately, it is "
+"not always clear from the syntax alone what mode is desired. This "
+"ambiguity stems from most command line utilities looking a lot like "
+"Python operators."
+msgstr ""
+
+#: ../../tutorial.rst:273
+msgid ""
+"Take the case of ``ls -l``.  This is valid Python code, though it could "
+"have also been written as ``ls - l`` or ``ls-l``.  So how does xonsh know"
+" that ``ls -l`` is meant to be run in subprocess-mode?"
+msgstr ""
+
+#: ../../tutorial.rst:277
+msgid ""
+"For any given line that only contains an expression statement (expr-stmt,"
+" see the Python AST docs for more information), if all the names cannot "
+"be found as current variables xonsh will try to parse the line as a "
+"subprocess command instead.  In the above, if ``ls`` and ``l`` are not "
+"variables, then subprocess mode will be attempted. If parsing in "
+"subprocess mode fails, then the line is left in Python-mode."
+msgstr ""
+
+#: ../../tutorial.rst:284
+msgid ""
+"In the following example, we will list the contents of the directory with"
+" ``ls -l``. Then we'll make new variable names ``ls`` and ``l`` and then "
+"subtract them. Finally, we will delete ``ls`` and ``l`` and be able to "
+"list the directories again."
+msgstr ""
+
+#: ../../tutorial.rst:306
+msgid ""
+"The determination between Python- and subprocess-modes is always done in "
+"the safest possible way. If anything goes wrong, it will favor Python-"
+"mode. The determination between the two modes is done well ahead of any "
+"execution. You do not need to worry about partially executed commands - "
+"that is impossible."
+msgstr ""
+
+#: ../../tutorial.rst:312
+msgid ""
+"If you absolutely want to run a subprocess command, you can always force "
+"xonsh to do so with the syntax that we will see in the following "
+"sections."
+msgstr ""
+
+#: ../../tutorial.rst:318
+msgid "Quoting"
+msgstr ""
+
+#: ../../tutorial.rst:320
+msgid ""
+"Single or double quotes can be used to remove the special meaning of "
+"certain characters or words to xonsh. If a subprocess command contains "
+"characters that collide with xonsh syntax then quotes must be used to "
+"force xonsh to not interpret them."
+msgstr ""
+
+#: ../../tutorial.rst:335
+msgid ""
+"There is no notion of an escaping character in xonsh like the backslash "
+"(\\\\) in bash."
+msgstr ""
+
+#: ../../tutorial.rst:340
+msgid "Captured Subprocess with ``$()`` and ``!()``"
+msgstr ""
+
+#: ../../tutorial.rst:341
+msgid ""
+"The ``$(<expr>)`` operator in xonsh executes a subprocess command and "
+"*captures* some information about that command."
+msgstr ""
+
+#: ../../tutorial.rst:344
+msgid ""
+"The ``$()`` syntax captures and returns the standard output stream of the"
+" command as a Python string.  This is similar to how ``$()`` performs in "
+"Bash. For example,"
+msgstr ""
+
+#: ../../tutorial.rst:353
+msgid ""
+"The ``!()`` syntax captured more information about the command, as an "
+"instance of a class called ``CommandPipeline``.  This object contains "
+"more information about the result of the given command, including the "
+"return code, the process id, the standard output and standard error "
+"streams, and information about how input and output were redirected.  For"
+" example:"
+msgstr ""
+
+#: ../../tutorial.rst:364
+msgid ""
+"This object will be \"truthy\" if its return code was 0, and it is equal "
+"(via ``==``) to its return code.  It also hashes to its return code.  "
+"This allows for some interesting new kinds of interactions with "
+"subprocess commands, for example:"
+msgstr ""
+
+#: ../../tutorial.rst:385
+msgid ""
+"If you iterate over the ``CommandPipeline`` object, it will yield lines "
+"of its output.  Using this, you can quickly and cleanly process output "
+"from commands. Additionally, these objects expose a method ``itercheck``,"
+" which behaves the same as the built-in iterator but raises "
+"``XonshCalledProcessError`` if the process had a nonzero return code."
+msgstr ""
+
+#: ../../tutorial.rst:422
+msgid ""
+"The ``$()`` and ``!()`` operators are expressions themselves. This means "
+"that we can assign the results to a variable or perform any other "
+"manipulations we want."
+msgstr ""
+
+#: ../../tutorial.rst:439
+msgid "Job control is not implemented for captured subprocesses."
+msgstr ""
+
+#: ../../tutorial.rst:441
+msgid ""
+"While in subprocess-mode or inside of a captured subprocess, we can "
+"always still query the environment with ``$NAME`` variables or the "
+"``${}`` syntax, or inject Python values with the ``@()`` operator:"
+msgstr ""
+
+#: ../../tutorial.rst:451
+msgid "Uncaptured Subprocess with ``$[]`` and ``![]``"
+msgstr ""
+
+#: ../../tutorial.rst:452
+msgid ""
+"Uncaptured subprocesses are denoted with the ``$[]`` and ``![]`` "
+"operators. They are the same as ``$()`` captured subprocesses in almost "
+"every way. The only difference is that the subprocess's stdout passes "
+"directly through xonsh and to the screen.  The return value of ``$[]`` is"
+" always ``None``."
+msgstr ""
+
+#: ../../tutorial.rst:457
+msgid ""
+"In the following, we can see that the results of ``$[]`` are "
+"automatically printed, and that the return value is not a string."
+msgstr ""
+
+#: ../../tutorial.rst:468
+msgid ""
+"The ``![]`` operator is similar to the ``!()`` in that it returns an "
+"object containing information about the result of executing the given "
+"command. However, its standard output and standard error streams are "
+"directed to the terminal, and the resulting object is not displayed.  For"
+" example"
+msgstr ""
+
+#: ../../tutorial.rst:482
+msgid "Python Evaluation with ``@()``"
+msgstr ""
+
+#: ../../tutorial.rst:484
+msgid ""
+"The ``@(<expr>)`` operator form works in subprocess mode, and will "
+"evaluate arbitrary Python code. The result is appended to the subprocess "
+"command list. If the result is a string, it is appended to the argument "
+"list. If the result is a list or other non-string sequence, the contents "
+"are converted to strings and appended to the argument list in order. If "
+"the result in the first position is a function, it is treated as an alias"
+" (see the section on `Aliases`_ below), even if it was not explicitly "
+"added to the ``aliases`` mapping.  Otherwise, the result is automatically"
+" converted to a string. For example,"
+msgstr ""
+
+#: ../../tutorial.rst:510
+msgid ""
+"This syntax can be used inside of a captured or uncaptured subprocess, "
+"and can be used to generate any of the tokens in the subprocess command "
+"list."
+msgstr ""
+
+#: ../../tutorial.rst:521
+msgid ""
+"Thus, ``@()`` allows us to create complex commands in Python-mode and "
+"then feed them to a subprocess as needed.  For example:"
+msgstr ""
+
+#: ../../tutorial.rst:529
+msgid ""
+"The ``@()`` syntax may also be used inside of subprocess arguments, not "
+"just as a stand-alone argument. For example:"
+msgstr ""
+
+#: ../../tutorial.rst:538
+msgid ""
+"When used inside of a subprocess argument and ``<expr>`` evaluates to a "
+"non-string iterable, ``@()`` will expand to the outer product of all "
+"given values:"
+msgstr ""
+
+#: ../../tutorial.rst:552
+msgid "Command Substitution with ``@$()``"
+msgstr ""
+
+#: ../../tutorial.rst:554
+msgid ""
+"A common use of the ``@()`` and ``$()`` operators is allowing the output "
+"of a command to replace the command itself (command substitution): "
+"``@([i.strip() for i in $(cmd).split()])``.  Xonsh offers a short-hand "
+"syntax for this operation: ``@$(cmd)``."
+msgstr ""
+
+#: ../../tutorial.rst:559
+msgid "Consider the following example:"
+msgstr ""
+
+#: ../../tutorial.rst:582
+msgid "Nesting Subprocesses"
+msgstr ""
+
+#: ../../tutorial.rst:583
+msgid ""
+"Though I am begging you not to abuse this, it is possible to nest the "
+"subprocess operators that we have seen so far (``$()``, ``$[]``, ``${}``,"
+" ``@()``, ``@$()``).  An instance of ``ls -l`` that is on the wrong side "
+"of the border of the absurd is shown below:"
+msgstr ""
+
+#: ../../tutorial.rst:594
+msgid "With great power, and so forth..."
+msgstr ""
+
+#: ../../tutorial.rst:596
+msgid ""
+"Nesting these subprocess operators inside of ``$()`` and/or ``$[]`` works"
+" because the contents of those operators are executed in subprocess mode."
+"  Since ``@()`` and ``${}`` run their contents in Python mode, it is not "
+"possible to nest other subprocess operators inside of them."
+msgstr ""
+
+#: ../../tutorial.rst:603
+msgid "Pipes"
+msgstr ""
+
+#: ../../tutorial.rst:605
+msgid ""
+"In subprocess-mode, xonsh allows you to use the ``|`` character to pipe "
+"together commands as you would in other shells."
+msgstr ""
+
+#: ../../tutorial.rst:619
+msgid ""
+"This is only available in subprocess-mode because ``|`` is otherwise a "
+"Python operator. If you are unsure of what pipes are, there are many "
+"great references out there. You should be able to find information on "
+"StackOverflow or Google."
+msgstr ""
+
+#: ../../tutorial.rst:625
+msgid "Logical Subprocess And"
+msgstr ""
+
+#: ../../tutorial.rst:627
+msgid ""
+"Subprocess-mode also allows you to use the ``and`` operator to chain "
+"together subprocess commands. The truth value of a command is evaluated "
+"as whether its return code is zero (i.e. ``proc.returncode == 0``).  Like"
+" in Python, if the command evaluates to ``False``, subsequent commands "
+"will not be executed. For example, suppose we want to lists files that "
+"may or may not exist:"
+msgstr ""
+
+#: ../../tutorial.rst:640
+msgid ""
+"However, if you list the file that doesn't exist first, you would have "
+"only seen the error:"
+msgstr ""
+
+#: ../../tutorial.rst:648
+msgid ""
+"Also, don't worry. Xonsh directly translates the ``&&`` operator into "
+"``and`` for you. It is less Pythonic, of course, but it is your shell!"
+msgstr ""
+
+#: ../../tutorial.rst:652
+msgid "Logical Subprocess Or"
+msgstr ""
+
+#: ../../tutorial.rst:654
+msgid ""
+"Much like with ``and``, you can use the ``or`` operator to chain together"
+" subprocess commands. The difference, to be certain, is that subsequent "
+"commands will be executed only if the if the return code is non-zero "
+"(i.e. a failure). Using the file example from above:"
+msgstr ""
+
+#: ../../tutorial.rst:665
+msgid ""
+"This doesn't even try to list a non-existent file! However, if you list "
+"the file that doesn't exist first, you will see the error and then the "
+"file that does exist:"
+msgstr ""
+
+#: ../../tutorial.rst:675
+msgid ""
+"Never fear! Xonsh also directly translates the ``||`` operator into "
+"``or``, too. Your muscle memory is safe now, here with us."
+msgstr ""
+
+#: ../../tutorial.rst:679
+msgid "Input/Output Redirection"
+msgstr ""
+
+#: ../../tutorial.rst:681
+msgid ""
+"xonsh also allows you to redirect ``stdin``, ``stdout``, and/or "
+"``stderr``. This allows you to control where the output of a command is "
+"sent, and where it receives its input from.  xonsh has its own syntax for"
+" these operations, but, for compatibility purposes, xonsh also support "
+"Bash-like syntax."
+msgstr ""
+
+#: ../../tutorial.rst:686
+msgid ""
+"The basic operations are \"write to\" (``>``), \"append to\" (``>>``), "
+"and \"read from\" (``<``).  The details of these are perhaps best "
+"explained through examples."
+msgstr ""
+
+#: ../../tutorial.rst:690
+msgid ""
+"The target of the redirection should be separated by a space, otherwise "
+"xonsh will raise a SyntaxError."
+msgstr ""
+
+#: ../../tutorial.rst:694
+msgid "Redirecting ``stdout``"
+msgstr ""
+
+#: ../../tutorial.rst:696
+msgid ""
+"All of the following examples will execute ``COMMAND`` and write its "
+"regular output (stdout) to a file called ``output.txt``, creating it if "
+"it does not exist:"
+msgstr ""
+
+#: ../../tutorial.rst:707
+msgid ""
+"These can be made to append to ``output.txt`` instead of overwriting its "
+"contents by replacing ``>`` with ``>>`` (note that ``>>`` will still "
+"create the file if it does not exist)."
+msgstr ""
+
+#: ../../tutorial.rst:712
+msgid "Redirecting ``stderr``"
+msgstr ""
+
+#: ../../tutorial.rst:714
+msgid ""
+"All of the following examples will execute ``COMMAND`` and write its "
+"error output (stderr) to a file called ``errors.txt``, creating it if it "
+"does not exist:"
+msgstr ""
+
+#: ../../tutorial.rst:724
+msgid ""
+"As above, replacing ``>`` with ``>>`` will cause the error output to be "
+"appended to ``errors.txt``, rather than replacing its contents."
+msgstr ""
+
+#: ../../tutorial.rst:728
+msgid "Combining Streams"
+msgstr ""
+
+#: ../../tutorial.rst:730
+msgid ""
+"It is possible to send all of ``COMMAND``'s output (both regular output "
+"and error output) to the same location.  All of the following examples "
+"accomplish that task:"
+msgstr ""
+
+#: ../../tutorial.rst:740
+msgid ""
+"It is also possible to explicitly merge stderr into stdout so that error "
+"messages are reported to the same location as regular output.  You can do"
+" this with the following syntax:"
+msgstr ""
+
+#: ../../tutorial.rst:752
+msgid ""
+"This merge can be combined with other redirections, including pipes (see "
+"the section on `Pipes`_ above):"
+msgstr ""
+
+#: ../../tutorial.rst:760
+msgid ""
+"It is worth noting that this last example is equivalent to: ``COMMAND a> "
+"combined.txt``"
+msgstr ""
+
+#: ../../tutorial.rst:762
+msgid "Similarly, you can also send stdout to stderr with the following syntax:"
+msgstr ""
+
+#: ../../tutorial.rst:773
+msgid "Redirecting ``stdin``"
+msgstr ""
+
+#: ../../tutorial.rst:775
+msgid ""
+"It is also possible to have a command read its input from a file, rather "
+"than from ``stdin``.  The following examples demonstrate two ways to "
+"accomplish this:"
+msgstr ""
+
+#: ../../tutorial.rst:784
+msgid "Combining I/O Redirects"
+msgstr ""
+
+#: ../../tutorial.rst:786
+msgid ""
+"It is worth noting that all of these redirections can be combined.  Below"
+" is one example of a complicated redirect."
+msgstr ""
+
+#: ../../tutorial.rst:793
+msgid ""
+"This line will run ``COMMAND1`` with the contents of ``input.txt`` fed in"
+" on stdin, and will pipe all output (stdout and stderr) to ``COMMAND2``; "
+"the regular output of this command will be redirected to ``output.txt``, "
+"and the error output will be appended to ``errors.txt``."
+msgstr ""
+
+#: ../../tutorial.rst:800
+msgid "Background Jobs"
+msgstr ""
+
+#: ../../tutorial.rst:802
+msgid ""
+"Typically, when you start a program running in xonsh, xonsh itself will "
+"pause and wait for that program to terminate.  Sometimes, though, you may"
+" want to continue giving commands to xonsh while that program is running."
+"  In subprocess mode, you can start a process \"in the background\" "
+"(i.e., in a way that allows continued use of the shell) by adding an "
+"ampersand (``&``) to the end of your command.  Background jobs are very "
+"useful when running programs with graphical user interfaces."
+msgstr ""
+
+#: ../../tutorial.rst:810
+msgid "The following shows an example with ``emacs``."
+msgstr ""
+
+#: ../../tutorial.rst:817
+msgid "Note that the prompt is returned to you after emacs is started."
+msgstr ""
+
+#: ../../tutorial.rst:820
+msgid "Job Control"
+msgstr ""
+
+#: ../../tutorial.rst:822
+msgid ""
+"If you start a program in the foreground (with no ampersand), you can "
+"suspend that program's execution and return to the xonsh prompt by "
+"pressing Control-Z. This will give control of the terminal back to xonsh,"
+" and will keep the program paused in the background."
+msgstr ""
+
+#: ../../tutorial.rst:827
+msgid ""
+"Suspending processes via Control-Z is not yet supported when running on "
+"Windows."
+msgstr ""
+
+#: ../../tutorial.rst:830
+msgid ""
+"To unpause the program and bring it back to the foreground, you can use "
+"the ``fg`` command.  To unpause the program have it continue in the "
+"background (giving you continued access to the xonsh prompt), you can use"
+" the ``bg`` command."
+msgstr ""
+
+#: ../../tutorial.rst:835
+msgid ""
+"You can get a listing of all currently running jobs with the ``jobs`` "
+"command."
+msgstr ""
+
+#: ../../tutorial.rst:837
+msgid ""
+"Each job has a unique identifier (starting with 1 and counting upward).  "
+"By default, the ``fg`` and ``bg`` commands operate on the job that was "
+"started most recently.  You can bring older jobs to the foreground or "
+"background by specifying the appropriate ID; for example, ``fg 1`` brings"
+" the job with ID 1 to the foreground. Additionally, specify \"+\" for the"
+" most recent job and \"-\" for the second most recent job."
+msgstr ""
+
+#: ../../tutorial.rst:845
+msgid "String Literals in Subprocess-mode"
+msgstr ""
+
+#: ../../tutorial.rst:846
+msgid ""
+"Strings can be used to escape special characters in subprocess-mode. The "
+"contents of the string are passed directly to the subprocess command as a"
+" single argument.  So whenever you are in doubt, or if there is a xonsh "
+"syntax error because of a filename, just wrap the offending portion in a "
+"string."
+msgstr ""
+
+#: ../../tutorial.rst:851
+msgid ""
+"A common use case for this is files with spaces in their names. This "
+"detestable practice refuses to die. \"No problem!\" says xonsh, \"I have "
+"strings.\"  Let's see it go!"
+msgstr ""
+
+#: ../../tutorial.rst:863
+msgid ""
+"By default, the name of an environment variable inside a string will be "
+"replaced by the contents of that variable (in subprocess mode only).  For"
+" example:"
+msgstr ""
+
+#: ../../tutorial.rst:874
+msgid ""
+"You can avoid this expansion within a particular command by forcing the "
+"strings to be evaluated in Python mode using the ``@()`` syntax:"
+msgstr ""
+
+#: ../../tutorial.rst:884
+msgid ""
+"You can also disable environment variable expansion completely by setting"
+" ``$EXPAND_ENV_VARS`` to ``False``."
+msgstr ""
+
+#: ../../tutorial.rst:888
+msgid "Filename Globbing with ``*``"
+msgstr ""
+
+#: ../../tutorial.rst:889
+msgid ""
+"Filename globbing with the ``*`` character is also allowed in subprocess-"
+"mode. This simply uses Python's glob module under-the-covers.  See there "
+"for more details.  As an example, start with a lovely bunch of xonshs:"
+msgstr ""
+
+#: ../../tutorial.rst:903
+msgid ""
+"This is not available in Python-mode because multiplication is pretty "
+"important."
+msgstr ""
+
+#: ../../tutorial.rst:908
+msgid "Advanced Path Search with Backticks"
+msgstr ""
+
+#: ../../tutorial.rst:910
+msgid ""
+"xonsh offers additional ways to find path names beyond regular globbing, "
+"both in Python mode and in subprocess mode."
+msgstr ""
+
+#: ../../tutorial.rst:914
+msgid "Regular Expression Globbing"
+msgstr ""
+
+#: ../../tutorial.rst:916
+msgid ""
+"If you have ever felt that normal globbing could use some more octane, "
+"then regex globbing is the tool for you! Any string that uses backticks "
+"(`````) instead of quotes (``'``, ``\"``) is interpreted as a regular "
+"expression to match filenames against.  Like with regular globbing, a "
+"list of successful matches is returned.  In Python-mode, this is just a "
+"list of strings. In subprocess-mode, each filename becomes its own "
+"argument to the subprocess command."
+msgstr ""
+
+#: ../../tutorial.rst:924
+msgid "Let's see a demonstration with some simple filenames:"
+msgstr ""
+
+#: ../../tutorial.rst:937
+msgid ""
+"This same kind of search is performed if the backticks are prefaced with "
+"``r``. So the following expressions are equivalent: ```test``` and "
+"``r`test```."
+msgstr ""
+
+#: ../../tutorial.rst:940
+msgid ""
+"Other than the regex matching, this functions in the same way as normal "
+"globbing.  For more information, please see the documentation for the "
+"``re`` module in the Python standard library."
+msgstr ""
+
+#: ../../tutorial.rst:944
+msgid ""
+"In Xonsh, the meaning of backticks is very different from their meaning "
+"in Bash. In Bash, backticks mean to run a captured subprocess (``$()`` in"
+" Xonsh)."
+msgstr ""
+
+#: ../../tutorial.rst:951
+msgid "Normal Globbing"
+msgstr ""
+
+#: ../../tutorial.rst:953
+msgid ""
+"In subprocess mode, normal globbing happens without any special syntax. "
+"However, the backtick syntax has an additional feature: it is available "
+"inside of Python mode as well as subprocess mode."
+msgstr ""
+
+#: ../../tutorial.rst:957
+msgid ""
+"Similarly to regex globbing, normal globbing can be performed (either in "
+"Python mode or subprocess mode) by using the ``g````:"
+msgstr ""
+
+#: ../../tutorial.rst:974
+msgid "Custom Path Searches"
+msgstr ""
+
+#: ../../tutorial.rst:976
+msgid ""
+"In addition, if normal globbing and regular expression globbing are not "
+"enough, xonsh allows you to specify your own search functions."
+msgstr ""
+
+#: ../../tutorial.rst:979
+msgid ""
+"A search function is defined as a function of a single argument (a "
+"string) that returns a list of possible matches to that string.  Search "
+"functions can then be used with backticks with the following syntax: "
+"``@<name>`test```"
+msgstr ""
+
+#: ../../tutorial.rst:983
+msgid "The following example shows the form of these functions:"
+msgstr ""
+
+#: ../../tutorial.rst:994
+msgid "Path Output"
+msgstr ""
+
+#: ../../tutorial.rst:996
+msgid ""
+"Using the ``p`` modifier with either regex or glob backticks changes the "
+"return type from a list of strings to a list of :class:`pathlib.Path` "
+"objects:"
+msgstr ""
+
+#: ../../tutorial.rst:1008
+msgid "Path Literals"
+msgstr ""
+
+#: ../../tutorial.rst:1010
+msgid ""
+"Path objects can be instantiated directly using *p-string* syntax. Path "
+"objects can be converted back to plain strings with `str()`, and this "
+"conversion is handled implicitly in subprocess mode."
+msgstr ""
+
+#: ../../tutorial.rst:1026
+msgid "Help & Superhelp with ``?`` & ``??``"
+msgstr ""
+
+#: ../../tutorial.rst:1027
+msgid ""
+"From IPython, xonsh allows you to inspect objects with question marks. A "
+"single question mark (``?``) is used to display the normal level of help."
+" Double question marks (``??``) are used to display a higher level of "
+"help, called superhelp. Superhelp usually includes source code if the "
+"object was written in pure Python."
+msgstr ""
+
+#: ../../tutorial.rst:1033
+msgid "Let's start by looking at the help for the int type:"
+msgstr ""
+
+#: ../../tutorial.rst:1058
+msgid ""
+"Now, let's look at the superhelp for the xonsh built-in that enables "
+"regex globbing:"
+msgstr ""
+
+#: ../../tutorial.rst:1076
+msgid ""
+"Note that both help and superhelp return the object that they are "
+"inspecting. This allows you to chain together help inside of other "
+"operations and ask for help several times in an object hierarchy.  For "
+"instance, let's get help for both the dict type and its key() method "
+"simultaneously:"
+msgstr ""
+
+#: ../../tutorial.rst:1102
+msgid ""
+"Of course, for subprocess commands, you still want to use the ``man`` "
+"command."
+msgstr ""
+
+#: ../../tutorial.rst:1106
+msgid "Compile, Evaluate, & Execute"
+msgstr ""
+
+#: ../../tutorial.rst:1107
+msgid ""
+"Like Python and Bash, xonsh provides built-in hooks to compile, evaluate,"
+" and execute strings of xonsh code.  To prevent this functionality from "
+"having serious name collisions with the Python built-in ``compile()``, "
+"``eval()``, and ``exec()`` functions, the xonsh equivalents all append an"
+" 'x'.  So for xonsh code you want to use the ``compilex()``, ``evalx()``,"
+" and ``execx()`` functions. If you don't know what these do, you probably"
+" don't need them."
+msgstr ""
+
+#: ../../tutorial.rst:1116
+msgid "Aliases"
+msgstr ""
+
+#: ../../tutorial.rst:1117
+msgid ""
+"Another important xonsh built-in is the ``aliases`` mapping.  This is "
+"like a dictionary that affects how subprocess commands are run.  If you "
+"are familiar with the Bash ``alias`` built-in, this is similar.  Alias "
+"command matching only occurs for the first element of a subprocess "
+"command."
+msgstr ""
+
+#: ../../tutorial.rst:1122
+msgid ""
+"The keys of ``aliases`` are strings that act as commands in subprocess-"
+"mode. The values are lists of strings, where the first element is the "
+"command, and the rest are the arguments. You can also set the value to a "
+"string, in which one of two things will happen:"
+msgstr ""
+
+#: ../../tutorial.rst:1127
+msgid ""
+"If the string is a xonsh expression, it will be converted to a list "
+"automatically with xonsh's ``Lexer.split()`` method."
+msgstr ""
+
+#: ../../tutorial.rst:1129
+msgid ""
+"If the string is more complex (representing a block of xonsh code), the "
+"alias will be registered as an ``ExecAlias``, which is a callable alias. "
+"This block of code will then be executed whenever the alias is run."
+msgstr ""
+
+#: ../../tutorial.rst:1134
+msgid ""
+"For example, the following creates several aliases for the ``git`` "
+"version control software.  Both styles (list of strings and single "
+"string) are shown:"
+msgstr ""
+
+#: ../../tutorial.rst:1144
+msgid ""
+"If you were to run ``gco feature-fabulous`` with the above aliases in "
+"effect, the command would reduce to ``['git', 'checkout', 'feature-"
+"fabulous']`` before being executed."
+msgstr ""
+
+#: ../../tutorial.rst:1150
+msgid "Callable Aliases"
+msgstr ""
+
+#: ../../tutorial.rst:1151
+msgid ""
+"Lastly, if an alias value is a function (or other callable), then this "
+"function is called *instead* of going to a subprocess command. Such "
+"functions may have one of the following signatures:"
+msgstr ""
+
+#: ../../tutorial.rst:1270
+msgid "Adding, Modifying, and Removing Aliases"
+msgstr ""
+
+#: ../../tutorial.rst:1272
+msgid ""
+"We can dynamically alter the aliases present simply by modifying the "
+"built-in mapping.  Here is an example using a function value:"
+msgstr ""
+
+#: ../../tutorial.rst:1284
+msgid ""
+"To redefine an alias, simply assign a new function, here using a python "
+"lambda with keyword arguments:"
+msgstr ""
+
+#: ../../tutorial.rst:1294
+msgid ""
+"Removing an alias is as easy as deleting the key from the alias "
+"dictionary:"
+msgstr ""
+
+#: ../../tutorial.rst:1302
+msgid ""
+"Alias functions should generally be defined with a leading underscore. "
+"Otherwise, they may shadow the alias itself, as Python variables take "
+"precedence over aliases when xonsh executes commands."
+msgstr ""
+
+#: ../../tutorial.rst:1308
+msgid "Anonymous Aliases"
+msgstr ""
+
+#: ../../tutorial.rst:1309
+msgid ""
+"As mentioned above, it is also possible to treat functions outside this "
+"mapping as aliases, by wrapping them in ``@()``.  For example:"
+msgstr ""
+
+#: ../../tutorial.rst:1321
+msgid "Unthreadable Aliases"
+msgstr ""
+
+#: ../../tutorial.rst:1322
+msgid ""
+"Usually, callable alias commands will be run in a separate thread so that"
+" they may be run in the background.  However, some aliases may need to be"
+" executed on the thread that they were called from. This is mostly useful"
+" for debuggers and profilers. To make an alias run in the foreground, "
+"decorate its function with the ``xonsh.tools.unthreadable`` decorator."
+msgstr ""
+
+#: ../../tutorial.rst:1339
+msgid "Uncapturable Aliases"
+msgstr ""
+
+#: ../../tutorial.rst:1340
+msgid ""
+"Also, callable aliases by default will be executed such that their output"
+" is captured (like most commands in xonsh that don't enter alternate "
+"mode). However, some aliases may want to run alternate-mode commands "
+"themselves. Thus the callable alias can't be captured without dire "
+"consequences (tm). To prevent this, you can declare a callable alias "
+"uncapturable. This is mostly useful for aliases that then open up text "
+"editors, pagers, or the like. To make an alias uncapturable, decorate its"
+" function with the ``xonsh.tools.uncapturable`` decorator. This is "
+"probably best used in conjunction with the ``unthreadable`` decorator.  "
+"For example:"
+msgstr ""
+
+#: ../../tutorial.rst:1361
+msgid ""
+"Note that ``@()`` is required to pass the python list ``args`` to a "
+"subprocess command."
+msgstr ""
+
+#: ../../tutorial.rst:1366
+msgid ""
+"Aliasing is a powerful way that xonsh allows you to seamlessly interact "
+"to with Python and subprocess."
+msgstr ""
+
+#: ../../tutorial.rst:1369
+msgid ""
+"If ``FOREIGN_ALIASES_OVERRIDE`` environment variable is False (the "
+"default) then foreign shell aliases that try to override xonsh aliases "
+"will be ignored. Setting of this environment variable must happen outside"
+" if xonsh, i.e. in the process that starts xonsh."
+msgstr ""
+
+#: ../../tutorial.rst:1376
+msgid "Up, Down, Tab"
+msgstr ""
+
+#: ../../tutorial.rst:1377
+msgid ""
+"The up and down keys search history matching from the start of the line, "
+"much like they do in the IPython shell."
+msgstr ""
+
+#: ../../tutorial.rst:1380
+msgid ""
+"Tab completion is present as well. By default, in Python-mode you are "
+"able to complete based on the variable names in the current builtins, "
+"globals, and locals, as well as xonsh languages keywords & operator, "
+"files & directories, and environment variable names. In subprocess-mode, "
+"you additionally complete on the names of executable files on your "
+"``$PATH``, alias keys, and full Bash completion for the commands "
+"themselves."
+msgstr ""
+
+#: ../../tutorial.rst:1387
+msgid ""
+"xonsh also provides a means of modifying the behavior of the tab "
+"completer.  More detail is available on the `Tab Completion page "
+"<tutorial_completers.html>`_."
+msgstr ""
+
+#: ../../tutorial.rst:1393
+msgid "Customizing the Prompt"
+msgstr ""
+
+#: ../../tutorial.rst:1394
+msgid ""
+"Customizing the prompt by modifying ``$PROMPT`` is probably the most "
+"common reason for altering an environment variable."
+msgstr ""
+
+#: ../../tutorial.rst:1397
+msgid ""
+"Note that the ``$PROMPT`` variable will never be inherited from a parent "
+"process (regardless of whether that parent is a foreign shell or an "
+"instance of xonsh)."
+msgstr ""
+
+#: ../../tutorial.rst:1401
+msgid ""
+"The ``$PROMPT`` variable can be a string, or it can be a function (of no "
+"arguments) that returns a string.  The result can contain keyword "
+"arguments, which will be replaced automatically:"
+msgstr ""
+
+#: ../../tutorial.rst:1412
+msgid "By default, the following variables are available for use:"
+msgstr ""
+
+#: ../../tutorial.rst:1414
+msgid "``user``: The username of the current user"
+msgstr ""
+
+#: ../../tutorial.rst:1415
+msgid "``hostname``: The name of the host computer"
+msgstr ""
+
+#: ../../tutorial.rst:1416
+msgid ""
+"``cwd``: The current working directory, you may use "
+"``$DYNAMIC_CWD_WIDTH`` to set a maximum width for this variable and "
+"``$DYNAMIC_CWD_ELISION_CHAR`` to set the character used in shortened "
+"path."
+msgstr ""
+
+#: ../../tutorial.rst:1419
+msgid ""
+"``short_cwd``: A shortened form of the current working directory; e.g., "
+"``/path/to/xonsh`` becomes ``/p/t/xonsh``"
+msgstr ""
+
+#: ../../tutorial.rst:1421
+msgid ""
+"``cwd_dir``: The dirname of the current working directory, e.g. "
+"``/path/to`` in ``/path/to/xonsh``."
+msgstr ""
+
+#: ../../tutorial.rst:1423
+msgid ""
+"``cwd_base``: The basename of the current working directory, e.g. "
+"``xonsh`` in ``/path/to/xonsh``."
+msgstr ""
+
+#: ../../tutorial.rst:1425
+msgid ""
+"``env_name``: The name of active virtual environment, if any. The "
+"rendering of this variable is affected by the ``$VIRTUAL_ENV_PROMPT`` and"
+" ``$VIRTUAL_ENV_DISABLE_PROMPT`` environment variables; see below."
+msgstr ""
+
+#: ../../tutorial.rst:1428
+msgid ""
+"``env_prefix``: The prefix characters if there is an active virtual "
+"environment, defaults to ``\"(\"``."
+msgstr ""
+
+#: ../../tutorial.rst:1430
+msgid ""
+"``env_postfix``: The postfix characters if there is an active virtual "
+"environment, defaults to ``\") \"``."
+msgstr ""
+
+#: ../../tutorial.rst:1432
+msgid "``curr_branch``: The name of the current git branch, if any."
+msgstr ""
+
+#: ../../tutorial.rst:1433
+msgid ""
+"``branch_color``: ``{BOLD_GREEN}`` if the current git branch is clean, "
+"otherwise ``{BOLD_RED}``. This is yellow if the branch color could not be"
+" determined."
+msgstr ""
+
+#: ../../tutorial.rst:1436
+msgid ""
+"``branch_bg_color``: Like, ``{branch_color}``, but sets a background "
+"color instead."
+msgstr ""
+
+#: ../../tutorial.rst:1438
+msgid ""
+"``prompt_end``: ``#`` if the user has root/admin permissions ``$`` "
+"otherwise"
+msgstr ""
+
+#: ../../tutorial.rst:1439
+msgid ""
+"``current_job``: The name of the command currently running in the "
+"foreground, if any."
+msgstr ""
+
+#: ../../tutorial.rst:1441
+msgid ""
+"``vte_new_tab_cwd``: Issues VTE escape sequence for opening new tabs in "
+"the current working directory on some linux terminals. This is not "
+"usually needed."
+msgstr ""
+
+#: ../../tutorial.rst:1443
+msgid ""
+"``gitstatus``: Informative git status, like ``[master|MERGING|+1…2]``, "
+"you may use `$XONSH_GITSTATUS_* <envvars.html>`_ to customize the "
+"styling."
+msgstr ""
+
+#: ../../tutorial.rst:1446
+msgid ""
+"xonsh obeys the ``$VIRTUAL_ENV_DISABLE_PROMPT`` environment variable `as "
+"defined by virtualenv <https://virtualenv.pypa.io/en/latest/reference/ "
+"#envvar-VIRTUAL_ENV_DISABLE_PROMPT>`__. If this variable is truthy, xonsh"
+" will *always* substitute an empty string for ``{env_name}``. Note that "
+"unlike with other shells, ``$VIRTUAL_ENV_DISABLE_PROMPT`` takes effect "
+"*immediately* after being set---it is not necessary to re-activate the "
+"environment."
+msgstr ""
+
+#: ../../tutorial.rst:1453
+msgid ""
+"xonsh also allows for an explicit override of the rendering of "
+"``{env_name}``, via the ``$VIRTUAL_ENV_PROMPT`` environment variable. If "
+"this variable is defined and has any value other than ``None``, "
+"``{env_name}`` will *always* render as ``str($VIRTUAL_ENV_PROMPT)`` when "
+"an environment is activated. It will still render as an empty string when"
+" no environment is active. ``$VIRTUAL_ENV_PROMPT`` is overridden by "
+"``$VIRTUAL_ENV_DISABLE_PROMPT``."
+msgstr ""
+
+#: ../../tutorial.rst:1460
+msgid "For example:"
+msgstr ""
+
+#: ../../tutorial.rst:1473
+msgid ""
+"You can also color your prompt easily by inserting keywords such as "
+"``{GREEN}`` or ``{BOLD_BLUE}``.  Colors have the form shown below:"
+msgstr ""
+
+#: ../../tutorial.rst:1476
+msgid "``NO_COLOR``: Resets any previously used color codes"
+msgstr ""
+
+#: ../../tutorial.rst:1477
+msgid ""
+"``COLORNAME``: Inserts a color code for the following basic colors, which"
+" come in regular (dark) and intense (light) forms:"
+msgstr ""
+
+#: ../../tutorial.rst:1480
+msgid "``BLACK`` or ``INTENSE_BLACK``"
+msgstr ""
+
+#: ../../tutorial.rst:1481
+msgid "``RED`` or ``INTENSE_RED``"
+msgstr ""
+
+#: ../../tutorial.rst:1482
+msgid "``GREEN`` or ``INTENSE_GREEN``"
+msgstr ""
+
+#: ../../tutorial.rst:1483
+msgid "``YELLOW`` or ``INTENSE_YELLOW``"
+msgstr ""
+
+#: ../../tutorial.rst:1484
+msgid "``BLUE`` or ``INTENSE_BLUE``"
+msgstr ""
+
+#: ../../tutorial.rst:1485
+msgid "``PURPLE`` or ``INTENSE_PURPLE``"
+msgstr ""
+
+#: ../../tutorial.rst:1486
+msgid "``CYAN`` or ``INTENSE_CYAN``"
+msgstr ""
+
+#: ../../tutorial.rst:1487
+msgid "``WHITE`` or ``INTENSE_WHITE``"
+msgstr ""
+
+#: ../../tutorial.rst:1489
+msgid ""
+"``#HEX``: A ``#`` before a len-3 or len-6 hex code will use that hex "
+"color, or the nearest approximation that that is supported by the shell "
+"and terminal.  For example, ``#fff`` and ``#fafad2`` are both valid."
+msgstr ""
+
+#: ../../tutorial.rst:1493
+msgid ""
+"``BACKGROUND_`` may be added to the beginning of a color name or hex "
+"color to set a background color.  For example, ``BACKGROUND_INTENSE_RED``"
+" and ``BACKGROUND_#123456`` can both be used."
+msgstr ""
+
+#: ../../tutorial.rst:1496
+msgid ""
+"``bg#HEX`` or ``BG#HEX`` are shortcuts for setting a background hex "
+"color. Thus you can set ``bg#0012ab`` or the uppercase version."
+msgstr ""
+
+#: ../../tutorial.rst:1498
+msgid ""
+"``BOLD_`` is a prefix modifier that increases the intesnity of the font. "
+"It may be used with any foreground color. For example, ``BOLD_RED`` and "
+"``BOLD_#112233`` are OK!"
+msgstr ""
+
+#: ../../tutorial.rst:1501
+msgid ""
+"``FAINT_`` is a prefix modifier that decreases the intesnity of the font."
+" For example, ``FAINT_YELLOW``."
+msgstr ""
+
+#: ../../tutorial.rst:1503
+msgid ""
+"``ITALIC_`` is a prefix modifier that switches to an italic font. For "
+"example, ``ITALIC_BLUE``."
+msgstr ""
+
+#: ../../tutorial.rst:1505
+msgid ""
+"``UNDERLINE_`` is a prefix qualifier that also may be used with any "
+"foreground color. For example, ``UNDERLINE_GREEN``."
+msgstr ""
+
+#: ../../tutorial.rst:1507
+msgid ""
+"``SLOWBLINK_`` is a prefix modifier makes the text blink, slowly. For "
+"example, ``SLOWBLINK_PURPLE``."
+msgstr ""
+
+#: ../../tutorial.rst:1509
+msgid ""
+"``FASTBLINK_`` is a prefix modifier makes the text blink, quickly. For "
+"example, ``FASTBLINK_CYAN``."
+msgstr ""
+
+#: ../../tutorial.rst:1511
+msgid ""
+"``INVERT_`` is a prefix modifier swaps the foreground and background "
+"colors. For example, ``INVERT_WHITE``."
+msgstr ""
+
+#: ../../tutorial.rst:1513
+msgid ""
+"``CONCEAL_`` is a prefix modifier which hides the text. This may not be "
+"widely supported. For example, ``CONCEAL_BLACK``."
+msgstr ""
+
+#: ../../tutorial.rst:1515
+msgid ""
+"``STRIKETHROUGH_`` is a prefix modifier which draws a line through the "
+"text. For example, ``STRIKETHROUGH_RED``."
+msgstr ""
+
+#: ../../tutorial.rst:1517
+msgid ""
+"Or any other combination of modifiers, such as "
+"``BOLD_UNDERLINE_INTENSE_BLACK``,   which is the most metal color you can"
+" use!"
+msgstr ""
+
+#: ../../tutorial.rst:1521
+msgid ""
+"You can make use of additional variables beyond these by adding them to "
+"the ``PROMPT_FIELDS`` environment variable.  The values in this "
+"dictionary should be strings (which will be inserted into the prompt "
+"verbatim), or functions of no arguments (which will be called each time "
+"the prompt is generated, and the results of those calls will be inserted "
+"into the prompt). For example:"
+msgstr ""
+
+#: ../../tutorial.rst:1540
+msgid ""
+"Environment variables and functions are also available with the ``$`` "
+"prefix.  For example:"
+msgstr ""
+
+#: ../../tutorial.rst:1548
+msgid ""
+"Note that some entries of the ``$PROMPT_FIELDS`` are not always "
+"applicable, for example, ``curr_branch`` returns ``None`` if the current "
+"directory is not in a repository. The ``None`` will be interpreted as an "
+"empty string."
+msgstr ""
+
+#: ../../tutorial.rst:1552
+msgid "But let's consider a problem:"
+msgstr ""
+
+#: ../../tutorial.rst:1560
+msgid ""
+"We want the branch to be displayed in square brackets, but we also don't "
+"want the brackets (and the extra space) to be displayed when there is no "
+"branch. The solution is to add a nested format string (separated with a "
+"colon) that will be invoked only if the value is not ``None``:"
+msgstr ""
+
+#: ../../tutorial.rst:1571
+msgid ""
+"The curly brackets act as a placeholder, because the additional part is "
+"an ordinary format string. What we're doing here is equivalent to this "
+"expression:"
+msgstr ""
+
+#: ../../tutorial.rst:1580
+msgid "Executing Commands and Scripts"
+msgstr ""
+
+#: ../../tutorial.rst:1581
+msgid ""
+"When started with the ``-c`` flag and a command, xonsh will execute that "
+"command and exit, instead of entering the command loop."
+msgstr ""
+
+#: ../../tutorial.rst:1589
+msgid ""
+"Longer scripts can be run either by specifying a filename containing the "
+"script, or by feeding them to xonsh via stdin.  For example, consider the"
+" following script, stored in ``test.xsh``:"
+msgstr ""
+
+#: ../../tutorial.rst:1612
+msgid "This script could be run by piping its contents to xonsh:"
+msgstr ""
+
+#: ../../tutorial.rst:1623
+msgid "or by invoking xonsh with its filename as an argument:"
+msgstr ""
+
+#: ../../tutorial.rst:1634
+msgid ""
+"xonsh scripts can also accept command line arguments and parameters. "
+"These arguments are made available to the script in two different ways:"
+msgstr ""
+
+#: ../../tutorial.rst:1637
+msgid "In either mode, as individual variables ``$ARG<n>`` (e.g., ``$ARG1``)"
+msgstr ""
+
+#: ../../tutorial.rst:1638
+msgid "In Python mode only, as a list ``$ARGS``"
+msgstr ""
+
+#: ../../tutorial.rst:1640
+msgid ""
+"For example, consider a slight variation of the example script from above"
+" that operates on a given argument, rather than on the string ``'xonsh'``"
+" (notice how ``$ARGS`` and ``$ARG1`` are used):"
+msgstr ""
+
+#: ../../tutorial.rst:1680
+msgid ""
+"Additionally, if the script should exit if a command fails, set the "
+"environment variable ``$RAISE_SUBPROC_ERROR = True`` at the top of the "
+"file. Errors in Python mode will already raise exceptions and so this is "
+"roughly equivalent to Bash's ``set -e``."
+msgstr ""
+
+#: ../../tutorial.rst:1685
+msgid ""
+"Furthermore, you can also toggle the ability to print source code lines "
+"with the ``trace on`` and ``trace off`` commands.  This is roughly "
+"equivalent to Bash's ``set -x`` or Python's ``python -m trace``, but you "
+"know, better."
+msgstr ""
+
+#: ../../tutorial.rst:1690
+msgid "Importing Xonsh (``*.xsh``)"
+msgstr ""
+
+#: ../../tutorial.rst:1691
+msgid ""
+"You can import xonsh source files with the ``*.xsh`` file extension using"
+" the normal Python syntax.  Say you had a file called ``mine.xsh``, you "
+"could, therefore, perform a Bash-like source into your current shell with"
+" the following:"
+msgstr ""
+
+#: ../../tutorial.rst:1702
+msgid "That's All, Folks"
+msgstr ""
+
+#: ../../tutorial.rst:1703
+msgid ""
+"To leave xonsh, hit ``Ctrl-D``, type ``EOF``, type ``quit``, or type "
+"``exit``. On Windows, you can also type ``Ctrl-Z``."
+msgstr ""
+
+#: ../../tutorial.rst:1710
+msgid "Now it is your turn."
+msgstr ""
+
