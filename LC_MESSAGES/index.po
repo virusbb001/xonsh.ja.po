@@ -238,7 +238,7 @@ msgid ""
 msgstr ""
 "xonshを開発したい場合は、"
 "`requires-docs.txt <https://github.com/xonsh/xonsh/blob/master/requirements-docs.txt>`_ "
-"（ドキュメンテーションを生成するため）および"
+"（ドキュメンテーションを生成するため）および "
 "`requirements-tests.txt <https://github.com/xonsh/xonsh/blob/master/requirements-tests.txt>`_ "
 "（テストスイートを実行するため）にリストされている依存関係をインストールすることを強くお勧めします。"
 
