@@ -19,9 +19,10 @@ msgstr ""
 
 #: ../../intro.rst:2
 msgid "the xonsh shell"
-msgstr ""
+msgstr "Xonsh シェル"
 
 #: ../../intro.rst:57
+# TODO: Unix-gazing のいい感じの訳
 msgid ""
 "Xonsh is a Python-powered, cross-platform, Unix-gazing shell language and"
 " command prompt. The language is a superset of Python 3.4+ with "
@@ -29,4 +30,8 @@ msgid ""
 "It works on all major systems including Linux, Mac OSX, and Windows. "
 "Xonsh is meant for the daily use of experts and novices alike."
 msgstr ""
+"XonshはPythonで動く、クロスプラットフォームのUnix-gazingなシェル言語とコマンドプロンプトです。"
+"この言語は、BashとIPythonから慣れ親しんだ追加のシェルプリミティブを持つPython 3.4+のスーパーセットです。"
+"これは、Linux、Mac OSX、およびWindowsを含むすべての主要なシステムで動作します。"
+"Xonshは専門家と初心者の毎日の使用のために作られています"
 
