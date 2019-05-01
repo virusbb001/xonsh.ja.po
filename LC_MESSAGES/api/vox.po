@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/vox.rst:5
+msgid "Vox (``xontrib.voxapi``)"
+msgstr ""
+
+#: of xontrib.voxapi:1
+msgid "API for Vox, the Python virtual environment manager for xonsh."
+msgstr ""
+
+#: of xontrib.voxapi:3
+msgid ""
+"Vox defines several events related to the life cycle of virtual "
+"environments:"
+msgstr ""
+
+#: of xontrib.voxapi:5
+msgid "``vox_on_create(env: str) -> None``"
+msgstr ""
+
+#: of xontrib.voxapi:6
+msgid "``vox_on_activate(env: str) -> None``"
+msgstr ""
+
+#: of xontrib.voxapi:7
+msgid "``vox_on_deactivate(env: str) -> None``"
+msgstr ""
+
+#: of xontrib.voxapi:8
+msgid "``vox_on_delete(env: str) -> None``"
+msgstr ""
+
+#: of xontrib.voxapi.EnvironmentInUse:2
+msgid ""
+"The given environment is currently activated, and the operation cannot be"
+" performed."
+msgstr ""
+
+#: of xontrib.voxapi.EnvironmentInUse.with_traceback:2
+#: xontrib.voxapi.NoEnvironmentActive.with_traceback:2
+msgid ""
+"Exception.with_traceback(tb) -- set self.__traceback__ to tb and return "
+"self."
+msgstr ""
+
+#: of xontrib.voxapi.NoEnvironmentActive:2
+msgid ""
+"No environment is currently activated, and the operation cannot be "
+"performed."
+msgstr ""
+
+#: of xontrib.voxapi.VirtualEnvironment:21
+msgid "Create new instance of VirtualEnvironment(env, bin, lib, inc)"
+msgstr ""
+
+#: of xontrib.voxapi.VirtualEnvironment.count:2
+msgid "Return number of occurrences of value."
+msgstr ""
+
+#: of xontrib.voxapi.VirtualEnvironment.index:2
+msgid "Return first index of value."
+msgstr ""
+
+#: of xontrib.voxapi.VirtualEnvironment.index:4
+msgid "Raises ValueError if the value is not present."
+msgstr ""
+
+#: of xontrib.voxapi.VirtualEnvironment.bin:2
+msgid "Alias for field number 1"
+msgstr ""
+
+#: of xontrib.voxapi.VirtualEnvironment.env:2
+msgid "Alias for field number 0"
+msgstr ""
+
+#: of xontrib.voxapi.VirtualEnvironment.inc:2
+msgid "Alias for field number 3"
+msgstr ""
+
+#: of xontrib.voxapi.VirtualEnvironment.lib:2
+msgid "Alias for field number 2"
+msgstr ""
+
+#: of xontrib.voxapi.Vox:2
+msgid "API access to Vox and virtual environments, in a dict-like format."
+msgstr ""
+
+#: of xontrib.voxapi.Vox:4
+msgid "Makes use of the VirtualEnvironment namedtuple:"
+msgstr ""
+
+#: of xontrib.voxapi.Vox:6
+msgid "``env``: The full path to the environment"
+msgstr ""
+
+#: of xontrib.voxapi.Vox:7
+msgid "``bin``: The full path to the bin/Scripts directory of the environment"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.activate:2
+msgid "Activate a virtual environment."
+msgstr ""
+
+#: of xontrib.voxapi.Vox.activate xontrib.voxapi.Vox.create
+#: xontrib.voxapi.Vox.upgrade
+msgid "Parameters"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.activate:21 xontrib.voxapi.Vox.create:8
+#: xontrib.voxapi.Vox.upgrade:10
+msgid "**name**"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.activate:20 xontrib.voxapi.Vox.create:7
+#: xontrib.voxapi.Vox.upgrade:9
+msgid "str"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.activate:8
+msgid "Virtual environment name or absolute path."
+msgstr ""
+
+#: of xontrib.voxapi.Vox.active:2
+msgid "Get the name of the active virtual environment."
+msgstr ""
+
+#: of xontrib.voxapi.Vox.active:4
+msgid "You can use this as a key to get further information."
+msgstr ""
+
+#: of xontrib.voxapi.Vox.active:6
+msgid "Returns None if no environment is active."
+msgstr ""
+
+#: of xontrib.voxapi.Vox.create:2 xontrib.voxapi.Vox.upgrade:2
+msgid "Create a virtual environment in $VIRTUALENV_HOME with python3's ``venv``."
+msgstr ""
+
+#: of xontrib.voxapi.Vox.create:8 xontrib.voxapi.Vox.upgrade:10
+msgid "Virtual environment name"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.create:11 xontrib.voxapi.Vox.upgrade:13
+msgid "**interpreter: str**"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.create:11
+msgid "Python interpreter used to create the virtual environment."
+msgstr ""
+
+#: of xontrib.voxapi.Vox.create:15
+msgid "**system_site_packages**"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.create:14 xontrib.voxapi.Vox.create:18
+#: xontrib.voxapi.Vox.create:34 xontrib.voxapi.Vox.upgrade:16
+#: xontrib.voxapi.Vox.upgrade:32
+msgid "bool"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.create:14
+msgid ""
+"If True, the system (global) site-packages dir is available to created "
+"environments."
+msgstr ""
+
+#: of xontrib.voxapi.Vox.create:19 xontrib.voxapi.Vox.upgrade:17
+msgid "**symlinks**"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.create:18 xontrib.voxapi.Vox.upgrade:16
+msgid ""
+"If True, attempt to symlink rather than copy files into virtual "
+"environment."
+msgstr ""
+
+#: of xontrib.voxapi.Vox.create:35 xontrib.voxapi.Vox.upgrade:33
+msgid "**with_pip**"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.create:22
+msgid ""
+"If True, ensure pip is installed in the virtual environment. (Default is "
+"True)"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.deactivate:2
+msgid "Deactivate the active virtual environment. Returns its name."
+msgstr ""
+
+#: of xontrib.voxapi.Vox.upgrade:4
+msgid ""
+"WARNING: If a virtual environment was created with symlinks or without "
+"PIP, you must specify these options again on upgrade."
+msgstr ""
+
+#: of xontrib.voxapi.Vox.upgrade:13
+msgid "The Python interpreter used to create the virtualenv"
+msgstr ""
+
+#: of xontrib.voxapi.Vox.upgrade:20
+msgid "If True, ensure pip is installed in the virtual environment."
+msgstr ""
+

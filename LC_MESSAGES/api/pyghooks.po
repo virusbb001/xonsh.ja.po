@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/pyghooks.rst:5
+msgid "Pygments Hooks (``xonsh.pyghooks``)"
+msgstr ""
+
+#: of xonsh.pyghooks:1
+msgid "Hooks for pygments syntax highlighting."
+msgstr ""
+
+#: of xonsh.pyghooks.CompoundColorMap:2
+msgid ""
+"Looks up color tokens by name, potentially generating the value from the "
+"lookup."
+msgstr ""
+
+#: of xonsh.pyghooks.XonshConsoleLexer:2 xonsh.pyghooks.XonshLexer:2
+msgid "Xonsh console lexer for pygments."
+msgstr ""
+
+#: of xonsh.pyghooks.XonshLexer.get_tokens_unprocessed:2
+msgid ""
+"Check first command, then call super.get_tokens_unprocessed with root or "
+"subproc state"
+msgstr ""
+
+#: of xonsh.pyghooks.XonshStyle:2
+msgid ""
+"A xonsh pygments style that will dispatch to the correct color map by "
+"using a ChainMap.  The style_name property may be used to reset the "
+"current style."
+msgstr ""
+
+#: of xonsh.pyghooks.XonshStyle xonsh.pyghooks.code_by_name
+#: xonsh.pyghooks.color_by_name
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.pyghooks.XonshStyle:43
+msgid "**style_name**"
+msgstr ""
+
+#: of xonsh.pyghooks.XonshStyle:42 xonsh.pyghooks.color_by_name:12
+#: xonsh.pyghooks.color_by_name:15
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.pyghooks.XonshStyle:30
+msgid "The style name to initialize with."
+msgstr ""
+
+#: of xonsh.pyghooks.XonshStyle.enhance_colors_for_cmd_exe:2
+msgid ""
+"Enhance colors when using cmd.exe on windows. When using the default "
+"style all blue and dark red colors are changed to CYAN and intense red."
+msgstr ""
+
+#: of xonsh.pyghooks.code_by_name:2
+msgid "Converts a token name into a pygments-style color code."
+msgstr ""
+
+#: of xonsh.pyghooks.code_by_name:8 xonsh.pyghooks.color_by_name:10
+msgid "**name**"
+msgstr ""
+
+#: of xonsh.pyghooks.code_by_name:7 xonsh.pyghooks.code_by_name:27
+#: xonsh.pyghooks.color_by_name:9
+msgid "str"
+msgstr ""
+
+#: of xonsh.pyghooks.code_by_name:8
+msgid "Color token name."
+msgstr ""
+
+#: of xonsh.pyghooks.code_by_name:11
+msgid "**styles**"
+msgstr ""
+
+#: of xonsh.pyghooks.code_by_name:10
+msgid "Mapping"
+msgstr ""
+
+#: of xonsh.pyghooks.code_by_name:11
+msgid "Mapping for looking up non-hex colors"
+msgstr ""
+
+#: of xonsh.pyghooks.code_by_name xonsh.pyghooks.color_by_name
+msgid "Returns"
+msgstr ""
+
+#: of xonsh.pyghooks.code_by_name:28
+msgid "**code**"
+msgstr ""
+
+#: of xonsh.pyghooks.code_by_name:16
+msgid "Pygments style color code."
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:2
+msgid ""
+"Converts a color name to a color token, foreground name, and background "
+"name.  Will take into consideration current foreground and background "
+"colors, if provided."
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:10
+msgid "Color name."
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:13 xonsh.pyghooks.color_by_name:24
+msgid "**fg**"
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:13
+msgid "Foreground color name."
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:16 xonsh.pyghooks.color_by_name:39
+msgid "**bg**"
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:16
+msgid "Background color name."
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:21
+msgid "**tok**"
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:20
+msgid "Token"
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:21
+msgid "Pygments Token.Color subclass"
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:23 xonsh.pyghooks.color_by_name:38
+msgid "str or None"
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:24
+msgid "New computed foreground color name."
+msgstr ""
+
+#: of xonsh.pyghooks.color_by_name:27
+msgid "New computed background color name."
+msgstr ""
+
+#: of xonsh.pyghooks.color_name_to_pygments_code:2
+msgid "Converts a xonsh color name to a pygments color code."
+msgstr ""
+
+#: of xonsh.pyghooks.make_pygments_style:2
+msgid "Makes a pygments style based on a color palette."
+msgstr ""
+
+#: of xonsh.pyghooks.partial_color_tokenize:2
+msgid ""
+"Tokenizes a template string containing colors. Will return a list of "
+"tuples mapping the token to the string which has that color. These sub-"
+"strings maybe templates themselves."
+msgstr ""
+
+#: of xonsh.pyghooks.pygments_style_by_name:2
+msgid "Gets or makes a pygments color style by its name."
+msgstr ""
+
+#: of xonsh.pyghooks.subproc_arg_callback:2
+msgid "Check if match contains valid path"
+msgstr ""
+
+#: of xonsh.pyghooks.subproc_cmd_callback:2
+msgid ""
+"Yield Builtin token if match contains valid command, otherwise fallback "
+"to fallback lexer."
+msgstr ""
+
+#: of xonsh.pyghooks.xonsh_style_proxy:2
+msgid "Factory for a proxy class to a xonsh style."
+msgstr ""
+

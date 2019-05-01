@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/imphooks.rst:5
+msgid "Import Hooks (``xonsh.imphooks``)"
+msgstr ""
+
+#: of xonsh.imphooks:1
+msgid "Import hooks for importing xonsh source files."
+msgstr ""
+
+#: of xonsh.imphooks:3
+msgid "This module registers the hooks it defines when it is imported."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportEventHook:2
+msgid "Implements the import hook for firing xonsh events on import."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportEventHook.append_stack:2
+msgid ""
+"A context manager for appending and then removing a name from the "
+"fullname stack."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportEventHook.find_spec:2
+#: xonsh.imphooks.XonshImportHook.find_spec:2
+msgid "Finds the spec for a xonsh module if it exists."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportEventLoader:2
+msgid ""
+"A class that dispatches loader calls to another loader and fires relevant"
+" xonsh events."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportEventLoader.create_module:2
+msgid "Creates and returns the module object."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportEventLoader.exec_module:2
+msgid "Executes the module in its own namespace."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportEventLoader.load_module:2
+msgid "Legacy module loading, provided for backwards compatibility."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportEventLoader.module_repr:2
+msgid "Legacy module repr, provided for backwards compatibility."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportHook:2
+msgid "Implements the import hook for xonsh source files."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportHook.create_module:2
+msgid "Create a xonsh module with the appropriate attributes."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportHook.get_code:2
+msgid "Gets the code object for a xonsh file."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportHook.get_data:2
+msgid "Gets the bytes for a path."
+msgstr ""
+
+#: of xonsh.imphooks.XonshImportHook.get_filename:2
+msgid "Returns the filename for a module's fullname."
+msgstr ""
+
+#: of xonsh.imphooks.find_source_encoding:2
+msgid ""
+"Finds the source encoding given bytes representing a file. If no encoding"
+" is found, UTF-8 will be returned as per the docs "
+"https://docs.python.org/3/howto/unicode.html#unicode-literals-in-python-"
+"source-code"
+msgstr ""
+
+#: of xonsh.imphooks.install_hook:2 xonsh.imphooks.install_import_hooks:2
+msgid ""
+"Install Xonsh import hooks in ``sys.meta_path`` in order for ``.xsh`` "
+"files to be importable and import events to be fired."
+msgstr ""
+
+#: of xonsh.imphooks.install_hook:5 xonsh.imphooks.install_import_hooks:5
+msgid ""
+"Can safely be called many times, will be no-op if xonsh import hooks are "
+"already present."
+msgstr ""
+

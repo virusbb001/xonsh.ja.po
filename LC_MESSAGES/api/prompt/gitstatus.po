@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/prompt/gitstatus.rst:5
+msgid "Informative git status prompt formatter (``xonsh.prompt.gitstatus``)"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus:1
+msgid "Informative git status prompt formatter"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus:21
+msgid ""
+"Create new instance of GitStatus(branch, num_ahead, num_behind, "
+"untracked, changed, conflicts, staged, stashed, operations)"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.count:2
+msgid "Return number of occurrences of value."
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.index:2
+msgid "Return first index of value."
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.index:4
+msgid "Raises ValueError if the value is not present."
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.branch:2
+msgid "Alias for field number 0"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.changed:2
+msgid "Alias for field number 4"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.conflicts:2
+msgid "Alias for field number 5"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.num_ahead:2
+msgid "Alias for field number 1"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.num_behind:2
+msgid "Alias for field number 2"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.operations:2
+msgid "Alias for field number 8"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.staged:2
+msgid "Alias for field number 6"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.stashed:2
+msgid "Alias for field number 7"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.GitStatus.untracked:2
+msgid "Alias for field number 3"
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.gitstatus:2
+msgid ""
+"Return namedtuple with fields: branch name, number of ahead commit, "
+"number of behind commit, untracked number, changed number, conflicts "
+"number, staged number, stashed number, operation."
+msgstr ""
+
+#: of xonsh.prompt.gitstatus.gitstatus_prompt:2
+msgid "Return str `BRANCH|OPERATOR|numbers`"
+msgstr ""
+

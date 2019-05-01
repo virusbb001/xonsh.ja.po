@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/jupyter_shell.rst:5
+msgid "Jupyter Shell (``xonsh.jupyter_shell``)"
+msgstr ""
+
+#: of xonsh.jupyter_shell:1
+msgid "An interactive shell for the Jupyter kernel."
+msgstr ""
+
+#: of xonsh.jupyter_shell.JupyterShell:2
+msgid "A shell for the Jupyter kernel."
+msgstr ""
+
+#: of xonsh.jupyter_shell.JupyterShell.default:2
+msgid "Executes code, but redirects output to Jupyter client"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect:2
+msgid "Redirects a standard I/O stream to the Jupyter kernel."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect:28
+msgid "**name**"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect:27
+msgid "str"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect:28
+msgid "The name of the buffer in the sys module, e.g. 'stdout'."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect:31
+msgid "**kernel**"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect:30
+msgid "XonshKernel"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect:31
+msgid "Instance of a Jupyter kernel"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect:47
+msgid "**parent_header**"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect:46
+msgid "dict or None, optional"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect:34
+msgid "parent header information to pass along with the kernel"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.close:2
+msgid "Restores the original std stream."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.detach:2
+msgid "This operation is not supported."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.fileno:2
+msgid "Tunnel fileno() calls to the std stream."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.flush:2
+msgid "Flushes kernel iopub_stream."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.read:2
+msgid "Read from the stream"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.readline:2
+msgid "Read a line."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.seek:2
+msgid "Seek to a location."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.truncate:2
+msgid "Truncate the streams."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.write:2
+msgid "Writes data to the original kernel stream."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.encoding:2
+msgid "The encoding of the stream"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.errors:2
+msgid "The encoding errors of the stream"
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirect.newlines:2
+msgid "The newlines of the standard buffer."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirectBuf:2
+msgid "Redirects standard I/O buffers to the Jupyter kernel."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirectBuf.fileno:2
+msgid "Returns the file descriptor of the std buffer."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirectBuf.readinto:2
+msgid "Read bytes into buffer from both streams."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirectBuf.seek:2
+msgid "Sets the location in both the stdbuf and the membuf."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirectBuf.truncate:2
+msgid "Truncate both buffers."
+msgstr ""
+
+#: of xonsh.jupyter_shell.StdJupyterRedirectBuf.write:2
+msgid "Write bytes to kernel."
+msgstr ""
+

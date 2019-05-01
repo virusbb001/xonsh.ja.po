@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/shell.rst:5
+msgid "Main Shell Command Prompt (``xonsh.shell``)"
+msgstr ""
+
+#: of xonsh.shell:1
+msgid "The xonsh shell"
+msgstr ""
+
+#: of xonsh.shell.Shell:2
+msgid "Main xonsh shell."
+msgstr ""
+
+#: of xonsh.shell.Shell:4
+msgid ""
+"Initializes execution environment and decides if prompt_toolkit or "
+"readline version of shell should be used."
+msgstr ""
+
+#: of xonsh.shell.Shell
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.shell.Shell:30
+msgid "**execer**"
+msgstr ""
+
+#: of xonsh.shell.Shell:29
+msgid "Execer"
+msgstr ""
+
+#: of xonsh.shell.Shell:30
+msgid "An execer instance capable of running xonsh code."
+msgstr ""
+
+#: of xonsh.shell.Shell:36
+msgid "**ctx**"
+msgstr ""
+
+#: of xonsh.shell.Shell:35
+msgid "Mapping, optional"
+msgstr ""
+
+#: of xonsh.shell.Shell:33
+msgid ""
+"The execution context for the shell (e.g. the globals namespace). If "
+"none, this is computed by loading the rc files. If not None, this no "
+"additional context is computed and this is used directly."
+msgstr ""
+
+#: of xonsh.shell.Shell:53
+msgid "**shell_type**"
+msgstr ""
+
+#: of xonsh.shell.Shell:52
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.shell.Shell:39
+msgid ""
+"The shell type to start, such as 'readline', 'prompt_toolkit1', or "
+"'random'."
+msgstr ""
+
+#: of xonsh.shell.transform_command:2
+msgid "Returns the results of firing the precommand handles."
+msgstr ""
+

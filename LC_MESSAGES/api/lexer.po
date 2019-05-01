@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/lexer.rst:5
+msgid "Lexer (``xonsh.lexer``)"
+msgstr ""
+
+#: of xonsh.lexer:1
+msgid "Lexer for xonsh code."
+msgstr ""
+
+#: of xonsh.lexer:3
+msgid "Written using a hybrid of ``tokenize`` and PLY."
+msgstr ""
+
+#: of xonsh.lexer.Lexer:2
+msgid "Implements a lexer for the xonsh language."
+msgstr ""
+
+#: of xonsh.lexer.Lexer
+msgid "Attributes"
+msgstr ""
+
+#: of xonsh.lexer.Lexer:40
+msgid "**fname**"
+msgstr ""
+
+#: of xonsh.lexer.Lexer:39
+msgid "str"
+msgstr ""
+
+#: of xonsh.lexer.Lexer:40
+msgid "Filename"
+msgstr ""
+
+#: of xonsh.lexer.Lexer:43
+msgid "**last**"
+msgstr ""
+
+#: of xonsh.lexer.Lexer:42
+msgid "token"
+msgstr ""
+
+#: of xonsh.lexer.Lexer:43
+msgid "The last token seen."
+msgstr ""
+
+#: of xonsh.lexer.Lexer:47
+msgid "**lineno**"
+msgstr ""
+
+#: of xonsh.lexer.Lexer:46
+msgid "int"
+msgstr ""
+
+#: of xonsh.lexer.Lexer:46
+msgid "The last line number seen."
+msgstr ""
+
+#: of xonsh.lexer.Lexer.build:2
+msgid "Part of the PLY lexer API."
+msgstr ""
+
+#: of xonsh.lexer.Lexer.input:2
+msgid "Calls the lexer on the string s."
+msgstr ""
+
+#: of xonsh.lexer.Lexer.split:2
+msgid ""
+"Splits a string into a list of strings which are whitespace-separated "
+"tokens."
+msgstr ""
+
+#: of xonsh.lexer.Lexer.token:2
+msgid "Retrieves the next token."
+msgstr ""
+
+#: of xonsh.lexer.get_tokens:2
+msgid ""
+"Given a string containing xonsh code, generates a stream of relevant PLY "
+"tokens using ``handle_token``."
+msgstr ""
+
+#: of xonsh.lexer.handle_error_linecont:2
+msgid ""
+"Function for handling special line continuations as whitespace characters"
+" in subprocess mode."
+msgstr ""
+
+#: of xonsh.lexer.handle_error_space:2
+msgid "Function for handling special whitespace characters in subprocess mode"
+msgstr ""
+
+#: of xonsh.lexer.handle_error_token:2
+msgid "Function for handling error tokens"
+msgstr ""
+
+#: of xonsh.lexer.handle_ignore:2
+msgid "Function for handling tokens that should be ignored"
+msgstr ""
+
+#: of xonsh.lexer.handle_name:2
+msgid "Function for handling name tokens"
+msgstr ""
+
+#: of xonsh.lexer.handle_rbrace:2
+msgid "Function for handling ``}``"
+msgstr ""
+
+#: of xonsh.lexer.handle_rbracket:2
+msgid "Function for handling ``]``"
+msgstr ""
+
+#: of xonsh.lexer.handle_rparen:2
+msgid "Function for handling ``)``"
+msgstr ""
+
+#: of xonsh.lexer.handle_token:2
+msgid ""
+"General-purpose token handler.  Makes use of ``token_map`` or "
+"``special_map`` to yield one or more PLY tokens from the given input."
+msgstr ""
+
+#: of xonsh.lexer.handle_token
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.lexer.handle_token:11
+msgid "**state :**"
+msgstr ""
+
+#: of xonsh.lexer.handle_token:9
+msgid ""
+"The current state of the lexer, including information about whether we "
+"are in Python mode or subprocess mode, which changes the lexer's "
+"behavior.  Also includes the stream of tokens yet to be considered."
+msgstr ""
+
+#: of xonsh.lexer.handle_token:27
+msgid "**token :**"
+msgstr ""
+
+#: of xonsh.lexer.handle_token:14
+msgid "The token (from ``tokenize``) currently under consideration"
+msgstr ""
+

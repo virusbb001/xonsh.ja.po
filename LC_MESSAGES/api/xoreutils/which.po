@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/xoreutils/which.rst:5
+msgid "Which Command -- :mod:`xonsh.xoreutils.which`"
+msgstr ""
+
+#: of xonsh.xoreutils.which:1
+msgid "Implements the which xoreutil."
+msgstr ""
+
+#: of xonsh.xoreutils.which.AWitchAWitch:2
+msgid "The Ducstring, the mother of all ducs."
+msgstr ""
+
+#: of xonsh.xoreutils.which.print_alias:2
+msgid "Print the alias."
+msgstr ""
+
+#: of xonsh.xoreutils.which.print_global_object:2
+msgid "Print the object."
+msgstr ""
+
+#: of xonsh.xoreutils.which.print_path:2
+msgid "Print the name and path of the command."
+msgstr ""
+
+#: of xonsh.xoreutils.which.which:2
+msgid ""
+"Checks if each arguments is a xonsh aliases, then if it's an executable, "
+"then finally return an error code equal to the number of misses. If '-a' "
+"flag is passed, run both to return both `xonsh` match and `which` match."
+msgstr ""
+

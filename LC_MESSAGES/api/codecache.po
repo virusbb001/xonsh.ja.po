@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/codecache.rst:5
+msgid "Compiling and Caching of Xonsh Code (``xonsh.codecache``)"
+msgstr ""
+
+#: of xonsh.codecache:1
+msgid "Tools for caching xonsh code."
+msgstr ""
+
+#: of xonsh.codecache.code_cache_check:2
+msgid "Check whether the code cache for a particular piece of code is valid."
+msgstr ""
+
+#: of xonsh.codecache.code_cache_check:4 xonsh.codecache.script_cache_check:4
+msgid ""
+"Returns a tuple containing: a boolean representing whether the cached "
+"code should be used, and the cached code (or ``None`` if the cache should"
+" not be used)."
+msgstr ""
+
+#: of xonsh.codecache.code_cache_name:2
+msgid "Return an appropriate spoofed filename for the given code."
+msgstr ""
+
+#: of xonsh.codecache.compile_code:2
+msgid "Wrapper for ``execer.compile`` to compile the given code"
+msgstr ""
+
+#: of xonsh.codecache.get_cache_filename:2
+msgid "Return the filename of the cache for the given filename."
+msgstr ""
+
+#: of xonsh.codecache.get_cache_filename:4
+msgid ""
+"Cache filenames are similar to those used by the Mercurial DVCS for its "
+"internal store."
+msgstr ""
+
+#: of xonsh.codecache.get_cache_filename:7
+msgid ""
+"The ``code`` switch should be true if we should use the code store rather"
+" than the script store."
+msgstr ""
+
+#: of xonsh.codecache.run_code_with_cache:2
+msgid ""
+"Run a piece of code, using a cached version if it exists, and updating "
+"the cache as necessary."
+msgstr ""
+
+#: of xonsh.codecache.run_compiled_code:2
+msgid "Helper to run code in a given mode and context"
+msgstr ""
+
+#: of xonsh.codecache.run_script_with_cache:2
+msgid ""
+"Run a script, using a cached version if it exists (and the source has not"
+" changed), and updating the cache as necessary."
+msgstr ""
+
+#: of xonsh.codecache.script_cache_check:2
+msgid "Check whether the script cache for a particular file is valid."
+msgstr ""
+
+#: of xonsh.codecache.should_use_cache:2
+msgid ""
+"Return ``True`` if caching has been enabled for this mode (through "
+"command line flags or environment variables)"
+msgstr ""
+
+#: of xonsh.codecache.update_cache:2
+msgid ""
+"Update the cache at ``cache_file_name`` to contain the compiled code "
+"represented by ``ccode``."
+msgstr ""
+

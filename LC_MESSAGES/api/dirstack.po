@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/dirstack.rst:5
+msgid "Directory Stack (``xonsh.dirstack``)"
+msgstr ""
+
+#: of xonsh.dirstack:1
+msgid "Directory stack and associated utilities for the xonsh shell."
+msgstr ""
+
+#: of xonsh.dirstack.cd:2
+msgid "Changes the directory."
+msgstr ""
+
+#: of xonsh.dirstack.cd:4
+msgid ""
+"If no directory is specified (i.e. if `args` is None) then this changes "
+"to the current user's home directory."
+msgstr ""
+
+#: of xonsh.dirstack.dirs:2
+msgid "xonsh command: dirs"
+msgstr ""
+
+#: of xonsh.dirstack.dirs:4
+msgid ""
+"Displays the list of currently remembered directories.  Can also be used "
+"to clear the directory stack."
+msgstr ""
+
+#: of xonsh.dirstack.popd:2
+msgid "xonsh command: popd"
+msgstr ""
+
+#: of xonsh.dirstack.popd:4
+msgid "Removes entries from the directory stack."
+msgstr ""
+
+#: of xonsh.dirstack.pushd:2
+msgid "xonsh command: pushd"
+msgstr ""
+
+#: of xonsh.dirstack.pushd:4
+msgid ""
+"Adds a directory to the top of the directory stack, or rotates the stack,"
+" making the new top of the stack the current working directory."
+msgstr ""
+
+#: of xonsh.dirstack.pushd:7
+msgid ""
+"On Windows, if the path is a UNC path (begins with "
+"`\\\\<server>\\<share>`) and if the `DisableUNCCheck` registry value is "
+"not enabled, creates a temporary mapped drive letter and sets the working"
+" directory there, emulating behavior of `PUSHD` in `CMD.EXE`"
+msgstr ""
+
+#: of xonsh.dirstack.DIRSTACK:2
+msgid "A list containing the currently remembered directories."
+msgstr ""
+

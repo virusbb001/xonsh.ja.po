@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/main.rst:5
+msgid "Command Line Interface (``xonsh.main``)"
+msgstr ""
+
+#: of xonsh.main:1
+msgid "The main xonsh script."
+msgstr ""
+
+#: of xonsh.main.XonshMode:2
+msgid "An enumeration."
+msgstr ""
+
+#: of xonsh.main.get_setproctitle:2
+msgid "Proxy function for loading process title"
+msgstr ""
+
+#: of xonsh.main.main_context:2
+msgid ""
+"Generator that runs pre- and post-main() functions. This has two "
+"iterations. The first yields the shell. The second returns None but "
+"cleans up the shell."
+msgstr ""
+
+#: of xonsh.main.main_xonsh:2
+msgid "Main entry point for xonsh cli."
+msgstr ""
+
+#: of xonsh.main.path_argument:2
+msgid "Return a path only if the path is actually legal"
+msgstr ""
+
+#: of xonsh.main.path_argument:4
+msgid ""
+"This is very similar to argparse.FileType, except that it doesn't return "
+"an open file handle, but rather simply validates the path."
+msgstr ""
+
+#: of xonsh.main.postmain:2
+msgid "Teardown for main xonsh entry point, accepts parsed arguments."
+msgstr ""
+
+#: of xonsh.main.premain:2
+msgid "Setup for main xonsh entry point. Returns parsed arguments."
+msgstr ""
+
+#: of xonsh.main.setup:2
+msgid ""
+"Starts up a new xonsh shell. Calling this in function in another packages"
+" __init__.py will allow xonsh to be fully used in the package in headless"
+" or headed mode. This function is primarily indended to make starting up "
+"xonsh for 3rd party packages easier."
+msgstr ""
+
+#: of xonsh.main.setup
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.main.setup:12
+msgid "**ctx**"
+msgstr ""
+
+#: of xonsh.main.setup:11
+msgid "dict-like or None, optional"
+msgstr ""
+
+#: of xonsh.main.setup:11
+msgid "The xonsh context to start with. If None, an empty dictionary is provided."
+msgstr ""
+
+#: of xonsh.main.setup:16
+msgid "**shell_type**"
+msgstr ""
+
+#: of xonsh.main.setup:15
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.main.setup:15
+msgid ""
+"The type of shell to start. By default this is 'none', indicating we "
+"should start in headless mode."
+msgstr ""
+
+#: of xonsh.main.setup:20
+msgid "**env**"
+msgstr ""
+
+#: of xonsh.main.setup:19 xonsh.main.setup:22 xonsh.main.setup:41
+msgid "dict-like, optional"
+msgstr ""
+
+#: of xonsh.main.setup:19
+msgid ""
+"Environment to update the current environment with after the shell has "
+"been initialized."
+msgstr ""
+
+#: of xonsh.main.setup:23
+msgid "**aliases**"
+msgstr ""
+
+#: of xonsh.main.setup:23
+msgid "Aliases to add after the shell has been initialized."
+msgstr ""
+
+#: of xonsh.main.setup:26
+msgid "**xontribs**"
+msgstr ""
+
+#: of xonsh.main.setup:25
+msgid "iterable of str, optional"
+msgstr ""
+
+#: of xonsh.main.setup:26
+msgid "Xontrib names to load."
+msgstr ""
+
+#: of xonsh.main.setup:42
+msgid "**threadable_predictors**"
+msgstr ""
+
+#: of xonsh.main.setup:29
+msgid "Threadable predictors to start up with. These overide the defaults."
+msgstr ""
+
+#: of xonsh.main.start_services:2
+msgid ""
+"Starts up the essential services in the proper order. This returns the "
+"environment instance as a convenience."
+msgstr ""
+

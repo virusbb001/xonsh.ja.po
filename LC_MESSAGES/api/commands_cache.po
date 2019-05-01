@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/commands_cache.rst:5
+msgid "Commands Cache (``xonsh.commands_cache``)"
+msgstr ""
+
+#: of xonsh.commands_cache:1
+msgid ""
+"Module for caching command & alias names as well as for predicting "
+"whether a command will be able to be run in the background."
+msgstr ""
+
+#: of xonsh.commands_cache:4
+msgid ""
+"A background predictor is a function that accepts a single argument list "
+"and returns whether or not the process can be run in the background "
+"(returns True) or must be run the foreground (returns False)."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache:2
+msgid ""
+"A lazy cache representing the commands available on the file system. The "
+"keys are the command names and the values a tuple of (loc, has_alias) "
+"where loc is either a str pointing to the executable on the file system "
+"or None (if no executable exists) and has_alias is a boolean flag for "
+"whether the command has an alias."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.cached_name:2
+msgid "Returns the name that would appear in the cache, if it exists."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.default_predictor_readbin:2
+msgid ""
+"Make a default predictor by analyzing the content of the binary. Should "
+"only works on POSIX. Return failure if the analysis fails."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.get_possible_names:2
+msgid ""
+"Generates the possible `PATHEXT` extension variants of a given executable"
+" name on Windows as a list, conserving the ordering in `PATHEXT`. Returns"
+" a list as `name` being the only item in it on other platforms."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.is_empty:2
+msgid "Returns whether the cache is populated or not."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.is_only_functional_alias:2
+msgid ""
+"Returns whether or not a command is only a functional alias, and has no "
+"underlying executable. For example, the \"cd\" command is only available "
+"as a functional alias."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazy_is_only_functional_alias:2
+msgid ""
+"Returns whether or not a command is only a functional alias, and has no "
+"underlying executable. For example, the \"cd\" command is only available "
+"as a functional alias. This search is performed lazily."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazy_locate_binary:2
+msgid "Locates an executable in the cache, without checking its validity."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazy_locate_binary
+#: xonsh.commands_cache.CommandsCache.locate_binary
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazy_locate_binary:8
+#: xonsh.commands_cache.CommandsCache.locate_binary:8
+msgid "**name**"
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazy_locate_binary:7
+#: xonsh.commands_cache.CommandsCache.locate_binary:7
+msgid "str"
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazy_locate_binary:8
+#: xonsh.commands_cache.CommandsCache.locate_binary:8
+msgid "name of binary to search for"
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazy_locate_binary:25
+#: xonsh.commands_cache.CommandsCache.locate_binary:25
+msgid "**ignore_alias**"
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazy_locate_binary:24
+#: xonsh.commands_cache.CommandsCache.locate_binary:24
+msgid "bool, optional"
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazy_locate_binary:11
+#: xonsh.commands_cache.CommandsCache.locate_binary:11
+msgid ""
+"Force return of binary path even if alias of ``name`` exists (default "
+"``False``)"
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazyget:2
+msgid "A lazy value getter."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazyin:2
+msgid ""
+"Checks if the value is in the current cache without the potential to "
+"update the cache. It just says whether the value is known *now*. This may"
+" not reflect precisely what is on the $PATH."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazyiter:2
+msgid ""
+"Returns an iterator over the current cache contents without the potential"
+" to update the cache. This may not reflect what is on the $PATH."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.lazylen:2
+msgid ""
+"Returns the length of the current cache contents without the potential to"
+" update the cache. This may not reflect precisely what is on the $PATH."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.locate_binary:2
+msgid "Locates an executable on the file system using the cache."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.predict_threadable:2
+msgid ""
+"Predicts whether a command list is able to be run on a background thread,"
+" rather than the main thread."
+msgstr ""
+
+#: of xonsh.commands_cache.default_threadable_predictors:2
+msgid ""
+"Generates a new defaultdict for known threadable predictors. The default "
+"is to predict true."
+msgstr ""
+
+#: of xonsh.commands_cache.predict_false:2
+msgid "Never say the process is threadable."
+msgstr ""
+
+#: of xonsh.commands_cache.predict_help_ver:2
+msgid ""
+"Predict the backgroundability of commands that have help & version "
+"switches: -h, --help, -v, -V, --version. If either of these options is "
+"present, the command is assumed to print to stdout normally and is "
+"therefore threadable. Otherwise, the command is assumed to not be "
+"threadable. This is useful for commands, like top, that normally enter "
+"alternate mode but may not in certain circumstances."
+msgstr ""
+
+#: of xonsh.commands_cache.predict_hg:2
+msgid ""
+"Predict if mercurial is about to be run in interactive mode. If it is "
+"interactive, predict False. If it isn't, predict True. Also predict False"
+" for certain commands, such as split."
+msgstr ""
+
+#: of xonsh.commands_cache.predict_shell:2
+msgid ""
+"Predict the backgroundability of the normal shell interface, which comes "
+"down to whether it is being run in subproc mode."
+msgstr ""
+
+#: of xonsh.commands_cache.predict_true:2
+msgid "Always say the process is threadable."
+msgstr ""
+

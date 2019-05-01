@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/ptk2/key_bindings.rst:5
+msgid "Prompt Toolkit 2 Key Bindings (``xonsh.ptk2.key_bindings``)"
+msgstr ""
+
+#: of xonsh.ptk2.key_bindings:1
+msgid "Key bindings for prompt_toolkit xonsh shell."
+msgstr ""
+
+#: of xonsh.ptk2.key_bindings.can_compile:2
+msgid "Returns whether the code can be compiled, i.e. it is valid xonsh."
+msgstr ""
+
+#: of xonsh.ptk2.key_bindings.carriage_return:2
+msgid ""
+"Preliminary parser to determine if 'Enter' key should send command to the"
+" xonsh parser for execution or should insert a newline for continued "
+"input."
+msgstr ""
+
+#: of xonsh.ptk2.key_bindings.carriage_return:5
+msgid ""
+"Current 'triggers' for inserting a newline are: - Not on first line of "
+"buffer and line is non-empty - Previous character is a colon (covers if, "
+"for, etc...) - User is in an open paren-block - Line ends with backslash "
+"- Any text exists below cursor position (relevant when editing previous "
+"multiline blocks)"
+msgstr ""
+
+#: of xonsh.ptk2.key_bindings.load_xonsh_bindings:2
+msgid "Load custom key bindings."
+msgstr ""
+

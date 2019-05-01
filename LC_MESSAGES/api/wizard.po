@@ -1,0 +1,497 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/wizard.rst:5
+msgid "Wizard Making Tools (``xonsh.wizard``)"
+msgstr ""
+
+#: of xonsh.wizard:1
+msgid ""
+"Tools for creating command-line and web-based wizards from a tree of "
+"nodes."
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:2
+msgid ""
+"Node for inserting the state into a file in between a prefix and suffix. "
+"The state is converted according to some dumper rules."
+msgstr ""
+
+#: of xonsh.wizard.FileInserter xonsh.wizard.Input xonsh.wizard.LoadJSON
+#: xonsh.wizard.PromptVisitor xonsh.wizard.Question xonsh.wizard.SaveJSON
+#: xonsh.wizard.StateFile xonsh.wizard.While xonsh.wizard.YesNo
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:30
+msgid "**prefix**"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:29 xonsh.wizard.FileInserter:34
+#: xonsh.wizard.Question:27 xonsh.wizard.YesNo:27
+msgid "str"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:29
+msgid ""
+"Starting unique string in file to find and begin the insertion at, e.g. "
+"'# XONSH WIZARD START"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:35
+msgid "**'**"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:35
+msgid "suffix"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:34
+msgid ""
+"Ending unique string to find in the file and end the replacement at, e.g."
+" '"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:76
+msgid "**# XONSH WIZARD END'**"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:53
+msgid "dump_rules"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:52
+msgid "dict of strs to functions"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:39
+msgid ""
+"This is a dictionary that maps the path-like match strings to functions "
+"that take the flat path and the value as arguments and convert the state "
+"value at a path to a string. The keys here may use wildcards (as seen in "
+"the standard library fnmatch module). For example::"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:51
+msgid ""
+"If a wildcard is not used in a path, then that rule will be used used on "
+"an exact match. If wildcards are used, the deepest and longest match is "
+"used.  If None is given instead of a the function, it means to skip "
+"generating that key."
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:55
+msgid "default_file"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:54 xonsh.wizard.Input:27
+#: xonsh.wizard.LoadJSON:28 xonsh.wizard.SaveJSON:28 xonsh.wizard.StateFile:28
+#: xonsh.wizard.While:39
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:56 xonsh.wizard.LoadJSON:29
+#: xonsh.wizard.SaveJSON:29 xonsh.wizard.StateFile:29
+msgid "The default filename to save the file as."
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:59
+msgid "check"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:58 xonsh.wizard.FileInserter:75
+#: xonsh.wizard.Input:36 xonsh.wizard.Input:40 xonsh.wizard.Input:44
+#: xonsh.wizard.LoadJSON:33 xonsh.wizard.LoadJSON:50 xonsh.wizard.SaveJSON:33
+#: xonsh.wizard.SaveJSON:50 xonsh.wizard.StateFile:33 xonsh.wizard.StateFile:50
+msgid "bool, optional"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:58 xonsh.wizard.LoadJSON:32
+#: xonsh.wizard.SaveJSON:32 xonsh.wizard.StateFile:32
+msgid ""
+"Whether to print the current state and ask if it should be saved/loaded "
+"prior to asking for the file name and saving the file, default=True."
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:76
+msgid "ask_filename"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter:62 xonsh.wizard.LoadJSON:37
+#: xonsh.wizard.SaveJSON:37 xonsh.wizard.StateFile:37
+msgid ""
+"Whether to ask for the filename (if ``False``, always use the default "
+"filename)"
+msgstr ""
+
+#: of xonsh.wizard.FileInserter.dumps:2
+msgid ""
+"Dumps a flat mapping of (string path keys, values) pairs and returns a "
+"formatted string."
+msgstr ""
+
+#: of xonsh.wizard.FileInserter.find_rule:2
+msgid ""
+"For a path, find the key and conversion function that should be used to "
+"dump a value."
+msgstr ""
+
+#: of xonsh.wizard.Input:2
+msgid "Gets input from the user."
+msgstr ""
+
+#: of xonsh.wizard.Input:28
+msgid "**prompt**"
+msgstr ""
+
+#: of xonsh.wizard.Input:28
+msgid "Prompt string prior to input"
+msgstr ""
+
+#: of xonsh.wizard.Input:32 xonsh.wizard.Question:35
+msgid "**converter**"
+msgstr ""
+
+#: of xonsh.wizard.Input:31 xonsh.wizard.Question:34
+msgid "callable, optional"
+msgstr ""
+
+#: of xonsh.wizard.Input:31
+msgid "Converts the string the user typed into another object prior to storage."
+msgstr ""
+
+#: of xonsh.wizard.Input:37
+msgid "**show_conversion**"
+msgstr ""
+
+#: of xonsh.wizard.Input:35
+msgid ""
+"Flag for whether or not to show the results of the conversion function if"
+" the conversion function was meaningfully executed. Default False."
+msgstr ""
+
+#: of xonsh.wizard.Input:41
+msgid "**confirm**"
+msgstr ""
+
+#: of xonsh.wizard.Input:40
+msgid "Whether the input should be confirmed until true or broken, default False."
+msgstr ""
+
+#: of xonsh.wizard.Input:45
+msgid "**retry**"
+msgstr ""
+
+#: of xonsh.wizard.Input:44
+msgid ""
+"In the event that the conversion operation fails, should users be re-"
+"prompted until they provide valid input. Default False."
+msgstr ""
+
+#: of xonsh.wizard.Input:61 xonsh.wizard.Question:51 xonsh.wizard.While:59
+#: xonsh.wizard.YesNo:50
+msgid "**path**"
+msgstr ""
+
+#: of xonsh.wizard.Input:60 xonsh.wizard.Question:50 xonsh.wizard.While:58
+#: xonsh.wizard.YesNo:49
+msgid "str or sequence of str, optional"
+msgstr ""
+
+#: of xonsh.wizard.Input:48 xonsh.wizard.Question:38 xonsh.wizard.While:46
+#: xonsh.wizard.YesNo:37
+msgid "A path within the storage object."
+msgstr ""
+
+#: of xonsh.wizard.LoadJSON:2
+msgid ""
+"Node for loading the state as a JSON file under a default or user given "
+"file name."
+msgstr ""
+
+#: of xonsh.wizard.LoadJSON:29 xonsh.wizard.SaveJSON:29
+#: xonsh.wizard.StateFile:29
+msgid "**default_file**"
+msgstr ""
+
+#: of xonsh.wizard.LoadJSON:34 xonsh.wizard.SaveJSON:34
+#: xonsh.wizard.StateFile:34
+msgid "**check**"
+msgstr ""
+
+#: of xonsh.wizard.LoadJSON:51 xonsh.wizard.SaveJSON:51
+#: xonsh.wizard.StateFile:51
+msgid "**ask_filename**"
+msgstr ""
+
+#: of xonsh.wizard.Message:2
+msgid "Contains a simple message to report to the user."
+msgstr ""
+
+#: of xonsh.wizard.Node:2
+msgid "Base type of all nodes."
+msgstr ""
+
+#: of xonsh.wizard.Pass:2
+msgid "Simple do-nothing node"
+msgstr ""
+
+#: of xonsh.wizard.PrettyFormatter:2
+msgid "Formats a tree of nodes into a pretty string"
+msgstr ""
+
+#: of xonsh.wizard.PrettyFormatter.visit:2 xonsh.wizard.PromptVisitor.visit:2
+#: xonsh.wizard.StateVisitor.visit:2 xonsh.wizard.Visitor.visit:2
+msgid "Walks over a node.  If no node is provided, the tree is used."
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor:2
+msgid "Visits the nodes in the tree via the a command-line prompt."
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor:28
+msgid "**tree**"
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor:27
+msgid "Node, optional"
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor:28
+msgid "Tree of nodes to start visitor with."
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor:31
+msgid "**state**"
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor:30
+msgid "dict, optional"
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor:31
+msgid "Initial state to begin with."
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor:48
+msgid "**kwargs**"
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor:47
+msgid "optional"
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor:34
+msgid ""
+"Options that are passed through to the prompt via the shell's "
+"singleline() method. See BaseShell for mor details."
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor.flatten:2 xonsh.wizard.StateVisitor.flatten:2
+msgid ""
+"Returns a dict version of the store whose keys are paths. Note that list "
+"and dict entries will always end in '/', allowing disambiquation in "
+"dump_rules."
+msgstr ""
+
+#: of xonsh.wizard.PromptVisitor.store:2 xonsh.wizard.StateVisitor.store:2
+msgid "Stores a value at the path location."
+msgstr ""
+
+#: of xonsh.wizard.Question:2
+msgid "Asks a question and then chooses the next node based on the response."
+msgstr ""
+
+#: of xonsh.wizard.Question:28 xonsh.wizard.YesNo:28
+msgid "**question**"
+msgstr ""
+
+#: of xonsh.wizard.Question:28 xonsh.wizard.YesNo:28
+msgid "The question itself."
+msgstr ""
+
+#: of xonsh.wizard.Question:31
+msgid "**responses**"
+msgstr ""
+
+#: of xonsh.wizard.Question:30
+msgid "dict with str keys and Node values"
+msgstr ""
+
+#: of xonsh.wizard.Question:31
+msgid "Mapping from user-input responses to nodes."
+msgstr ""
+
+#: of xonsh.wizard.Question:34
+msgid ""
+"Converts the string the user typed into another object that serves as a "
+"key to the responses dict."
+msgstr ""
+
+#: of xonsh.wizard.SaveJSON:2
+msgid ""
+"Node for saving the state as a JSON file under a default or user given "
+"file name."
+msgstr ""
+
+#: of xonsh.wizard.StateFile:2
+msgid ""
+"Node for representing the state as a file under a default or user given "
+"file name. This node type is likely not useful on its own."
+msgstr ""
+
+#: of xonsh.wizard.StateVisitor:2
+msgid ""
+"This class visits the nodes and stores the results in a top-level dict of"
+" data according to the state path of the node. The the node does not have"
+" a path or the path does not exist, the storage is skipped. This class "
+"can be optionally initialized with an existing state."
+msgstr ""
+
+#: of xonsh.wizard.StoreNonEmpty:2
+msgid ""
+"Stores the user input only if the input was not an empty string. This "
+"works by wrapping the converter function."
+msgstr ""
+
+#: of xonsh.wizard.TrueFalse:2
+msgid "Input node the returns a True or False value."
+msgstr ""
+
+#: of xonsh.wizard.TrueFalseBreak:2
+msgid "Input node the returns a True, False, or 'break' value."
+msgstr ""
+
+#: of xonsh.wizard.UnstorableType:2
+msgid ""
+"Represents an unstorable return value for when no input was given or such"
+" input was skipped. Typically represented by the Unstorable singleton."
+msgstr ""
+
+#: of xonsh.wizard.Visitor:2
+msgid ""
+"Super-class for all classes that should walk over a tree of nodes. This "
+"implements the visit() method."
+msgstr ""
+
+#: of xonsh.wizard.While:2
+msgid "Computes a body while a condition function evaluates to true."
+msgstr ""
+
+#: of xonsh.wizard.While:4
+msgid ""
+"The condition function has the form ``cond(visitor=None, node=None)`` and"
+" must return an object that responds to the Python magic method "
+"``__bool__``. The beg attribute specifies the number to start the loop "
+"iteration at."
+msgstr ""
+
+#: of xonsh.wizard.While:32
+msgid "**cond**"
+msgstr ""
+
+#: of xonsh.wizard.While:31
+msgid "callable"
+msgstr ""
+
+#: of xonsh.wizard.While:31
+msgid "Function that determines if the next loop iteration should be executed."
+msgstr ""
+
+#: of xonsh.wizard.While:37
+msgid "**body**"
+msgstr ""
+
+#: of xonsh.wizard.While:36
+msgid "sequence of nodes"
+msgstr ""
+
+#: of xonsh.wizard.While:35
+msgid ""
+"A list of node to execute on each iteration. The condition function has "
+"the form ``cond(visitor=None, node=None)`` and must return an object that"
+" responds to the Python magic method ``__bool__``."
+msgstr ""
+
+#: of xonsh.wizard.While:40
+msgid "**idxname**"
+msgstr ""
+
+#: of xonsh.wizard.While:40
+msgid "The variable name for the index."
+msgstr ""
+
+#: of xonsh.wizard.While:43
+msgid "**beg**"
+msgstr ""
+
+#: of xonsh.wizard.While:42
+msgid "int, optional"
+msgstr ""
+
+#: of xonsh.wizard.While:43
+msgid "The first index value when evaluating path format strings."
+msgstr ""
+
+#: of xonsh.wizard.Wizard:2
+msgid "Top-level node in the tree."
+msgstr ""
+
+#: of xonsh.wizard.YesNo:2
+msgid "Represents a simple yes/no question."
+msgstr ""
+
+#: of xonsh.wizard.YesNo:31
+msgid "**yes**"
+msgstr ""
+
+#: of xonsh.wizard.YesNo:30 xonsh.wizard.YesNo:33
+msgid "Node"
+msgstr ""
+
+#: of xonsh.wizard.YesNo:31
+msgid "Node to execute if the response is True."
+msgstr ""
+
+#: of xonsh.wizard.YesNo:34
+msgid "**no**"
+msgstr ""
+
+#: of xonsh.wizard.YesNo:34
+msgid "Node to execute if the response is False."
+msgstr ""
+
+#: of xonsh.wizard.canon_path:2
+msgid ""
+"Returns the canonical form of a path, which is a tuple of str or ints. "
+"Indices may be optionally passed in."
+msgstr ""
+
+#: of xonsh.wizard.create_truefalse_cond:2
+msgid ""
+"This creates a basic condition function for use with nodes like While or "
+"other conditions. The condition function creates and visits a TrueFalse "
+"node and returns the result. This TrueFalse node takes the prompt and "
+"path that is passed in here."
+msgstr ""
+
+#: of xonsh.wizard.ensure_str_or_int:2
+msgid "Creates a string or int."
+msgstr ""
+

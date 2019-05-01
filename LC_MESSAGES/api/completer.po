@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/completer.rst:5
+msgid "Tab Completer (``xonsh.completer``)"
+msgstr ""
+
+#: of xonsh.completer:1
+msgid "A (tab-)completer for xonsh."
+msgstr ""
+
+#: of xonsh.completer.Completer:2
+msgid "This provides a list of optional completions for the xonsh shell."
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:2
+msgid "Complete the string, given a possible execution context."
+msgstr ""
+
+#: of xonsh.completer.Completer.complete
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:8
+msgid "**prefix**"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:7
+#: xonsh.completer.Completer.complete:10
+msgid "str"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:8
+msgid "The string to match"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:11
+msgid "**line**"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:11
+msgid "The line that prefix appears on."
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:14
+msgid "**begidx**"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:13
+#: xonsh.completer.Completer.complete:16 xonsh.completer.Completer.complete:39
+msgid "int"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:14
+msgid "The index in line that prefix starts on."
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:17
+msgid "**endidx**"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:17
+msgid "The index in line that prefix ends on."
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:20
+msgid "**ctx**"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:19
+msgid "Iterable of str (ie dict, set, etc), optional"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:20
+msgid "Names in the current execution context."
+msgstr ""
+
+#: of xonsh.completer.Completer.complete
+msgid "Returns"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:25
+msgid "**rtn**"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:24
+msgid "list of str"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:25
+msgid "Possible completions of prefix, sorted alphabetically."
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:40
+msgid "**lprefix**"
+msgstr ""
+
+#: of xonsh.completer.Completer.complete:28
+msgid "Length of the prefix to be replaced in the completion."
+msgstr ""
+

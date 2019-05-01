@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/xoreutils/uptime.rst:5
+msgid "System Uptime -- :mod:`xonsh.xoreutils.uptime`"
+msgstr ""
+
+#: of xonsh.xoreutils.uptime:1
+msgid "Provides a cross-platform way to figure out the system uptime."
+msgstr ""
+
+#: of xonsh.xoreutils.uptime:3
+msgid ""
+"Should work on damned near any operating system you can realistically "
+"expect to be asked to write Python code for. If this module is invoked as"
+" a stand-alone script, it will print the current uptime in a human-"
+"readable format, or display an error message if it can't, to standard "
+"output."
+msgstr ""
+
+#: of xonsh.xoreutils.uptime:9
+msgid ""
+"This file was forked from the uptime project: "
+"https://github.com/Cairnarvon/uptime Copyright (c) 2012, Koen Crolla, All"
+" rights reserved."
+msgstr ""
+
+#: of xonsh.xoreutils.uptime.boottime:2
+msgid "Returns boot time if remotely possible, or None if not."
+msgstr ""
+
+#: of xonsh.xoreutils.uptime.uptime:2
+msgid "Returns uptime in seconds if even remotely possible, or None if not."
+msgstr ""
+

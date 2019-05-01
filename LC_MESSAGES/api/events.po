@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/events.rst:5
+msgid "Events (``xonsh.events``)"
+msgstr ""
+
+#: of xonsh.events:1
+msgid "Events for xonsh."
+msgstr ""
+
+#: of xonsh.events:3
+msgid "In all likelihood, you want builtins.events"
+msgstr ""
+
+#: of xonsh.events:5
+msgid "The best way to \"declare\" an event is something like::"
+msgstr ""
+
+#: of xonsh.events.AbstractEvent:2
+msgid "A given event that handlers can register against."
+msgstr ""
+
+#: of xonsh.events.AbstractEvent:4
+msgid "Acts as a ``MutableSet`` for registered handlers."
+msgstr ""
+
+#: of xonsh.events.AbstractEvent:6
+msgid "Note that ordering is never guaranteed."
+msgstr ""
+
+#: of xonsh.events.AbstractEvent.add:2
+msgid "Add an element."
+msgstr ""
+
+#: of xonsh.events.AbstractEvent.clear:2 xonsh.events.Event.clear:2
+#: xonsh.events.LoadEvent.clear:2
+msgid "This is slow (creates N new iterators!) but effective."
+msgstr ""
+
+#: of xonsh.events.AbstractEvent.discard:2
+msgid "Remove an element.  Do not raise an exception if absent."
+msgstr ""
+
+#: of xonsh.events.AbstractEvent.fire:2 xonsh.events.LoadEvent.fire:2
+msgid "Fires an event, calling registered handlers with the given arguments."
+msgstr ""
+
+#: of xonsh.events.AbstractEvent.fire xonsh.events.Event.fire
+#: xonsh.events.EventManager.doc xonsh.events.EventManager.transmogrify
+#: xonsh.events.LoadEvent.fire
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.events.AbstractEvent.fire:21 xonsh.events.Event.fire:10
+#: xonsh.events.LoadEvent.fire:21
+msgid "**\\*\\*kwargs :**"
+msgstr ""
+
+#: of xonsh.events.AbstractEvent.fire:8 xonsh.events.Event.fire:10
+#: xonsh.events.LoadEvent.fire:8
+msgid "Keyword arguments to pass to each handler"
+msgstr ""
+
+#: of xonsh.events.AbstractEvent.isdisjoint:2 xonsh.events.Event.isdisjoint:2
+#: xonsh.events.LoadEvent.isdisjoint:2
+msgid "Return True if two sets have a null intersection."
+msgstr ""
+
+#: of xonsh.events.AbstractEvent.pop:2 xonsh.events.Event.pop:2
+#: xonsh.events.LoadEvent.pop:2
+msgid "Return the popped value.  Raise KeyError if empty."
+msgstr ""
+
+#: of xonsh.events.AbstractEvent.remove:2 xonsh.events.Event.remove:2
+#: xonsh.events.LoadEvent.remove:2
+msgid "Remove an element. If not a member, raise a KeyError."
+msgstr ""
+
+#: of xonsh.events.AbstractEvent.species:2 xonsh.events.Event.species:2
+#: xonsh.events.LoadEvent.species:2
+msgid "The species (basically, class) of the event"
+msgstr ""
+
+#: of xonsh.events.Event:2
+msgid "An event species for notify and scatter-gather events."
+msgstr ""
+
+#: of xonsh.events.Event.add:2 xonsh.events.LoadEvent.add:2
+msgid "Add an element to a set."
+msgstr ""
+
+#: of xonsh.events.Event.add:4 xonsh.events.LoadEvent.add:4
+msgid "This has no effect if the element is already present."
+msgstr ""
+
+#: of xonsh.events.Event.discard:2 xonsh.events.LoadEvent.discard:2
+msgid "Remove an element from a set if it is a member."
+msgstr ""
+
+#: of xonsh.events.Event.discard:4 xonsh.events.LoadEvent.discard:4
+msgid "If the element is not a member, do nothing."
+msgstr ""
+
+#: of xonsh.events.Event.fire:2
+msgid ""
+"Fires an event, calling registered handlers with the given arguments. A "
+"non-unique iterable of the results is returned."
+msgstr ""
+
+#: of xonsh.events.Event.fire:5
+msgid "Each handler is called immediately. Exceptions are turned in to warnings."
+msgstr ""
+
+#: of xonsh.events.Event.fire
+msgid "Returns"
+msgstr ""
+
+#: of xonsh.events.Event.fire:28
+msgid "**vals**"
+msgstr ""
+
+#: of xonsh.events.Event.fire:27
+msgid "iterable"
+msgstr ""
+
+#: of xonsh.events.Event.fire:15
+msgid ""
+"Return values of each handler. If multiple handlers return the same "
+"value, it will appear multiple times."
+msgstr ""
+
+#: of xonsh.events.EventManager:2
+msgid "Container for all events in a system."
+msgstr ""
+
+#: of xonsh.events.EventManager:4
+msgid "Meant to be a singleton, but doesn't enforce that itself."
+msgstr ""
+
+#: of xonsh.events.EventManager:6
+msgid "Each event is just an attribute. They're created dynamically on first use."
+msgstr ""
+
+#: of xonsh.events.EventManager.doc:2
+msgid "Applies a docstring to an event."
+msgstr ""
+
+#: of xonsh.events.EventManager.doc:8 xonsh.events.EventManager.transmogrify:9
+msgid "**name**"
+msgstr ""
+
+#: of xonsh.events.EventManager.doc:7 xonsh.events.EventManager.doc:23
+#: xonsh.events.EventManager.transmogrify:8
+msgid "str"
+msgstr ""
+
+#: of xonsh.events.EventManager.doc:8 xonsh.events.EventManager.transmogrify:9
+msgid "The name of the event, eg \"on_precommand\""
+msgstr ""
+
+#: of xonsh.events.EventManager.doc:24
+msgid "**docstring**"
+msgstr ""
+
+#: of xonsh.events.EventManager.doc:11
+msgid "The docstring to apply to the event"
+msgstr ""
+
+#: of xonsh.events.EventManager.exists:2
+msgid ""
+"Checks if an event with a given name exist. If it does not exist, it will"
+" not be created. That is what makes this different than ``hasattr(events,"
+" name)``, which will create the event."
+msgstr ""
+
+#: of xonsh.events.EventManager.transmogrify:2
+msgid ""
+"Converts an event from one species to another, preserving handlers and "
+"docstring."
+msgstr ""
+
+#: of xonsh.events.EventManager.transmogrify:4
+msgid ""
+"Please note: Some species maintain specialized state. This is lost on "
+"transmogrification."
+msgstr ""
+
+#: of xonsh.events.EventManager.transmogrify:25
+msgid "**species**"
+msgstr ""
+
+#: of xonsh.events.EventManager.transmogrify:24
+msgid "subclass of AbstractEvent"
+msgstr ""
+
+#: of xonsh.events.EventManager.transmogrify:12
+msgid "The type to turn the event in to."
+msgstr ""
+
+#: of xonsh.events.LoadEvent:2
+msgid ""
+"An event species where each handler is called exactly once, shortly after"
+" either the event is fired or the handler is registered (whichever is "
+"later). Additional firings are ignored."
+msgstr ""
+
+#: of xonsh.events.LoadEvent:5
+msgid ""
+"Note: Does not support scatter/gather, due to never knowing when we have "
+"all the handlers."
+msgstr ""
+
+#: of xonsh.events.LoadEvent:7
+msgid ""
+"Note: Maintains a strong reference to pargs/kwargs in case of the "
+"addition of future handlers."
+msgstr ""
+
+#: of xonsh.events.LoadEvent:9
+msgid "Note: This is currently NOT thread safe."
+msgstr ""
+

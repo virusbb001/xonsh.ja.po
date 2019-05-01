@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/history/json.rst:5
+msgid "History Backend JSON -- :mod:`xonsh.history.json`"
+msgstr ""
+
+#: of xonsh.history.json:1
+msgid "Implements JSON version of xonsh history backend."
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:2
+msgid "A field in the 'cmds' portion of history."
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:22
+msgid "Represents a field in the 'cmds' portion of history."
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:24
+msgid ""
+"Will query the buffer for the relevant data, if possible. Otherwise it "
+"will lazily acquire data from the file."
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField xonsh.history.json.JsonHistory
+#: xonsh.history.json.JsonHistory.append xonsh.history.json.JsonHistory.flush
+#: xonsh.history.json.JsonHistory.run_gc
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:30
+msgid "**field**"
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:29
+msgid "str"
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:30
+msgid "The name of the field to query."
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:33
+msgid "**hist**"
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:32
+msgid "History object"
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:33
+msgid "The history object to query."
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:49
+msgid "**default**"
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:48 xonsh.history.json.JsonHistory:41
+msgid "optional"
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField:36
+msgid "The default value to return if key is not present."
+msgstr ""
+
+#: of xonsh.history.json.JsonCommandField.i_am_at_the_front:2
+msgid "Tests if the command field is at the front of the queue."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:2
+msgid "Xonsh history backend implemented with JSON files."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:4
+msgid "JsonHistory implements two extra actions: ``diff``, and ``replay``."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:23
+msgid ""
+"Represents a xonsh session's history as an in-memory buffer that is "
+"periodically flushed to disk."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:31
+msgid "**filename**"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:30
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:30
+msgid ""
+"Location of history file, defaults to "
+"``$XONSH_DATA_DIR/xonsh-{sessionid}.json``."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:35
+msgid "**sessionid**"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:34
+msgid "int, uuid, str, optional"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:34
+msgid "Current session identifier, will generate a new sessionid if not set."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:38
+msgid "**buffersize**"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:37
+msgid "int, optional"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:38
+msgid "Maximum buffersize in memory."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:42
+msgid "**meta**"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:41
+msgid ""
+"Top-level metadata to store along with the history. The kwargs 'cmds' and"
+" 'sessionid' are not allowed and will be overwritten."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:58
+msgid "**gc**"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:57 xonsh.history.json.JsonHistory.flush:8
+msgid "bool, optional"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory:45
+msgid "Run garbage collector flag."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.all_items:2
+msgid "Returns all history as found in XONSH_DATA_DIR."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.all_items:4
+msgid "yield format: {'inp': cmd, 'rtn': 0, ...}"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.append:2
+msgid "Appends command to history. Will periodically flush the history to file."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.append:11
+msgid "**cmd**"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.append:10
+msgid "dict"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.append:8
+msgid ""
+"This dict contains information about the command that is to be added to "
+"the history list. It should contain the keys ``inp``, ``rtn`` and ``ts``."
+" These key names mirror the same names defined as instance variables in "
+"the ``HistoryEntry`` class."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.append
+#: xonsh.history.json.JsonHistory.flush xonsh.history.json.JsonHistory.info
+msgid "Returns"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.append:28
+#: xonsh.history.json.JsonHistory.flush:26
+msgid "**hf**"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.append:27
+#: xonsh.history.json.JsonHistory.flush:25
+msgid "JsonHistoryFlusher or None"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.append:16
+#: xonsh.history.json.JsonHistory.flush:14
+msgid "The thread that was spawned to flush history"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.flush:2
+msgid "Flushes the current command buffer to disk."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.flush:9
+msgid "**at_exit**"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.flush:8
+msgid ""
+"Whether the JsonHistoryFlusher should act as a thread in the background, "
+"or execute immediately and block."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.info:2
+msgid "A collection of information about the shell history."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.info:21
+msgid "dict or collections.OrderedDict"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.info:9
+msgid "Contains history information as str key pairs."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.items:2
+msgid "Display history items of current session."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.run_gc:2
+msgid "Run the garbage collector."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.run_gc:8
+msgid "**size: None or tuple of a int and a string**"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.run_gc:8
+msgid "Determines the size and units of what would be allowed to remain."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.run_gc:24
+msgid "**blocking: bool**"
+msgstr ""
+
+#: of xonsh.history.json.JsonHistory.run_gc:11
+msgid "If set blocking, then wait until gc action finished."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistoryFlusher:2
+msgid "Flush shell history to disk periodically."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistoryFlusher:22
+msgid "Thread for flushing history."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistoryFlusher.dump:2
+msgid "Write the cached history to external storage."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistoryFlusher.i_am_at_the_front:2
+msgid "Tests if the flusher is at the front of the queue."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistoryFlusher.run:2
+#: xonsh.history.json.JsonHistoryGC.run:2
+msgid "Method representing the thread's activity."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistoryFlusher.run:4
+#: xonsh.history.json.JsonHistoryGC.run:4
+msgid ""
+"You may override this method in a subclass. The standard run() method "
+"invokes the callable object passed to the object's constructor as the "
+"target argument, if any, with sequential and keyword arguments taken from"
+" the args and kwargs arguments, respectively."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistoryGC:2
+msgid "Shell history garbage collection."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistoryGC:22
+msgid "Thread responsible for garbage collecting old history."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistoryGC:24
+msgid "May wait for shell (and for xonshrc to have been loaded) to start work."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistoryGC.files:2
+msgid ""
+"Find and return the history files. Optionally locked files may be "
+"excluded."
+msgstr ""
+
+#: of xonsh.history.json.JsonHistoryGC.files:5
+msgid ""
+"This is sorted by the last closed time. Returns a list of (timestamp, "
+"number of cmds, file name) tuples."
+msgstr ""
+

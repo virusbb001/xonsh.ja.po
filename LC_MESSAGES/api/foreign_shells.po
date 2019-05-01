@@ -1,0 +1,417 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/foreign_shells.rst:5
+msgid "Foreign Shell Tools (``xonsh.foreign_shells``)"
+msgstr ""
+
+#: of xonsh.foreign_shells:1
+msgid "Tools to help interface with foreign shells, such as Bash."
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:2
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:2
+msgid ""
+"This class is responsible for calling foreign shell functions as if they "
+"were aliases. This does not currently support taking stdin."
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias
+#: xonsh.foreign_shells.ForeignShellExecAlias
+#: xonsh.foreign_shells.ForeignShellFunctionAlias
+#: xonsh.foreign_shells.foreign_shell_data
+#: xonsh.foreign_shells.load_foreign_aliases
+#: xonsh.foreign_shells.load_foreign_envs
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:29
+#: xonsh.foreign_shells.ForeignShellExecAlias:31
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:32
+#: xonsh.foreign_shells.foreign_shell_data:9
+msgid "**shell**"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:28
+#: xonsh.foreign_shells.ForeignShellBaseAlias:31
+#: xonsh.foreign_shells.ForeignShellExecAlias:27
+#: xonsh.foreign_shells.ForeignShellExecAlias:30
+#: xonsh.foreign_shells.ForeignShellExecAlias:33
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:28
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:31
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:34
+#: xonsh.foreign_shells.foreign_shell_data:8
+msgid "str"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:29
+#: xonsh.foreign_shells.ForeignShellExecAlias:31
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:32
+msgid "Name or path to shell"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:32
+#: xonsh.foreign_shells.ForeignShellExecAlias:34
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:35
+msgid "**filename**"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:32
+#: xonsh.foreign_shells.ForeignShellExecAlias:34
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:35
+msgid "Where the function is defined, path to source."
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:35
+#: xonsh.foreign_shells.ForeignShellExecAlias:37
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:38
+#: xonsh.foreign_shells.foreign_shell_data:52
+msgid "**sourcer**"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:34
+#: xonsh.foreign_shells.ForeignShellExecAlias:36
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:37
+#: xonsh.foreign_shells.foreign_shell_data:17
+#: xonsh.foreign_shells.foreign_shell_data:20
+#: xonsh.foreign_shells.foreign_shell_data:46
+#: xonsh.foreign_shells.foreign_shell_data:51
+#: xonsh.foreign_shells.foreign_shell_data:58
+#: xonsh.foreign_shells.foreign_shell_data:62
+#: xonsh.foreign_shells.foreign_shell_data:67
+#: xonsh.foreign_shells.foreign_shell_data:73
+msgid "str or None, optional"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:35
+#: xonsh.foreign_shells.ForeignShellExecAlias:37
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:38
+msgid "Command to source foreign files with."
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:51
+#: xonsh.foreign_shells.ForeignShellExecAlias:53
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:54
+#: xonsh.foreign_shells.foreign_shell_data:24
+msgid "**extra_args**"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:50
+#: xonsh.foreign_shells.ForeignShellExecAlias:52
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:53
+#: xonsh.foreign_shells.foreign_shell_data:23
+msgid "tuple of str, optional"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellBaseAlias:38
+#: xonsh.foreign_shells.ForeignShellExecAlias:40
+#: xonsh.foreign_shells.ForeignShellFunctionAlias:41
+#: xonsh.foreign_shells.foreign_shell_data:24
+msgid "Additional command line options to pass into the shell."
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellExecAlias:2
+msgid "Provides a callable alias for source code in a foreign shell."
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellExecAlias:28
+msgid "**src**"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellExecAlias:28
+msgid "Source code in the shell language"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellFunctionAlias:29
+msgid "**funcname**"
+msgstr ""
+
+#: of xonsh.foreign_shells.ForeignShellFunctionAlias:29
+msgid "function name"
+msgstr ""
+
+#: of xonsh.foreign_shells.ensure_shell:2
+msgid "Ensures that a mapping follows the shell specification."
+msgstr ""
+
+#: of xonsh.foreign_shells.load_foreign_aliases:2
+msgid "Loads aliases from foreign shells."
+msgstr ""
+
+#: of xonsh.foreign_shells.load_foreign_aliases:9
+#: xonsh.foreign_shells.load_foreign_envs:9
+msgid "**shells**"
+msgstr ""
+
+#: of xonsh.foreign_shells.load_foreign_aliases:8
+#: xonsh.foreign_shells.load_foreign_envs:8
+msgid "sequence of dicts"
+msgstr ""
+
+#: of xonsh.foreign_shells.load_foreign_aliases:8
+#: xonsh.foreign_shells.load_foreign_envs:8
+msgid ""
+"An iterable of dicts that can be passed into foreign_shell_data() as "
+"keyword arguments."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data
+#: xonsh.foreign_shells.load_foreign_aliases
+#: xonsh.foreign_shells.load_foreign_envs
+msgid "Returns"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:101
+#: xonsh.foreign_shells.load_foreign_aliases:26
+msgid "**aliases**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:84
+#: xonsh.foreign_shells.foreign_shell_data:100
+#: xonsh.foreign_shells.load_foreign_aliases:25
+#: xonsh.foreign_shells.load_foreign_envs:25
+msgid "dict"
+msgstr ""
+
+#: of xonsh.foreign_shells.load_foreign_aliases:14
+msgid "A dictionary of the merged aliases."
+msgstr ""
+
+#: of xonsh.foreign_shells.load_foreign_envs:2
+msgid "Loads environments from foreign shells."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:85
+#: xonsh.foreign_shells.load_foreign_envs:26
+msgid "**env**"
+msgstr ""
+
+#: of xonsh.foreign_shells.load_foreign_envs:14
+msgid "A dictionary of the merged environments."
+msgstr ""
+
+#: of xonsh.foreign_shells.parse_aliases:2
+msgid "Parses the aliases portion of string into a dict."
+msgstr ""
+
+#: of xonsh.foreign_shells.parse_env:2
+msgid "Parses the environment portion of string into a dict."
+msgstr ""
+
+#: of xonsh.foreign_shells.parse_funcs:2
+msgid ""
+"Parses the funcs portion of a string into a dict of callable foreign "
+"function wrappers."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:2
+msgid ""
+"Extracts data from a foreign (non-xonsh) shells. Currently this gets the "
+"environment, aliases, and functions but may be extended in the future."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:9
+msgid "The name of the shell, such as 'bash' or '/bin/sh'."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:12
+msgid "**interactive**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:11
+#: xonsh.foreign_shells.foreign_shell_data:14
+#: xonsh.foreign_shells.foreign_shell_data:29
+#: xonsh.foreign_shells.foreign_shell_data:55
+#: xonsh.foreign_shells.foreign_shell_data:76
+#: xonsh.foreign_shells.foreign_shell_data:79
+msgid "bool, optional"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:12
+msgid "Whether the shell should be run in interactive mode."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:15
+msgid "**login**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:15
+msgid "Whether the shell should be a login shell."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:18
+msgid "**envcmd**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:18
+msgid "The command to generate environment output with."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:21
+msgid "**aliascmd**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:21
+msgid "The command to generate alias output with."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:27
+msgid "**currenv**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:26
+msgid "tuple of items or None, optional"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:27
+msgid "Manual override for the current environment."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:30
+msgid "**safe**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:30
+msgid "Flag for whether or not to safely handle exceptions and other errors."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:34
+msgid "**prevcmd**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:33
+#: xonsh.foreign_shells.foreign_shell_data:37
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:33
+msgid ""
+"A command to run in the shell before anything else, useful for sourcing "
+"and other commands that may require environment recovery."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:38
+msgid "**postcmd**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:37
+msgid ""
+"A command to run after everything else, useful for cleaning up any damage"
+" that the prevcmd may have caused."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:47
+msgid "**funcscmd**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:41
+msgid ""
+"This is a command or script that can be used to determine the names and "
+"locations of any functions that are native to the foreign shell. This "
+"command should print *only* a JSON object that maps function names to the"
+" filenames where the functions are defined. If this is None, then a "
+"default script will attempted to be looked up based on the shell name. "
+"Callable wrappers for these functions will be returned in the aliases "
+"dictionary."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:50
+msgid ""
+"How to source a foreign shell file for purposes of calling functions in "
+"that shell. If this is None, a default value will attempt to be looked up"
+" based on the shell name."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:56
+msgid "**use_tmpfile**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:55
+msgid ""
+"This specifies if the commands are written to a tmp file or just parsed "
+"directly to the shell"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:59
+msgid "**tmpfile_ext**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:59
+msgid "If tmpfile is True this sets specifies the extension used."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:63
+msgid "**runcmd**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:62
+msgid ""
+"Command line switches to use when running the script, such as -c for Bash"
+" and /C for cmd.exe."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:68
+msgid "**seterrprevcmd**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:66
+msgid ""
+"Command that enables exit-on-error for the shell that is run at the start"
+" of the script. For example, this is \"set -e\" in Bash. To disable exit-"
+"on-error behavior, simply pass in an empty string."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:74
+msgid "**seterrpostcmd**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:71
+msgid ""
+"Command that enables exit-on-error for the shell that is run at the end "
+"of the script. For example, this is \"if errorlevel 1 exit 1\" in "
+"cmd.exe. To disable exit-on-error behavior, simply pass in an empty "
+"string."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:77
+msgid "**show**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:77
+msgid "Whether or not to display the script that will be run."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:80
+msgid "**dryrun**"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:80
+msgid "Whether or not to actually run and process the command."
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:85
+msgid "Dictionary of shell's environment. (None if the subproc command fails)"
+msgstr ""
+
+#: of xonsh.foreign_shells.foreign_shell_data:88
+msgid ""
+"Dictionary of shell's aliases, this includes foreign function "
+"wrappers.(None if the subproc command fails)"
+msgstr ""
+

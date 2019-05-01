@@ -1,0 +1,332 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/environ.rst:5
+msgid "Environment (``xonsh.environ``)"
+msgstr ""
+
+#: of xonsh.environ:1
+msgid "Environment for the xonsh shell."
+msgstr ""
+
+#: of xonsh.environ.Ensurer:2
+msgid ""
+"Named tuples whose elements are functions that represent environment "
+"variable validation, conversion, detyping."
+msgstr ""
+
+#: of xonsh.environ.Ensurer:23
+msgid "Create new instance of Ensurer(validate, convert, detype)"
+msgstr ""
+
+#: of xonsh.environ.Ensurer.count:2 xonsh.environ.VarDocs.count:2
+msgid "Return number of occurrences of value."
+msgstr ""
+
+#: of xonsh.environ.Ensurer.index:2 xonsh.environ.VarDocs.index:2
+msgid "Return first index of value."
+msgstr ""
+
+#: of xonsh.environ.Ensurer.index:4 xonsh.environ.VarDocs.index:4
+msgid "Raises ValueError if the value is not present."
+msgstr ""
+
+#: of xonsh.environ.Ensurer.convert:2 xonsh.environ.VarDocs.configurable:2
+msgid "Alias for field number 1"
+msgstr ""
+
+#: of xonsh.environ.Ensurer.detype:2 xonsh.environ.VarDocs.default:2
+msgid "Alias for field number 2"
+msgstr ""
+
+#: of xonsh.environ.Ensurer.validate:2 xonsh.environ.VarDocs.docstr:2
+msgid "Alias for field number 0"
+msgstr ""
+
+#: of xonsh.environ.Env:2
+msgid ""
+"A xonsh environment, whose variables have limited typing (unlike BASH). "
+"Most variables are, by default, strings (like BASH). However, the "
+"following rules also apply based on variable-name:"
+msgstr ""
+
+#: of xonsh.environ.Env:6
+msgid "PATH: any variable whose name ends in PATH is a list of strings."
+msgstr ""
+
+#: of xonsh.environ.Env:7
+msgid "XONSH_HISTORY_SIZE: this variable is an (int | float, str) tuple."
+msgstr ""
+
+#: of xonsh.environ.Env:8
+msgid ""
+"LC_* (locale categories): locale category names get/set the Python locale"
+" via locale.getlocale() and locale.setlocale() functions."
+msgstr ""
+
+#: of xonsh.environ.Env:11
+msgid ""
+"An Env instance may be converted to an untyped version suitable for use "
+"in a subprocess."
+msgstr ""
+
+#: of xonsh.environ.Env:31
+msgid "If no initial environment is given, os_environ is used."
+msgstr ""
+
+#: of xonsh.environ.Env.get:2
+msgid ""
+"The environment will look up default values from its own defaults if a "
+"default is not given here."
+msgstr ""
+
+#: of xonsh.environ.Env.get_docs:2
+msgid "Gets the documentation for the environment variable."
+msgstr ""
+
+#: of xonsh.environ.Env.get_ensurer:2
+msgid "Gets an ensurer for the given key."
+msgstr ""
+
+#: of xonsh.environ.Env.help:2
+msgid "Get information about a specific environment variable."
+msgstr ""
+
+#: of xonsh.environ.Env.is_manually_set:2
+msgid "Checks if an environment variable has been manually set."
+msgstr ""
+
+#: of xonsh.environ.Env.pop:2 xonsh.environ.LsColors.pop:2
+msgid "If key is not found, d is returned if given, otherwise KeyError is raised."
+msgstr ""
+
+#: of xonsh.environ.Env.popitem:2 xonsh.environ.LsColors.popitem:2
+msgid "as a 2-tuple; but raise KeyError if D is empty."
+msgstr ""
+
+#: of xonsh.environ.Env.replace_env:2 xonsh.environ.Env.undo_replace_env:2
+msgid ""
+"Replaces the contents of os_environ with a detyped version of the xonsh "
+"environment."
+msgstr ""
+
+#: of xonsh.environ.Env.set_ensurer:2
+msgid "Sets an ensurer."
+msgstr ""
+
+#: of xonsh.environ.Env.swap:2
+msgid ""
+"Provides a context manager for temporarily swapping out certain "
+"environment variables with other values. On exit from the context "
+"manager, the original values are restored."
+msgstr ""
+
+#: of xonsh.environ.Env.update:2 xonsh.environ.LsColors.update:2
+msgid ""
+"If E present and has a .keys() method, does:     for k in E: D[k] = E[k] "
+"If E present and lacks .keys() method, does:     for (k, v) in E: D[k] = "
+"v In either case, this is followed by: for k, v in F.items(): D[k] = v"
+msgstr ""
+
+#: of xonsh.environ.LsColors:2
+msgid ""
+"Helps convert to/from $LS_COLORS format, respecting the xonsh color "
+"style. This accepts the same inputs as dict()."
+msgstr ""
+
+#: of xonsh.environ.LsColors.convert:2
+msgid "Converts an object to LsColors, if needed."
+msgstr ""
+
+#: of xonsh.environ.LsColors.detype:2
+msgid "De-types the instance, allowing it to be exported to the environment."
+msgstr ""
+
+#: of xonsh.environ.LsColors.fromdircolors:2
+msgid ""
+"Constructs an LsColors instance by running dircolors. If a filename is "
+"provided, it is passed down to the dircolors command."
+msgstr ""
+
+#: of xonsh.environ.LsColors.fromstring:2
+msgid ""
+"Creates a new instance of the LsColors class from a colon-separated "
+"string of dircolor-valid keys to ANSI color escape sequences."
+msgstr ""
+
+#: of xonsh.environ.LsColors.style:2
+msgid "The ANSI color style for the current XONSH_COLOR_STYLE"
+msgstr ""
+
+#: of xonsh.environ.LsColors.style_name:2
+msgid "Current XONSH_COLOR_STYLE value"
+msgstr ""
+
+#: of xonsh.environ.VarDocs:2
+msgid "Named tuple for environment variable documentation"
+msgstr ""
+
+#: of xonsh.environ.VarDocs
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.environ.VarDocs:8
+msgid "**docstr**"
+msgstr ""
+
+#: of xonsh.environ.VarDocs:7
+msgid "str"
+msgstr ""
+
+#: of xonsh.environ.VarDocs:8
+msgid "The environment variable docstring."
+msgstr ""
+
+#: of xonsh.environ.VarDocs:11
+msgid "**configurable**"
+msgstr ""
+
+#: of xonsh.environ.VarDocs:10 xonsh.environ.VarDocs:34
+msgid "bool, optional"
+msgstr ""
+
+#: of xonsh.environ.VarDocs:11
+msgid "Flag for whether the environment variable is configurable or not."
+msgstr ""
+
+#: of xonsh.environ.VarDocs:16
+msgid "**default**"
+msgstr ""
+
+#: of xonsh.environ.VarDocs:15
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.environ.VarDocs:14
+msgid ""
+"Custom docstring for the default value for complex defaults. Is this is "
+"DefaultNotGiven, then the default will be looked up from DEFAULT_VALUES "
+"and converted to a str."
+msgstr ""
+
+#: of xonsh.environ.VarDocs:35
+msgid "**store_as_str**"
+msgstr ""
+
+#: of xonsh.environ.VarDocs:19
+msgid ""
+"Flag for whether the environment variable should be stored as a string. "
+"This is used when persisting a variable that is not JSON serializable to "
+"the config file. For example, sets, frozensets, and potentially other "
+"non-trivial data types. default, False."
+msgstr ""
+
+#: of xonsh.environ.VarDocs:40
+msgid ""
+"Create new instance of VarDocs(docstr, configurable, default, "
+"store_as_str)"
+msgstr ""
+
+#: of xonsh.environ.VarDocs.store_as_str:2
+msgid "Alias for field number 3"
+msgstr ""
+
+#: of xonsh.environ.default_env:2
+msgid "Constructs a default xonsh environment."
+msgstr ""
+
+#: of xonsh.environ.default_lscolors:2
+msgid "Gets a default instanse of LsColors"
+msgstr ""
+
+#: of xonsh.environ.default_value:2
+msgid "Decorator for making callable default values."
+msgstr ""
+
+#: of xonsh.environ.default_xonshrc:2
+msgid "Creates a new instance of the default xonshrc tuple."
+msgstr ""
+
+#: of xonsh.environ.ensure_ls_colors_in_env:2
+msgid ""
+"This ensures that the $LS_COLORS environment variable is in the "
+"environment. This fires exactly once upon the first time the ls command "
+"is called."
+msgstr ""
+
+#: of xonsh.environ.foreign_env_fixes:2
+msgid "Environment fixes for all operating systems"
+msgstr ""
+
+#: of xonsh.environ.is_callable_default:2
+msgid "Checks if a value is a callable default."
+msgstr ""
+
+#: of xonsh.environ.is_lscolors:2
+msgid "Checks if an object is an instance of LsColors"
+msgstr ""
+
+#: of xonsh.environ.locale_convert:2
+msgid "Creates a converter for a locale key."
+msgstr ""
+
+#: of xonsh.environ.locate_binary:2
+msgid "Locates an executable on the file system."
+msgstr ""
+
+#: of xonsh.environ.make_args_env:2
+msgid ""
+"Makes a dictionary containing the $ARGS and $ARG<N> environment "
+"variables. If the supplied ARGS is None, then sys.argv is used."
+msgstr ""
+
+#: of xonsh.environ.to_debug:2
+msgid ""
+"Converts value using to_bool_or_int() and sets this value on as the "
+"execer's debug level."
+msgstr ""
+
+#: of xonsh.environ.windows_foreign_env_fixes:2
+msgid "Environment fixes for Windows. Operates in-place."
+msgstr ""
+
+#: of xonsh.environ.xonsh_append_newline:2
+msgid "Appends a newline if we are in interactive mode"
+msgstr ""
+
+#: of xonsh.environ.xonsh_config_dir:2
+msgid "Ensures and returns the $XONSH_CONFIG_DIR"
+msgstr ""
+
+#: of xonsh.environ.xonsh_data_dir:2
+msgid "Ensures and returns the $XONSH_DATA_DIR"
+msgstr ""
+
+#: of xonsh.environ.xonsh_script_run_control:2
+msgid "Loads a xonsh file and applies it as a run control."
+msgstr ""
+
+#: of xonsh.environ.xonshconfig:2
+msgid "Ensures and returns the $XONSHCONFIG"
+msgstr ""
+
+#: of xonsh.environ.xonshrc_context:2
+msgid "Attempts to read in all xonshrc files and return the context."
+msgstr ""
+

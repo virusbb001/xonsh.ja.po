@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/jobs.rst:5
+msgid "Job Control (``xonsh.jobs``)"
+msgstr ""
+
+#: of xonsh.jobs:1
+msgid "Job control for the xonsh shell."
+msgstr ""
+
+#: of xonsh.jobs.add_job:2
+msgid "Add a new job to the jobs dictionary."
+msgstr ""
+
+#: of xonsh.jobs.bg:2
+msgid "xonsh command: bg"
+msgstr ""
+
+#: of xonsh.jobs.bg:4
+msgid ""
+"Resume execution of the currently active job in the background, or, if a "
+"single number is given as an argument, resume that job in the background."
+msgstr ""
+
+#: of xonsh.jobs.clean_jobs:2
+msgid "Clean up jobs for exiting shell"
+msgstr ""
+
+#: of xonsh.jobs.clean_jobs:4
+msgid "In non-interactive mode, kill all jobs."
+msgstr ""
+
+#: of xonsh.jobs.clean_jobs:6
+msgid ""
+"In interactive mode, check for suspended or background jobs, print a "
+"warning if any exist, and return False. Otherwise, return True."
+msgstr ""
+
+#: of xonsh.jobs.fg:2
+msgid "xonsh command: fg"
+msgstr ""
+
+#: of xonsh.jobs.fg:4
+msgid ""
+"Bring the currently active job to the foreground, or, if a single number "
+"is given as an argument, bring that job to the foreground. Additionally, "
+"specify \"+\" for the most recent job and \"-\" for the second most "
+"recent job."
+msgstr ""
+
+#: of xonsh.jobs.get_next_job_number:2
+msgid "Get the lowest available unique job number (for the next job created)."
+msgstr ""
+
+#: of xonsh.jobs.get_next_task:2
+msgid "Get the next active task and put it on top of the queue"
+msgstr ""
+
+#: of xonsh.jobs.jobs:2
+msgid "xonsh command: jobs"
+msgstr ""
+
+#: of xonsh.jobs.jobs:4
+msgid "Display a list of all current jobs."
+msgstr ""
+
+#: of xonsh.jobs.kill_all_jobs:2
+msgid "Send SIGKILL to all child processes (called when exiting xonsh)."
+msgstr ""
+
+#: of xonsh.jobs.print_one_job:2
+msgid "Print a line describing job number ``num``."
+msgstr ""
+
+#: of xonsh.jobs.resume_job:2
+msgid ""
+"used by fg and bg to resume a job either in the foreground or in the "
+"background."
+msgstr ""
+
+#: of xonsh.jobs.wait_for_active_job:2
+msgid ""
+"Wait for the active job to finish, to be killed by SIGINT, or to be "
+"suspended by ctrl-z."
+msgstr ""
+

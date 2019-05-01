@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/ptk2/completer.rst:5
+msgid "Prompt Toolkit 2 Completer (``xonsh.ptk2.completer``)"
+msgstr ""
+
+#: of xonsh.ptk2.completer:1
+msgid "Completer implementation to use with prompt_toolkit."
+msgstr ""
+
+#: of xonsh.ptk2.completer.PromptToolkitCompleter:2
+msgid "Simple prompt_toolkit Completer object."
+msgstr ""
+
+#: of xonsh.ptk2.completer.PromptToolkitCompleter:4
+msgid "It just redirects requests to normal Xonsh completer."
+msgstr ""
+
+#: of xonsh.ptk2.completer.PromptToolkitCompleter:23
+msgid ""
+"Takes instance of xonsh.completer.Completer, the xonsh execution context,"
+" and the shell instance itself."
+msgstr ""
+
+#: of xonsh.ptk2.completer.PromptToolkitCompleter.get_completions:2
+msgid "Returns a generator for list of completions."
+msgstr ""
+
+#: of xonsh.ptk2.completer.PromptToolkitCompleter.get_completions_async:2
+msgid ""
+"Asynchronous generator for completions. (Probably, you won't have to "
+"override this.)"
+msgstr ""
+
+#: of xonsh.ptk2.completer.PromptToolkitCompleter.get_completions_async:5
+msgid ""
+"This should return an iterable that can yield both :class:`.Completion` "
+"and `Future` objects. The :class:`.Completion` objects have to be wrapped"
+" in a `AsyncGeneratorItem` object."
+msgstr ""
+
+#: of xonsh.ptk2.completer.PromptToolkitCompleter.get_completions_async:9
+msgid ""
+"If we drop Python 2 support in the future, this could become a true "
+"asynchronous generator."
+msgstr ""
+
+#: of xonsh.ptk2.completer.PromptToolkitCompleter.reserve_space:2
+msgid "Adjust the height for showing autocompletion menu."
+msgstr ""
+
+#: of xonsh.ptk2.completer.PromptToolkitCompleter.suggestion_completion:2
+msgid "Provides a completion based on the current auto-suggestion."
+msgstr ""
+

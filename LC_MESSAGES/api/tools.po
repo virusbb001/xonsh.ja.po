@@ -1,0 +1,989 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/tools.rst:5
+msgid "Tools (``xonsh.tools``)"
+msgstr ""
+
+#: of xonsh.tools:1
+msgid "Misc. xonsh tools."
+msgstr ""
+
+#: of xonsh.tools:3
+msgid "The following implementations were forked from the IPython project:"
+msgstr ""
+
+#: of xonsh.tools:5
+msgid "Copyright (c) 2008-2014, IPython Development Team"
+msgstr ""
+
+#: of xonsh.tools:6
+msgid "Copyright (C) 2001-2007 Fernando Perez <fperez@colorado.edu>"
+msgstr ""
+
+#: of xonsh.tools:7
+msgid "Copyright (c) 2001, Janko Hauser <jhauser@zscout.de>"
+msgstr ""
+
+#: of xonsh.tools:8
+msgid "Copyright (c) 2001, Nathaniel Gray <n8gray@caltech.edu>"
+msgstr ""
+
+#: of xonsh.tools:10
+msgid "Implementations:"
+msgstr ""
+
+#: of xonsh.tools:12
+msgid "decode()"
+msgstr ""
+
+#: of xonsh.tools:13
+msgid "encode()"
+msgstr ""
+
+#: of xonsh.tools:14
+msgid "cast_unicode()"
+msgstr ""
+
+#: of xonsh.tools:15
+msgid "safe_hasattr()"
+msgstr ""
+
+#: of xonsh.tools:16
+msgid "indent()"
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError:2
+msgid "Raised when there's an error with a called process"
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError:4
+msgid ""
+"Inherits from XonshError and subprocess.CalledProcessError, catching "
+"either will also catch this error."
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError:7
+msgid ""
+"Raised *after* iterating over stdout of a captured command, if the "
+"returncode of the command is nonzero."
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError:15
+msgid "Example:"
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError:12
+msgid "try:"
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError:12
+msgid "for line in !(ls):"
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError:13
+msgid "print(line)"
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError:15
+msgid "except subprocess.CalledProcessError as error:"
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError:15
+msgid "print(\"Error in process: {}.format(error.completed_command.pid))"
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError:17
+msgid ""
+"This also handles differences between Python3.4 and 3.5 where "
+"CalledProcessError is concerned."
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError.with_traceback:2
+#: xonsh.tools.XonshError.with_traceback:2
+msgid ""
+"Exception.with_traceback(tb) -- set self.__traceback__ to tb and return "
+"self."
+msgstr ""
+
+#: of xonsh.tools.XonshCalledProcessError.stdout:2
+msgid "Alias for output attribute, to match stderr"
+msgstr ""
+
+#: of xonsh.tools.DefaultNotGivenType:2
+msgid "Singleton for representing when no default value is given."
+msgstr ""
+
+#: of xonsh.tools.EnvPath:2
+msgid ""
+"A class that implements an environment path, which is a list of strings. "
+"Provides a custom method that expands all paths if the relevant env "
+"variable has been set."
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add:2
+msgid "Add a value to this EnvPath,"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add:4
+msgid ""
+"path.add(data, front=bool, replace=bool) -> ensures that path contains "
+"data, with position determined by kwargs"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add xonsh.tools.check_for_partial_string
+#: xonsh.tools.deprecated xonsh.tools.get_portions xonsh.tools.indent
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add:9
+msgid "**data**"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add:8
+msgid "string or bytes or pathlib.Path"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add:9
+msgid "value to be added"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add:15
+msgid "**front**"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add:14 xonsh.tools.EnvPath.add:19
+msgid "bool"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add:12
+msgid ""
+"whether the value should be added to the front, will be ignored if the "
+"data already exists in this EnvPath and replace is False Default : False"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add:20
+msgid "**replace**"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add:18
+msgid ""
+"If True, the value will be removed and added to the start or "
+"end(depending on the value of front) Default : False"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add xonsh.tools.check_for_partial_string
+#: xonsh.tools.indent
+msgid "Returns"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.add:37
+msgid "None"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.append:2
+msgid "S.append(value) -- append value to the end of the sequence"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.extend:2
+msgid ""
+"S.extend(iterable) -- extend sequence by appending elements from the "
+"iterable"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.index:2
+msgid "Raises ValueError if the value is not present."
+msgstr ""
+
+#: of xonsh.tools.EnvPath.index:4
+msgid "Supporting start and stop arguments is optional, but recommended."
+msgstr ""
+
+#: of xonsh.tools.EnvPath.insert:2
+msgid "S.insert(index, value) -- insert value before index"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.pop:2
+msgid "Raise IndexError if list is empty or index is out of range."
+msgstr ""
+
+#: of xonsh.tools.EnvPath.remove:2
+msgid ""
+"S.remove(value) -- remove first occurrence of value. Raise ValueError if "
+"the value is not present."
+msgstr ""
+
+#: of xonsh.tools.EnvPath.reverse:2
+msgid "S.reverse() -- reverse *IN PLACE*"
+msgstr ""
+
+#: of xonsh.tools.EnvPath.paths:2
+msgid "Returns the list of directories that this EnvPath contains."
+msgstr ""
+
+#: of xonsh.tools.redirect_stderr:2
+msgid "Context manager for temporarily redirecting stderr to another file."
+msgstr ""
+
+#: of xonsh.tools.redirect_stdout:2
+msgid "Context manager for temporarily redirecting stdout to another file::"
+msgstr ""
+
+#: of xonsh.tools.redirect_stdout:13
+msgid "Mostly for backwards compatibility."
+msgstr ""
+
+#: of xonsh.tools.all_permutations:2
+msgid "Yeilds all permutations, not just those of a specified length"
+msgstr ""
+
+#: of xonsh.tools.always_false:2
+msgid "Returns False"
+msgstr ""
+
+#: of xonsh.tools.always_none:2
+msgid "Returns None"
+msgstr ""
+
+#: of xonsh.tools.always_true:2
+msgid "Returns True"
+msgstr ""
+
+#: of xonsh.tools.ansicolors_to_ptk1_names:2
+msgid "Converts ansicolor names in a stylemap to old PTK1 color names"
+msgstr ""
+
+#: of xonsh.tools.argvquote:2
+msgid ""
+"Returns an argument quoted in such a way that that CommandLineToArgvW on "
+"Windows will return the argument string unchanged. This is the same thing"
+" Popen does when supplied with an list of arguments. Arguments in a "
+"command line should be separated by spaces; this function does not add "
+"these spaces. This implementation follows the suggestions outlined here: "
+"https://blogs.msdn.microsoft.com/twistylittlepassagesallalike/2011/04/23"
+"/everyone-quotes-command-line-arguments-the-wrong-way/"
+msgstr ""
+
+#: of xonsh.tools.backup_file:2
+msgid ""
+"Moves an existing file to a new name that has the current time right "
+"before the extension."
+msgstr ""
+
+#: of xonsh.tools.balanced_parens:2
+msgid "Determines if parentheses are balanced in an expression."
+msgstr ""
+
+#: of xonsh.tools.bool_or_int_to_str:2
+msgid "Converts a boolean or integer to a string."
+msgstr ""
+
+#: of xonsh.tools.bool_seq_to_csv:2
+msgid "Converts a sequence of bools to a comma-separated string."
+msgstr ""
+
+#: of xonsh.tools.bool_to_str:2
+msgid "Converts a bool to an empty string if False and the string '1' if True."
+msgstr ""
+
+#: of xonsh.tools.carriage_return:2
+msgid "Writes a carriage return to stdout, and nothing else."
+msgstr ""
+
+#: of xonsh.tools.check_bad_str_token:2
+msgid "Checks if a token is a bad string."
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:2
+msgid ""
+"Returns the starting index (inclusive), ending index (exclusive), and "
+"starting quote string of the most recent Python string found in the "
+"input."
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:5
+msgid "check_for_partial_string(x) -> (startix, endix, quote)"
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:10
+msgid "**x**"
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:9 xonsh.tools.deprecated:17
+#: xonsh.tools.deprecated:33
+msgid "str"
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:10
+msgid "The string to be checked (representing a line of terminal input)"
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:16
+msgid "**startix**"
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:15
+#: xonsh.tools.check_for_partial_string:20
+msgid "int (or None)"
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:15
+msgid ""
+"The index where the most recent Python string found started (inclusive), "
+"or None if no strings exist in the input"
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:21
+msgid "**endix**"
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:19
+msgid ""
+"The index where the most recent Python string found ended (exclusive), or"
+" None if no strings exist in the input OR if the input ended in the "
+"middle of a Python string"
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:37
+msgid "**quote**"
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:36
+msgid "str (or None)"
+msgstr ""
+
+#: of xonsh.tools.check_for_partial_string:24
+msgid ""
+"A string containing the quote used to start the string (e.g., b\", \", "
+"'''), or None if no string was found."
+msgstr ""
+
+#: of xonsh.tools.check_quotes:2
+msgid ""
+"Checks a string to make sure that if it starts with quotes, it also ends "
+"with quotes."
+msgstr ""
+
+#: of xonsh.tools.color_style:2
+msgid "Returns the current color map."
+msgstr ""
+
+#: of xonsh.tools.color_style_names:2
+msgid "Returns an iterable of all available style names."
+msgstr ""
+
+#: of xonsh.tools.columnize:2
+msgid ""
+"Takes an iterable of strings and returns a list of lines with the "
+"elements placed in columns. Each line will be at most *width* columns. "
+"The newline character will be appended to the end of each line."
+msgstr ""
+
+#: of xonsh.tools.command_not_found:2
+msgid ""
+"Uses the debian/ubuntu command-not-found utility to suggest packages for "
+"a command that cannot currently be found."
+msgstr ""
+
+#: of xonsh.tools.csv_to_bool_seq:2
+msgid "Takes a comma-separated string and converts it into a list of bools."
+msgstr ""
+
+#: of xonsh.tools.csv_to_set:2
+msgid "Convert a comma-separated list of strings to a set of strings."
+msgstr ""
+
+#: of xonsh.tools.decode_bytes:2
+msgid ""
+"Tries to decode the bytes using XONSH_ENCODING if available, otherwise "
+"using sys.getdefaultencoding()."
+msgstr ""
+
+#: of xonsh.tools.deprecated:2
+msgid "Parametrized decorator that deprecates a function in a graceful manner."
+msgstr ""
+
+#: of xonsh.tools.deprecated:4
+msgid ""
+"Updates the decorated function's docstring to mention the version that "
+"deprecation occurred in and the version it will be removed in if both of "
+"these values are passed."
+msgstr ""
+
+#: of xonsh.tools.deprecated:8
+msgid ""
+"When removed_in is not a release equal to or less than the current "
+"release, call ``warnings.warn`` with details, while raising "
+"``DeprecationWarning``."
+msgstr ""
+
+#: of xonsh.tools.deprecated:12
+msgid ""
+"When removed_in is a release equal to or less than the current release, "
+"raise an ``AssertionError``."
+msgstr ""
+
+#: of xonsh.tools.deprecated:18
+msgid "**deprecated_in**"
+msgstr ""
+
+#: of xonsh.tools.deprecated:18
+msgid "The version number that deprecated this function."
+msgstr ""
+
+#: of xonsh.tools.deprecated:34
+msgid "**removed_in**"
+msgstr ""
+
+#: of xonsh.tools.deprecated:21
+msgid "The version number that this function will be removed in."
+msgstr ""
+
+#: of xonsh.tools.detype:2
+msgid "This assumes that the object has a detype method, and calls that."
+msgstr ""
+
+#: of xonsh.tools.dict_to_str:2
+msgid "Converts a dictionary to a string"
+msgstr ""
+
+#: of xonsh.tools.display_error_message:2
+msgid "Prints the error message of the current exception on stderr."
+msgstr ""
+
+#: of xonsh.tools.dynamic_cwd_tuple_to_str:2
+msgid "Convert a canonical cwd_width tuple to a string."
+msgstr ""
+
+#: of xonsh.tools.ensure_slice:2
+msgid "Try to convert an object into a slice, complain on failure"
+msgstr ""
+
+#: of xonsh.tools.ensure_string:2
+msgid "Returns a string if x is not a string, and x if it already is."
+msgstr ""
+
+#: of xonsh.tools.env_path_to_str:2
+msgid "Converts an environment path to a string by joining on the OS separator."
+msgstr ""
+
+#: of xonsh.tools.escape_windows_cmd_string:2
+msgid ""
+"Returns a string that is usable by the Windows cmd.exe. The escaping is "
+"based on details here and empirical testing: "
+"http://www.robvanderwoude.com/escapechars.php"
+msgstr ""
+
+#: of xonsh.tools.executables_in:2
+msgid "Returns a generator of files in path that the user could execute."
+msgstr ""
+
+#: of xonsh.tools.expand_case_matching:2
+msgid "Expands a string to a case insensitive globable string."
+msgstr ""
+
+#: of xonsh.tools.expand_path:2
+msgid ""
+"Takes a string path and expands ~ to home if expand_user is set and "
+"environment vars if EXPAND_ENV_VARS is set."
+msgstr ""
+
+#: of xonsh.tools.expanduser_abs_path:2
+msgid "Provides user expanded absolute path"
+msgstr ""
+
+#: of xonsh.tools.expandvars:2
+msgid ""
+"Expand shell variables of the forms $var, ${var} and %var%. Unknown "
+"variables are left unchanged."
+msgstr ""
+
+#: of xonsh.tools.fallback:2
+msgid ""
+"Decorator for returning the object if cond is true and a backup if cond "
+"is false."
+msgstr ""
+
+#: of xonsh.tools.find_next_break:2
+msgid ""
+"Returns the column number of the next logical break in subproc mode. This"
+" function may be useful in finding the maxcol argument of subproc_toks()."
+msgstr ""
+
+#: of xonsh.tools.findfirst:2
+msgid ""
+"Finds whichever of the given substrings occurs first in the given string "
+"and returns that substring, or returns None if no such strings occur."
+msgstr ""
+
+#: of xonsh.tools.format_color:2
+msgid ""
+"Formats strings that may contain colors. This simply dispatches to the "
+"shell instances method of the same name. The results of this function "
+"should be directly usable by print_color()."
+msgstr ""
+
+#: of xonsh.tools.format_datetime:2
+msgid "Format datetime object to string base on $XONSH_DATETIME_FORMAT Env."
+msgstr ""
+
+#: of xonsh.tools.format_std_prepost:2
+msgid ""
+"Formats a template prefix/postfix string for a standard buffer. Returns a"
+" string suitable for prepending or appending."
+msgstr ""
+
+#: of xonsh.tools.get_line_continuation:2
+msgid ""
+"The line continuation characters used in subproc mode. In interactive "
+"mode on Windows the backslash must be preceded by a space. This is "
+"because paths on Windows may end in a backslash."
+msgstr ""
+
+#: of xonsh.tools.get_logical_line:2
+msgid ""
+"Returns a single logical line (i.e. one without line continuations) from "
+"a list of lines.  This line should begin at index idx. This also returns "
+"the number of physical lines the logical line spans. The lines should not"
+" contain newlines"
+msgstr ""
+
+#: of xonsh.tools.get_portions:2
+msgid "Yield from portions of an iterable."
+msgstr ""
+
+#: of xonsh.tools.get_portions:8
+msgid "**it: iterable**"
+msgstr ""
+
+#: of xonsh.tools.get_portions:24
+msgid "**slices: a slice or a list of slice objects**"
+msgstr ""
+
+#: of xonsh.tools.get_sep:2
+msgid ""
+"Returns the appropriate filepath separator char depending on OS and xonsh"
+" options set"
+msgstr ""
+
+#: of xonsh.tools.globpath:2
+msgid "Simple wrapper around glob that also expands home and env vars."
+msgstr ""
+
+#: of xonsh.tools.hardcode_colors_for_win10:2
+msgid ""
+"Replace all ansi colors with hardcoded colors to avoid unreadable "
+"defaults in conhost.exe"
+msgstr ""
+
+#: of xonsh.tools.history_tuple_to_str:2
+msgid "Converts a valid history tuple to a canonical string."
+msgstr ""
+
+#: of xonsh.tools.iglobpath:2
+msgid "Simple wrapper around iglob that also expands home and env vars."
+msgstr ""
+
+#: of xonsh.tools.indent:2
+msgid "Indent a string a given number of spaces or tabstops."
+msgstr ""
+
+#: of xonsh.tools.indent:4
+msgid "indent(str,nspaces=4,ntabs=0) -> indent str by ntabs+nspaces."
+msgstr ""
+
+#: of xonsh.tools.indent:9
+msgid "**instr**"
+msgstr ""
+
+#: of xonsh.tools.indent:8
+msgid "basestring"
+msgstr ""
+
+#: of xonsh.tools.indent:9
+msgid "The string to be indented."
+msgstr ""
+
+#: of xonsh.tools.indent:12
+msgid "**nspaces**"
+msgstr ""
+
+#: of xonsh.tools.indent:11
+msgid "int (default: 4)"
+msgstr ""
+
+#: of xonsh.tools.indent:12
+msgid "The number of spaces to be indented."
+msgstr ""
+
+#: of xonsh.tools.indent:15
+msgid "**ntabs**"
+msgstr ""
+
+#: of xonsh.tools.indent:14
+msgid "int (default: 0)"
+msgstr ""
+
+#: of xonsh.tools.indent:15
+msgid "The number of tabs to be indented."
+msgstr ""
+
+#: of xonsh.tools.indent:20
+msgid "**flatten**"
+msgstr ""
+
+#: of xonsh.tools.indent:19
+msgid "bool (default: False)"
+msgstr ""
+
+#: of xonsh.tools.indent:18
+msgid ""
+"Whether to scrub existing indentation.  If True, all lines will be "
+"aligned to the same indentation.  If False, existing indentation will be "
+"strictly increased."
+msgstr ""
+
+#: of xonsh.tools.indent:37
+msgid "**outstr**"
+msgstr ""
+
+#: of xonsh.tools.indent:36
+msgid "string indented by ntabs and nspaces."
+msgstr ""
+
+#: of xonsh.tools.intensify_colors_for_cmd_exe:2
+msgid ""
+"Returns a modified style to where colors that maps to dark colors are "
+"replaced with brighter versions."
+msgstr ""
+
+#: of xonsh.tools.intensify_colors_on_win_setter:2
+msgid ""
+"Resets the style when setting the INTENSIFY_COLORS_ON_WIN environment "
+"variable."
+msgstr ""
+
+#: of xonsh.tools.is_balanced:2
+msgid ""
+"Determines whether an expression has unbalanced opening and closing "
+"tokens."
+msgstr ""
+
+#: of xonsh.tools.is_bool:2
+msgid "Tests if something is a boolean."
+msgstr ""
+
+#: of xonsh.tools.is_bool_or_int:2
+msgid "Returns whether a value is a boolean or integer."
+msgstr ""
+
+#: of xonsh.tools.is_bool_seq:2
+msgid "Tests if an object is a sequence of bools."
+msgstr ""
+
+#: of xonsh.tools.is_callable:2
+msgid "Tests if something is callable"
+msgstr ""
+
+#: of xonsh.tools.is_class:2
+msgid "Tests if something is a class"
+msgstr ""
+
+#: of xonsh.tools.is_dynamic_cwd_width:2
+msgid ""
+"Determine if the input is a valid input for the DYNAMIC_CWD_WIDTH "
+"environment variable."
+msgstr ""
+
+#: of xonsh.tools.is_env_path:2
+msgid "This tests if something is an environment path, ie a list of strings."
+msgstr ""
+
+#: of xonsh.tools.is_float:2
+msgid "Tests if something is a float"
+msgstr ""
+
+#: of xonsh.tools.is_history_backend:2
+msgid "Tests if something is a valid history backend."
+msgstr ""
+
+#: of xonsh.tools.is_history_tuple:2
+msgid "Tests if something is a proper history value, units tuple."
+msgstr ""
+
+#: of xonsh.tools.is_int:2
+msgid "Tests if something is an integer"
+msgstr ""
+
+#: of xonsh.tools.is_int_as_str:2
+msgid "Test if string x is an integer. If not a string return False."
+msgstr ""
+
+#: of xonsh.tools.is_logfile_opt:2
+msgid ""
+"Checks if x is a valid $XONSH_TRACEBACK_LOGFILE option. Returns False if "
+"x is not a writable/creatable file or an empty string or None."
+msgstr ""
+
+#: of xonsh.tools.is_nonstring_seq_of_strings:2
+msgid ""
+"Tests if something is a sequence of strings, where the top-level sequence"
+" is not a string itself."
+msgstr ""
+
+#: of xonsh.tools.is_slice:2
+msgid "Tests if something is a slice"
+msgstr ""
+
+#: of xonsh.tools.is_slice_as_str:2
+msgid "Test if string x is a slice. If not a string return False."
+msgstr ""
+
+#: of xonsh.tools.is_str_str_dict:2
+msgid "Tests if something is a str:str dictionary"
+msgstr ""
+
+#: of xonsh.tools.is_string:2
+msgid "Tests if something is a string"
+msgstr ""
+
+#: of xonsh.tools.is_string_or_callable:2
+msgid "Tests if something is a string or callable"
+msgstr ""
+
+#: of xonsh.tools.is_string_seq:2
+msgid "Tests if something is a sequence of strings"
+msgstr ""
+
+#: of xonsh.tools.is_string_set:2
+msgid "Tests if something is a set of strings"
+msgstr ""
+
+#: of xonsh.tools.is_writable_file:2
+msgid "Checks if a filepath is valid for writing."
+msgstr ""
+
+#: of xonsh.tools.levenshtein:2
+msgid "Calculates the Levenshtein distance between a and b."
+msgstr ""
+
+#: of xonsh.tools.logfile_opt_to_str:2
+msgid "Detypes a $XONSH_TRACEBACK_LOGFILE option."
+msgstr ""
+
+#: of xonsh.tools.normabspath:2
+msgid "Returns as normalized absolute path, namely, normcase(abspath(p))"
+msgstr ""
+
+#: of xonsh.tools.on_main_thread:2
+msgid "Checks if we are on the main thread or not."
+msgstr ""
+
+#: of xonsh.tools.pathsep_to_seq:2
+msgid "Converts a os.pathsep separated string to a sequence of strings."
+msgstr ""
+
+#: of xonsh.tools.pathsep_to_set:2
+msgid "Converts a os.pathsep separated string to a set of strings."
+msgstr ""
+
+#: of xonsh.tools.pathsep_to_upper_seq:2
+msgid "Converts a os.pathsep separated string to a sequence of uppercase strings."
+msgstr ""
+
+#: of xonsh.tools.print_color:2
+msgid ""
+"Prints a string that may contain colors. This dispatched to the shell "
+"method of the same name. Colors will be formatted if they have not "
+"already been."
+msgstr ""
+
+#: of xonsh.tools.print_exception:2
+msgid "Print exceptions with/without traceback."
+msgstr ""
+
+#: of xonsh.tools.ptk2_color_depth_setter:2
+msgid ""
+"Setter function for $PROMPT_TOOLKIT_COLOR_DEPTH. Also updates os.environ "
+"so prompt toolkit can pickup the value."
+msgstr ""
+
+#: of xonsh.tools.replace_logical_line:2
+msgid ""
+"Replaces lines at idx that may end in line continuation with a logical "
+"line that spans n lines."
+msgstr ""
+
+#: of xonsh.tools.safe_hasattr:2
+msgid ""
+"In recent versions of Python, hasattr() only catches AttributeError. This"
+" catches all errors."
+msgstr ""
+
+#: of xonsh.tools.seq_to_pathsep:2
+msgid "Converts a sequence to an os.pathsep separated string."
+msgstr ""
+
+#: of xonsh.tools.seq_to_upper_pathsep:2
+msgid "Converts a sequence to an uppercase os.pathsep separated string."
+msgstr ""
+
+#: of xonsh.tools.set_to_csv:2
+msgid "Convert a set of strings to a comma-separated list of strings."
+msgstr ""
+
+#: of xonsh.tools.set_to_pathsep:2
+msgid ""
+"Converts a set to an os.pathsep separated string. The sort kwarg "
+"specifies whether to sort the set prior to str conversion."
+msgstr ""
+
+#: of xonsh.tools.setup_win_unicode_console:2
+msgid "\"Enables or disables unicode display on windows."
+msgstr ""
+
+#: of xonsh.tools.starting_whitespace:2
+msgid "Returns the whitespace at the start of a string"
+msgstr ""
+
+#: of xonsh.tools.str_to_env_path:2
+msgid ""
+"Converts a string to an environment path, ie a list of strings, splitting"
+" on the OS separator."
+msgstr ""
+
+#: of xonsh.tools.strip_simple_quotes:2
+msgid ""
+"Gets rid of single quotes, double quotes, single triple quotes, and "
+"single double quotes from a string, if present front and back of a "
+"string. Otherwiswe, does nothing."
+msgstr ""
+
+#: of xonsh.tools.subexpr_before_unbalanced:2
+msgid "Obtains the expression prior to last unbalanced left token."
+msgstr ""
+
+#: of xonsh.tools.subexpr_from_unbalanced:2
+msgid ""
+"Attempts to pull out a valid subexpression for unbalanced grouping, based"
+" on opening tokens, eg. '(', and closing tokens, eg. ')'.  This does not "
+"do full tokenization, but should be good enough for tab completion."
+msgstr ""
+
+#: of xonsh.tools.subproc_toks:2
+msgid ""
+"Encapsulates tokens in a source code line in a uncaptured subprocess ![] "
+"starting at a minimum column. If there are no tokens (ie in a comment "
+"line) this returns None. If greedy is True, it will encapsulate normal "
+"parentheses. Greedy is False by default."
+msgstr ""
+
+#: of xonsh.tools.suggest_commands:2
+msgid "Suggests alternative commands given an environment and aliases."
+msgstr ""
+
+#: of xonsh.tools.suggestion_sort_helper:2
+msgid ""
+"Returns a score (lower is better) for x based on how similar it is to y."
+"  Used to rank suggestions."
+msgstr ""
+
+#: of xonsh.tools.swap:2
+msgid ""
+"Swaps a current variable name in a namespace for another value, and then "
+"replaces it when the context is exited."
+msgstr ""
+
+#: of xonsh.tools.swap_values:2
+msgid ""
+"Updates a dictionary (or other mapping) with values from another mapping,"
+" and then restores the original mapping when the context is exited."
+msgstr ""
+
+#: of xonsh.tools.to_bool:2
+msgid "\"Converts to a boolean in a semantically meaningful way."
+msgstr ""
+
+#: of xonsh.tools.to_bool_or_int:2
+msgid "Converts a value to a boolean or an integer."
+msgstr ""
+
+#: of xonsh.tools.to_dict:2
+msgid "Converts a string to a dictionary"
+msgstr ""
+
+#: of xonsh.tools.to_dynamic_cwd_tuple:2
+msgid "Convert to a canonical cwd_width tuple."
+msgstr ""
+
+#: of xonsh.tools.to_history_tuple:2
+msgid "Converts to a canonical history tuple."
+msgstr ""
+
+#: of xonsh.tools.to_itself:2
+msgid "No conversion, returns itself."
+msgstr ""
+
+#: of xonsh.tools.to_logfile_opt:2
+msgid ""
+"Converts a $XONSH_TRACEBACK_LOGFILE option to either a str containing the"
+" filepath if it is a writable file or None if the filepath is not valid, "
+"informing the user on stderr about the invalid choice."
+msgstr ""
+
+#: of xonsh.tools.to_str_str_dict:2
+msgid "Converts a string to str:str dictionary"
+msgstr ""
+
+#: of xonsh.tools.uncapturable:2
+msgid ""
+"Decorator that specifies that a callable alias should not be run with any"
+" capturing. This is often needed if the alias call interactive "
+"subprocess, like pagers and text editors."
+msgstr ""
+
+#: of xonsh.tools.unthreadable:2
+msgid ""
+"Decorator that specifies that a callable alias should be run only on the "
+"main thread process. This is often needed for debuggers and profilers."
+msgstr ""
+
+#: of xonsh.tools.HISTORY_UNITS:2
+msgid "Maps lowercase unit names to canonical name and conversion utilities."
+msgstr ""
+
+#: of xonsh.tools.RE_BEGIN_STRING:2
+msgid ""
+"Regular expression matching the start of a string, including quotes and "
+"leading characters (r, b, or u)"
+msgstr ""
+
+#: of xonsh.tools.RE_STRING_CONT:2
+msgid ""
+"Dictionary mapping starting quote sequences to regular expressions that "
+"match the contents of a string beginning with those quotes (not including"
+" the terminating quotes)"
+msgstr ""
+
+#: of xonsh.tools.RE_STRING_START:2
+msgid ""
+"Regular expression matching the characters before the quotes when "
+"starting a string (r, b, or u, case insensitive)"
+msgstr ""
+

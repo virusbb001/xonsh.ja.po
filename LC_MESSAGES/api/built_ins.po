@@ -1,0 +1,670 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/built_ins.rst:5
+msgid "Built-Ins (``xonsh.built_ins``)"
+msgstr ""
+
+#: of xonsh.built_ins:1
+msgid "The xonsh built-ins."
+msgstr ""
+
+#: of xonsh.built_ins:3
+msgid ""
+"Note that this module is named 'built_ins' so as not to be confused with "
+"the special Python builtins module."
+msgstr ""
+
+#: of xonsh.built_ins.DeprecationWarningProxy:2
+msgid "Proxies access, but warns in the process."
+msgstr ""
+
+#: of xonsh.built_ins.DeprecationWarningProxy.warn:2
+msgid "Issues deprecation warning."
+msgstr ""
+
+#: of xonsh.built_ins.DeprecationWarningProxy.obj:2
+#: xonsh.built_ins.DynamicAccessProxy.obj:2
+msgid "Dynamically grabs object"
+msgstr ""
+
+#: of xonsh.built_ins.DynamicAccessProxy:2
+msgid "Proxies access dynamically."
+msgstr ""
+
+#: of xonsh.built_ins.DynamicAccessProxy xonsh.built_ins.SubprocSpec
+#: xonsh.built_ins.XonshSession xonsh.built_ins.XonshSession.load
+#: xonsh.built_ins.call_macro xonsh.built_ins.convert_macro_arg
+#: xonsh.built_ins.enter_macro xonsh.built_ins.in_macro_call
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.built_ins.DynamicAccessProxy:29
+msgid "**refname**"
+msgstr ""
+
+#: of xonsh.built_ins.DynamicAccessProxy:28
+#: xonsh.built_ins.DynamicAccessProxy:45 xonsh.built_ins.convert_macro_arg:7
+#: xonsh.built_ins.enter_macro:14
+msgid "str"
+msgstr ""
+
+#: of xonsh.built_ins.DynamicAccessProxy:28
+msgid ""
+"'.'-separated string that represents the new, reference name that the "
+"user will access."
+msgstr ""
+
+#: of xonsh.built_ins.DynamicAccessProxy:46
+msgid "**objname**"
+msgstr ""
+
+#: of xonsh.built_ins.DynamicAccessProxy:32
+msgid ""
+"'.'-separated string that represents the name where the target object "
+"actually lives that refname points to."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:2
+msgid "A container for specifying how a subprocess command should be executed."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:29
+msgid "**cmd**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:28 xonsh.built_ins.SubprocSpec:68
+msgid "list of str"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:29
+msgid "Command to be run."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:32
+msgid "**cls**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:31
+msgid "Popen-like"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:32
+msgid "Class to run the subprocess with."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:35
+msgid "**stdin**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:34 xonsh.built_ins.SubprocSpec:37
+#: xonsh.built_ins.SubprocSpec:40 xonsh.built_ins.SubprocSpec:93
+#: xonsh.built_ins.SubprocSpec:96
+msgid "file-like"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:35
+msgid "Popen file descriptor or flag for stdin."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:38
+msgid "**stdout**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:38
+msgid "Popen file descriptor or flag for stdout."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:41
+msgid "**stderr**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:41
+msgid "Popen file descriptor or flag for stderr."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:44
+msgid "**universal_newlines**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:43 xonsh.built_ins.SubprocSpec:47
+#: xonsh.built_ins.SubprocSpec:77 xonsh.built_ins.SubprocSpec:80
+#: xonsh.built_ins.SubprocSpec:84 xonsh.built_ins.SubprocSpec:90
+msgid "bool"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:44
+msgid "Whether or not to use universal newlines."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:48
+msgid "**close_fds**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:47
+msgid "Whether or not to close the file descriptiors when the process exits."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:64
+msgid "**captured**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:63
+msgid "bool or str, optional"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:51
+msgid ""
+"The flag for if the subprocess is captured, may be one of: False for $[],"
+" 'stdout' for $(), 'hiddenobject' for ![], or 'object' for !()."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec
+msgid "Attributes"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:69
+msgid "**args**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:69
+msgid "Arguments as originally supplied."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:72
+msgid "**alias**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:71
+msgid "list of str, callable, or None"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:72
+msgid "The alias that was resolved for this command, if any."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:75
+msgid "**binary_loc**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:74
+msgid "str or None"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:75
+msgid "Path to binary to execute."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:78
+msgid "**is_proxy**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:78
+msgid "Whether or not the subprocess is or should be run as a proxy."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:81
+msgid "**background**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:81
+msgid "Whether or not the subprocess should be started in the background."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:85
+msgid "**threadable**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:84
+msgid ""
+"Whether or not the subprocess is able to be run in a background thread, "
+"rather than the main thread."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:88
+msgid "**pipeline_index**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:87
+msgid "int or None"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:88
+msgid "The index number of this sepc into the pipeline that is being setup."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:91
+msgid "**last_in_pipeline**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:91
+msgid "Whether the subprocess is the last in the execution pipeline."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:94
+msgid "**captured_stdout**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:94
+msgid "Handle to captured stdin"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:97
+msgid "**captured_stderr**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:97
+msgid "Handle to captured stderr"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:102
+msgid "**stack**"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:101
+msgid "list of FrameInfo namedtuples or None"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec:100
+msgid ""
+"The stack of the call-site of alias, if the alias requires it. None "
+"otherwise."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.build:2
+msgid ""
+"Creates an instance of the subprocess command, with any modifications and"
+" adjustments based on the actual cmd that was received."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.prep_env:2
+msgid "Prepares the environment to use in the subprocess."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.prep_preexec_fn:2
+msgid "Prepares the 'preexec_fn' keyword argument"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.redirect_leading:2
+msgid "Manage leading redirects such as with '< input.txt COMMAND'."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.redirect_trailing:2
+msgid "Manages trailing redirects."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.resolve_alias:2
+msgid "Sets alias in command, if applicable."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.resolve_alias_cls:2
+msgid "Determine which proxy class to run an alias with."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.resolve_auto_cd:2
+msgid "Implements AUTO_CD functionality."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.resolve_binary_loc:2
+msgid "Sets the binary location"
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.resolve_executable_commands:2
+msgid "Resolve command executables, if applicable."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.resolve_stack:2
+msgid "Computes the stack for a callable alias's call-site, if needed."
+msgstr ""
+
+#: of xonsh.built_ins.SubprocSpec.run:2
+msgid "Launches the subprocess and returns the object."
+msgstr ""
+
+#: of xonsh.built_ins.XonshSession:2
+msgid "All components defining a xonsh session."
+msgstr ""
+
+#: of xonsh.built_ins.XonshSession:28 xonsh.built_ins.XonshSession.load:8
+msgid "**execer**"
+msgstr ""
+
+#: of xonsh.built_ins.XonshSession:27 xonsh.built_ins.XonshSession.load:7
+msgid "Execer, optional"
+msgstr ""
+
+#: of xonsh.built_ins.XonshSession:28 xonsh.built_ins.XonshSession.load:8
+msgid "Xonsh execution object, may be None to start"
+msgstr ""
+
+#: of xonsh.built_ins.XonshSession:44 xonsh.built_ins.XonshSession.load:24
+msgid "**ctx**"
+msgstr ""
+
+#: of xonsh.built_ins.XonshSession:43 xonsh.built_ins.XonshSession.load:23
+msgid "Mapping, optional"
+msgstr ""
+
+#: of xonsh.built_ins.XonshSession:31 xonsh.built_ins.XonshSession.load:11
+msgid "Context to start xonsh session with."
+msgstr ""
+
+#: of xonsh.built_ins.XonshSession.load:2
+msgid "Loads the session with default values."
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:2
+msgid "Calls a function as a macro, returning its result."
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:8 xonsh.built_ins.in_macro_call:9
+msgid "**f**"
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:7 xonsh.built_ins.in_macro_call:8
+msgid "callable object"
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:8 xonsh.built_ins.in_macro_call:9
+msgid "The function that is called as ``f(*args)``."
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:13
+msgid "**raw_args**"
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:12
+msgid "tuple of str"
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:11
+msgid ""
+"The str representation of arguments of that were passed into the macro. "
+"These strings will be parsed, compiled, evaled, or left as a string "
+"depending on the annotations of f."
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:16 xonsh.built_ins.convert_macro_arg:14
+#: xonsh.built_ins.enter_macro:18 xonsh.built_ins.in_macro_call:12
+msgid "**glbs**"
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:15 xonsh.built_ins.convert_macro_arg:13
+#: xonsh.built_ins.enter_macro:17 xonsh.built_ins.in_macro_call:11
+msgid "Mapping"
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:16 xonsh.built_ins.convert_macro_arg:14
+#: xonsh.built_ins.in_macro_call:12
+msgid "The globals from the call site."
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:32 xonsh.built_ins.convert_macro_arg:17
+#: xonsh.built_ins.enter_macro:21 xonsh.built_ins.in_macro_call:28
+msgid "**locs**"
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:31 xonsh.built_ins.convert_macro_arg:16
+#: xonsh.built_ins.enter_macro:20 xonsh.built_ins.in_macro_call:27
+msgid "Mapping or None"
+msgstr ""
+
+#: of xonsh.built_ins.call_macro:19 xonsh.built_ins.convert_macro_arg:17
+#: xonsh.built_ins.in_macro_call:15
+msgid "The locals from the call site."
+msgstr ""
+
+#: of xonsh.built_ins.cmds_to_specs:2
+msgid ""
+"Converts a list of cmds to a list of SubprocSpec objects that are ready "
+"to be executed."
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:2
+msgid "Converts a string macro argument based on the requested kind."
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:8
+msgid "**raw_arg**"
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:8
+msgid "The str representation of the macro argument."
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:11
+msgid "**kind**"
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:10
+msgid "object"
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:11
+msgid "A flag or type representing how to convert the argument."
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:20
+msgid "**name**"
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:19 xonsh.built_ins.convert_macro_arg:22
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:20
+msgid "The macro argument name."
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:23
+msgid "**macroname**"
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:23
+msgid "The name of the macro itself."
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg xonsh.built_ins.enter_macro
+msgid "Returns"
+msgstr ""
+
+#: of xonsh.built_ins.convert_macro_arg:40
+msgid "The converted argument."
+msgstr ""
+
+#: of xonsh.built_ins.default_signal_pauser:2
+msgid "Pauses a signal, as needed."
+msgstr ""
+
+#: of xonsh.built_ins.ensure_list_of_strs:2
+msgid "Ensures that x is a list of strings."
+msgstr ""
+
+#: of xonsh.built_ins.enter_macro:2
+msgid ""
+"Prepares to enter a context manager macro by attaching the contents of "
+"the macro block, globals, and locals to the object. These modifications "
+"are made in-place and the original object is returned."
+msgstr ""
+
+#: of xonsh.built_ins.enter_macro:10 xonsh.built_ins.enter_macro:38
+msgid "**obj**"
+msgstr ""
+
+#: of xonsh.built_ins.enter_macro:9 xonsh.built_ins.enter_macro:37
+msgid "context manager"
+msgstr ""
+
+#: of xonsh.built_ins.enter_macro:10
+msgid "The object that is about to be entered via a with-statement."
+msgstr ""
+
+#: of xonsh.built_ins.enter_macro:15
+msgid "**raw_block**"
+msgstr ""
+
+#: of xonsh.built_ins.enter_macro:13
+msgid ""
+"The str of the block that is the context body. This string will be "
+"parsed, compiled, evaled, or left as a string depending on the return "
+"annotation of obj.__enter__."
+msgstr ""
+
+#: of xonsh.built_ins.enter_macro:18
+msgid "The globals from the context site."
+msgstr ""
+
+#: of xonsh.built_ins.enter_macro:21
+msgid "The locals from the context site."
+msgstr ""
+
+#: of xonsh.built_ins.enter_macro:26
+msgid "The same context manager but with the new macro information applied."
+msgstr ""
+
+#: of xonsh.built_ins.get_script_subproc_command:2
+msgid ""
+"Given the name of a script outside the path, returns a list representing "
+"an appropriate subprocess command to execute the script.  Raises "
+"PermissionError if the script is not executable."
+msgstr ""
+
+#: of xonsh.built_ins.helper:2 xonsh.built_ins.superhelper:2
+msgid "Prints help about, and then returns that variable."
+msgstr ""
+
+#: of xonsh.built_ins.in_macro_call:2
+msgid ""
+"Attaches macro globals and locals temporarily to function as a context "
+"manager."
+msgstr ""
+
+#: of xonsh.built_ins.list_of_list_of_strs_outer_product:2
+msgid "Takes an outer product of a list of strings"
+msgstr ""
+
+#: of xonsh.built_ins.list_of_strs_or_callables:2
+msgid "Ensures that x is a list of strings or functions"
+msgstr ""
+
+#: of xonsh.built_ins.load_builtins:2
+msgid ""
+"Loads the xonsh builtins into the Python builtins. Sets the "
+"BUILTINS_LOADED variable to True."
+msgstr ""
+
+#: of xonsh.built_ins.load_proxies:2
+msgid ""
+"Loads builtin dynamic access proxies. Also puts temporary shims in place "
+"for `__xonsh_*__` builtins."
+msgstr ""
+
+#: of xonsh.built_ins.no_pg_xonsh_preexec_fn:2
+msgid ""
+"Default subprocess preexec function for when there is no existing "
+"pipeline group."
+msgstr ""
+
+#: of xonsh.built_ins.pathsearch:2
+msgid ""
+"Takes a string and returns a list of file paths that match (regex, glob, "
+"or arbitrary search function). If pathobj=True, the return is a list of "
+"pathlib.Path objects instead of strings."
+msgstr ""
+
+#: of xonsh.built_ins.reglob:2
+msgid "Regular expression-based globbing."
+msgstr ""
+
+#: of xonsh.built_ins.resetting_signal_handle:2
+msgid ""
+"Sets a new signal handle that will automatically restore the old value "
+"once the new handle is finished."
+msgstr ""
+
+#: of xonsh.built_ins.run_subproc:2
+msgid ""
+"Runs a subprocess, in its many forms. This takes a list of 'commands,' "
+"which may be a list of command line arguments or a string, representing a"
+" special connecting character.  For example::"
+msgstr ""
+
+#: of xonsh.built_ins.run_subproc:8
+msgid "is represented by the following cmds::"
+msgstr ""
+
+#: of xonsh.built_ins.run_subproc:12
+msgid "Lastly, the captured argument affects only the last real command."
+msgstr ""
+
+#: of xonsh.built_ins.safe_close:2
+msgid "Safely attempts to close an object."
+msgstr ""
+
+#: of xonsh.built_ins.safe_open:2
+msgid "Safely attempts to open a file in for xonsh subprocs."
+msgstr ""
+
+#: of xonsh.built_ins.subproc_captured_hiddenobject:2
+msgid ""
+"Runs a subprocess, capturing the output. Returns an instance of "
+"HiddenCommandPipeline representing the completed command."
+msgstr ""
+
+#: of xonsh.built_ins.subproc_captured_inject:2
+msgid ""
+"Runs a subprocess, capturing the output. Returns a list of whitespace-"
+"separated strings of the stdout that was produced. The string is split "
+"using xonsh's lexer, rather than Python's str.split() or shlex.split()."
+msgstr ""
+
+#: of xonsh.built_ins.subproc_captured_object:2
+msgid ""
+"Runs a subprocess, capturing the output. Returns an instance of "
+"CommandPipeline representing the completed command."
+msgstr ""
+
+#: of xonsh.built_ins.subproc_captured_stdout:2
+msgid ""
+"Runs a subprocess, capturing the output. Returns the stdout that was "
+"produced as a str."
+msgstr ""
+
+#: of xonsh.built_ins.subproc_uncaptured:2
+msgid ""
+"Runs a subprocess, without capturing the output. Returns the stdout that "
+"was produced as a str."
+msgstr ""
+
+#: of xonsh.built_ins.unload_builtins:2
+msgid ""
+"Removes the xonsh builtins from the Python builtins, if the "
+"BUILTINS_LOADED is True, sets BUILTINS_LOADED to False, and returns."
+msgstr ""
+
+#: of xonsh.built_ins.unload_proxies:2
+msgid "Removes the xonsh builtins (proxies) from the Python builtins."
+msgstr ""
+
+#: of xonsh.built_ins.xonsh_builtins:2
+msgid ""
+"A context manager for using the xonsh builtins only in a limited scope. "
+"Likely useful in testing."
+msgstr ""
+

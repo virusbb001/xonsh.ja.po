@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/replay.rst:5
+msgid "Replay History (``xonsh.replay``)"
+msgstr ""
+
+#: of xonsh.replay:1
+msgid "Tools to replay xonsh history files."
+msgstr ""
+
+#: of xonsh.replay.Replayer:2
+msgid "Replays a xonsh history file."
+msgstr ""
+
+#: of xonsh.replay.Replayer xonsh.replay.Replayer.replay
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.replay.Replayer:28
+msgid "**f**"
+msgstr ""
+
+#: of xonsh.replay.Replayer:27
+msgid "file handle or str"
+msgstr ""
+
+#: of xonsh.replay.Replayer:28
+msgid "Path to xonsh history file."
+msgstr ""
+
+#: of xonsh.replay.Replayer:45
+msgid "**reopen**"
+msgstr ""
+
+#: of xonsh.replay.Replayer:44
+msgid "bool, optional"
+msgstr ""
+
+#: of xonsh.replay.Replayer:31
+msgid ""
+"Whether new file handle should be opened for each load, passed directly "
+"into LazyJSON class."
+msgstr ""
+
+#: of xonsh.replay.Replayer.replay:2
+msgid ""
+"Replays the history specified, returns the history object where the code "
+"was executed."
+msgstr ""
+
+#: of xonsh.replay.Replayer.replay:13
+msgid "**merge_env**"
+msgstr ""
+
+#: of xonsh.replay.Replayer.replay:12
+msgid "tuple of str or Mappings, optional"
+msgstr ""
+
+#: of xonsh.replay.Replayer.replay:9
+msgid ""
+"Describes how to merge the environments, in order of increasing "
+"precedence. Available strings are 'replay' and 'native'. The 'replay' env"
+" comes from the history file that we are replaying. The 'native' env "
+"comes from what this instance of xonsh was started up with. Instead of a "
+"string, a dict or other mapping may be passed in as well. Defaults to "
+"('replay', 'native')."
+msgstr ""
+
+#: of xonsh.replay.Replayer.replay:29
+msgid "**target**"
+msgstr ""
+
+#: of xonsh.replay.Replayer.replay:28
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.replay.Replayer.replay:16
+msgid "Path to new history file."
+msgstr ""
+
+#: of xonsh.replay.replay_main:2
+msgid "Acts as main function for replaying a xonsh history file."
+msgstr ""
+

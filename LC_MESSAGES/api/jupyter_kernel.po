@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/jupyter_kernel.rst:5
+msgid "Jupyter Kernel (``xonsh.jupyter_kernel``)"
+msgstr ""
+
+#: of xonsh.jupyter_kernel:1
+msgid "Hooks for Jupyter Xonsh Kernel."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel:2
+msgid "Xonsh xernal for Jupyter"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel:28
+msgid "**debug_level**"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel:27
+msgid "int, optional"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel:28
+msgid "Integer from 0 (no debugging) to 3 (all debugging), default: 0."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel:32
+msgid "**session_id**"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel:31
+msgid "str or None, optional"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel:31
+msgid ""
+"Unique string id representing the kernel session. If None, this will be "
+"replaced with a random UUID."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel:50
+msgid "**config**"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel:49
+msgid "dict or None, optional"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel:35
+msgid ""
+"Configuration dictionary to start server with. BY default will search the"
+" command line for options (if given) or use default configuration."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.control_handler:2
+msgid "Handles control requests"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.deserialize_wire_message:2
+msgid "Split the routing prefix and message frames from a message on the wire"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.do_complete:2
+msgid "Get completions."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.do_execute:2
+msgid "Execute user code."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.dprint:2
+msgid "Print but with debug information."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.handle_complete_request:2
+#: xonsh.jupyter_kernel.XonshKernel.handle_kernel_info_request:2
+msgid "Handles kernel info requests."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.handle_execute_request:2
+msgid "Handle execute request messages."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.heartbeat_loop:2
+msgid "Run heartbeat"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.iopub_handler:2
+msgid "Handles iopub requests."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.make_default_config:2
+msgid "Provides default configuration"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.new_header:2
+msgid "Make a new header"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.run_thread:2
+msgid "Run main thread"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.send:2
+msgid "Send data to the client via a stream"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.shell_handler:2
+msgid "Dispatch shell messages to their handlers"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.shutdown:2
+msgid "Shutsdown the kernel"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.sign:2
+msgid "Sign a message list with a secure signature."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.XonshKernel.start:2
+msgid "Starts the server"
+msgstr ""
+
+#: of xonsh.jupyter_kernel.bind:2
+msgid "Binds a socket to a port, or a random port if needed. Returns the port."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.dump_bytes:2
+msgid "Converts an object to JSON and returns the bytes."
+msgstr ""
+
+#: of xonsh.jupyter_kernel.load_bytes:2
+msgid "Converts bytes of JSON to an object."
+msgstr ""
+

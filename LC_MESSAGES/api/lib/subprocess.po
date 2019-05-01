@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/lib/subprocess.rst:5
+msgid "Subprocesses (``xonsh.lib.subrpocess``)"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.subprocess:1
+msgid ""
+"Xonsh extension of the standard library subprocess module, using xonsh "
+"for subprocess calls"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.subprocess.check_call:2
+msgid "Drop in replacement for ``subprocess.check_call`` like functionality"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.subprocess.check_output:2
+msgid "Drop in replacement for ``subprocess.check_output`` like functionality"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.subprocess.run:2
+msgid "Drop in replacement for ``subprocess.run`` like functionality"
+msgstr ""
+

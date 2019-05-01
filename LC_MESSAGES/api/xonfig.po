@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/xonfig.rst:5
+msgid "Xonsh Configuration Utility (``xonsh.xonfig``)"
+msgstr ""
+
+#: of xonsh.xonfig:1
+msgid "The xonsh configuration (xonfig) utility."
+msgstr ""
+
+#: of xonsh.xonfig.make_env_wiz:2
+msgid "Makes an environment variable wizard."
+msgstr ""
+
+#: of xonsh.xonfig.make_envvar:2
+msgid "Makes a StoreNonEmpty node for an environment variable."
+msgstr ""
+
+#: of xonsh.xonfig.make_exit_message:2
+msgid "Creates a message for how to exit the wizard."
+msgstr ""
+
+#: of xonsh.xonfig.make_fs_wiz:2
+msgid "Makes the foreign shell part of the wizard."
+msgstr ""
+
+#: of xonsh.xonfig.make_xonfig_wizard:2
+msgid "Makes a configuration wizard for xonsh config file."
+msgstr ""
+
+#: of xonsh.xonfig.make_xonfig_wizard
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.xonfig.make_xonfig_wizard:8
+msgid "**default_file**"
+msgstr ""
+
+#: of xonsh.xonfig.make_xonfig_wizard:7 xonsh.xonfig.make_xonfig_wizard:27
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.xonfig.make_xonfig_wizard:8
+msgid "Default filename to save and load to. User will still be prompted."
+msgstr ""
+
+#: of xonsh.xonfig.make_xonfig_wizard:11
+msgid "**confirm**"
+msgstr ""
+
+#: of xonsh.xonfig.make_xonfig_wizard:10
+msgid "bool, optional"
+msgstr ""
+
+#: of xonsh.xonfig.make_xonfig_wizard:11
+msgid "Confirm that the main part of the wizard should be run."
+msgstr ""
+
+#: of xonsh.xonfig.make_xonfig_wizard:28
+msgid "**no_wizard_file**"
+msgstr ""
+
+#: of xonsh.xonfig.make_xonfig_wizard:14
+msgid ""
+"Filename for that will flag to future runs that the wizard should not be "
+"run again. If None (default), this defaults to default_file."
+msgstr ""
+
+#: of xonsh.xonfig.make_xontrib:2
+msgid "Makes a message and StoreNonEmpty node for a xontrib."
+msgstr ""
+
+#: of xonsh.xonfig.make_xontribs_wiz:2
+msgid "Makes a xontrib wizard."
+msgstr ""
+
+#: of xonsh.xonfig.xonfig_main:2
+msgid "Main xonfig entry point."
+msgstr ""
+

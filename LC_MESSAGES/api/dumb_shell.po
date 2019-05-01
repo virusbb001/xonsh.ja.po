@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/dumb_shell.rst:5
+msgid "Dumb Shell (``xonsh.dumb_shell``)"
+msgstr ""
+
+#: of xonsh.dumb_shell:1 xonsh.dumb_shell.DumbShell:2
+msgid "A dumb shell for when $TERM == 'dumb', which usually happens in emacs."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.cmdloop:2
+msgid ""
+"Repeatedly issue a prompt, accept input, parse an initial prefix off the "
+"received input, and dispatch to action methods, passing them the "
+"remainder of the line as argument."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.color_style:2
+msgid "Returns the current color map."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.color_style_names:2
+msgid "Returns an iterable of all available style names."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.columnize:2
+msgid "Display a list of strings as a compact set of columns."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.columnize:4
+msgid ""
+"Each column is only as wide as necessary. Columns are separated by two "
+"spaces (one was not legible enough)."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.compile:2
+msgid ""
+"Compiles source code and returns the (possibly modified) source and a "
+"valid code object."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.complete:2
+msgid "Return the next possible completion for 'text'."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.complete:4
+msgid ""
+"If a command has not been entered, then complete against command list. "
+"Otherwise try to call complete_<command> to get list of completions."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.completedefault:2
+#: xonsh.dumb_shell.DumbShell.completenames:2
+msgid "Implements tab-completion for text."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.default:2
+msgid "Implements code execution."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.do_help:2
+msgid "List available commands with \"help\" or detailed help with \"help cmd\"."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.emptyline:2
+msgid "Called when an empty line has been entered."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.format_color:2
+msgid "Readline implementation of color formatting. This uses ANSI color codes."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.onecmd:2
+msgid ""
+"Interpret the argument as though it had been typed in response to the "
+"prompt."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.onecmd:5
+msgid ""
+"This may be overridden, but should not normally need to be; see the "
+"precmd() and postcmd() methods for useful execution hooks. The return "
+"value is a flag indicating whether interpretation of commands by the "
+"interpreter should stop."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.parseline:2
+msgid "Overridden to no-op."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.postcmd:2
+msgid ""
+"Called just before execution of line. For readline, this handles the "
+"automatic indentation of code blocks."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.postloop:2
+msgid "Hook method executed once when the cmdloop() method is about to return."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.precmd:2
+msgid "Called just before execution of line."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.preloop:2
+msgid "Hook method executed once when the cmdloop() method is called."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.print_color:2
+msgid ""
+"Prints a string in color. This base implementation's colors are based on "
+"ANSI color codes if a string was given as input. If a list of token pairs"
+" is given, it will color based on pygments, if available. If pygments is "
+"not available, it will print a colorless string."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.push:2
+msgid ""
+"Pushes a line onto the buffer and compiles the code in a way that enables"
+" multiline input."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.reset_buffer:2
+msgid "Resets the line buffer."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.restore_tty_sanity:2
+msgid ""
+"An interface for resetting the TTY stdin mode. This is highly dependent "
+"on the shell backend. Also it is mostly optional since it only affects ^Z"
+" backgrounding behaviour."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.settitle:2
+msgid "Sets terminal title."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.singleline:2
+msgid ""
+"Reads a single line of input. The store_in_history kwarg flags whether "
+"the input should be stored in readline's in-memory history."
+msgstr ""
+
+#: of xonsh.dumb_shell.DumbShell.prompt:2
+msgid "Obtains the current prompt string."
+msgstr ""
+

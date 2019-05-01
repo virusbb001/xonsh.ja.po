@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/lib/os.rst:5
+msgid "Operating System Tools (``xonsh.lib.os``)"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.os:1
+msgid ""
+"Xonsh extension of the standard library os module, using xonsh for "
+"subprocess calls"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.os.indir:2
+msgid "Context manager for temporarily entering into a directory."
+msgstr ""
+
+#: ../../docstring of xonsh.lib.os.rmtree:2
+msgid ""
+"Remove a directory, even if it has read-only files (Windows). Git creates"
+" read-only files that must be removed on teardown. See "
+"https://stackoverflow.com/questions/2656322  for more info."
+msgstr ""
+
+#: ../../docstring of xonsh.lib.os.rmtree
+msgid "Parameters"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.os.rmtree:10
+msgid "**dirname**"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.os.rmtree:9
+msgid "str"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.os.rmtree:10
+msgid "Directory to be removed"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.os.rmtree:26
+msgid "**force**"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.os.rmtree:25
+msgid "bool"
+msgstr ""
+
+#: ../../docstring of xonsh.lib.os.rmtree:13
+msgid "If True force removal, defaults to False"
+msgstr ""
+

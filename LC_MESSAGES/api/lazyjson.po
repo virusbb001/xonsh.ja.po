@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/lazyjson.rst:5
+msgid "Lazy JSON Files (``xonsh.lazyjson``)"
+msgstr ""
+
+#: of xonsh.lazyjson:1
+msgid "Implements a lazy JSON file class that wraps around json data."
+msgstr ""
+
+#: of xonsh.lazyjson.LJNode:2
+msgid "A proxy node for JSON nodes. Acts as both sequence and mapping."
+msgstr ""
+
+#: of xonsh.lazyjson.LJNode xonsh.lazyjson.LazyJSON
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.lazyjson.LJNode:28
+msgid "**offsets**"
+msgstr ""
+
+#: of xonsh.lazyjson.LJNode:27 xonsh.lazyjson.LJNode:30
+msgid "dict, list, or int"
+msgstr ""
+
+#: of xonsh.lazyjson.LJNode:28
+msgid "offsets of corresponding data structure, in bytes"
+msgstr ""
+
+#: of xonsh.lazyjson.LJNode:31
+msgid "**sizes**"
+msgstr ""
+
+#: of xonsh.lazyjson.LJNode:31
+msgid "sizes of corresponding data structure, in bytes"
+msgstr ""
+
+#: of xonsh.lazyjson.LJNode:47
+msgid "**root**"
+msgstr ""
+
+#: of xonsh.lazyjson.LJNode:46
+msgid "weakref.proxy of LazyJSON"
+msgstr ""
+
+#: of xonsh.lazyjson.LJNode:34
+msgid "weakref back to root node, which should be a LazyJSON object."
+msgstr ""
+
+#: of xonsh.lazyjson.LJNode.load:2
+msgid "Returns the Python data structure represented by the node."
+msgstr ""
+
+#: of xonsh.lazyjson.LazyJSON:2
+msgid ""
+"Represents a lazy json file. Can be used like a normal Python dict or "
+"list."
+msgstr ""
+
+#: of xonsh.lazyjson.LazyJSON:29
+msgid "**f**"
+msgstr ""
+
+#: of xonsh.lazyjson.LazyJSON:28
+msgid "file handle or str"
+msgstr ""
+
+#: of xonsh.lazyjson.LazyJSON:29
+msgid "JSON file to open."
+msgstr ""
+
+#: of xonsh.lazyjson.LazyJSON:45
+msgid "**reopen**"
+msgstr ""
+
+#: of xonsh.lazyjson.LazyJSON:44
+msgid "bool, optional"
+msgstr ""
+
+#: of xonsh.lazyjson.LazyJSON:32
+msgid "Whether new file handle should be opened for each load."
+msgstr ""
+
+#: of xonsh.lazyjson.LazyJSON.close:2
+msgid "Close the file handle, if appropriate."
+msgstr ""
+
+#: of xonsh.lazyjson.dumps:2
+msgid "Dumps an object to JSON with an index."
+msgstr ""
+
+#: of xonsh.lazyjson.index:2
+msgid "Creates an index for a JSON file."
+msgstr ""
+
+#: of xonsh.lazyjson.ljdump:2
+msgid "Dumps an object to JSON file."
+msgstr ""
+

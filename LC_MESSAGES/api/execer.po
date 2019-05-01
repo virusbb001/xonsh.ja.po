@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/execer.rst:5
+msgid "Compilation, Evaluation, & Execution  (``xonsh.execer``)"
+msgstr ""
+
+#: of xonsh.execer:1
+msgid "Implements the xonsh executer."
+msgstr ""
+
+#: of xonsh.execer.Execer:2
+msgid "Executes xonsh code in a context."
+msgstr ""
+
+#: of xonsh.execer.Execer
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.execer.Execer:28
+msgid "**filename**"
+msgstr ""
+
+#: of xonsh.execer.Execer:27
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.execer.Execer:28
+msgid "File we are to execute."
+msgstr ""
+
+#: of xonsh.execer.Execer:31
+msgid "**debug_level**"
+msgstr ""
+
+#: of xonsh.execer.Execer:30
+msgid "int, optional"
+msgstr ""
+
+#: of xonsh.execer.Execer:31
+msgid "Debugging level to use in lexing and parsing."
+msgstr ""
+
+#: of xonsh.execer.Execer:34
+msgid "**parser_args**"
+msgstr ""
+
+#: of xonsh.execer.Execer:33
+msgid "dict, optional"
+msgstr ""
+
+#: of xonsh.execer.Execer:34
+msgid "Arguments to pass down to the parser."
+msgstr ""
+
+#: of xonsh.execer.Execer:37
+msgid "**unload**"
+msgstr ""
+
+#: of xonsh.execer.Execer:36 xonsh.execer.Execer:43 xonsh.execer.Execer:60
+msgid "bool, optional"
+msgstr ""
+
+#: of xonsh.execer.Execer:37
+msgid "Whether or not to unload xonsh builtins upon deletion."
+msgstr ""
+
+#: of xonsh.execer.Execer:40
+msgid "**xonsh_ctx**"
+msgstr ""
+
+#: of xonsh.execer.Execer:39
+msgid "dict or None, optional"
+msgstr ""
+
+#: of xonsh.execer.Execer:40
+msgid "Xonsh xontext to load as builtins.__xonsh__.ctx"
+msgstr ""
+
+#: of xonsh.execer.Execer:44
+msgid "**scriptcache**"
+msgstr ""
+
+#: of xonsh.execer.Execer:43
+msgid ""
+"Whether or not to use a precompiled bytecode cache when execing code, "
+"default: True."
+msgstr ""
+
+#: of xonsh.execer.Execer:61
+msgid "**cacheall**"
+msgstr ""
+
+#: of xonsh.execer.Execer:47
+msgid ""
+"Whether or not to cache all xonsh code, and not just files. If this is "
+"set to true, it will cache command line input too, default: False."
+msgstr ""
+
+#: of xonsh.execer.Execer.compile:2
+msgid ""
+"Compiles xonsh code into a Python code object, which may then be execed "
+"or evaled."
+msgstr ""
+
+#: of xonsh.execer.Execer.eval:2
+msgid "Evaluates (and returns) xonsh code."
+msgstr ""
+
+#: of xonsh.execer.Execer.exec:2
+msgid "Execute xonsh code."
+msgstr ""
+
+#: of xonsh.execer.Execer.parse:2
+msgid ""
+"Parses xonsh code in a context-aware fashion. For context-free parsing, "
+"please use the Parser class directly or pass in transform=False."
+msgstr ""
+

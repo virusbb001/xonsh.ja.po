@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/ast.rst:5
+msgid "Abstract Syntax Tree (``xonsh.ast``)"
+msgstr ""
+
+#: of xonsh.ast:1
+msgid "The xonsh abstract syntax tree node."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer:2
+msgid ""
+"Transforms a xonsh AST based to use subprocess calls when the first name "
+"in an expression statement is not known in the context. This assumes that"
+" the expression statement is instead parseable as a subprocess."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer xonsh.ast.CtxAwareTransformer.ctxvisit
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer:44
+msgid "**parser**"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer:43
+msgid "xonsh.Parser"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer:31
+msgid "A parse instance to try to parse subprocess statements with."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxadd:2
+msgid "Adds a value the most recent context."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxremove:2
+msgid "Removes a value the most recent context."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxupdate:2
+msgid "Updated the most recent context."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:2
+msgid "Transforms the node in a context-dependent way."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:8
+#: xonsh.ast.CtxAwareTransformer.ctxvisit:37
+msgid "**node**"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:7
+#: xonsh.ast.CtxAwareTransformer.ctxvisit:36
+msgid "ast.AST"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:8
+msgid "A syntax tree to transform."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:11
+msgid "**input**"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:10
+msgid "str"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:11
+msgid "The input code in string format."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:14
+msgid "**ctx**"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:13
+msgid "dict"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:14
+msgid "The root context to use."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:17
+msgid "**filename**"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:16
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:17
+msgid "File we are to transform."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:20
+msgid "**debug_level**"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:19
+msgid "int, optional"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:20
+msgid "Debugging level to use in lexing and parsing."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit
+msgid "Returns"
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.ctxvisit:25
+msgid "The transformed node."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.generic_visit:2
+msgid "Called if no explicit visitor function exists for a node."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.is_in_scope:2
+msgid "Determines whether or not the current node is in scope."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.try_subproc_toks:2
+msgid "Tries to parse the line of the node as a subprocess."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit:2
+msgid "Visit a node."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_AnnAssign:2
+#: xonsh.ast.CtxAwareTransformer.visit_Assign:2
+msgid "Handle visiting an assignment statement."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_BoolOp:2
+msgid "Handle visiting an boolean operands, like and/or."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_ClassDef:2
+msgid "Handle visiting a class definition."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_Delete:2
+msgid "Handle visiting a del statement."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_Expr:2
+msgid "Handle visiting an expression."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_Expression:2
+msgid "Handle visiting an expression body."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_For:2
+msgid "Handle visiting a for statement."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_FunctionDef:2
+msgid "Handle visiting a function definition."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_Global:2
+msgid "Handle visiting a global statement."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_Import:2
+msgid "Handle visiting a import statement."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_ImportFrom:2
+msgid "Handle visiting a \"from ... import ...\" statement."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_Try:2
+msgid "Handle visiting a try statement."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_UnaryOp:2
+msgid "Handle visiting an unary operands, like not."
+msgstr ""
+
+#: of xonsh.ast.CtxAwareTransformer.visit_With:2
+msgid "Handle visiting a with statement."
+msgstr ""
+
+#: of xonsh.ast.gather_load_store_names:2
+msgid ""
+"Returns the names present in the node's tree in a set of load nodes and a"
+" set of store nodes."
+msgstr ""
+
+#: of xonsh.ast.gather_names:2
+msgid "Returns the set of all names present in the node's tree."
+msgstr ""
+
+#: of xonsh.ast.get_col:2
+msgid "Gets the col_offset of a node, or returns the default"
+msgstr ""
+
+#: of xonsh.ast.get_id:2
+msgid "Gets the id attribute of a node, or returns a default."
+msgstr ""
+
+#: of xonsh.ast.get_id_ctx:2
+msgid "Gets the id and attribute of a node, or returns a default."
+msgstr ""
+
+#: of xonsh.ast.get_lineno:2
+msgid "Gets the lineno of a node or returns the default."
+msgstr ""
+
+#: of xonsh.ast.has_elts:2
+msgid "Tests if x is an AST node with elements."
+msgstr ""
+
+#: of xonsh.ast.isdescendable:2
+msgid ""
+"Determines whether or not a node is worth visiting. Currently only "
+"UnaryOp and BoolOp nodes are visited."
+msgstr ""
+
+#: of xonsh.ast.isexpression:2
+msgid ""
+"Determines whether a node (or code string) is an expression, and does not"
+" contain any statements. The execution context (ctx) and other args and "
+"kwargs are passed down to the parser, as needed."
+msgstr ""
+
+#: of xonsh.ast.leftmostname:2
+msgid "Attempts to find the first name in the tree."
+msgstr ""
+
+#: of xonsh.ast.load_attribute_chain:2
+msgid ""
+"Creates an AST that loads variable name that may (or may not) have "
+"attribute chains. For example, \"a.b.c\""
+msgstr ""
+
+#: of xonsh.ast.max_col:2
+msgid "Returns the maximum col_offset of the node and all sub-nodes."
+msgstr ""
+
+#: of xonsh.ast.max_line:2
+msgid "Computes the maximum lineno."
+msgstr ""
+
+#: of xonsh.ast.min_col:2
+msgid "Computes the minimum col_offset."
+msgstr ""
+
+#: of xonsh.ast.min_line:2
+msgid "Computes the minimum lineno."
+msgstr ""
+
+#: of xonsh.ast.node_len:2
+msgid "The length of a node as a string"
+msgstr ""
+
+#: of xonsh.ast.pdump:2
+msgid "performs a pretty dump of an AST node."
+msgstr ""
+
+#: of xonsh.ast.pprint_ast:2
+msgid "Performs a pretty print of the AST nodes."
+msgstr ""
+
+#: of xonsh.ast.xonsh_call:2
+msgid ""
+"Creates the AST node for calling a function of a given name. Functions "
+"names may contain attribute access, e.g. __xonsh__.env."
+msgstr ""
+

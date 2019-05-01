@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/mplhooks.rst:5
+msgid "Matplotlib Hooks (``xontrib.mplhooks``)"
+msgstr ""
+
+#: of xontrib.mplhooks:1
+msgid "Matplotlib hooks, for what its worth."
+msgstr ""
+
+#: of xontrib.mplhooks.buf_to_color_str:2
+msgid "Converts an RGB array to a xonsh color string."
+msgstr ""
+
+#: of xontrib.mplhooks.display_figure_with_iterm2:2
+msgid "Displays a matplotlib figure using iterm2 inline-image escape sequence."
+msgstr ""
+
+#: of xontrib.mplhooks.display_figure_with_iterm2
+#: xontrib.mplhooks.figure_to_rgb_array xontrib.mplhooks.figure_to_tight_array
+msgid "Parameters"
+msgstr ""
+
+#: of xontrib.mplhooks.display_figure_with_iterm2:21
+#: xontrib.mplhooks.figure_to_rgb_array:8
+#: xontrib.mplhooks.figure_to_tight_array:8
+msgid "**fig**"
+msgstr ""
+
+#: of xontrib.mplhooks.display_figure_with_iterm2:20
+#: xontrib.mplhooks.figure_to_rgb_array:7
+#: xontrib.mplhooks.figure_to_tight_array:7
+msgid "matplotlib.figure.Figure"
+msgstr ""
+
+#: of xontrib.mplhooks.display_figure_with_iterm2:8
+#: xontrib.mplhooks.figure_to_rgb_array:8
+#: xontrib.mplhooks.figure_to_tight_array:8
+msgid "the figure to be plotted"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_rgb_array:2
+msgid "Converts figure to a numpy array"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_rgb_array:12
+msgid "**shape**"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_rgb_array:11
+msgid "iterable"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_rgb_array:11
+msgid ""
+"with the shape of the output array. by default this attempts to use the "
+"pixel height and width of the figure"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_rgb_array
+#: xontrib.mplhooks.figure_to_tight_array
+msgid "Returns"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_rgb_array:17
+#: xontrib.mplhooks.figure_to_tight_array:35
+msgid "**array**"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_rgb_array:16
+#: xontrib.mplhooks.figure_to_tight_array:34
+msgid "np.ndarray"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_rgb_array:17
+#: xontrib.mplhooks.figure_to_tight_array:23
+msgid "An RGBA array of the image represented by the figure."
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_rgb_array:32
+msgid "Note: the method will throw an exception if the given shape is wrong."
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_tight_array:2
+msgid "Converts figure to a numpy array of rgb values of tight value"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_tight_array:11
+msgid "**width**"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_tight_array:10
+#: xontrib.mplhooks.figure_to_tight_array:13
+msgid "int"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_tight_array:11
+msgid "pixel width of the final array"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_tight_array:14
+msgid "**height**"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_tight_array:14
+msgid "pixel height of the final array"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_tight_array:18
+msgid "**minimal**"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_tight_array:17
+msgid "bool"
+msgstr ""
+
+#: of xontrib.mplhooks.figure_to_tight_array:17
+msgid ""
+"whether or not to reduce the output array to minimized margins/whitespace"
+" text is also eliminated"
+msgstr ""
+
+#: of xontrib.mplhooks.show:2
+msgid "Run the mpl display sequence by printing the most recent figure to console"
+msgstr ""
+

@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/platform.rst:4
+msgid "Platform-specific constants and implementations (``xonsh.platform``)"
+msgstr ""
+
+#: of xonsh.platform:1
+msgid ""
+"Module for platform-specific constants and implementations, as well as "
+"compatibility layers to make use of the 'best' implementation available "
+"on a platform."
+msgstr ""
+
+#: of xonsh.platform.pathbasename:2
+msgid ""
+"This is a safe version of os.path.basename(), which does not work on "
+"input without a drive.  This version does."
+msgstr ""
+
+#: of xonsh.platform.pathsplit:2
+msgid ""
+"This is a safe version of os.path.split(), which does not work on input "
+"without a drive."
+msgstr ""
+
+#: of xonsh.platform.windows_expanduser:2
+msgid ""
+"A Windows-specific expanduser() function for xonsh. This is needed since "
+"os.path.expanduser() does not check on Windows if the user actually "
+"exists. This restricts expanding the '~' if it is not followed by a "
+"separator. That is only '~/' and '~' are expanded."
+msgstr ""
+
+#: of xonsh.platform.CAN_RESIZE_WINDOW:2
+msgid ""
+"``True`` if we can resize terminal window, as provided by the presense of"
+" signal.SIGWINCH, else ``False``."
+msgstr ""
+
+#: of xonsh.platform.DEFAULT_ENCODING:2
+msgid "Default string encoding."
+msgstr ""
+
+#: of xonsh.platform.ON_ANACONDA:2
+msgid "``True`` if executed in an Anaconda instance, else ``False``."
+msgstr ""
+
+#: of xonsh.platform.ON_CYGWIN:2
+msgid "``True`` if executed on a Cygwin Windows platform, else ``False``."
+msgstr ""
+
+#: of xonsh.platform.ON_DARWIN:2
+msgid "``True`` if executed on a Darwin platform, else ``False``."
+msgstr ""
+
+#: of xonsh.platform.ON_DRAGONFLY:2
+msgid "``True`` if on a DragonFly BSD operating system, else ``False``."
+msgstr ""
+
+#: of xonsh.platform.ON_FREEBSD:2
+msgid "``True`` if on a FreeBSD operating system, else ``False``."
+msgstr ""
+
+#: of xonsh.platform.ON_LINUX:2
+msgid "``True`` if executed on a Linux platform, else ``False``."
+msgstr ""
+
+#: of xonsh.platform.ON_MSYS:2
+msgid "``True`` if executed on a MSYS Windows platform, else ``False``."
+msgstr ""
+
+#: of xonsh.platform.ON_NETBSD:2
+msgid "``True`` if on a NetBSD operating system, else ``False``."
+msgstr ""
+
+#: of xonsh.platform.ON_POSIX:2
+msgid "``True`` if executed on a POSIX-compliant platform, else ``False``."
+msgstr ""
+
+#: of xonsh.platform.ON_WINDOWS:2
+msgid "``True`` if executed on a native Windows platform, else ``False``."
+msgstr ""
+
+#: of xonsh.platform.PYTHON_VERSION_INFO:2
+msgid "Version of Python interpreter as three-value tuple."
+msgstr ""
+
+#: of xonsh.platform.bash_command:2
+msgid "Determines the command for Bash on the current platform."
+msgstr ""
+
+#: of xonsh.platform.git_for_windows_path:2
+msgid "Returns the path to git for windows, if available and None otherwise."
+msgstr ""
+
+#: of xonsh.platform.githash:2
+msgid "Returns a tuple contains two strings: the hash and the date."
+msgstr ""
+
+#: of xonsh.platform.has_prompt_toolkit:2
+msgid "Tests if the `prompt_toolkit` is available."
+msgstr ""
+
+#: of xonsh.platform.is_readline_available:2
+msgid "Checks if readline is available to import."
+msgstr ""
+
+#: of xonsh.platform.linux_distro:2
+msgid ""
+"The id of the Linux distribution running on, possibly 'unknown'. None on "
+"non-Linux platforms."
+msgstr ""
+
+#: of xonsh.platform.ptk_shell_type:2
+msgid "Returns the prompt_toolkit shell type based on the installed version."
+msgstr ""
+
+#: of xonsh.platform.ptk_version:2
+msgid "Returns `prompt_toolkit.__version__` if available, else ``None``."
+msgstr ""
+
+#: of xonsh.platform.ptk_version_info:2
+msgid "Returns `prompt_toolkit`'s version as tuple of integers."
+msgstr ""
+
+#: of xonsh.platform.pygments_version:2
+msgid "pygments.__version__ version if available, else None."
+msgstr ""
+
+#: of xonsh.platform.pygments_version_info:2
+msgid "Returns `pygments`'s version as tuple of integers."
+msgstr ""
+
+#: of xonsh.platform.windows_bash_command:2
+msgid "Determines the command for Bash on windows."
+msgstr ""
+
+#: ../../api/platform.rst:13
+msgid ""
+"This is either `os.scandir` on Python 3.5+ or a function providing a "
+"compatibility layer for it. It is recommended for iterations over "
+"directory entries at a significantly higher speed than `os.listdir` on "
+"Python 3.5+. It also caches properties that are commonly used for "
+"filtering."
+msgstr ""
+
+#: ../../api/platform.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../api/platform.rst:19
+msgid "The path to scan for entries."
+msgstr ""
+
+#: ../../api/platform.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../api/platform.rst:20
+msgid "A generator yielding `DirEntry` instances."
+msgstr ""
+

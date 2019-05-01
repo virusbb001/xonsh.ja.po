@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/aliases.rst:5
+msgid "Aliases (``xonsh.aliases``)"
+msgstr ""
+
+#: of xonsh.aliases:1
+msgid "Aliases for the xonsh shell."
+msgstr ""
+
+#: of xonsh.aliases.Aliases:2
+msgid "Represents a location to hold and look up aliases."
+msgstr ""
+
+#: of xonsh.aliases.Aliases.eval_alias:2
+msgid ""
+"\"Evaluates\" the alias ``value``, by recursively looking up the leftmost"
+" token and \"expanding\" if it's also an alias."
+msgstr ""
+
+#: of xonsh.aliases.Aliases.eval_alias:5
+msgid ""
+"A value like ``[\"cmd\", \"arg\"]`` might transform like this: ``> "
+"[\"cmd\", \"arg\"] -> [\"ls\", \"-al\", \"arg\"] -> callable()`` where "
+"``cmd=ls -al`` and ``ls`` is an alias with its value being a callable.  "
+"The resulting callable will be \"partially applied\" with ``[\"-al\", "
+"\"arg\"]``."
+msgstr ""
+
+#: of xonsh.aliases.Aliases.expand_alias:2
+msgid ""
+"Expands any aliases present in line if alias does not point to a builtin "
+"function and if alias is only a single command."
+msgstr ""
+
+#: of xonsh.aliases.Aliases.get:2
+msgid ""
+"Returns the (possibly modified) value. If the key is not present, then "
+"`default` is returned. If the value is callable, it is returned without "
+"modification. If it is an iterable of strings it will be evaluated "
+"recursively to expand other aliases, resulting in a new list or a "
+"\"partially applied\" callable."
+msgstr ""
+
+#: of xonsh.aliases.Aliases.pop:2
+msgid "If key is not found, d is returned if given, otherwise KeyError is raised."
+msgstr ""
+
+#: of xonsh.aliases.Aliases.popitem:2
+msgid "as a 2-tuple; but raise KeyError if D is empty."
+msgstr ""
+
+#: of xonsh.aliases.Aliases.update:2
+msgid ""
+"If E present and has a .keys() method, does:     for k in E: D[k] = E[k] "
+"If E present and lacks .keys() method, does:     for (k, v) in E: D[k] = "
+"v In either case, this is followed by: for k, v in F.items(): D[k] = v"
+msgstr ""
+
+#: of xonsh.aliases.ExecAlias:2
+msgid "Provides a callable alias for xonsh source code."
+msgstr ""
+
+#: of xonsh.aliases.ExecAlias xonsh.aliases.PartialEvalAlias0
+#: xonsh.aliases.PartialEvalAlias1 xonsh.aliases.PartialEvalAlias2
+#: xonsh.aliases.PartialEvalAlias3 xonsh.aliases.PartialEvalAlias4
+#: xonsh.aliases.PartialEvalAlias5 xonsh.aliases.PartialEvalAlias6
+#: xonsh.aliases.PartialEvalAliasBase
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.aliases.ExecAlias:41
+msgid "**src**"
+msgstr ""
+
+#: of xonsh.aliases.ExecAlias:40
+msgid "str"
+msgstr ""
+
+#: of xonsh.aliases.ExecAlias:28
+msgid "Source code that will be"
+msgstr ""
+
+#: of xonsh.aliases.PartialEvalAlias0:8 xonsh.aliases.PartialEvalAlias1:8
+#: xonsh.aliases.PartialEvalAlias2:8 xonsh.aliases.PartialEvalAlias3:8
+#: xonsh.aliases.PartialEvalAlias4:8 xonsh.aliases.PartialEvalAlias5:8
+#: xonsh.aliases.PartialEvalAlias6:8 xonsh.aliases.PartialEvalAliasBase:28
+msgid "**f**"
+msgstr ""
+
+#: of xonsh.aliases.PartialEvalAlias0:7 xonsh.aliases.PartialEvalAlias1:7
+#: xonsh.aliases.PartialEvalAlias2:7 xonsh.aliases.PartialEvalAlias3:7
+#: xonsh.aliases.PartialEvalAlias4:7 xonsh.aliases.PartialEvalAlias5:7
+#: xonsh.aliases.PartialEvalAlias6:7 xonsh.aliases.PartialEvalAliasBase:27
+msgid "callable"
+msgstr ""
+
+#: of xonsh.aliases.PartialEvalAlias0:8 xonsh.aliases.PartialEvalAlias1:8
+#: xonsh.aliases.PartialEvalAlias2:8 xonsh.aliases.PartialEvalAlias3:8
+#: xonsh.aliases.PartialEvalAlias4:8 xonsh.aliases.PartialEvalAlias5:8
+#: xonsh.aliases.PartialEvalAlias6:8 xonsh.aliases.PartialEvalAliasBase:28
+msgid "A function to dispatch to."
+msgstr ""
+
+#: of xonsh.aliases.PartialEvalAlias0:25 xonsh.aliases.PartialEvalAlias1:25
+#: xonsh.aliases.PartialEvalAlias2:25 xonsh.aliases.PartialEvalAlias3:25
+#: xonsh.aliases.PartialEvalAlias4:25 xonsh.aliases.PartialEvalAlias5:25
+#: xonsh.aliases.PartialEvalAlias6:25 xonsh.aliases.PartialEvalAliasBase:45
+msgid "**acc_args**"
+msgstr ""
+
+#: of xonsh.aliases.PartialEvalAlias0:24 xonsh.aliases.PartialEvalAlias1:24
+#: xonsh.aliases.PartialEvalAlias2:24 xonsh.aliases.PartialEvalAlias3:24
+#: xonsh.aliases.PartialEvalAlias4:24 xonsh.aliases.PartialEvalAlias5:24
+#: xonsh.aliases.PartialEvalAlias6:24 xonsh.aliases.PartialEvalAliasBase:44
+msgid "sequence of strings, optional"
+msgstr ""
+
+#: of xonsh.aliases.PartialEvalAlias0:11 xonsh.aliases.PartialEvalAlias1:11
+#: xonsh.aliases.PartialEvalAlias2:11 xonsh.aliases.PartialEvalAlias3:11
+#: xonsh.aliases.PartialEvalAlias4:11 xonsh.aliases.PartialEvalAlias5:11
+#: xonsh.aliases.PartialEvalAlias6:11 xonsh.aliases.PartialEvalAliasBase:31
+msgid ""
+"Additional arguments to prepent to the argument list passed in when the "
+"alias is called."
+msgstr ""
+
+#: of xonsh.aliases.PartialEvalAliasBase:2
+msgid "Partially evaluated alias."
+msgstr ""
+
+#: of xonsh.aliases.detect_xpip_alias:2
+msgid "Determines the correct invocation to get xonsh's pip"
+msgstr ""
+
+#: of xonsh.aliases.make_default_aliases:2
+msgid "Creates a new default aliases dictionary."
+msgstr ""
+
+#: of xonsh.aliases.partial_eval_alias:2
+msgid ""
+"Dispatches the appropriate eval alias based on the number of args to the "
+"original callable alias and how many arguments to apply."
+msgstr ""
+
+#: of xonsh.aliases.showcmd:2
+msgid "usage: showcmd [-h|--help|cmd args]"
+msgstr ""
+
+#: of xonsh.aliases.showcmd:4
+msgid ""
+"Displays the command and arguments as a list of strings that xonsh would "
+"run in subprocess mode. This is useful for determining how xonsh "
+"evaluates your commands and arguments prior to running these commands."
+msgstr ""
+
+#: of xonsh.aliases.showcmd:9
+msgid "optional arguments:"
+msgstr ""
+
+#: of xonsh.aliases.showcmd:9
+msgid "show this help message and exit"
+msgstr ""
+
+#: of xonsh.aliases.showcmd:27
+msgid "example:"
+msgstr ""
+
+#: of xonsh.aliases.source_alias:2
+msgid ""
+"Executes the contents of the provided files in the current context. If "
+"sourced file isn't found in cwd, search for file along $PATH to source "
+"instead."
+msgstr ""
+
+#: of xonsh.aliases.source_cmd:2
+msgid "Simple cmd.exe-specific wrapper around source-foreign."
+msgstr ""
+
+#: of xonsh.aliases.source_foreign:2
+msgid "Sources a file written in a foreign shell language."
+msgstr ""
+
+#: of xonsh.aliases.trace:2
+msgid "Runs the xonsh tracer utility."
+msgstr ""
+
+#: of xonsh.aliases.xexec:2
+msgid "exec [-h|--help] command [args...]"
+msgstr ""
+
+#: of xonsh.aliases.xexec:4
+msgid ""
+"exec (also aliased as xexec) uses the os.execvpe() function to replace "
+"the xonsh process with the specified program. This provides the "
+"functionality of the bash 'exec' builtin::"
+msgstr ""
+
+#: of xonsh.aliases.xexec:11
+msgid "The '-h' and '--help' options print this message and exit."
+msgstr ""
+
+#: of xonsh.aliases.xexec:23
+msgid "Notes"
+msgstr ""
+
+#: of xonsh.aliases.xexec:24
+msgid ""
+"This command **is not** the same as the Python builtin function exec(). "
+"That function is for running Python code. This command, which shares the "
+"same name as the sh-lang statement, is for launching a command directly "
+"in the same process. In the event of a name conflict, please use the "
+"xexec command directly or dive into subprocess mode explicitly with "
+"![exec command]. For more details, please see "
+"http://xon.sh/faq.html#exec."
+msgstr ""
+
+#: of xonsh.aliases.xonfig:2
+msgid "Runs the xonsh configuration utility."
+msgstr ""
+
+#: of xonsh.aliases.xonsh_exit:2
+msgid "Sends signal to exit shell."
+msgstr ""
+
+#: of xonsh.aliases.xonsh_reset:2
+msgid "Clears __xonsh__.ctx"
+msgstr ""
+

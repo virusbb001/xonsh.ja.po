@@ -1,0 +1,907 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/proc.rst:5
+msgid "Python Procedures as Subprocess Commands (``xonsh.proc``)"
+msgstr ""
+
+#: of xonsh.proc:1
+msgid "Interface for running Python functions as subprocess-mode commands."
+msgstr ""
+
+#: of xonsh.proc:3
+msgid ""
+"Code for several helper methods in the `ProcProxy` class have been "
+"reproduced without modification from `subprocess.py` in the Python 3.4.2 "
+"standard library. The contents of `subprocess.py` (and, thus, the "
+"reproduced methods) are Copyright (c) 2003-2005 by Peter Astrand "
+"<astrand@lysator.liu.se> and were licensed to the Python Software "
+"foundation under a Contributor Agreement."
+msgstr ""
+
+#: of xonsh.proc.BufferedFDParallelReader:2
+msgid "Buffered, parallel background thread reader."
+msgstr ""
+
+#: of xonsh.proc.BufferedFDParallelReader xonsh.proc.CommandPipeline
+#: xonsh.proc.ConsoleParallelReader xonsh.proc.FileThreadDispatcher
+#: xonsh.proc.HiddenCommandPipeline xonsh.proc.NonBlockingFDReader
+#: xonsh.proc.PrevProcCloser xonsh.proc.ProcProxyThread xonsh.proc.QueueReader
+#: xonsh.proc.parse_proxy_return xonsh.proc.pause_call_resume
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.proc.BufferedFDParallelReader:28
+#: xonsh.proc.ConsoleParallelReader:30 xonsh.proc.NonBlockingFDReader:30
+#: xonsh.proc.QueueReader:28
+msgid "**fd**"
+msgstr ""
+
+#: of xonsh.proc.BufferedFDParallelReader:27
+#: xonsh.proc.ConsoleParallelReader:29 xonsh.proc.NonBlockingFDReader:29
+#: xonsh.proc.QueueReader:27 xonsh.proc.parse_proxy_return:30
+msgid "int"
+msgstr ""
+
+#: of xonsh.proc.BufferedFDParallelReader:28
+msgid "File descriptor from which to read."
+msgstr ""
+
+#: of xonsh.proc.BufferedFDParallelReader:32
+#: xonsh.proc.ConsoleParallelReader:33
+msgid "**buffer**"
+msgstr ""
+
+#: of xonsh.proc.BufferedFDParallelReader:31
+msgid "binary file-like or None, optional"
+msgstr ""
+
+#: of xonsh.proc.BufferedFDParallelReader:31
+msgid "A buffer to write bytes into. If None, a new BytesIO object is created."
+msgstr ""
+
+#: of xonsh.proc.BufferedFDParallelReader:48
+#: xonsh.proc.ConsoleParallelReader:36
+msgid "**chunksize**"
+msgstr ""
+
+#: of xonsh.proc.BufferedFDParallelReader:47
+#: xonsh.proc.ConsoleParallelReader:35
+msgid "int, optional"
+msgstr ""
+
+#: of xonsh.proc.BufferedFDParallelReader:35
+#: xonsh.proc.ConsoleParallelReader:36
+msgid "The max size of the parallel reads, default 1 kb."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:2
+msgid "Represents a subprocess-mode command pipeline."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:39 xonsh.proc.HiddenCommandPipeline:19
+msgid "**specs**"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:38 xonsh.proc.HiddenCommandPipeline:18
+msgid "list of SubprocSpec"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:28 xonsh.proc.HiddenCommandPipeline:8
+msgid "Process specifications"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline xonsh.proc.FileThreadDispatcher
+#: xonsh.proc.HiddenCommandPipeline
+msgid "Attributes"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:44 xonsh.proc.HiddenCommandPipeline:24
+msgid "**spec**"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:43 xonsh.proc.HiddenCommandPipeline:23
+msgid "SubprocSpec"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:44 xonsh.proc.HiddenCommandPipeline:24
+msgid "The last specification in specs"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:47 xonsh.proc.HiddenCommandPipeline:27
+msgid "**proc**"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:46 xonsh.proc.HiddenCommandPipeline:26
+msgid "Popen-like"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:47 xonsh.proc.HiddenCommandPipeline:27
+msgid "The process in procs"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:50 xonsh.proc.HiddenCommandPipeline:30
+msgid "**ended**"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:49 xonsh.proc.HiddenCommandPipeline:29
+msgid "bool"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:50 xonsh.proc.HiddenCommandPipeline:30
+msgid "Boolean for if the command has stopped executing."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:53 xonsh.proc.HiddenCommandPipeline:33
+msgid "**input**"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:52 xonsh.proc.CommandPipeline:55
+#: xonsh.proc.CommandPipeline:58 xonsh.proc.HiddenCommandPipeline:32
+#: xonsh.proc.HiddenCommandPipeline:35 xonsh.proc.HiddenCommandPipeline:38
+msgid "str"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:53 xonsh.proc.HiddenCommandPipeline:33
+msgid "A string of the standard input."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:56 xonsh.proc.HiddenCommandPipeline:36
+msgid ":obj:`output <output>`"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:56 xonsh.proc.CommandPipeline.output:2
+#: xonsh.proc.HiddenCommandPipeline:36
+msgid "Non-blocking, lazy access to output"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:59 xonsh.proc.HiddenCommandPipeline:39
+msgid "**errors**"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:59 xonsh.proc.HiddenCommandPipeline:39
+msgid "A string of the standard error."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:62 xonsh.proc.HiddenCommandPipeline:42
+msgid "**lines**"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:61 xonsh.proc.HiddenCommandPipeline:41
+msgid "list of str"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:62 xonsh.proc.HiddenCommandPipeline:42
+msgid "The output lines"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:66 xonsh.proc.HiddenCommandPipeline:46
+msgid "**starttime**"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:65 xonsh.proc.HiddenCommandPipeline:45
+msgid "floats or None"
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline:65 xonsh.proc.HiddenCommandPipeline:45
+msgid "Pipeline start timestamp."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.end:2
+msgid "End the pipeline, return the controlling terminal if needed."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.end:4
+msgid "Main things done in self._end()."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.itercheck:2
+msgid ""
+"Iterates through the command lines and throws an error if the returncode "
+"is non-zero."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.iterraw:2
+msgid "Iterates through the last stdout, and returns the lines exactly as found."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.stream_stderr:2
+msgid "Streams lines to sys.stderr and the errors attribute."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.tee_stdout:2
+msgid ""
+"Writes the process stdout to the output variable, line-by-line, and "
+"yields each line. This may optionally accept lines (in bytes) to iterate "
+"over, in which case it does not call iterraw()."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.alias:2
+msgid "Alias the process used."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.args:2
+msgid "Arguments to the process."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.err:2
+msgid "Error messages as a string."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.executed_cmd:2
+msgid "The resolve and executed command."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.inp:2
+msgid "Creates normalized input string from args."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.out:2
+msgid "Output value as a str."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.pid:2
+msgid "Process identifier."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.returncode:2
+msgid "Process return code, waits until command is completed."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.rtn:2
+msgid "Alias to return code."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.stderr:2
+msgid "Process stderr."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.stderr_postfix:2
+msgid "Postfix to print after stderr, as bytes."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.stderr_prefix:2
+msgid "Prefix to print in front of stderr, as bytes."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.stderr_redirect:2
+msgid "Redirection used for stderr."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.stdin:2
+msgid "Process stdin."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.stdin_redirect:2
+msgid "Redirection used for stdin."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.stdout:2
+msgid "Process stdout."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.stdout_redirect:2
+msgid "Redirection used for stdout."
+msgstr ""
+
+#: of xonsh.proc.CommandPipeline.timestamps:2
+msgid "The start and end time stamps."
+msgstr ""
+
+#: of xonsh.proc.ConsoleParallelReader:2
+msgid ""
+"Parallel reader for consoles that runs in a background thread. This is "
+"only needed, available, and useful on Windows."
+msgstr ""
+
+#: of xonsh.proc.ConsoleParallelReader:29
+msgid ""
+"Standard buffer file descriptor, 0 for stdin, 1 for stdout (default), and"
+" 2 for stderr."
+msgstr ""
+
+#: of xonsh.proc.ConsoleParallelReader:32
+msgid "ctypes.c_wchar_p, optional"
+msgstr ""
+
+#: of xonsh.proc.ConsoleParallelReader:33
+msgid "An existing buffer to (re-)use."
+msgstr ""
+
+#: of xonsh.proc.ConsoleParallelReader:52 xonsh.proc.NonBlockingFDReader:46
+#: xonsh.proc.QueueReader:44
+msgid "**timeout**"
+msgstr ""
+
+#: of xonsh.proc.ConsoleParallelReader:51
+msgid "float, optional"
+msgstr ""
+
+#: of xonsh.proc.ConsoleParallelReader:39 xonsh.proc.NonBlockingFDReader:33
+#: xonsh.proc.QueueReader:31
+msgid "The queue reading timeout."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher:2
+msgid ""
+"Dispatches to different file handles depending on the current thread. "
+"Useful if you want file operation to go to different places for different"
+" threads."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher:42
+msgid "**default**"
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher:41
+msgid "file-like or None, optional"
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher:30
+msgid ""
+"The file handle to write to if a thread cannot be found in the registry. "
+"If None, a new in-memory instance."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher:48
+msgid "**registry**"
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher:47
+msgid "dict"
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher:47
+msgid "Maps thread idents to file handles."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.close:2
+msgid "Closes the current thread's handle."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.deregister:2
+msgid "Removes the current thread from the registry."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.detach:2
+msgid "Detaches the buffer for the current thread."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.fileno:2
+msgid "Returns the file descriptor for the current thread."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.flush:2
+msgid "Flushes the file descriptor for the current thread."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.isatty:2
+msgid "Returns if the file descriptor for the current thread is a tty."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.read:2
+msgid "Reads from the handle for the current thread."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.readable:2
+msgid "Returns if file descriptor for the current thread is readable."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.readline:2
+msgid "Reads a line from the handle for the current thread."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.readlines:2
+msgid "Reads lines from the handle for the current thread."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.register:2
+msgid ""
+"Registers a file handle for the current thread. Returns self so that this"
+" method can be used in a with-statement."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.seek:2
+msgid "Seeks the current file."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.seekable:2
+msgid "Returns if file descriptor for the current thread is seekable."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.tell:2
+msgid "Reports the current position in the handle for the current thread."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.truncate:2
+msgid "Truncates the file for for the current thread."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.writable:2
+msgid "Returns if file descriptor for the current thread is writable."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.write:2
+msgid ""
+"Writes to this thread's handle. This also flushes, just to be extra sure "
+"the string was written."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.writelines:2
+msgid "Writes lines for the file descriptor for the current thread."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.available:2
+msgid "True if the thread is available in the registry."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.buffer:2
+msgid "Gets the buffer for this thread's handle."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.closed:2
+msgid "Is the thread's handle closed."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.encoding:2
+msgid "Gets the encoding for this thread's handle."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.errors:2
+msgid "Gets the errors for this thread's handle."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.handle:2
+msgid "Gets the current handle for the thread."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.line_buffering:2
+msgid "Gets if line buffering for this thread's handle enabled."
+msgstr ""
+
+#: of xonsh.proc.FileThreadDispatcher.newlines:2
+msgid "Gets the newlines for this thread's handle."
+msgstr ""
+
+#: of xonsh.proc.NonBlockingFDReader:2
+msgid ""
+"A class for reading characters from a file descriptor on a background "
+"thread. This has the advantages that the calling thread can close the "
+"file and that the reading does not block the calling thread."
+msgstr ""
+
+#: of xonsh.proc.NonBlockingFDReader:30 xonsh.proc.QueueReader:28
+msgid "A file descriptor"
+msgstr ""
+
+#: of xonsh.proc.NonBlockingFDReader:45 xonsh.proc.QueueReader:43
+msgid "float or None, optional"
+msgstr ""
+
+#: of xonsh.proc.PopenThread:2
+msgid ""
+"A thread for running and managing subprocess. This allows reading from "
+"the stdin, stdout, and stderr streams in a non-blocking fashion."
+msgstr ""
+
+#: of xonsh.proc.PopenThread:5
+msgid ""
+"This takes the same arguments and keyword arguments as regular Popen. "
+"This requires that the captured_stdout and captured_stderr attributes to "
+"be set following instantiation."
+msgstr ""
+
+#: of xonsh.proc.PopenThread.kill:2
+msgid "Dispatches to Popen.kill()."
+msgstr ""
+
+#: of xonsh.proc.PopenThread.poll:2
+msgid "Dispatches to Popen.returncode."
+msgstr ""
+
+#: of xonsh.proc.PopenThread.run:2
+msgid ""
+"Runs the subprocess by performing a parallel read on stdin if allowed, "
+"and copying bytes from captured_stdout to stdout and bytes from "
+"captured_stderr to stderr."
+msgstr ""
+
+#: of xonsh.proc.PopenThread.send_signal:2
+msgid "Dispatches to Popen.send_signal()."
+msgstr ""
+
+#: of xonsh.proc.PopenThread.terminate:2
+msgid "Dispatches to Popen.terminate()."
+msgstr ""
+
+#: of xonsh.proc.PopenThread.wait:2
+msgid ""
+"Dispatches to Popen.wait(), but also does process cleanup such as joining"
+" this thread and replacing the original window size signal handler."
+msgstr ""
+
+#: of xonsh.proc.PopenThread.returncode:2
+msgid "Process return code."
+msgstr ""
+
+#: of xonsh.proc.PopenThread.signal:2
+msgid "Process signal, or None."
+msgstr ""
+
+#: of xonsh.proc.PrevProcCloser:2
+msgid ""
+"Previous process closer thread for pipelines whose last command is itself"
+" unthreadable. This makes sure that the pipeline is driven forward and "
+"does not deadlock."
+msgstr ""
+
+#: of xonsh.proc.PrevProcCloser:43
+msgid "**pipeline**"
+msgstr ""
+
+#: of xonsh.proc.PrevProcCloser:42
+msgid "CommandPipeline"
+msgstr ""
+
+#: of xonsh.proc.PrevProcCloser:30
+msgid "The pipeline whose prev procs we should close."
+msgstr ""
+
+#: of xonsh.proc.PrevProcCloser.run:2
+msgid "Runs the closing algorithm."
+msgstr ""
+
+#: of xonsh.proc.ProcProxy:2
+msgid ""
+"This is process proxy class that runs its alias functions on the same "
+"thread that it was called from, which is typically the main thread. This "
+"prevents the process from running on a background thread, but enables "
+"debugger and profiler tools (functions) be run on the same thread that "
+"they are attempting to debug."
+msgstr ""
+
+#: of xonsh.proc.ProcProxy.poll:2
+msgid "Check if the function has completed via the returncode or None."
+msgstr ""
+
+#: of xonsh.proc.ProcProxy.wait:2
+msgid ""
+"Runs the function and returns the result. Timeout argument only present "
+"for API compatibility."
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:2
+msgid "Class representing a function to be run as a subprocess-mode command."
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:28 xonsh.proc.pause_call_resume:12
+msgid "**f**"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:27
+msgid "function"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:28
+msgid "The function to be executed."
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:32 xonsh.proc.pause_call_resume:15
+msgid "**args**"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:31
+msgid "list"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:31
+msgid ""
+"A (possibly empty) list containing the arguments that were given on the "
+"command line"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:38
+msgid "**stdin**"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:37 xonsh.proc.ProcProxyThread:42
+#: xonsh.proc.ProcProxyThread:47
+msgid "file-like, optional"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:35
+msgid ""
+"A file-like object representing stdin (input can be read from here).  If "
+"`stdin` is not provided or if it is explicitly set to `None`, then an "
+"instance of `io.StringIO` representing an empty file is used."
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:43 xonsh.proc.parse_proxy_return:11
+#: xonsh.proc.parse_proxy_return:14
+msgid "**stdout**"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:41
+msgid ""
+"A file-like object representing stdout (normal output can be written "
+"here).  If `stdout` is not provided or if it is explicitly set to `None`,"
+" then `sys.stdout` is used."
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:48
+msgid "**stderr**"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:46
+msgid ""
+"A file-like object representing stderr (error output can be written "
+"here).  If `stderr` is not provided or if it is explicitly set to `None`,"
+" then `sys.stderr` is used."
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:51
+msgid "**universal_newlines**"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:50 xonsh.proc.ProcProxyThread:54
+msgid "bool, optional"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:51
+msgid "Whether or not to use universal newlines."
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:55
+msgid "**close_fds**"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:54
+msgid ""
+"Whether or not to close file descriptors. This is here for Popen "
+"compatability and currently does nothing."
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:71
+msgid "**env**"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:70
+msgid "Mapping, optional"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread:58
+msgid "Environment mapping."
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread.poll:2
+msgid "Check if the function has completed."
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread.poll xonsh.proc.parse_proxy_return
+msgid "Returns"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread.poll:21
+msgid "None if the function is still executing, and the returncode otherwise"
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread.run:2
+msgid ""
+"Set up input/output streams and execute the child function in a new "
+"thread.  This is part of the `threading.Thread` interface and should not "
+"be called directly."
+msgstr ""
+
+#: of xonsh.proc.ProcProxyThread.wait:2
+msgid "Waits for the process to finish and returns the return code."
+msgstr ""
+
+#: of xonsh.proc.QueueReader:2
+msgid "Provides a file-like interface to reading from a queue."
+msgstr ""
+
+#: of xonsh.proc.QueueReader.close:2
+msgid "close the reader"
+msgstr ""
+
+#: of xonsh.proc.QueueReader.fileno:2
+msgid "Returns the file descriptor number."
+msgstr ""
+
+#: of xonsh.proc.QueueReader.is_fully_read:2
+msgid "Returns whether or not the queue is fully read and the reader is closed."
+msgstr ""
+
+#: of xonsh.proc.QueueReader.iterqueue:2
+msgid "Iterates through all remaining chunks in a blocking fashion."
+msgstr ""
+
+#: of xonsh.proc.QueueReader.read:2
+msgid "Reads bytes from the file."
+msgstr ""
+
+#: of xonsh.proc.QueueReader.read_queue:2
+msgid ""
+"Reads a single chunk from the queue. This is blocking if the timeout is "
+"None and non-blocking otherwise."
+msgstr ""
+
+#: of xonsh.proc.QueueReader.readable:2
+msgid "Returns true, because this object is always readable."
+msgstr ""
+
+#: of xonsh.proc.QueueReader.readline:2
+msgid "Reads a line, or a partial line from the file descriptor."
+msgstr ""
+
+#: of xonsh.proc.QueueReader.readlines:2
+msgid ""
+"Reads lines from the file descriptor. This is blocking for negative hints"
+" (i.e. read all the remaining lines) and non-blocking otherwise."
+msgstr ""
+
+#: of xonsh.proc.parse_proxy_return:2
+msgid "Proxies may return a variety of outputs. This handles them generally."
+msgstr ""
+
+#: of xonsh.proc.parse_proxy_return:8
+msgid "**r**"
+msgstr ""
+
+#: of xonsh.proc.parse_proxy_return:7
+msgid "tuple, str, int, or None"
+msgstr ""
+
+#: of xonsh.proc.parse_proxy_return:8
+msgid "Return from proxy function"
+msgstr ""
+
+#: of xonsh.proc.parse_proxy_return:10 xonsh.proc.parse_proxy_return:13
+msgid "file-like"
+msgstr ""
+
+#: of xonsh.proc.parse_proxy_return:11
+msgid "Current stdout stream"
+msgstr ""
+
+#: of xonsh.proc.parse_proxy_return:14
+msgid "Current stderr stream"
+msgstr ""
+
+#: of xonsh.proc.parse_proxy_return:31
+msgid "**cmd_result**"
+msgstr ""
+
+#: of xonsh.proc.parse_proxy_return:19
+msgid "The return code of the proxy"
+msgstr ""
+
+#: of xonsh.proc.partial_proxy:2
+msgid "Dispatches the appropriate proxy function based on the number of args."
+msgstr ""
+
+#: of xonsh.proc.pause_call_resume:2
+msgid ""
+"For a process p, this will call a function f with the remaining args and "
+"and kwargs. If the process cannot accept signals, the function will be "
+"called."
+msgstr ""
+
+#: of xonsh.proc.pause_call_resume:9
+msgid "**p**"
+msgstr ""
+
+#: of xonsh.proc.pause_call_resume:8
+msgid "Popen object or similar"
+msgstr ""
+
+#: of xonsh.proc.pause_call_resume:11
+msgid "callable"
+msgstr ""
+
+#: of xonsh.proc.pause_call_resume:14
+msgid "remaining arguments"
+msgstr ""
+
+#: of xonsh.proc.pause_call_resume:31
+msgid "**kwargs**"
+msgstr ""
+
+#: of xonsh.proc.pause_call_resume:30
+msgid "keyword arguments"
+msgstr ""
+
+#: of xonsh.proc.populate_buffer:2
+msgid "Reads bytes from the file descriptor and copies them into a buffer."
+msgstr ""
+
+#: of xonsh.proc.populate_buffer:4
+msgid ""
+"The reads happen in parallel using the pread() syscall; which is only "
+"available on POSIX systems. If the read fails for any reason, the reader "
+"is flagged as closed."
+msgstr ""
+
+#: of xonsh.proc.populate_console:2
+msgid ""
+"Reads bytes from the file descriptor and puts lines into the queue. The "
+"reads happened in parallel, using "
+"xonsh.winutils.read_console_output_character(), and is thus only "
+"available on windows. If the read fails for any reason, the reader is "
+"flagged as closed."
+msgstr ""
+
+#: of xonsh.proc.populate_fd_queue:2
+msgid ""
+"Reads 1 kb of data from a file descriptor into a queue. If this ends or "
+"fails, it flags the calling reader object as closed."
+msgstr ""
+
+#: of xonsh.proc.proxy_five:2
+msgid ""
+"Calls a proxy function which takes four parameter: args, stdin, stdout, "
+"stderr, and spec."
+msgstr ""
+
+#: of xonsh.proc.proxy_four:2
+msgid ""
+"Calls a proxy function which takes four parameter: args, stdin, stdout, "
+"and stderr."
+msgstr ""
+
+#: of xonsh.proc.proxy_one:2
+msgid "Calls a proxy function which takes one parameter: args"
+msgstr ""
+
+#: of xonsh.proc.proxy_three:2
+msgid "Calls a proxy function which takes three parameter: args, stdin, stdout."
+msgstr ""
+
+#: of xonsh.proc.proxy_two:2
+msgid "Calls a proxy function which takes two parameter: args and stdin."
+msgstr ""
+
+#: of xonsh.proc.proxy_zero:2
+msgid "Calls a proxy function which takes no parameters."
+msgstr ""
+
+#: of xonsh.proc.safe_fdclose:2
+msgid ""
+"Closes a file handle in the safest way possible, and potentially storing "
+"the result."
+msgstr ""
+
+#: of xonsh.proc.safe_flush:2
+msgid "Attempts to safely flush a file handle, returns success bool."
+msgstr ""
+
+#: of xonsh.proc.safe_readable:2
+msgid "Attempts to find if the handle is readable without throwing an error."
+msgstr ""
+
+#: of xonsh.proc.safe_readlines:2
+msgid "Attempts to read lines without throwing an error."
+msgstr ""
+
+#: of xonsh.proc.still_writable:2
+msgid ""
+"Determines whether a file descriptor is still writable by trying to write"
+" an empty string and seeing if it fails."
+msgstr ""
+

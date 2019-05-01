@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/contexts.rst:5
+msgid "Context Managers for Xonsh (``xonsh.contexts``)"
+msgstr ""
+
+#: of xonsh.contexts:1
+msgid "Context management tools for xonsh."
+msgstr ""
+
+#: of xonsh.contexts.Block:2
+msgid ""
+"This is a context manager for obtaining a block of lines without actually"
+" executing the block. The lines are accessible as the 'lines' attribute. "
+"This must be used as a macro."
+msgstr ""
+
+#: of xonsh.contexts.Block xonsh.contexts.Functor
+msgid "Attributes"
+msgstr ""
+
+#: of xonsh.contexts.Block:42
+msgid "**lines**"
+msgstr ""
+
+#: of xonsh.contexts.Block:41
+msgid "list of str or None"
+msgstr ""
+
+#: of xonsh.contexts.Block:42
+msgid "Block lines as if split by str.splitlines(), if available."
+msgstr ""
+
+#: of xonsh.contexts.Block:45
+msgid "**glbs**"
+msgstr ""
+
+#: of xonsh.contexts.Block:44 xonsh.contexts.Block:48
+msgid "Mapping or None"
+msgstr ""
+
+#: of xonsh.contexts.Block:45
+msgid "Global execution context, ie globals()."
+msgstr ""
+
+#: of xonsh.contexts.Block:49
+msgid "**locs**"
+msgstr ""
+
+#: of xonsh.contexts.Block:48
+msgid "Local execution context, ie locals()."
+msgstr ""
+
+#: of xonsh.contexts.Functor:2
+msgid ""
+"This is a context manager that turns the block into a callable object, "
+"bound to the execution context it was created in."
+msgstr ""
+
+#: of xonsh.contexts.Functor
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.contexts.Functor:29
+msgid "**args**"
+msgstr ""
+
+#: of xonsh.contexts.Functor:28
+msgid "Sequence of str, optional"
+msgstr ""
+
+#: of xonsh.contexts.Functor:29
+msgid "A tuple of argument names for the functor."
+msgstr ""
+
+#: of xonsh.contexts.Functor:32
+msgid "**kwargs**"
+msgstr ""
+
+#: of xonsh.contexts.Functor:31
+msgid "Mapping of str to values or list of item tuples, optional"
+msgstr ""
+
+#: of xonsh.contexts.Functor:32
+msgid "Keyword argument names and values, if available."
+msgstr ""
+
+#: of xonsh.contexts.Functor:46
+msgid "**rtn**"
+msgstr ""
+
+#: of xonsh.contexts.Functor:45
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.contexts.Functor:35
+msgid "Name of object to return, if available."
+msgstr ""
+
+#: of xonsh.contexts.Functor:53
+msgid "**func**"
+msgstr ""
+
+#: of xonsh.contexts.Functor:52
+msgid "function"
+msgstr ""
+
+#: of xonsh.contexts.Functor:51
+msgid ""
+"The underlying function object. This defaults to none and is set after "
+"the the block is exited."
+msgstr ""
+

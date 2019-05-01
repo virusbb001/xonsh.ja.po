@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/tracer.rst:5
+msgid "Tracer (``xonsh.tracer``)"
+msgstr ""
+
+#: of xonsh.tracer:1
+msgid "Implements a xonsh tracer."
+msgstr ""
+
+#: of xonsh.tracer.TracerType:2
+msgid ""
+"Represents a xonsh tracer object, which keeps track of all tracing state."
+" This is a singleton."
+msgstr ""
+
+#: of xonsh.tracer.TracerType.color_output:2
+msgid "Specify whether or not the tracer output should be colored."
+msgstr ""
+
+#: of xonsh.tracer.TracerType.start:2
+msgid "Starts tracing a file."
+msgstr ""
+
+#: of xonsh.tracer.TracerType.stop:2
+msgid "Stops tracing a file."
+msgstr ""
+
+#: of xonsh.tracer.TracerType.trace:2
+msgid "Implements a line tracing function."
+msgstr ""
+
+#: of xonsh.tracer.tracer_format_line:2
+msgid "Formats a trace line suitable for printing."
+msgstr ""
+
+#: of xonsh.tracer.tracermain:2
+msgid "Main function for tracer command-line interface."
+msgstr ""
+

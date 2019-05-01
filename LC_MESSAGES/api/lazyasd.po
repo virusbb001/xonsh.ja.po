@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/lazyasd.rst:5
+msgid "Lazy & Self-destructive Objects (``xonsh.lazyasd``)"
+msgstr ""
+
+#: of xonsh.lazyasd:1
+msgid "Lazy and self destructive containers for speeding up module import."
+msgstr ""
+
+#: of xonsh.lazyasd.BackgroundModuleLoader:2
+msgid "Thread to load modules in the background."
+msgstr ""
+
+#: of xonsh.lazyasd.BackgroundModuleLoader.run:2
+msgid "Method representing the thread's activity."
+msgstr ""
+
+#: of xonsh.lazyasd.BackgroundModuleLoader.run:4
+msgid ""
+"You may override this method in a subclass. The standard run() method "
+"invokes the callable object passed to the object's constructor as the "
+"target argument, if any, with sequential and keyword arguments taken from"
+" the args and kwargs arguments, respectively."
+msgstr ""
+
+#: of xonsh.lazyasd.BackgroundModuleProxy:2
+msgid ""
+"Proxy object for modules loaded in the background that block attribute "
+"access until the module is loaded.."
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool:2
+msgid ""
+"Boolean like object that lazily computes it boolean value when it is "
+"first asked. Once loaded, this result will replace itself in the provided"
+" context (typically the globals of the call site) with the given name."
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool:7
+msgid ""
+"For example, you can prevent the complex boolean until it is actually "
+"used::"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool xonsh.lazyasd.LazyDict xonsh.lazyasd.LazyObject
+#: xonsh.lazyasd.load_module_in_background
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool:15 xonsh.lazyasd.LazyObject:15
+msgid "**load**"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool:14 xonsh.lazyasd.LazyObject:14
+msgid "function with no arguments"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool:15
+msgid "A loader function that performs the actual boolean evaluation."
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool:19 xonsh.lazyasd.LazyDict:25
+#: xonsh.lazyasd.LazyObject:19
+msgid "**ctx**"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool:18 xonsh.lazyasd.LazyDict:24
+#: xonsh.lazyasd.LazyObject:18
+msgid "Mapping"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool:18
+msgid ""
+"Context to replace the LazyBool instance in with the the fully loaded "
+"mapping."
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool:36 xonsh.lazyasd.LazyDict:42
+#: xonsh.lazyasd.LazyObject:36 xonsh.lazyasd.load_module_in_background:8
+msgid "**name**"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool:35 xonsh.lazyasd.LazyDict:41
+#: xonsh.lazyasd.LazyObject:35 xonsh.lazyasd.load_module_in_background:7
+msgid "str"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyBool:22 xonsh.lazyasd.LazyDict:28
+msgid ""
+"Name in the context to give the loaded mapping. This *should* be the name"
+" on the LHS of the assignment."
+msgstr ""
+
+#: of xonsh.lazyasd.LazyDict:2
+msgid ""
+"Dictionary like object that lazily loads its values from an initial dict "
+"of key-loader function pairs.  Each key is loaded when its value is first"
+" accessed. Once fully loaded, this object will replace itself in the "
+"provided context (typically the globals of the call site) with the given "
+"name."
+msgstr ""
+
+#: of xonsh.lazyasd.LazyDict:8
+msgid ""
+"For example, you can prevent the compilation of a bunch of regular "
+"expressions until they are actually used::"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyDict:21
+msgid "**loaders**"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyDict:20
+msgid "Mapping of keys to functions with no arguments"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyDict:20
+msgid ""
+"A mapping of loader function that performs the actual value construction "
+"upon access."
+msgstr ""
+
+#: of xonsh.lazyasd.LazyDict:24
+msgid ""
+"Context to replace the LazyDict instance in with the the fully loaded "
+"mapping."
+msgstr ""
+
+#: of xonsh.lazyasd.LazyObject:2
+msgid ""
+"Lazily loads an object via the load function the first time an attribute "
+"is accessed. Once loaded it will replace itself in the provided context "
+"(typically the globals of the call site) with the given name."
+msgstr ""
+
+#: of xonsh.lazyasd.LazyObject:7
+msgid ""
+"For example, you can prevent the compilation of a regular expression "
+"until it is actually used::"
+msgstr ""
+
+#: of xonsh.lazyasd.LazyObject:15
+msgid "A loader function that performs the actual object construction."
+msgstr ""
+
+#: of xonsh.lazyasd.LazyObject:18
+msgid ""
+"Context to replace the LazyObject instance in with the object returned by"
+" load()."
+msgstr ""
+
+#: of xonsh.lazyasd.LazyObject:22
+msgid ""
+"Name in the context to give the loaded object. This *should* be the name "
+"on the LHS of the assignment."
+msgstr ""
+
+#: of xonsh.lazyasd.lazybool:2
+msgid "Decorator for constructing lazy booleans from a function."
+msgstr ""
+
+#: of xonsh.lazyasd.lazydict:2
+msgid "Decorator for constructing lazy dicts from a function."
+msgstr ""
+
+#: of xonsh.lazyasd.lazyobject:2
+msgid "Decorator for constructing lazy objects from a function."
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:2
+msgid "Entry point for loading modules in background thread."
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:8
+msgid "Module name to load in background thread."
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:11
+msgid "**package**"
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:10
+msgid "str or None, optional"
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:11
+msgid "Package name, has the same meaning as in importlib.import_module()."
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:14
+msgid "**debug**"
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:13
+msgid "str, optional"
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:14
+msgid "Debugging symbol name to look up in the environment."
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:18
+msgid "**env**"
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:17
+#: xonsh.lazyasd.load_module_in_background:23
+msgid "Mapping or None, optional"
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:17
+msgid ""
+"Environment this will default to __xonsh__.env, if available, and "
+"os.environ otherwise."
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:24
+msgid "**replacements**"
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:21
+msgid ""
+"Dictionary mapping fully qualified module names (eg foo.bar.baz) that "
+"import the lazily loaded module, with the variable name in that module. "
+"For example, suppose that foo.bar imports module a as b, this dict is "
+"then {'foo.bar': 'b'}."
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background
+msgid "Returns"
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:43
+msgid "**module**"
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:42
+msgid "ModuleType"
+msgstr ""
+
+#: of xonsh.lazyasd.load_module_in_background:29
+msgid ""
+"This is either the original module that is found in sys.modules or a "
+"proxy module that will block until delay attribute access until the "
+"module is fully loaded."
+msgstr ""
+

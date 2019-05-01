@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/prompt/vc.rst:5
+msgid "Version control branch info prompt formatter (``xonsh.prompt.vc``)"
+msgstr ""
+
+#: of xonsh.prompt.vc:1
+msgid "Prompt formatter for simple version control branches"
+msgstr ""
+
+#: of xonsh.prompt.vc.branch_bg_color:2
+msgid ""
+"Return red if the current branch is dirty, yellow if the dirtiness can "
+"not be determined, and green if it clean. These are background colors."
+msgstr ""
+
+#: of xonsh.prompt.vc.branch_color:2
+msgid ""
+"Return red if the current branch is dirty, yellow if the dirtiness can "
+"not be determined, and green if it clean. These are bold, intense colors "
+"for the foreground."
+msgstr ""
+
+#: of xonsh.prompt.vc.current_branch:2
+msgid ""
+"Gets the branch for a current working directory. Returns an empty string "
+"if the cwd is not a repository.  This currently only works for git and hg"
+" and should be extended in the future.  If a timeout occurred, the string"
+" '<branch-timeout>' is returned."
+msgstr ""
+
+#: of xonsh.prompt.vc.dirty_working_directory:2
+msgid ""
+"Returns a boolean as to whether there are uncommitted files in version "
+"control repository we are inside. If this cannot be determined, returns "
+"None. Currently supports git and hg."
+msgstr ""
+
+#: of xonsh.prompt.vc.get_git_branch:2
+msgid ""
+"Attempts to find the current git branch. If this could not be determined "
+"(timeout, not in a git repo, etc.) then this returns None."
+msgstr ""
+
+#: of xonsh.prompt.vc.get_hg_branch:2
+msgid ""
+"Try to get the mercurial branch of the current directory, return None if "
+"not in a repo or subprocess.TimeoutExpired if timed out."
+msgstr ""
+
+#: of xonsh.prompt.vc.git_dirty_working_directory:2
+msgid ""
+"Returns whether or not the git directory is dirty. If this could not be "
+"determined (timeout, file not found, etc.) then this returns None."
+msgstr ""
+
+#: of xonsh.prompt.vc.hg_dirty_working_directory:2
+msgid ""
+"Computes whether or not the mercurial working directory is dirty or not. "
+"If this cannot be determined, None is returned."
+msgstr ""
+

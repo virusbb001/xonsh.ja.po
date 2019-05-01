@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Anthony Scopatz
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api/diff_history.rst:5
+msgid "History Diff'er (``xonsh.diff_history``)"
+msgstr ""
+
+#: of xonsh.diff_history:1
+msgid "Tools for diff'ing two xonsh history files in a meaningful fashion."
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer:2
+msgid "This class helps diff two xonsh history files."
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer
+msgid "Parameters"
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer:28
+msgid "**afile**"
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer:27 xonsh.diff_history.HistoryDiffer:30
+msgid "file handle or str"
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer:28
+msgid "The first file to diff"
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer:31
+msgid "**bfile**"
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer:31
+msgid "The second file to diff"
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer:36
+msgid "**reopen**"
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer:35 xonsh.diff_history.HistoryDiffer:51
+msgid "bool, optional"
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer:34
+msgid ""
+"Whether or not to reopen the file handles each time. The default here is "
+"opposite from the LazyJSON default because we know that we will be doing "
+"a lot of reading so it is best to keep the handles open."
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer:52
+msgid "**verbose**"
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer:39
+msgid "Whether to print a verbose amount of information."
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer.cmdsdiff:2
+msgid "Computes the difference of the commands themselves."
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer.envdiff:2
+msgid "Computes the difference between the environments."
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer.format:2
+msgid "Formats the difference between the two history files."
+msgstr ""
+
+#: of xonsh.diff_history.HistoryDiffer.header:2
+msgid "Computes a header string difference."
+msgstr ""
+
+#: of xonsh.diff_history.highlighted_ndiff:2
+msgid "Returns a highlighted string, with bold characters where different."
+msgstr ""
+
