@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"POT-Creation-Date: 2019-05-01 22:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -952,7 +952,7 @@ msgid "Color settings for ``ls`` command line utility"
 msgstr ""
 
 #: ../../envvarsbody:583
-msgid "**default:** <function default_lscolors at 0x7f26604b7598>"
+msgid "**default:** <function default_lscolors at 0x7f405ced3598>"
 msgstr ""
 
 #: ../../envvarsbody:592
@@ -1417,7 +1417,7 @@ msgid "Append new line when a partial line is preserved in output."
 msgstr ""
 
 #: ../../envvarsbody:1085
-msgid "**default:** <function xonsh_append_newline at 0x7f26604b7510>"
+msgid "**default:** <function xonsh_append_newline at 0x7f405ced3510>"
 msgstr ""
 
 #: ../../envvarsbody:1094
@@ -1792,5 +1792,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "**default:** <function xonsh_append_newline at 0x7f8a826d5510>"
+#~ msgstr ""
+
+#~ msgid "**default:** <function default_lscolors at 0x7f26604b7598>"
+#~ msgstr ""
+
+#~ msgid "**default:** <function xonsh_append_newline at 0x7f26604b7510>"
 #~ msgstr ""
 
