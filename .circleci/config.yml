@@ -2,18 +2,53 @@
 # Use the latest 2.1 version of CircleCI pipeline processing engine,
 # see https://circleci.com/docs/2.0/configuration-reference/
 version: 2.1
-
-# Use a package of configuration called an orb,
-# see https://circleci.com/docs/2.0/orb-intro/
-orbs:
-  # Declare a dependency on the welcome-orb
-  welcome: circleci/welcome-orb@0.3.1
+jobs:
+  build:
+    docker:
+      - circleci/python:3
+    steps:
+      - run:
+          name: Sync original xonsh
+          command: git clone https://github.com/xonsh/xonsh.git
+      - checkout:
+          path: xonsh/docs/locale/ja
+      - run:
+          name: apply patch to xonsh
+          command: |
+            git -C xonsh apply xonsh/docs/locale/ja/patches/add_i18n_conf.patch
+      - run:
+          name: create venv
+          command: |
+            python -m venv venv
+            . venv/bin/activate
+            pip install -r xonsh/requirements-docs.txt
+            (cd xonsh && pip intall -e .)
+      - run:
+          name: Building docs
+          command: |
+            . venv/bin/activate
+            git clone git@github.com:virusbb001/xonsh-docs-ja.git xonsh/docs/_build/html
+            # applypatch here
+            (cd xonsh/docs && make -e SPHINXOPTS="-D language='ja'" html)
+      - run:
+          name: Publish docs
+          command: |
+            cd xonsh/docs/_build/html
+            git config user.email "virusbb001a+circleci@gmail.com"
+            git config user.name "virus bot"
+            git add .
+            git commit -m "Publish $CIRCLE_SHA1"
+            git push origin master
 
 # Orchestrate or schedule a set of jobs,
 # see https://circleci.com/docs/2.0/workflows/
 workflows:
   # Name the workflow "Welcome"
-  Welcome:
+  build_and_deploy:
     # Run the welcome/run job in its own container
     jobs:
-      - welcome/run
+      - build:
+          filters:
+            branches:
+              only:
+                - master
