@@ -26,6 +26,7 @@ jobs:
           command: |
             . venv/bin/activate
             git clone git@github.com:virusbb001/xonsh-docs-ja.git xonsh/docs/_build/html
+            # git clone https://github.com/virusbb001/xonsh-docs-ja.git xonsh/docs/_build/html
             (cd xonsh/docs && make -e SPHINXOPTS="-D language='ja'" html)
       - run:
           name: Publish docs
@@ -34,8 +35,11 @@ jobs:
             git config user.email "virusbb001a+circleci@gmail.com"
             git config user.name "virus bot"
             git add .
-            git commit -m "[ci skip] Publish at $(date)\n\nxonsh.ja.po: $CIRCLE_SHA1"
+            git commit -m "[ci skip] Publish at $(date)
+
+            xonsh.ja.po: $CIRCLE_SHA1"
             git push origin master
+            # git log -n1 HEAD
 
 # Orchestrate or schedule a set of jobs,
 # see https://circleci.com/docs/2.0/workflows/
