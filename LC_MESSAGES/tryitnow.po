@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../tryitnow.rst:2
 msgid "Try It Now!"
-msgstr ""
+msgstr "今すぐ試す!"
 
 #: ../../tryitnow.rst:3
 msgid ""
@@ -28,4 +28,7 @@ msgid ""
 "below. **Note:** this is not a fully featured xonsh instance due to "
 "repl.it limitations."
 msgstr ""
+"ブラウザーでxonshを試してみてください。"
+"下の `Repl.it <https://repl.it>`_ フレームの右下にある三角再生ボタンを押すだけです。 "
+"注意： repl.itの制限により、完全に機能するxonshインスタンスではありません。"
 
