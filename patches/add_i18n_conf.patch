@@ -1,0 +1,48 @@
+diff --git a/docs/Makefile b/docs/Makefile
+index 1d02f6c9..2cdbc172 100644
+--- a/docs/Makefile
++++ b/docs/Makefile
+@@ -17,7 +17,7 @@ DOCREPONAME = xonsh-docs
+ DOCREPOURL  = git@github.com:xonsh/xonsh-docs.git
+ DOCREPOBRANCH = gh-pages
+ 
+-.PHONY: help clean html dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest
++.PHONY: help clean html dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest gettext
+ 
+ help:
+ 	@echo "Please use \`make <target>' where <target> is one of"
+@@ -29,6 +29,7 @@ help:
+ 	@echo "  qthelp    to make HTML files and a qthelp project"
+ 	@echo "  latex     to make LaTeX files, you can set PAPER=a4 or PAPER=letter"
+ 	@echo "  changes   to make an overview of all changed/added/deprecated items"
++	@echo "  gettext   to make gettext files"
+ 	@echo "  linkcheck to check all external links for integrity"
+ 	@echo "  doctest   to run all doctests embedded in the documentation (if enabled)"
+ 
+@@ -82,6 +83,11 @@ changes:
+ 	@echo
+ 	@echo "The overview file is in $(BUILDDIR)/changes."
+ 
++gettext:
++	$(SPHINXBUILD) -b gettext $(ALLSPHINXOPTS) $(BUILDDIR)/gettext
++	@echo
++	@echo "Build finished. The gettext files are in $(BUILDDIR)/gettext."
++
+ linkcheck:
+ 	$(SPHINXBUILD) -b linkcheck $(ALLSPHINXOPTS) $(BUILDDIR)/linkcheck
+ 	@echo
+diff --git a/docs/conf.py b/docs/conf.py
+index 96e9e48d..d6eee2c9 100644
+--- a/docs/conf.py
++++ b/docs/conf.py
+@@ -267,6 +267,10 @@ autosummary_generate = []
+ # Prevent numpy from making silly tables
+ numpydoc_show_class_members = False
+ 
++# Add i18n settings
++locale_dirs = ['locale/']
++gettext_compact = False
++
+ 
+ #
+ # Auto-generate some docs
