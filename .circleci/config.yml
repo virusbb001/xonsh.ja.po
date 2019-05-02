@@ -15,7 +15,7 @@ jobs:
       - run:
           name: apply patch to xonsh
           command: |
-            git -C xonsh apply xonsh/docs/locale/ja/patches/add_i18n_conf.patch
+            git -C xonsh apply docs/locale/ja/patches/add_i18n_conf.patch
       - run:
           name: create venv
           command: |
