@@ -19,40 +19,43 @@ msgstr ""
 
 #: ../../windows.rst:3
 msgid "Windows Guide"
-msgstr ""
+msgstr "Windowsガイド"
 
 #: ../../windows.rst:6
 msgid "Installation"
-msgstr ""
+msgstr "インストール"
 
 #: ../../windows.rst:9
 msgid "The easy way"
-msgstr ""
+msgstr "簡単な方法"
 
 #: ../../windows.rst:11
 msgid ""
 "The easiest way to install xonsh on windows is through the `Anaconda "
 "Python Distribution <https://www.anaconda.com/download/>`__ and the conda"
 " package manager."
-msgstr ""
+msgstr "XonshをWindowsにインストールする最も簡単な方法は `Anaconda Python "
+"ディストリビューション <https://www.anaconda.com/download/>`__ と conda パッケージ "
+"マネージャーを通す方法です。"
 
 #: ../../windows.rst:16
 msgid "Xonsh is not supported on legacy Python (2.7)."
-msgstr ""
+msgstr "Xonshは古いPython(2.7)をサポートしていません。"
 
 #: ../../windows.rst:18
 msgid "Install xonsh with the following command:"
-msgstr ""
+msgstr "以下のコマンドでXonshをインストールします。"
 
 #: ../../windows.rst:25
 msgid ""
 "This will install xonsh and all the recommended dependencies. Next, run "
 "xonsh:"
 msgstr ""
+"これでxonshと推奨される依存パッケージをインストールします。次に、xonshを実行します。"
 
 #: ../../windows.rst:34
 msgid "Install from source"
-msgstr ""
+msgstr "ソースからインストール"
 
 #: ../../windows.rst:36
 msgid ""
@@ -60,38 +63,44 @@ msgid ""
 "from http://python.org. Remember to select \"Add python to PATH\" during "
 "installation."
 msgstr ""
+"Windows上でXonshをソースからインストールするには、まず `Python v3.4+`_ を"
+"http://python.org からインストールします。 インストール中に \"Add python to PATH\" "
+"を選択することをおすすめします。"
 
 #: ../../windows.rst:39
 msgid "Next, install the prompt_toolkit dependency via ``pip``:"
-msgstr ""
+msgstr "次に、prompt_toolkit 依存を ``pip`` でインストールします:"
 
 #: ../../windows.rst:45
 msgid ""
 "Download the latest `xonsh-master.zip`_ from github and unzip it to "
 "``xonsh-master``."
 msgstr ""
+"Githubから最新の `xonsh-master.zip`_ をダウンロードして ``xonsh-master`` "
+"に解凍します。"
 
 #: ../../windows.rst:48
 msgid "Now install xonsh:"
-msgstr ""
+msgstr "Xonshをインストールします:"
 
 #: ../../windows.rst:55
 msgid "Next, run xonsh:"
-msgstr ""
+msgstr "次に、xonshを実行します:"
 
 #: ../../windows.rst:69
 msgid "Usage"
-msgstr ""
+msgstr "使い方"
 
 #: ../../windows.rst:72
 msgid "Color style"
-msgstr ""
+msgstr "カラースタイル"
 
 #: ../../windows.rst:74
 msgid ""
 "The dark red and blue colors are completely unreadable in Windows' "
 "default terminal."
 msgstr ""
+"Windowsのデフォルトの端末では暗い赤と青は全く読めません。"
 
 #: ../../windows.rst:82
 msgid ""
@@ -100,21 +109,26 @@ msgid ""
 "controlled by the :ref:`$INTENSIFY_COLORS_ON_WIN "
 "<intensify_colors_on_win>` environment variable which is ``True`` by "
 "default."
-msgstr ""
+msgstr "色を設定する方法はありますが（下記参照）、新しいユーザーに最高の"
+"体験を提供するために、Xonshには色を修正するためのいくつかのトリックがあります。"
+"これは :ref:`$INTENSIFY_COLORS_ON_WIN <intensify_colors_on_win>` 環境変数によって"
+"制御されます。これはデフォルトで ``True`` です。"
 
 #: ../../windows.rst:87
 msgid "**On Windows 10**"
-msgstr ""
+msgstr "**Windows 10の場合**"
 
 #: ../../windows.rst:89
 msgid ""
 "Windows 10 supports true color in the terminal, so on Win 10 Xonsh will "
 "use a style with hard coded colors instead of the terminal colors."
 msgstr ""
+"Windows 10は端末でトゥルーカラーをサポートしています。なので、Windows 10 のXonshは"
+"端末の色の代わりにハードコードされたスタイルを使用します。"
 
 #: ../../windows.rst:97
 msgid "**On older Windows**"
-msgstr ""
+msgstr "**古いWindowsの場合**"
 
 #: ../../windows.rst:99
 msgid ""
@@ -122,10 +136,12 @@ msgid ""
 " some of the unreadable dark colors with more readable alternatives (e.g."
 " blue becomes cyan)."
 msgstr ""
+"古いWindowsではXonshは他のアプローチを取り、読みにくい暗い色のいくつかを読みやすい"
+"ものに置き換えます。(例えば青はシアンになります)"
 
 #: ../../windows.rst:103
 msgid "**Configure the terminal colors**"
-msgstr ""
+msgstr "**端末の色の設定**"
 
 #: ../../windows.rst:105
 msgid ""
@@ -133,10 +149,13 @@ msgid ""
 "colors, but it is tedious to do manually. The Microsoft console team has "
 "made a `handy tool to configure colors`_ in the terminal"
 msgstr ""
+"Windowsコンソールを読みやすいデフォルトの色で設定することは可能ですが、"
+"手動で行うのは面倒です。 Microsoftのコンソールチームは、"
+"`端末の色を設定するための便利なツール <handy tool to configure colors_>`_ を作りました。"
 
 #: ../../windows.rst:109
 msgid "`Download Colortool`_ from from GitHub"
-msgstr ""
+msgstr "GitHubから `Colortoolをダウンロード <Download Colortool_>`_"
 
 #: ../../windows.rst:111
 msgid ""
@@ -144,10 +163,13 @@ msgid ""
 " to ``False`` to allow the console to control the colors. You can do this"
 " by adding the following to the xonsh run control file ``.xonshrc``:"
 msgstr ""
+"より良い色が設定されている場合は、コンソールで色を制御できるように"
+" ``$INTENSIFY_COLORS_ON_WIN`` を ``False`` に設定する必要があります。 "
+"これを行うには、Xonsh実行制御ファイル ``.xonshrc`` に以下を追加します。"
 
 #: ../../windows.rst:124
 msgid "Avoid locking the working directory"
-msgstr ""
+msgstr "作業ディレクトリをロックしない"
 
 #: ../../windows.rst:126
 msgid ""
@@ -155,6 +177,9 @@ msgid ""
 "directory so it can't be deleted or renamed. ``cmd.exe`` has this "
 "behaviour as well, but it is quite annoying for a shell."
 msgstr ""
+"Pythonは(Windows上の他のプロセスと同様に)現在の作業ディレクトリをロックするので、"
+"削除したり名前を変更したりすることはできません。 ``cmd.exe`` にもこのような動作が"
+"ありますが、シェルにとっては非常に面倒です。"
 
 #: ../../windows.rst:130
 msgid ""
@@ -164,14 +189,18 @@ msgid ""
 "works with the prompt-toolkit back-end. To enable that behaviour run the "
 "following:"
 msgstr ""
+"xonshの :ref:`free_cwd <free_cwd>` xontrib（アドオン）はこの問題のいくつかを解決します。 "
+"シェルがアイドル状態のときはいつでも、プロンプトをフックして現在の作業ディレクトリを"
+"ルートドライブフォルダにリセットします。 これはprompt-toolkitバックエンドでのみ機能します。"
+"その動作を有効にするには、次のコマンドを実行します。"
 
 #: ../../windows.rst:135
 msgid "Add this line to your ``~/.xonshrc`` file to have it always enabled."
-msgstr ""
+msgstr "この行を ``~/.xonshrc`` に追記することで常に有効にできます。"
 
 #: ../../windows.rst:143
 msgid "Name space conflicts"
-msgstr ""
+msgstr "名前空間の競合"
 
 #: ../../windows.rst:145
 msgid ""
@@ -179,22 +208,27 @@ msgid ""
 "directory via the ``cmd.exe`` builtin you must explicitly request the "
 "``.``, like this:"
 msgstr ""
+"Pythonの ``dir`` ビルトインとのあいまいさのため、``cmd.exe`` ビルトインを介して"
+"現在のディレクトリを一覧表示するには、次のように明示的に ``.`` "
+"を要求しなければなりません。"
 
 #: ../../windows.rst:164
 msgid ""
 "Many people create a ``d`` alias for the ``dir`` command to save typing "
 "and avoid the ambiguity altogether:"
-msgstr ""
+msgstr "多くの人が ``dir`` コマンドのために ``d`` エイリアスを作成して"
+"入力を節約し、あいまいさを完全に避けます。"
 
 #: ../../windows.rst:171
 msgid ""
 "You can add aliases to your ``~/.xonshrc`` to have it always available "
 "when xonsh starts."
-msgstr ""
+msgstr "``~/.xonshrc`` にエイリアスを追加して、 ``xonsh`` の起動時に"
+"エイリアスを常に使用可能にすることができます。"
 
 #: ../../windows.rst:177
 msgid "Unicode support for Windows"
-msgstr ""
+msgstr "WindowsのUnicodeサポート"
 
 #: ../../windows.rst:179
 msgid ""
@@ -204,16 +238,24 @@ msgid ""
 "disabled/enabled with the :ref:`$WIN_UNICODE_CONSOLE "
 "<win_unicode_console>` environment variable."
 msgstr ""
+"Pythonのutf-8 Unicodeは、Windows上のデフォルトのシェル 'cmd.exe'と互換性がありません。 "
+"パッケージ ``win_unicode_console`` はこれを修正します。 Xonshがインストールされている場合、"
+"Xonshは ``win_unicode_console`` を使用します。 これは :ref:`$WIN_UNICODE_CONSOLE <win_unicode_console>`"
+" 環境変数で無効/有効にできます。"
 
 #: ../../windows.rst:181
 msgid ""
 "Even with unicode support enabled the symbols available will depend on "
 "the font used in cmd.exe."
 msgstr ""
+"Unicodeサポートが有効になっていても、利用可能なシンボルは"
+"cmd.exeで使用されているフォントによって異なります。"
 
 #: ../../windows.rst:183
 msgid ""
 "The packages ``win_unicode_console`` can be installed along with xonsh by"
 " using the package name ``xonsh[win]`` or separately using pip or conda."
 msgstr ""
+"パッケージ ``win_unicode_console`` は、パッケージ名 ``xonsh[win]`` を使用するか、"
+"またはpipまたはcondaを使用してxonshと一緒にインストールできます。"
 
