@@ -1,0 +1,3 @@
+[submodule "xonsh"]
+	path = xonsh
+	url = https://github.com/xonsh/xonsh.git
