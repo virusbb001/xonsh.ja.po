@@ -60,4 +60,5 @@ workflows:
             branches:
               only:
                 - master
+                - /enhance-ci-.*/
   version: 2
