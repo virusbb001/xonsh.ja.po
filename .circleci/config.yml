@@ -5,15 +5,21 @@ jobs:
     docker:
       - image: circleci/python:3
     steps:
+      - checkout
       - run:
-          name: Sync original xonsh
-          command: git clone https://github.com/xonsh/xonsh.git
-      - checkout:
-          path: xonsh/docs/locale/ja
+          name: Sync submodules
+          command: |
+            git submodule sync
+            git submodule update --init
       - run:
           name: apply patch to xonsh
           command: |
-            git -C xonsh apply docs/locale/ja/patches/add_i18n_conf.patch
+            ls
+            git -C xonsh apply ../patches/add_i18n_conf.patch
+      - restore_cache:
+          keys:
+            - venv-cache-{{ .Environment.CACHE_VALUE }}-{{ checksum "xonsh/requirements-docs.txt" }}
+            - venv-cache-{{ .Environment.CACHE_VALUE }}
       - run:
           name: create venv
           command: |
@@ -21,6 +27,9 @@ jobs:
             . venv/bin/activate
             pip install -r xonsh/requirements-docs.txt
             (cd xonsh && pip install -e .)
+      - save_cache:
+          key: venv-cache-{{ .Environment.CACHE_VALUE }}-{{ checksum "xonsh/requirements-docs.txt" }}
+          paths: venv
       - run:
           name: Building docs
           command: |
