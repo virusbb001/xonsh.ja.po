@@ -33,6 +33,8 @@ jobs:
       - run:
           name: Building docs
           command: |
+            mkdir -p xonsh/docs/locale/ja
+            ln -s ../../../../LC_MESSAGES xonsh/docs/locale/ja
             . venv/bin/activate
             git clone git@github.com:virusbb001/xonsh-docs-ja.git xonsh/docs/_build/html
             # git clone https://github.com/virusbb001/xonsh-docs-ja.git xonsh/docs/_build/html
@@ -48,7 +50,7 @@ jobs:
 
             xonsh.ja.po: $CIRCLE_SHA1"
             git push origin master
-            # git log -n1 HEAD
+            # git log -n1 -p HEAD | cat
 
 # Orchestrate or schedule a set of jobs,
 # see https://circleci.com/docs/2.0/workflows/
