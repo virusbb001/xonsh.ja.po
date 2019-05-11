@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"POT-Creation-Date: 2019-05-11 15:34+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,19 +21,19 @@ msgstr ""
 msgid "the xonsh shell"
 msgstr "Xonsh シェル"
 
-#: ../../intro.rst:57
 # TODO: Unix-gazing のいい感じの訳
+#: ../../intro.rst:57
 msgid ""
 "Xonsh is a Python-powered, cross-platform, Unix-gazing shell language and"
-" command prompt. The language is a superset of Python 3.4+ with "
+" command prompt. The language is a superset of Python 3.5+ with "
 "additional shell primitives that you are used to from Bash and IPython. "
 "It works on all major systems including Linux, Mac OSX, and Windows. "
 "Xonsh is meant for the daily use of experts and novices alike."
 msgstr ""
-"XonshはPythonで動く、クロスプラットフォームのUnix-gazingなシェル言語とコマンドプロンプトです。"
-"この言語は、BashとIPythonから慣れ親しんだ追加のシェルプリミティブを持つPython 3.4+のスーパーセットです。"
-"これは、Linux、Mac OSX、およびWindowsを含むすべての主要なシステムで動作します。"
-"Xonshは専門家と初心者の毎日の使用のために作られています"
+"XonshはPythonで動く、クロスプラットフォームのUnix-"
+"gazingなシェル言語とコマンドプロンプトです。この言語は、BashとIPythonから慣れ親しんだ追加のシェルプリミティブを持つPython "
+"3.5+のスーパーセットです。これは、Linux、Mac "
+"OSX、およびWindowsを含むすべての主要なシステムで動作します。Xonshは専門家と初心者の毎日の使用のために作られています"
 
 #: ../../tryitnow.rst:2
 msgid "Try It Now!"
@@ -46,9 +46,8 @@ msgid ""
 "below. **Note:** this is not a fully featured xonsh instance due to "
 "repl.it limitations."
 msgstr ""
-"ブラウザーでxonshを試してみてください。"
-"下の `Repl.it <https://repl.it>`_ フレームの右下にある三角再生ボタンを押すだけです。 "
-"注意： repl.itの制限により、完全に機能するxonshインスタンスではありません。"
+"ブラウザーでxonshを試してみてください。下の `Repl.it <https://repl.it>`_ "
+"フレームの右下にある三角再生ボタンを押すだけです。 注意： repl.itの制限により、完全に機能するxonshインスタンスではありません。"
 
 #: ../../comparison.rst:2
 msgid "Comparison"
@@ -59,8 +58,7 @@ msgid ""
 "Xonsh is significantly different from most other shells or shell tools. "
 "The following table lists features and capabilities that various tools "
 "may or may not share."
-msgstr ""
-"Xonshは、他のほとんどのシェルやシェルツールと大きく異なります。次の表に、さまざまなツールが共有する機能と不可能な機能の一覧を示します。"
+msgstr "Xonshは、他のほとんどのシェルやシェルツールと大きく異なります。次の表に、さまざまなツールが共有する機能と不可能な機能の一覧を示します。"
 
 #: ../../comparison.rst:12
 msgid "Bash"
@@ -113,8 +111,8 @@ msgstr "記述が簡単"
 msgid "Native cross-platform support"
 msgstr "標準のクロスプラットフォームサポート"
 
-#: ../../comparison.rst:39
 # TODO: 自信なし 監訳求む
+#: ../../comparison.rst:39
 msgid "Meant as a shell"
 msgstr "シェルのつもりであった"
 
@@ -138,8 +136,8 @@ msgstr "型付きの変数"
 msgid "Syntax highlighting"
 msgstr "シンタックスハイライト"
 
-#: ../../comparison.rst:79
 # このnotebookはJupyter Notebookを指していると思われます。
+#: ../../comparison.rst:79
 msgid "in notebook"
 msgstr "Notebook内で"
 
@@ -179,9 +177,7 @@ msgstr "Python v3.4+"
 msgid ""
 "Pip supports \"extra\" dependencies in the form of ``xonsh[ptk,linux]``, "
 "where the list in the brackets identify the optional features"
-msgstr ""
-"Pipは ``xonsh[ptk,linux]`` のような\"追加の\"依存関係をサポートしており、"
-"括弧内のリストでオプション機能が識別されます。"
+msgstr "Pipは ``xonsh[ptk,linux]`` のような\"追加の\"依存関係をサポートしており、括弧内のリストでオプション機能が識別されます。"
 
 #: ../../dependencies.rst:12
 msgid "Xonsh currently has the following extras"
@@ -213,15 +209,13 @@ msgstr "``mac``: gnureadline: *readlineのGNUの機能方法なバージョン*"
 msgid ""
 "``win``: win_unicode_console: *enables the use of Unicode in windows "
 "consoles*"
-msgstr ""
-"``win``: win_unicode_console: *Windowsコンソール内でUnicodeを有効化*"
+msgstr "``win``: win_unicode_console: *Windowsコンソール内でUnicodeを有効化*"
 
 #: ../../dependencies.rst:22
 msgid ""
 "In addition, xonsh integrates with Jupyter, an in-browser REPL, enabling "
 "the use of xonsh in jupyter notebooks"
-msgstr ""
-"さらに、Xonshはブラウザー内のREPLであるJupyterと統合され、Jupyter NotebookでXonshを使用できるようにします"
+msgstr "さらに、Xonshはブラウザー内のREPLであるJupyterと統合され、Jupyter NotebookでXonshを使用できるようにします"
 
 #: ../../dependencies.rst:25
 msgid "Development Dependencies"
@@ -236,10 +230,10 @@ msgid ""
 "<https://github.com/xonsh/xonsh/blob/master/requirements-tests.txt>`_ (to"
 " run the test suite)."
 msgstr ""
-"xonshを開発したい場合は、"
-"`requires-docs.txt <https://github.com/xonsh/xonsh/blob/master/requirements-docs.txt>`_ "
-"（ドキュメンテーションを生成するため）および "
-"`requirements-tests.txt <https://github.com/xonsh/xonsh/blob/master/requirements-tests.txt>`_ "
+"xonshを開発したい場合は、`requires-docs.txt "
+"<https://github.com/xonsh/xonsh/blob/master/requirements-docs.txt>`_ "
+"（ドキュメンテーションを生成するため）および `requirements-tests.txt "
+"<https://github.com/xonsh/xonsh/blob/master/requirements-tests.txt>`_ "
 "（テストスイートを実行するため）にリストされている依存関係をインストールすることを強くお勧めします。"
 
 #: ../../installation.rst:8
@@ -271,18 +265,16 @@ msgid ""
 "(xonsh@googlegroups.com) or the `Gitter <https://gitter.im/xonsh/xonsh>`_"
 " channel."
 msgstr ""
-"xonshへの貢献を強くお勧めします！あなたが貢献したいのであれば、"
-"GitHubでリポジトリをフォークし、変更を加え、プルリクエストを発行するのと同じくらい簡単です。"
-"このプロセスについてご質問がある場合はお気軽に メーリングリスト (xonsh@googlegroups.com)"
-"もしくは `Gitter <https://gitter.im/xonsh/xonsh>`_ チャンネルへお問い合わせください。"
-"(訳注: この問い合わせ先はおそらく英語のみの受付です。)"
+"xonshへの貢献を強くお勧めします！あなたが貢献したいのであれば、GitHubでリポジトリをフォークし、変更を加え、プルリクエストを発行するのと同じくらい簡単です。このプロセスについてご質問がある場合はお気軽に"
+" メーリングリスト (xonsh@googlegroups.com)もしくは `Gitter "
+"<https://gitter.im/xonsh/xonsh>`_ チャンネルへお問い合わせください。(訳注: "
+"この問い合わせ先はおそらく英語のみの受付です。)"
 
 #: ../../contributing.rst:10
 msgid ""
 "See the `Developer's Guide <devguide.html>`_ for more information about "
 "contributing."
-msgstr ""
-"貢献についてのより多くの情報は `開発者ガイド <devguide.html>`_ をご覧ください。"
+msgstr "貢献についてのより多くの情報は `開発者ガイド <devguide.html>`_ をご覧ください。"
 
 #: ../../contact.rst:4
 msgid "Contact Us"
@@ -295,11 +287,10 @@ msgid ""
 "open an issue on GitHub. `Join the mailing list here! "
 "<https://groups.google.com/forum/#!forum/xonsh>`_"
 msgstr ""
-"ご質問やご意見がありましたら、xonsh@googlegroups.com メーリングリストに送信したり、"
-"IRCで私達を呼び出したり、直接著者に連絡したり、GitHubでissueを開いてください。 "
-"`ここからメーリングリストに参加してください！ <https://groups.google.com/forum/#!forum/xonsh>`_ "
-"(訳注: おそらく英語のみの受付です。)"
-
+"ご質問やご意見がありましたら、xonsh@googlegroups.com "
+"メーリングリストに送信したり、IRCで私達を呼び出したり、直接著者に連絡したり、GitHubでissueを開いてください。 "
+"`ここからメーリングリストに参加してください！ <https://groups.google.com/forum/#!forum/xonsh>`_"
+" (訳注: おそらく英語のみの受付です。)"
 
 #: ../../links.rst:4
 msgid "Helpful Links"
