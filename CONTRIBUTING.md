@@ -22,7 +22,8 @@
 ドキュメントのビルドに、 [xonsh](https://github.com/xonsh/xonsh)リポジトリのファイルを使用します。
 
 1. Python 3.4以上をインストールします。
-1. [xonsh](https://github.com/xonsh/xonsh) をクローンします。
+1. [xonsh](https://github.com/xonsh/xonsh) をクローン/チェックアウトします。
+	+ 対応しているリビジョンをチェックアウトしてください。 `git submodule status xonsh` で確認できます。
 1. このリポジトリの[patches/add\_i18n\_conf.patch](patches/add_i18n_conf.patch)を適用します。
 	1. `xonsh` のリポジトリに移動します
 	1. `git apply PATH_TO_THIS_REPO/patches/add_i18n_conf.patch` のようにしてパッチを適用します。
@@ -35,7 +36,10 @@
 		```
 	+ xonshをソースからインストールする場合は、 `pip install -e .` を行うことをおすすめします。
 		+ これはバージョン番号に `dev` が付加されるのを避ける効果もあります。
+1. このリポジトリの `LC_MESSAGES` を `xonsh/docs/locale/ja` にコピーします
+	+ このリポジトリを `xonsh/docs/locale/ja` でクローンすると便利です
+	+ サブモジュールとしてチェックアウトして `ln ../../../ ja` のようにしてしまうと再帰的に処理されるため避けてください。
 1. `xonsh/docs` 内で `make -e SPHINXOPTS="-D language='ja'" html` を実行して日本語訳を適用させたファイルを生成します。
-	+ `make` コマンドがない場合は以下のコマンドで代用できます。
+	+ `make` コマンドがない場合は以下のコマンドで代用できます。  
 		`sphinx-build -b html -d _build/doctrees . -D language='ja' _build/html`
 1. `_build/html` の中身を確認します。
