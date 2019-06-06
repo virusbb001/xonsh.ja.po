@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"POT-Creation-Date: 2019-06-01 19:31+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../api/commands_cache.rst:5
 msgid "Commands Cache (``xonsh.commands_cache``)"
@@ -47,6 +47,13 @@ msgstr ""
 msgid "Returns the name that would appear in the cache, if it exists."
 msgstr ""
 
+#: of xonsh.commands_cache.CommandsCache.default_predictor:2
+msgid ""
+"Default predictor, using predictor from original command if the command "
+"is an alias, elseif build a predictor based on binary analysis on POSIX, "
+"else return predict_true."
+msgstr ""
+
 #: of xonsh.commands_cache.CommandsCache.default_predictor_readbin:2
 msgid ""
 "Make a default predictor by analyzing the content of the binary. Should "
@@ -58,6 +65,12 @@ msgid ""
 "Generates the possible `PATHEXT` extension variants of a given executable"
 " name on Windows as a list, conserving the ordering in `PATHEXT`. Returns"
 " a list as `name` being the only item in it on other platforms."
+msgstr ""
+
+#: of xonsh.commands_cache.CommandsCache.get_predictor_threadable:2
+msgid ""
+"Return the predictor whether a command list is able to be run on a "
+"background thread, rather than the main thread."
 msgstr ""
 
 #: of xonsh.commands_cache.CommandsCache.is_empty:2
@@ -156,6 +169,13 @@ msgstr ""
 msgid ""
 "Generates a new defaultdict for known threadable predictors. The default "
 "is to predict true."
+msgstr ""
+
+#: of xonsh.commands_cache.predict_env:2
+msgid ""
+"Predict if env is launching a threadable command or not. The launched "
+"command is extracted from env args, and the predictor of lauched command "
+"is used."
 msgstr ""
 
 #: of xonsh.commands_cache.predict_false:2

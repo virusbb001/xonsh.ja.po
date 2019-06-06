@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-01 16:24+0900\n"
+"POT-Creation-Date: 2019-06-01 19:31+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../api/platform.rst:4
 msgid "Platform-specific constants and implementations (``xonsh.platform``)"
@@ -28,6 +28,21 @@ msgid ""
 "on a platform."
 msgstr ""
 
+#: of xonsh.platform.OSEnvironCasePreserving:2
+msgid ""
+"Case-preserving wrapper for os.environ on Windows. It uses nt.environ to "
+"get the correct cased keys on initialization. It also preserves the case "
+"of any variables add after initialization."
+msgstr ""
+
+#: of xonsh.platform.expanduser:2 xonsh.platform.windows_expanduser:2
+msgid ""
+"A Windows-specific expanduser() function for xonsh. This is needed since "
+"os.path.expanduser() does not check on Windows if the user actually "
+"exists. This restricts expanding the '~' if it is not followed by a "
+"separator. That is only '~/' and '~' are expanded."
+msgstr ""
+
 #: of xonsh.platform.pathbasename:2
 msgid ""
 "This is a safe version of os.path.basename(), which does not work on "
@@ -38,14 +53,6 @@ msgstr ""
 msgid ""
 "This is a safe version of os.path.split(), which does not work on input "
 "without a drive."
-msgstr ""
-
-#: of xonsh.platform.windows_expanduser:2
-msgid ""
-"A Windows-specific expanduser() function for xonsh. This is needed since "
-"os.path.expanduser() does not check on Windows if the user actually "
-"exists. This restricts expanding the '~' if it is not followed by a "
-"separator. That is only '~/' and '~' are expanded."
 msgstr ""
 
 #: of xonsh.platform.CAN_RESIZE_WINDOW:2

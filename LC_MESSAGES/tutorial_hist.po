@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-30 00:54+0900\n"
+"POT-Creation-Date: 2019-06-01 19:31+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../tutorial_hist.rst:5
 msgid "Tutorial: History"
@@ -571,10 +571,12 @@ msgid ""
 "Xonsh has a second built-in history backend powered by sqlite (other than"
 " the JSON version mentioned all above in this tutorial). It shares the "
 "same functionality as the JSON version in most ways, except it currently "
-"doesn't support ``history diff`` and ``history replay`` actions."
+"doesn't support ``history diff`` and ``history replay`` actions and does "
+"not store the output of commands, as the json-backend does. E.g. "
+"`__xonsh__.history[-1].out` will always be `None`."
 msgstr ""
 
-#: ../../tutorial_hist.rst:470
+#: ../../tutorial_hist.rst:472
 msgid ""
 "The Sqlite history backend can provide a speed advantage in loading "
 "history into a just-started xonsh session. The JSON history backend may "
@@ -583,56 +585,67 @@ msgid ""
 "amount of time before all history is available for searching."
 msgstr ""
 
-#: ../../tutorial_hist.rst:476
+#: ../../tutorial_hist.rst:478
 msgid ""
 "To use sqlite history backend, set ``$XONSH_HISTORY_BACKEND = 'sqlite'`` "
 "in your ``~/.xonshrc`` file. To switch back to JSON version, remove this "
 "line, or set it to ``'json'``."
 msgstr ""
 
-#: ../../tutorial_hist.rst:480
+#: ../../tutorial_hist.rst:482
 msgid ""
 "SQLite history backend currently only supports ``commands`` as the unit "
 "in ``$XONSH_HISTORY_SIZE`` in its garbage collection."
 msgstr ""
 
-#: ../../tutorial_hist.rst:483
+#: ../../tutorial_hist.rst:485
 msgid ""
 "If you have `sqlite-web <https://pypi.python.org/pypi/sqlite-web>`_ "
 "installed, you can read the history easily with command: ``sqlite_web "
 "@$(history file)``."
 msgstr ""
 
-#: ../../tutorial_hist.rst:489
+#: ../../tutorial_hist.rst:491
 msgid "Fun ideas for history data"
 msgstr ""
 
-#: ../../tutorial_hist.rst:490
+#: ../../tutorial_hist.rst:492
 msgid ""
 "Now that we have all of this history data, it seems like what we have "
 "here is just the tip of the iceberg! Here are some hopefully fun ideas "
 "that I think would be great to see implemented:"
 msgstr ""
 
-#: ../../tutorial_hist.rst:494
+#: ../../tutorial_hist.rst:496
 msgid "Basic statistic reports about command usage, timing, etc.,"
 msgstr ""
 
-#: ../../tutorial_hist.rst:495
+#: ../../tutorial_hist.rst:497
 msgid "Global statistics by collecting anonymized histories from many people,"
 msgstr ""
 
-#: ../../tutorial_hist.rst:496
+#: ../../tutorial_hist.rst:498
 msgid "MCMC-based tab-completer for inputs,"
 msgstr ""
 
-#: ../../tutorial_hist.rst:497
+#: ../../tutorial_hist.rst:499
 msgid "and many more!"
 msgstr ""
 
-#: ../../tutorial_hist.rst:499
+#: ../../tutorial_hist.rst:501
 msgid ""
 "Let us know if you'd be interested in working on any of these, inside or "
 "outside of xonsh."
 msgstr ""
+
+#~ msgid ""
+#~ "Xonsh has a second built-in "
+#~ "history backend powered by sqlite (other"
+#~ " than the JSON version mentioned all"
+#~ " above in this tutorial). It shares"
+#~ " the same functionality as the JSON"
+#~ " version in most ways, except it "
+#~ "currently doesn't support ``history diff`` "
+#~ "and ``history replay`` actions."
+#~ msgstr ""
 

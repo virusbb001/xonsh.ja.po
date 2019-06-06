@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh 0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-11 15:34+0900\n"
+"POT-Creation-Date: 2019-06-06 23:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../envvars.rst:2
 msgid "Environment Variables"
@@ -410,9 +410,8 @@ msgstr ""
 msgid "This is used on Windows to set the title, if available."
 msgstr ""
 
-#: ../../envvarsbody:107 ../../envvarsbody:427 ../../envvarsbody:539
-#: ../../envvarsbody:567 ../../envvarsbody:623 ../../envvarsbody:693
-#: ../../envvarsbody:899 ../../envvarsbody:997 ../../envvarsbody:1025
+#: ../../envvarsbody:107 ../../envvarsbody:567 ../../envvarsbody:623
+#: ../../envvarsbody:693 ../../envvarsbody:899 ../../envvarsbody:997
 #: ../../envvarsbody:1039 ../../envvarsbody:1153 ../../envvarsbody:1195
 #: ../../envvarsbody:1278 ../../envvarsbody:1327 ../../envvarsbody:1341
 #: ../../envvarsbody:1383
@@ -475,18 +474,19 @@ msgstr ""
 #: ../../envvarsbody:257 ../../envvarsbody:271 ../../envvarsbody:285
 #: ../../envvarsbody:315 ../../envvarsbody:329 ../../envvarsbody:343
 #: ../../envvarsbody:357 ../../envvarsbody:371 ../../envvarsbody:385
-#: ../../envvarsbody:399 ../../envvarsbody:413 ../../envvarsbody:441
-#: ../../envvarsbody:455 ../../envvarsbody:469 ../../envvarsbody:483
-#: ../../envvarsbody:497 ../../envvarsbody:511 ../../envvarsbody:525
-#: ../../envvarsbody:553 ../../envvarsbody:581 ../../envvarsbody:595
-#: ../../envvarsbody:609 ../../envvarsbody:637 ../../envvarsbody:651
-#: ../../envvarsbody:665 ../../envvarsbody:679 ../../envvarsbody:707
-#: ../../envvarsbody:721 ../../envvarsbody:742 ../../envvarsbody:756
-#: ../../envvarsbody:770 ../../envvarsbody:784 ../../envvarsbody:806
-#: ../../envvarsbody:820 ../../envvarsbody:834 ../../envvarsbody:848
-#: ../../envvarsbody:862 ../../envvarsbody:876 ../../envvarsbody:913
-#: ../../envvarsbody:927 ../../envvarsbody:941 ../../envvarsbody:955
-#: ../../envvarsbody:969 ../../envvarsbody:983 ../../envvarsbody:1011
+#: ../../envvarsbody:399 ../../envvarsbody:413 ../../envvarsbody:427
+#: ../../envvarsbody:441 ../../envvarsbody:455 ../../envvarsbody:469
+#: ../../envvarsbody:483 ../../envvarsbody:497 ../../envvarsbody:511
+#: ../../envvarsbody:525 ../../envvarsbody:539 ../../envvarsbody:553
+#: ../../envvarsbody:581 ../../envvarsbody:595 ../../envvarsbody:609
+#: ../../envvarsbody:637 ../../envvarsbody:651 ../../envvarsbody:665
+#: ../../envvarsbody:679 ../../envvarsbody:707 ../../envvarsbody:721
+#: ../../envvarsbody:742 ../../envvarsbody:756 ../../envvarsbody:770
+#: ../../envvarsbody:784 ../../envvarsbody:806 ../../envvarsbody:820
+#: ../../envvarsbody:834 ../../envvarsbody:848 ../../envvarsbody:862
+#: ../../envvarsbody:876 ../../envvarsbody:913 ../../envvarsbody:927
+#: ../../envvarsbody:941 ../../envvarsbody:955 ../../envvarsbody:969
+#: ../../envvarsbody:983 ../../envvarsbody:1011 ../../envvarsbody:1025
 #: ../../envvarsbody:1053 ../../envvarsbody:1067 ../../envvarsbody:1083
 #: ../../envvarsbody:1097 ../../envvarsbody:1111 ../../envvarsbody:1125
 #: ../../envvarsbody:1139 ../../envvarsbody:1167 ../../envvarsbody:1181
@@ -952,7 +952,9 @@ msgid "Color settings for ``ls`` command line utility"
 msgstr ""
 
 #: ../../envvarsbody:583
-msgid "**default:** <function default_lscolors at 0x7fcd70d18b70>"
+msgid ""
+"**default:** "
+"``*.7z=1;0;31:*.Z=1;0;31:*.aac=0;36:*.ace=1;0;31:*.alz=1;0;31:*.arc=1;0;31:*.arj=1;0;31:*.asf=1;0;35:*.au=0;36:*.avi=1;0;35:*.bmp=1;0;35:*.bz=1;0;31:*.bz2=1;0;31:*.cab=1;0;31:*.cgm=1;0;35:*.cpio=1;0;31:*.deb=1;0;31:*.dl=1;0;35:*.dwm=1;0;31:*.dz=1;0;31:*.ear=1;0;31:*.emf=1;0;35:*.esd=1;0;31:*.flac=0;36:*.flc=1;0;35:*.fli=1;0;35:*.flv=1;0;35:*.gif=1;0;35:*.gl=1;0;35:*.gz=1;0;31:*.jar=1;0;31:*.jpeg=1;0;35:*.jpg=1;0;35:*.lha=1;0;31:*.lrz=1;0;31:*.lz=1;0;31:*.lz4=1;0;31:*.lzh=1;0;31:*.lzma=1;0;31:*.lzo=1;0;31:*.m2v=1;0;35:*.m4a=0;36:*.m4v=1;0;35:*.mid=0;36:*.midi=0;36:*.mjpeg=1;0;35:*.mjpg=1;0;35:*.mka=0;36:*.mkv=1;0;35:*.mng=1;0;35:*.mov=1;0;35:*.mp3=0;36:*.mp4=1;0;35:*.mp4v=1;0;35:*.mpc=0;36:*.mpeg=1;0;35:*.mpg=1;0;35:*.nuv=1;0;35:*.oga=0;36:*.ogg=0;36:*.ogm=1;0;35:*.ogv=1;0;35:*.ogx=1;0;35:*.opus=0;36:*.pbm=1;0;35:*.pcx=1;0;35:*.pgm=1;0;35:*.png=1;0;35:*.ppm=1;0;35:*.qt=1;0;35:*.ra=0;36:*.rar=1;0;31:*.rm=1;0;35:*.rmvb=1;0;35:*.rpm=1;0;31:*.rz=1;0;31:*.sar=1;0;31:*.spx=0;36:*.svg=1;0;35:*.svgz=1;0;35:*.swm=1;0;31:*.t7z=1;0;31:*.tar=1;0;31:*.taz=1;0;31:*.tbz=1;0;31:*.tbz2=1;0;31:*.tga=1;0;35:*.tgz=1;0;31:*.tif=1;0;35:*.tiff=1;0;35:*.tlz=1;0;31:*.txz=1;0;31:*.tz=1;0;31:*.tzo=1;0;31:*.tzst=1;0;31:*.vob=1;0;35:*.war=1;0;31:*.wav=0;36:*.webm=1;0;35:*.wim=1;0;31:*.wmv=1;0;35:*.xbm=1;0;35:*.xcf=1;0;35:*.xpm=1;0;35:*.xspf=0;36:*.xwd=1;0;35:*.xz=1;0;31:*.yuv=1;0;35:*.z=1;0;31:*.zip=1;0;31:*.zoo=1;0;31:*.zst=1;0;31:bd=40;0;33:ca=0;30;41:cd=40;0;33:di=1;0;34:do=1;0;35:ex=1;0;32:ln=1;0;36:mh=0:mi=0:or=40;0;31:ow=0;34;42:pi=40;0;33:rs=0:sg=0;30;43:so=1;0;35:st=0;37;44:su=0;37;41:tw=0;30;42``"
 msgstr ""
 
 #: ../../envvarsbody:592
@@ -999,8 +1001,15 @@ msgstr ""
 
 #: ../../envvarsbody:639
 msgid ""
-"**default:** ('/usr/local/sbin', '/usr/local/bin', '/usr/bin', "
-"'/usr/bin/site_perl', '/usr/bin/vendor_perl', '/usr/bin/core_perl')"
+"**default:** On Windows: it is ``Path`` value of register's "
+"``HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session "
+"Manager\\Environment``. On Mac OSX: ``('/usr/local/bin', '/usr/bin', "
+"'/bin', '/usr/sbin', '/sbin')`` On Linux & on Cygwin & on MSYS, when "
+"detected that the distro is like arch, the default PATH is "
+"``('/usr/local/sbin', '/usr/local/bin', '/usr/bin', '/usr/bin/site_perl',"
+" '/usr/bin/vendor_perl', '/usr/bin/core_perl')`` and otherwise is "
+"``('~/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin','/usr/bin', "
+"'/sbin', '/bin', '/usr/games', '/usr/local/games')``"
 msgstr ""
 
 #: ../../envvarsbody:648
@@ -1014,7 +1023,7 @@ msgid ""
 msgstr ""
 
 #: ../../envvarsbody:653
-msgid "**default:** []"
+msgid "**default:** ['.COM', '.EXE', '.BAT', '.CMD']"
 msgstr ""
 
 #: ../../envvarsbody:662
@@ -1320,7 +1329,7 @@ msgid ""
 msgstr ""
 
 #: ../../envvarsbody:971
-msgid "**default:** 0.1"
+msgid "**default:** 0.2"
 msgstr ""
 
 #: ../../envvarsbody:980
@@ -1417,7 +1426,7 @@ msgid "Append new line when a partial line is preserved in output."
 msgstr ""
 
 #: ../../envvarsbody:1085
-msgid "**default:** <function xonsh_append_newline at 0x7fcd70d18ae8>"
+msgid "**default:** ``$XONSH_INTERACTIVE``"
 msgstr ""
 
 #: ../../envvarsbody:1094
@@ -1787,3 +1796,76 @@ msgstr ""
 #: ../../envvarsbody:1455
 msgid "**default:** None"
 msgstr ""
+
+#~ msgid "**default:** <function default_lscolors at 0x7fcd70d18b70>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**default:** ('/usr/local/sbin', '/usr/local/bin', "
+#~ "'/usr/bin', '/usr/bin/site_perl', '/usr/bin/vendor_perl',"
+#~ " '/usr/bin/core_perl')"
+#~ msgstr ""
+
+#~ msgid "**default:** <function xonsh_append_newline at 0x7fcd70d18ae8>"
+#~ msgstr ""
+
+#~ msgid "**default:** <function default_lscolors at 0x7f9ee727fd90>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**default:** ('/home/virus/bin', '/usr/local/sbin', "
+#~ "'/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin',"
+#~ " '/bin', '/usr/games', '/usr/local/games')"
+#~ msgstr ""
+
+#~ msgid "**default:** []"
+#~ msgstr ""
+
+#~ msgid "**default:** 0.1"
+#~ msgstr ""
+
+#~ msgid "**default:** <function xonsh_append_newline at 0x7f9ee727fd08>"
+#~ msgstr ""
+
+#~ msgid "**default:** <function default_lscolors at 0x000001CA28567400>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**default:** "
+#~ "('D:\\\\Applications\\\\Python\\\\37\\\\Scripts\\\\', "
+#~ "'D:\\\\Applications\\\\Python\\\\37\\\\', 'C:\\\\Program "
+#~ "Files\\\\NVIDIA GPU Computing "
+#~ "Toolkit\\\\CUDA\\\\v9.2\\\\bin', 'C:\\\\Program "
+#~ "Files\\\\NVIDIA GPU Computing "
+#~ "Toolkit\\\\CUDA\\\\v9.2\\\\libnvvp', "
+#~ "'C:\\\\Windows\\\\system32', 'C:\\\\Windows', "
+#~ "'C:\\\\Windows\\\\System32\\\\Wbem', "
+#~ "'C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\', "
+#~ "'C:\\\\WINDOWS\\\\system32', 'C:\\\\WINDOWS', "
+#~ "'C:\\\\WINDOWS\\\\System32\\\\Wbem', "
+#~ "'C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\', "
+#~ "'C:\\\\WINDOWS\\\\System32\\\\OpenSSH\\\\', "
+#~ "'C:\\\\ProgramData\\\\chocolatey\\\\bin', 'C:\\\\Program "
+#~ "Files\\\\OpenSSH-Win64', 'C:\\\\Program "
+#~ "Files\\\\dotnet\\\\', "
+#~ "'C:\\\\ProgramData\\\\chocolatey\\\\lib\\\\lua52\\\\tools', "
+#~ "'C:\\\\Program Files\\\\Gauche\\\\bin', "
+#~ "'C:\\\\ProgramData\\\\chocolatey\\\\lib\\\\lua53\\\\tools', "
+#~ "'D:\\\\Applications\\\\nodejs\\\\', "
+#~ "'C:\\\\ProgramData\\\\chocolatey\\\\lib\\\\lua51\\\\tools', "
+#~ "'C:\\\\Program Files\\\\NVIDIA Corporation\\\\NVIDIA "
+#~ "NvDLISR', 'C:\\\\Program Files "
+#~ "(x86)\\\\Gpg4win\\\\..\\\\GnuPG\\\\bin', "
+#~ "'D:\\\\Applications\\\\erl10.1\\\\bin', "
+#~ "'D:\\\\Applications\\\\Elixir\\\\bin', "
+#~ "'C:\\\\Users\\\\virus\\\\.mix\\\\escripts', 'C:\\\\Program "
+#~ "Files (x86)\\\\NVIDIA Corporation\\\\PhysX\\\\Common', "
+#~ "'C:\\\\Program Files (x86)\\\\Yarn\\\\bin\\\\', "
+#~ "'D:\\\\Applications\\\\PowerShell\\\\6\\\\', "
+#~ "'D:\\\\Applications\\\\Go\\\\bin', "
+#~ "'D:\\\\Applications\\\\Git\\\\cmd')"
+#~ msgstr ""
+
+#~ msgid "**default:** <function xonsh_append_newline at 0x000001CA28567378>"
+#~ msgstr ""
+
